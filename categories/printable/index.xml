@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Printable on open collector</title>
+    <link>http://open.konspyre.org/categories/printable/</link>
+    <description>Recent content in Printable on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Feb 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/categories/printable/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Printable divider for the 10164 storage drawer</title>
+      <link>http://open.konspyre.org/blog/2013-02-04-printable-divider/</link>
+      <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2013-02-04-printable-divider/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/box_divider/box_divider_plate.png&#34; alt=&#34;Storage drawer divider&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This is a 3D printable small drawer divider for the Akro-Mils 10164 parts cabinet.&lt;/p&gt;
+
+&lt;p&gt;The clear drawers themselves have a nice little slot for partitioning, so this divider fits right in and sits snugly without bowing out the drawer.&lt;/p&gt;
+
+&lt;p&gt;While there are several dividers that come attached to the back of the cabinet (which are manually de-paneled by the end consumer), they&amp;rsquo;re very limited in quantity.&lt;/p&gt;
+
+&lt;p&gt;So if you have a 3D printer of some sort, or want to play with the model enough to make it &amp;lsquo;go&amp;rsquo; on a laser cutter/CNC, give this a shot.&lt;/p&gt;
+
+&lt;p&gt;Keep in mind that this &lt;strong&gt;&lt;em&gt;will not&lt;/em&gt;&lt;/strong&gt; fit the larger drawers like on the 10144.&lt;/p&gt;
+
+&lt;p&gt;Download the STL file &lt;a href=&#34;https://github.com/davidk/3D-Printable-Parts-Divider&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To prevent ambiguities, the license for this (simple work) is WTFPL. Feel free to remix it, and do as you wish without reading walls of text.&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

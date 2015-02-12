@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Electroscope on open collector</title>
+    <link>http://open.konspyre.org/categories/electroscope/</link>
+    <description>Recent content in Electroscope on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Feb 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/categories/electroscope/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Electroscope update</title>
+      <link>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
+      <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
+      <description>
+
+&lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
+back for this version is 2014-08-24(!)&lt;/p&gt;
+
+&lt;h3 id=&#34;changes:7dde062d6c6ca61db731fda7916bef40&#34;&gt;Changes&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pulled copper pour near inputs back&lt;/li&gt;
+&lt;li&gt;Removed polyimide/kapton shield&lt;/li&gt;
+&lt;li&gt;Simplified antennae construction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One slight quirk with nearly all of these electroscopes is that they appear
+to be hard &amp;lsquo;on&amp;rsquo; after assembly sometimes. In many cases i&amp;rsquo;ve found that this is
+due to residual flux (of the water washable type).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve had success by scrubbing down with isopropyl alcohol and reflowing
+again with hot air.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/electroscope_08_24.png&#34; alt=&#34;Updated electroscope&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Toy Electroscope</title>
+      <link>http://open.konspyre.org/blog/2014-05-30-electroscope/</link>
+      <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-05-30-electroscope/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Nearly a year ago, vk2zay posted a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM&#34;&gt;video on electrets&lt;/a&gt;. In it, he also shared
+a design for a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM#t=152&#34;&gt;pretty fun electroscope&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As a part of learning KiCAD earlier this year, I turned it into a PCB.&lt;/p&gt;
+
+&lt;p&gt;This is the latest result:
+&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/top2.png&#34; alt=&#34;Electroscope&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The exposed copper area accepts a combination of kapton+sticky copper tape+kapton for some rudimentary shielding. LEDs are 3mm, or
+0805 (imperial). The antennae are simply stripped breadboarding wire.&lt;/p&gt;
+
+&lt;p&gt;It triggers on things I would have never expected.. like the clear plastic bags some components come in (from a
+very popular electronics vendor in the middle of nowhere). With the right LEDs (non-diffused/surface mount), people shuffling by light it up,
+and many are curious enough to pick it up and play with it/ask questions.&lt;/p&gt;
+
+&lt;p&gt;You can get your own copy of the PCB through the &lt;a href=&#34;https://www.oshpark.com/shared_projects/KFA2jmSs&#34;&gt;OSHPark shared project page&lt;/a&gt;, or grab the source
+KiCAD files/Bill of Materials/Placement &lt;a href=&#34;https://github.com/davidk/electroscope&#34;&gt;here&lt;/a&gt;. If you want the Gerbers used in fabrication, OSHPark has started
+exposing those as well, &lt;a href=&#34;http://uploads.oshpark.com/uploads/project/design/KFA2jmSs/design.zip&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

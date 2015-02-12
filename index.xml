@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open collector</title>
+    <link>http://open.konspyre.org/</link>
+    <description>Recent content on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Feb 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Electroscope update</title>
+      <link>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
+      <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
+      <description>
+
+&lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
+back for this version is 2014-08-24(!)&lt;/p&gt;
+
+&lt;h3 id=&#34;changes:7dde062d6c6ca61db731fda7916bef40&#34;&gt;Changes&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pulled copper pour near inputs back&lt;/li&gt;
+&lt;li&gt;Removed polyimide/kapton shield&lt;/li&gt;
+&lt;li&gt;Simplified antennae construction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One slight quirk with nearly all of these electroscopes is that they appear
+to be hard &amp;lsquo;on&amp;rsquo; after assembly sometimes. In many cases i&amp;rsquo;ve found that this is
+due to residual flux (of the water washable type).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve had success by scrubbing down with isopropyl alcohol and reflowing
+again with hot air.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/electroscope/electroscope_08_24.png&#34; alt=&#34;Updated electroscope&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CR2032 tester</title>
+      <link>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
+      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I was able to release a small breakout board based on a sample I received long ago from Texas Instruments.
+It is a CR2032 tester, based on the pretty accurate TPS3809L30DBVR part (which was derived
+from eevblog&amp;rsquo;s µCurrent). The LED stops lighting up somewhere slightly at or below 2.64v, where most CR2032 coin cells enter
+end-of-life on the discharge curve.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/davidk/cr2032-tester&#34;&gt;Read more and get it made on the project page&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://open.konspyre.org/pages/about/</link>
+      <pubDate>Sat, 31 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/pages/about/</guid>
+      <description>&lt;p&gt;&lt;em&gt;open collector&lt;/em&gt; is just one person, Dave.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m a hobbyist hacking on MCUs, sensors, physical fabrication techniques,
+circuits, and on occasion, radio stuff.&lt;/p&gt;
+
+&lt;p&gt;I have experience and work with Linux/Unix related stuff,
+so you may see a bit of crossover into that from time to time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Toy Electroscope</title>
+      <link>http://open.konspyre.org/blog/2014-05-30-electroscope/</link>
+      <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-05-30-electroscope/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Nearly a year ago, vk2zay posted a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM&#34;&gt;video on electrets&lt;/a&gt;. In it, he also shared
+a design for a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM#t=152&#34;&gt;pretty fun electroscope&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As a part of learning KiCAD earlier this year, I turned it into a PCB.&lt;/p&gt;
+
+&lt;p&gt;This is the latest result:
+&lt;img src=&#34;/assets/images/electroscope/top2.png&#34; alt=&#34;Electroscope&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The exposed copper area accepts a combination of kapton+sticky copper tape+kapton for some rudimentary shielding. LEDs are 3mm, or
+0805 (imperial). The antennae are simply stripped breadboarding wire.&lt;/p&gt;
+
+&lt;p&gt;It triggers on things I would have never expected.. like the clear plastic bags some components come in (from a
+very popular electronics vendor in the middle of nowhere). With the right LEDs (non-diffused/surface mount), people shuffling by light it up,
+and many are curious enough to pick it up and play with it/ask questions.&lt;/p&gt;
+
+&lt;p&gt;You can get your own copy of the PCB through the &lt;a href=&#34;https://www.oshpark.com/shared_projects/KFA2jmSs&#34;&gt;OSHPark shared project page&lt;/a&gt;, or grab the source
+KiCAD files/Bill of Materials/Placement &lt;a href=&#34;https://github.com/davidk/electroscope&#34;&gt;here&lt;/a&gt;. If you want the Gerbers used in fabrication, OSHPark has started
+exposing those as well, &lt;a href=&#34;http://uploads.oshpark.com/uploads/project/design/KFA2jmSs/design.zip&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Avrrrinator B Released</title>
+      <link>http://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</link>
+      <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_top_cables.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Bus Pirate 3 -&amp;gt; 2x AVR (ISP) adapter!&lt;/p&gt;
+
+&lt;p&gt;This is a really short post since the actual pages have more information. However, Avrrrinator B is now out the
+door. While my personal use cases have been quite limited (burning bootloaders for Arduinos, flashing blink programs/not
+learning my lesson with RSTDISBL), hopefully someone will find a bit of utility with this breakout.&lt;/p&gt;
+
+&lt;h3 id=&#34;for-more-information:62a29b9cec1fd322dd17ad6f628a4365&#34;&gt;For more information:&lt;/h3&gt;
+
+&lt;p&gt;The Eagle source/Bill of Materials can be located &lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revB&#34;&gt;here on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The long form blog posting is &lt;a href=&#34;http://open.konspyre.org/avrb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Avrrrinator B</title>
+      <link>http://open.konspyre.org/pages/avrb/</link>
+      <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/pages/avrb/</guid>
+      <description>
+
+&lt;h2 id=&#34;silkscreen-text-bottom-squirrel-packing-a-ruby-laser-rod:e701188abab5b493e5915f1270430909&#34;&gt;Silkscreen text (bottom): &amp;ldquo;Squirrel Packing A Ruby Laser Rod&amp;rdquo;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_top.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;For the prior revision A release (single output, no logic level voltage translation), &lt;a href=&#34;http://open.konspyre.org/blog/2013/01/23/the-avrrrinator-revision-a/&#34;&gt;click here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is revision B, adding two outputs behind buffers (which also offers logic level voltage shifting).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_early.png&#34; alt=&#34;avrrrinator rev b programmin&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;With revision B, you can flash two attached projects (not at the same time!) without moving your cables around.&lt;/p&gt;
+
+&lt;p&gt;This could be mis-construed to be more awesome than it is, so just to be clear: This isn&amp;rsquo;t a jig for mass-manufacturing, but for projects where it is nice to compare and contrast among two devices.&lt;/p&gt;
+
+&lt;p&gt;Being an adapter for the Bus Pirate means getting features tailored for hacking too, like the ability to provide a small amount of power to connected projects (around 150mA):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# Only available on some firmware revisions
+# it seems, YMMV
+$ screen /dev/ttyUSB0 115200
+HiZ&amp;gt; m 9
+DIO&amp;gt; W
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Of course, this thing does actually program AVR chips!&lt;/p&gt;
+
+&lt;h2 id=&#34;b-side-what-are-the-avrdude-commands-i-can-t-remember-the-avrdude-commands:e701188abab5b493e5915f1270430909&#34;&gt;B-side: &amp;ldquo;What are the avrdude commands? I can&amp;rsquo;t remember the avrdude commands!&amp;rdquo;&lt;/h2&gt;
+
+&lt;p&gt;Revision B includes a cheat sheet. Just flip the board over.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_rear.png&#34; alt=&#34;reverse side avrb&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Here are the general commands listed if you want to cut and paste:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ avrdude -v -p attiny4313 -c buspirate
+-P /dev/ttyUSB0 -U flash:w:blinky313.hex -x reset=cs
+
+$ avrdude -v -p attiny85 -c buspirate
+-P /dev/ttyUSB0 -U flash:w:blinky85.hex -x reset=aux
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Change &lt;code&gt;blinky313.hex&lt;/code&gt; or &lt;code&gt;blinky85.hex&lt;/code&gt; to the hex file for flashing/upload.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;-x reset=cs&lt;/code&gt; will target the AVR attached to the &amp;ldquo;ISP CS&amp;rdquo; header, and &lt;code&gt;-x reset=aux&lt;/code&gt; will target the AVR attached to &amp;ldquo;ISP AUX&amp;rdquo;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;/dev/ttyUSB0&lt;/code&gt; will need to be changed to reflect the location of your Bus Pirate.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See below for test runs of Avrrrinator Rev. B against an ATTiny4313 and ATTiny85.&lt;/p&gt;
+
+&lt;h2 id=&#34;board-files:e701188abab5b493e5915f1270430909&#34;&gt;Board Files&lt;/h2&gt;
+
+&lt;p&gt;Grab the board file here: &lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revB&#34;&gt;https://github.com/davidk/avrrrinator/tree/master/hardware/revB&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Keen observers (read: nobody) will notice that i&amp;rsquo;ve switched to KiCad for some recent projects. Revision B has been in the works for quite some time! I
+may get around to porting this project over to KiCad one day, but it&amp;rsquo;ll likely involve a redo of all the routing and placement.&lt;/p&gt;
+
+&lt;h3 id=&#34;something-to-keep-in-mind-this-board-has-small-parts-they-re-probably-a-sanity-hazard:e701188abab5b493e5915f1270430909&#34;&gt;Something to keep in mind: &lt;strong&gt;&lt;em&gt;This board has small parts. They&amp;rsquo;re probably a sanity hazard.&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;0603 (imperial) is considered by some to be just at the edge of being too difficult to do by hand/without solder
+paste and vision assistance (microscope).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;You can probably get by on good leaded solder, some solder wick, and drag soldering (for the fine pitch ICs).&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The board can be sent off for fabrication in several ways:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Take the board file, load it into Eagle and generate gerbers appropriate for your fabricator.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revB&#34;&gt;Click through to the repository&lt;/a&gt; for the shared projects link at OSHPark. Order from there. (You can also upload the .brd file to OSHPark for fabrication.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;While you wait, buy the parts on the &lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revB#bill-of-materials-for-revision-b&#34;&gt;Bill of Materials list&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;soldering:e701188abab5b493e5915f1270430909&#34;&gt;Soldering&lt;/h2&gt;
+
+&lt;p&gt;For accurate placement information, see the &lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revB#bill-of-materials-for-revision-b&#34;&gt;Bill of Materials&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The two surface mount switches are quite delicate. If using lead-free solder paste, be aware that the plastic switch may melt slightly before the solder reflows. Careful hot air application/hand soldering is suggested.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It is best to start off with soldering the larger ICs, and end with the smaller 0603 resistors and capacitors. Only solder in the through-hole components when you are satisfied with the surface mount placement.&lt;/p&gt;
+
+&lt;p&gt;Capacitors are all 0603 (imperial) 0.1µF, so just solder them to everything C.
+All resistors are 0603 (imperial), and 10k ohms.&lt;/p&gt;
+
+&lt;h2 id=&#34;caveats-and-future-improvements:e701188abab5b493e5915f1270430909&#34;&gt;Caveats and future improvements&lt;/h2&gt;
+
+&lt;p&gt;There are some things you should be aware of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;This is intended for programming AVR microcontrollers through an ISP interface, using avrdude. Boards like the Arduino have a 6-pin AVR ISP connector. Nothing else unless you use hacks.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There is very little in the way of protection. This board will happily hang around and get knocked in the head by some really bad things. Physically and electrically.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;While revision B has been tested in a limited capacity, this breakout is fairly new. A crazy combination of conditions $X $Y $Z will cause problems. So don&amp;rsquo;t pack this as your only programmer to Makerfaire, etc.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Routing needs improvement. Everything works, it just isn&amp;rsquo;t pretty/nice enough.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The 10k resistors exist to set the state of the AVR side during the high impedance/tri-state stages. Further revisions (if done) will suppress the cross-coupling present more elegantly.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;This requires a version 3 Bus Pirate. Version 4 won&amp;rsquo;t work unless connections are jumpered across to the breakout (untested since I do not have a v4 Bus Pirate).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;This also requires a supported Bus Pirate 3 firmware revision, as well as a recent avrdude version with Bus Pirate support. This board has been tested with avrdude version: 5.11.1, and Bus Pirate firmware version: 5.10 (r559). &lt;strong&gt;&lt;em&gt;If you have avrdude version 6, there is a &lt;em&gt;bug&lt;/em&gt; that prevents you from using more than one output (requires a separate posting).&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following change to &lt;code&gt;buspirate.c&lt;/code&gt; makes things work again.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;Index: buspirate.c
+===================================================================
+--- buspirate.c (revision 1285)
++++ buspirate.c (working copy)
+@@ -573,7 +573,7 @@
+
+        /* 0b0100wxyz - Configure peripherals w=power, x=pull-ups/aux2, y=AUX, z=CS
+         * we want power (0x48) and all reset pins high. */
+-       PDATA(pgm)-&amp;gt;current_peripherals_config  = 0x48 | PDATA(pgm)-&amp;gt;reset;
++       PDATA(pgm)-&amp;gt;current_peripherals_config  = 0x48 | BP_RESET_CS | BP_RESET_AUX;
+        buspirate_expect_bin_byte(pgm, PDATA(pgm)-&amp;gt;current_peripherals_config, 0x01);
+        usleep(50000);  // sleep for 50ms after power up  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;licensing:e701188abab5b493e5915f1270430909&#34;&gt;Licensing&lt;/h2&gt;
+
+&lt;p&gt;This project is Open Source Hardware. Feel free to open, examine, and make. Officially, revision B is &lt;a href=&#34;http://creativecommons.org/publicdomain/zero/1.0/&#34;&gt;Creative Commons Zero&lt;/a&gt;. This is a public domain dedication with an added warranty disclaimer.&lt;/p&gt;
+
+&lt;p&gt;I can&amp;rsquo;t stop you from not doing this (and I really don&amp;rsquo;t want to), but if you plan to make these and sell them, please spin off a cleverly named derivative. Just change the name, url, and add/remove fancy flourishes as desired. I&amp;rsquo;ll be happy to add you to a list of (hopefully improved) derivatives too. This is mostly because I lack the bandwidth to support projects.&lt;/p&gt;
+
+&lt;h2 id=&#34;acknowledgments:e701188abab5b493e5915f1270430909&#34;&gt;Acknowledgments&lt;/h2&gt;
+
+&lt;p&gt;The following deserve thanks for various reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.oshpark.com&#34;&gt;&lt;strong&gt;&lt;em&gt;OSHPark&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;: Purple all the things! It was very useful to forgo breadboarding at one point and just spin prototypes without abandon.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.johngineer.com/projects/bb313/&#34;&gt;&lt;strong&gt;&lt;em&gt;The BB313 board&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;: Many things are borrowed from this board. Parts: ISP connector, and pull jumper. The silkscreen for the ISP connector is borrowed from the BB313 &amp;ndash; it is more user-friendly than the standard &amp;ldquo;honeycomb&amp;rdquo; connector footprint. More importantly, these boards were used as test targets throughout the development of the Avrrrinator (both revision A and B).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://dangerousprototypes.com/docs/Bus_Pirate&#34;&gt;&lt;strong&gt;&lt;em&gt;Dangerous Prototypes&amp;rsquo; Bus Pirate&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;, as well as its &lt;a href=&#34;http://dangerousprototypes.com/docs/Partlist&#34;&gt;&lt;strong&gt;&lt;em&gt;part list&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;http://dangerousprototypes.com/docs/Dangerous_Prototypes_Cadsoft_Eagle_parts_library&#34;&gt;&lt;strong&gt;&lt;em&gt;footprints&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; library. In particular, the power selection switch is borrowed directly from Dangerous Protoypes&amp;rsquo; list and footprint. The Bus Pirate connector is as well.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.nongnu.org/avrdude/&#34;&gt;&lt;strong&gt;&lt;em&gt;avrdude&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; support for the Bus Pirate and documentation in its man page.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;past:e701188abab5b493e5915f1270430909&#34;&gt;Past&lt;/h2&gt;
+
+&lt;p&gt;Many spins ago, I decided to showcase what I was working on. Here is an earlier prototype of this revision, targeting two ATTiny MCUs for 24 hours. It was an entry into the Adafruit 6 second film festival contest:&lt;/p&gt;
+
+&lt;iframe width=&#34;500&#34; height=&#34;480&#34; src=&#34;//www.youtube.com/embed/1nvUlqp4ISU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;test-output:e701188abab5b493e5915f1270430909&#34;&gt;Test output&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;avrdude -v -p attiny4313 -c buspirate -P /dev/ttyUSB0 -U flash:w:blinky313.hex -x reset=cs speed=7
+
+avrdude: Version 5.11.1, compiled on Jun 18 2013 at 10:33:15
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2009 Joerg Wunsch
+
+         System wide configuration file is &amp;quot;/etc/avrdude/avrdude.conf&amp;quot;
+         User configuration file is &amp;quot;/home/davidk/.avrduderc&amp;quot;
+         User configuration file does not exist or is not a regular file, skipping
+
+         Using Port                    : /dev/ttyUSB0
+         Using Programmer              : buspirate
+         AVR Part                      : ATtiny4313
+         Chip Erase delay              : 9000 us
+         PAGEL                         : PD4
+         BS2                           : PD6
+         RESET disposition             : possible i/o
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65     6     4    0 no        256    4      0  4000  4500 0xff 0xff
+           flash         65     6    32    0 yes      4096   64     64  4500  4500 0xff 0xff
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+           lock           0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           lfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           hfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           efuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           calibration    0     0     0    0 no          2    0      0     0     0 0x00 0x00
+
+         Programmer Type : BusPirate
+         Description     : The Bus Pirate
+
+Detecting BusPirate...
+avrdude: buspirate_readline(): #
+avrdude: buspirate_readline(): RE
+avrdude: buspirate_readline(): Bus Pirate v3.5
+avrdude: buspirate_readline(): Firmware v6.1 r1676  Bootloader v4.4
+avrdude: buspirate_readline(): DEVID:0x0447 REVID:0x3046 (24FJ64GA002 B8)
+avrdude: buspirate_readline(): http://dangerousprototypes.com
+avrdude: buspirate_readline(): HiZ&amp;gt;
+**
+BusPirate: using BINARY mode
+BusPirate binmode version: 1
+BusPirate SPI version: 1
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e920d
+avrdude: safemode: lfuse reads as 64
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as FF
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: reading input file &amp;quot;blinky313.hex&amp;quot;
+avrdude: input file blinky313.hex auto detected as Intel Hex
+avrdude: writing flash (60 bytes):
+
+Writing | ################################################## | 100% 0.19s
+
+avrdude: 60 bytes of flash written
+avrdude: verifying flash memory against blinky313.hex:
+avrdude: load data flash data from input file blinky313.hex:
+avrdude: input file blinky313.hex auto detected as Intel Hex
+avrdude: input file blinky313.hex contains 60 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.18s
+
+avrdude: verifying ...
+avrdude: 60 bytes of flash verified
+
+avrdude: safemode: lfuse reads as 64
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as FF
+avrdude: safemode: Fuses OK
+BusPirate is back in the text mode
+
+avrdude done.  Thank you.
+
+avrdude -v -p attiny85 -c buspirate -P /dev/ttyUSB0 -U flash:w:blinky45.hex -x reset=aux speed=7
+
+avrdude: Version 5.11.1, compiled on Jun 18 2013 at 10:33:15
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2009 Joerg Wunsch
+
+         System wide configuration file is &amp;quot;/etc/avrdude/avrdude.conf&amp;quot;
+         User configuration file is &amp;quot;/home/davidk/.avrduderc&amp;quot;
+         User configuration file does not exist or is not a regular file, skipping
+
+         Using Port                    : /dev/ttyUSB0
+         Using Programmer              : buspirate
+         AVR Part                      : ATtiny85
+         Chip Erase delay              : 4500 us
+         PAGEL                         : P00
+         BS2                           : P00
+         RESET disposition             : possible i/o
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65     6     4    0 no        512    4      0  4000  4500 0xff 0xff
+           flash         65     6    32    0 yes      8192   64    128  4500  4500 0xff 0xff
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+           lock           0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           lfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           hfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           efuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           calibration    0     0     0    0 no          2    0      0     0     0 0x00 0x00
+
+         Programmer Type : BusPirate
+         Description     : The Bus Pirate
+
+Detecting BusPirate...
+avrdude: buspirate_readline(): #
+avrdude: buspirate_readline(): RE
+avrdude: buspirate_readline(): Bus Pirate v3.5
+avrdude: buspirate_readline(): Firmware v6.1 r1676  Bootloader v4.4
+avrdude: buspirate_readline(): DEVID:0x0447 REVID:0x3046 (24FJ64GA002 B8)
+avrdude: buspirate_readline(): http://dangerousprototypes.com
+avrdude: buspirate_readline(): HiZ&amp;gt;
+**
+BusPirate: using BINARY mode
+BusPirate binmode version: 1
+BusPirate SPI version: 1
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e930b
+avrdude: safemode: lfuse reads as 62
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as FF
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: reading input file &amp;quot;blinky45.hex&amp;quot;
+avrdude: input file blinky45.hex auto detected as Intel Hex
+avrdude: writing flash (18 bytes):
+
+Writing | ################################################## | 100% 0.06s
+
+avrdude: 18 bytes of flash written
+avrdude: verifying flash memory against blinky45.hex:
+avrdude: load data flash data from input file blinky45.hex:
+avrdude: input file blinky45.hex auto detected as Intel Hex
+avrdude: input file blinky45.hex contains 18 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.05s
+
+avrdude: verifying ...
+avrdude: 18 bytes of flash verified
+
+avrdude: safemode: lfuse reads as 62
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as FF
+avrdude: safemode: Fuses OK
+BusPirate is back in the text mode
+
+avrdude done.  Thank you.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Avrrrinator Rev. A</title>
+      <link>http://open.konspyre.org/pages/avra/</link>
+      <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/pages/avra/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Documentation for the latest Avrrrinator Rev. A board is located &lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revA&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Panasonic PIR Breakout Board</title>
+      <link>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</link>
+      <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been working on some motion sensing stuff and stumbled across Panasonic&amp;rsquo;s PIR sensors. They&amp;rsquo;re not raw sensors, but come as a mostly all in one TO-5 package.&lt;/p&gt;
+
+&lt;p&gt;Since the package has slender, non-breadboard friendly pins, working with it was quite unwieldy, and required alligator clips (which got tied up in knots, required careful positioning, etc).&lt;/p&gt;
+
+&lt;p&gt;So here is a &lt;a href=&#34;https://github.com/davidk/PanaPIR&#34;&gt;tested breakout board for the Panasonic PIR sensors&lt;/a&gt;. All the good bits of information (which sensors have been tested, vendor links, etc) are in the repository&amp;rsquo;s README (just scroll down).&lt;/p&gt;
+
+&lt;p&gt;If you prefer to use OSHPark&amp;rsquo;s fabrication services for purpleization, a link is included to a shared project. All you need to do is to click order.&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Avrrrinator Rev. A Updated</title>
+      <link>http://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;A mostly visual update to Avrrrinator Rev. A has been pushed to its &lt;a href=&#34;https://github.com/davidk/avrrrinator&#34;&gt;repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There isn&amp;rsquo;t much to update with a straight Bus Pirate (3) to AVR ISP breakout, so the changes are mostly visual. A new BOM part now allows mating directly to the Bus Pirate 3, so check that out too.&lt;/p&gt;
+
+&lt;p&gt;As before, you can do as you like with this board under the CC0 Public Domain license.&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stop, blink and roll*</title>
+      <link>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</guid>
+      <description>
+
+&lt;p&gt;A little bit of the cat got out of the bag some time ago:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/avrrrinator/6-seconds-avrrrinator.gif&#34; alt=&#34;6 seconds of AVR flashing&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;re looking at ~24 hours of continuous AVR flashing compressed down into 6 seconds.&lt;/p&gt;
+
+&lt;p&gt;While I won&amp;rsquo;t be releasing the connecting PCB just yet (i&amp;rsquo;m still beating down a few issues and refining the BOM), I thought it would be good to supply the scripts I used to do the actual time lapse since it was non-obvious from a &amp;ldquo;oh dear, the contest entry is due in &amp;lt;48 hours isn&amp;rsquo;t it..&amp;rdquo; point of view.&lt;/p&gt;
+
+&lt;h2 id=&#34;parts-and-materials:c434917f357788de682d8fe989da3bc9&#34;&gt;Parts and Materials&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Teensy3&lt;/strong&gt;:  Attached to the system doing the programming&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;SSD1306&lt;/strong&gt;: OLED display showing how many times the AVR has been programmed&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Bus Pirate 3&lt;/strong&gt;: Acting as an AVR programmer&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Avrrrinator Rev B&lt;/strong&gt;: Bus Pirate to 2x AVR ISP adapter (this is the super secret &amp;ldquo;prototype&amp;rdquo; I mentioned in the &lt;a href=&#34;http://www.youtube.com/watch?v=1nvUlqp4ISU&#34;&gt;YouTube post&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;BB313 boards&lt;/strong&gt;: Breakouts for easily attaching AVR ISP cables&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;ATtiny4313&lt;/strong&gt;: tiny AVR for programming&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;ATtiny85&lt;/strong&gt;: tiny AVR for programming&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Assorted LEDs&lt;/strong&gt;: Status indicators/Lighting&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Logitech C920 Webcam&lt;/strong&gt;: Takes all the pictures&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;taking-a-picture:c434917f357788de682d8fe989da3bc9&#34;&gt;Taking a picture&lt;/h2&gt;
+
+&lt;p&gt;The small bash script invoking the gstreamer toolchain (without reading the documentation this is pretty much magic) took on the duty of taking a picture every minute. It then copied everything out via rsync to another machine with tons of spare space.&lt;/p&gt;
+
+&lt;p&gt;This is not properly done since my start time edged uncomfortably close to when I had to stop, edit and ship (24 hours later).&lt;/p&gt;
+
+&lt;p&gt;Note that this constantly writes over the same file. It stops the local disk from being clogged up by continuous snapshots. It also does not check and do anything reasonable if the rsync transfer fails.. like move the file aside/retry.&lt;/p&gt;
+
+&lt;p&gt;In my case, losing a few minutes worth of snapshots wasn&amp;rsquo;t a big deal for 24 hours compressed down to 6 seconds. I actually deleted quite a few frames before rendering out to video to eliminate periods of darkness (they show up as jarring sub-millisecond transitions to darkness).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+
+while true; do
+gst-launch -e v4l2src ! video/x-raw-yuv,format=\(fourcc\)YUY2,width=1920,height=1080,framerate=5/1 \
+! ffmpegcolorspace ! pngenc snapshot=true ! filesink location=&amp;quot;frame.png&amp;quot;
+
+# Yup, this is talking to an actual rsyncd daemon on a NAS
+RSYNC_PASSWORD=&amp;quot;super_secret&amp;quot; rsync -avP frame.png rsync://rsync@storage.somewhere/frame-`date &#39;+%s&#39;`.png
+
+sleep 60;
+done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;video-out:c434917f357788de682d8fe989da3bc9&#34;&gt;Video out&lt;/h2&gt;
+
+&lt;p&gt;After all the frames were assembled, I manually went in and pruned a bunch that were completely dark due to the lights being off. Compressing the video down a bunch to 6 seconds took a bit of playing around, mostly with the framerate:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mencoder &#39;mf://*.png&#39; -mf fps=145:type=png -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -oac copy -o ~/Desktop/output-yt.avi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;At this point, the video quality kind of sucked, but I had to ship it.&lt;/p&gt;
+
+&lt;p&gt;Here is the completed video:&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/1nvUlqp4ISU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;code-doing-the-programming:c434917f357788de682d8fe989da3bc9&#34;&gt;Code doing the programming&lt;/h2&gt;
+
+&lt;p&gt;This is the script that refreshes the display you see. It calls &lt;code&gt;avrdude&lt;/code&gt; to flash the AVRs and records the return code.&lt;/p&gt;
+
+&lt;p&gt;If it is zero, then the success counter for the AVR is incremented.&lt;/p&gt;
+
+&lt;p&gt;From there counts are then written to the serial port where the Teensy 3 can handle persisting the display and refreshing it with new results.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+# requires pyserial (pip install pyserial)
+import subprocess
+import serial
+
+counter_4313 = 0
+counter_85 = 0
+
+failures_4313 = 0
+failures_85 = 0
+
+ser_port = serial.Serial(port=&#39;/dev/tty.usbmodem12341&#39;, baudrate=9600)
+
+while True:
+    try:
+        ret_4313 = subprocess.check_call([&#39;avrdude&#39;, &#39;-v&#39;, &#39;-p&#39;, &#39;attiny4313&#39;, &#39;-c&#39;, &#39;buspirate&#39;, &#39;-P&#39;,
+        &#39;/dev/tty.usbserial-AE01J4Q7&#39;, &#39;-U&#39;, &#39;flash:w:blinky313.hex&#39;, &#39;-x&#39;, &#39;reset=aux&#39;])
+    except subprocess.CalledProcessError:
+        ret_4313 = 1
+
+    if ret_4313 == 0:
+        print &amp;quot;ATtiny4313&amp;quot;
+        counter_4313 += 1
+    else:
+        failures_4313 += 1
+
+   # Report statistics to the LCD screen
+    report = &amp;quot;313:%s\n\n85:%s&amp;quot; % (counter_4313, counter_85)
+    ser_port.write(report)
+    try:
+        ret_85 = subprocess.check_call([&#39;avrdude&#39;, &#39;-v&#39;, &#39;-p&#39;, &#39;attiny85&#39;, &#39;-c&#39;, &#39;buspirate&#39;, &#39;-P&#39;,
+        &#39;/dev/tty.usbserial-AE01J4Q7&#39;, &#39;-U&#39;, &#39;flash:w:blinky45.hex&#39;, &#39;-x&#39;, &#39;reset=cs&#39;])
+    except subprocess.CalledProcessError:
+        ret_85 = 1
+
+    if ret_85 == 0:
+        print &amp;quot;ATtiny85&amp;quot;
+        counter_85 += 1
+    else:
+        failures_85 += 1
+
+   # We do this twice to make it look more live
+    report = &amp;quot;313:%s\n\n85:%s&amp;quot; % (counter_4313, counter_85)
+    ser_port.write(report)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On the Teensy 3, the data is received and pumped out to the display. Not the greatest code, but decent enough to run for 24 hours without much of a hiccup.&lt;/p&gt;
+
+&lt;p&gt;Note that there are several small issues when using the SSD1306 library with the Teensy 3. I just stomped out the relevant sections after chasing down errors from the compiler (which were unrelated to SPI operation, and mostly due to i2c support).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-arduino&#34;&gt;/*********************************************************************
+* Flash Counter!
+* Teensy 3.0 attached to a 128x64 SPI-driven OLED display
+* Vendor: Adafruit
+*
+* IF YOU GET COMPILE ERRORS (you likely will!)
+* Stomp out the compile errors in Adafruit_SSD1306.cpp line by line
+* and everything should be OK (most of them are i2c related).
+*
+*********************************************************************/
+#include &amp;lt;Wire.h&amp;gt;
+#include &amp;lt;Adafruit_GFX.h&amp;gt;
+#include &amp;lt;Adafruit_SSD1306.h&amp;gt;
+
+#define OLED_DC 11      // All pin numbers correspond to
+#define OLED_CS 10  // the &#39;gray&#39; labels on the welcome to
+#define OLED_CLK 14     // Teensy 3 card
+#define OLED_MOSI 12    // SSD1306 labels this as: &amp;quot;Data&amp;quot;
+#define OLED_RESET 9
+
+Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+
+  // Display setup
+  display.begin(SSD1306_SWITCHCAPVCC);
+  display.clearDisplay();
+  display.setTextColor(WHITE,BLACK);
+
+}
+
+void loop() {
+
+  // Persist the display until we have something to display
+  if( Serial.available() &amp;gt; 0 ) {
+    display.clearDisplay();
+  }
+  display.println(&amp;quot;AVR Program Count&amp;quot;);
+  display.println();
+  display.setTextSize(2);
+  while ( Serial.available() &amp;gt; 0 ) {
+    digitalWrite(13, HIGH);
+    char c = Serial.read();
+
+    if (c == &#39;\n&#39;) {
+      display.println();
+    } else {
+      display.write(c);
+    }
+    digitalWrite(13, LOW);
+  }
+  display.display();
+
+  delay(500);
+  display.setTextSize(1);
+  display.setCursor(0,0);
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And of course, blink programs. The ATtiny4313 and &lt;a href=&#34;https://gist.github.com/davidk/4555334&#34;&gt;ATtiny85&lt;/a&gt; each had their own. They&amp;rsquo;re pretty generic, (the one for the 4313 is from the BB313 website).&lt;/p&gt;
+
+&lt;p&gt;cheers (and drink, if thats your thing)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hardware Volume Controller</title>
+      <link>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
+      <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&amp;rsquo;m porting it here to keep everything in one place.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;And if you&amp;rsquo;re curious about the long-term viability of this build.. it is still kicking. The detents are a little less crisp now, but everything works a treat. (And now, back to your regularly scheduled post re-run!)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It wasn&amp;rsquo;t too long ago that volume control on a keyboard was a foreign concept. After it became a &amp;lsquo;feature&amp;rsquo;, that control seemed pretty normal. There is however, a slight modern exception now. Many mechanical keyboards (which have been coming back into style) don&amp;rsquo;t have them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/volcontrol/overview.png&#34; alt=&#34;overview&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;In response, I hacked this together. It&amp;rsquo;s a volume controller which parses a rotary encoder&amp;rsquo;s input
+and controls the volume (tested on OS X/Windows/Linux so far).&lt;/p&gt;
+
+&lt;h3 id=&#34;parts-bill-of-materials:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Parts/Bill of Materials:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.adafruit.com/products/16&#34;&gt;Altoids Gum sized tin&lt;/a&gt; - A slick enclosure. Scratches easily though.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.adafruit.com/products/377&#34;&gt;Rotary Encoder&lt;/a&gt; - I&amp;rsquo;ve tried a bunch. A lot of them either failed over time, or the &amp;lsquo;clicks&amp;rsquo; (detents) became mushy. This one comes with a cool looking knob and is panel mountable too.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.adafruit.com/products/296&#34;&gt;Adafruit Atmega32u4 Breakout&lt;/a&gt; - Brains of the operation. Comes with headers. For this particular project, just keep the headers for a rainy day.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Wire - Will need these to hook up the rotary encoder. Stranded wire is preferable since it can bend and flex.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Perfboard - While you can go without, the perfboard is nice to relieve the stress on the rotary encoder pins. I haven&amp;rsquo;t run across an economical source of cuttable copper-clad perf; they&amp;rsquo;re usually so large that I feel guilty slicing them apart. &lt;a href=&#34;https://www.adafruit.com/products/589&#34;&gt;These&lt;/a&gt; seem to be the right size, but are rather thick (I haven&amp;rsquo;t sliced these apart yet). Use anything that works.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Optional (or you already have these if you&amp;rsquo;re thinking this is a good weekend project):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.adafruit.com/products/436&#34;&gt;Sugru&lt;/a&gt; - I used this stuff to attach the board to the tin. Anything non-conductive works (determine the amount of adhesion based on your projected re-use of these parts).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Soldering iron + Solder - Needed to join all the parts together.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Mini-B USB cable - This is the cable type that the breakout board accepts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Drill/set of bits - To make a hole so that the encoder can poke out of.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Something to cut with - For perfboard cutting, wire stripping, prying the enclosure, etc.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;electronics-assembly:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Electronics assembly&lt;/h3&gt;
+
+&lt;p&gt;Start by cutting perf for the rotary encoder. Put on your safety glasses (and quite possibly a dust mask just to be extra cautious). Cutting perfboard (and other things too!) can cause pieces of it to fly into your eyeballs.&lt;/p&gt;
+
+&lt;p&gt;To cut the perfboard by hand, score 5-7 times along the holes that mark the edges of the cut (make sure to dry fit before cutting). I had better cuts by scoring along the entire length of the perf (although this means some perf ends up being wasted).&lt;/p&gt;
+
+&lt;p&gt;Once you&amp;rsquo;re ready to cut, take a pair of shears (dull diagonal cutters work too) and clip a notch where your scored lines meet the edges. This should serve as a guide for your snap (the concept is similar to tearing a notch in a piece of folded paper before ripping it apart cleanly). Slowly bend the perf where the score is and the perf should snap apart. If it resists or seems like it won&amp;rsquo;t snap along the score line, score some more and repeat.&lt;/p&gt;
+
+&lt;p&gt;If that fails, break out a dust mask, a pair of safety glasses (you should already be wearing these!), and just start hacksawing. It won&amp;rsquo;t be very pretty, but it should work.&lt;/p&gt;
+
+&lt;p&gt;The next step is to solder the encoder in. Insert the encoder and tack a leg with solder to hold it in place. Ensure everything is aligned the way you like it (check that there is room for the wiring below), and solder the rest of the pins in.&lt;/p&gt;
+
+&lt;p&gt;The wiring can be deceptively tricky. Measure out enough wire so that you can open/close the box. Cut, strip and tin the wires. You&amp;rsquo;ll need 5 wires.&lt;/p&gt;
+
+&lt;p&gt;Here is the wire mapping (looking from top to down at the rotary encoder, with three pins on top and two on the bottom):&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;volume-up-down-three-pins-top:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Volume Up/Down (three pins, top)&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Wire color&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pin on Atmega32u4&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pin on encoder&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;White&lt;/td&gt;
+&lt;td&gt;D0&lt;/td&gt;
+&lt;td&gt;Left-most pin&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Black&lt;/td&gt;
+&lt;td&gt;GND&lt;/td&gt;
+&lt;td&gt;Middle pin&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Red&lt;/td&gt;
+&lt;td&gt;D1&lt;/td&gt;
+&lt;td&gt;Right-most pin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;mute-on-off-two-pins-bottom:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Mute On/Off (two pins, bottom)&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Wire color&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pin on Atmega32u4&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pin on encoder&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Black&lt;/td&gt;
+&lt;td&gt;GND&lt;/td&gt;
+&lt;td&gt;Left-most pin&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;White&lt;/td&gt;
+&lt;td&gt;B0&lt;/td&gt;
+&lt;td&gt;Right-most pin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Solder all the wires together. Once the wires are attached to the perf, blob some solder to bridge the wiring and the encoder pins together.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/volcontrol/encoderwiring.png&#34; alt=&#34;encoder wiring&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;enclosure:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Enclosure&lt;/h3&gt;
+
+&lt;p&gt;To drill a hole for the encoder, find a bit size that matches (the datasheet says it is 6mm / .236 inches or just around a &lt;sup&gt;15&lt;/sup&gt;&amp;frasl;&lt;sub&gt;64&lt;/sub&gt; drill bit (.234 inches)). Measure for dead center on both axes (or like a professor once told me: &amp;lsquo;eyeball it until your OCD stops&amp;rsquo;). Mark the drill point.&lt;/p&gt;
+
+&lt;p&gt;If it makes it easier, it is possible to remove the lid from the body. Simply bend the hinged tabs outward and the lid will slide off. Reverse to fit the lid back on.&lt;/p&gt;
+
+&lt;p&gt;You may need to brace the back of the drill area with a block of scrap wood to prevent warping. Drill from the outside in (so that all the unsightly edges are hidden somewhat). Don&amp;rsquo;t apply too much pressure (you won&amp;rsquo;t be able to undent things easily).&lt;/p&gt;
+
+&lt;p&gt;Once you&amp;rsquo;re done, dry fit the encoder but don&amp;rsquo;t screw it into place yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/volcontrol/enclosure.png&#34; alt=&#34;enclosure&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;For the USB port, buttress the breakout board against the bottom of the enclosure and mark an approximate outline. Using a drill, begin drilling into the case (the hole won&amp;rsquo;t be large enough, but we&amp;rsquo;ll fix that in a bit). With the hole made, take your shears and carefully pry to make an opening wide enough for the USB plug to poke out. Continue to check the fit while slowly prying. Don&amp;rsquo;t worry if it looks too ugly. The USB plug covers up most of the mess.&lt;/p&gt;
+
+&lt;h3 id=&#34;final-assembly:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Final assembly&lt;/h3&gt;
+
+&lt;p&gt;Before adhering the breakout board (permanently, depending on your preference); lets test everything.&lt;/p&gt;
+
+&lt;p&gt;Compiling:&lt;/p&gt;
+
+&lt;p&gt;Unfortunately I haven&amp;rsquo;t had all that much luck compiling on OS X (using Homebrew packages), and I haven&amp;rsquo;t tried on Windows at all. Only Linux has worked so far. All hope is not lost however, you can manually program the breakout with avrdude! Read on to &amp;lsquo;Skipping all of that&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;These are the packages I have installed for Fedora which are needed to compile:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo yum -y install avr-libc avrdude avr-gcc avr-binutils git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, grab a copy of the LUFA git repository that includes the necessary modifications:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git clone git://github.com/davidk/lufa-lib.git
+$ cd lufa-lib
+$ git checkout -b atmega32u4-mediacontroller origin/atmega32u4-mediacontroller
+$ cd trunk/Projects/MediaController
+$ make all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the compile was successful, connect the breakout board to your computer. Type the following into your console,
+hit enter, but don&amp;rsquo;t type in your password yet.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo make program
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Going back to the breakout board, hit the white button (a green light should slowly start fading in and out indicating that the breakout is ready to be programmed). Type in your password and watch it go. If avrdude had
+problems finding your 32u4 breakout, run &lt;code&gt;dmesg&lt;/code&gt; and check the output for something along the lines of &lt;code&gt;ttyACM&lt;/code&gt;. The last part should be a number. Modify the &lt;code&gt;makefile&lt;/code&gt; with the new port and re-run the line.&lt;/p&gt;
+
+&lt;p&gt;Here is what my dmesg looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/volcontrol/dmesg.png&#34; alt=&#34;dmesg&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Skipping all of that:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re on OS X or Windows.. or just don&amp;rsquo;t like compiling, get the &lt;a href=&#34;http://open.konspyre.org/assets/code/volcontrol/MediaController.hex&#34;&gt;hex file&lt;/a&gt;, press the white bootloader button, and run the following (a working example for OS X):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ avrdude -p atmega32u4 -P /dev/tty.usbmodem621 -c avr109 -U flash:w:MediaController.hex
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change &lt;code&gt;/dev/tty.usbmodem621&lt;/code&gt; as appropriate for your platform. On OS X, if at first /dev/tty.usbmodem612 doesn&amp;rsquo;t work, use tab-completion to fill in the remaining section. Enter &lt;code&gt;/dev/tty.usb&lt;/code&gt; and tap tab to get relevant entries when the bootloader light is active.&lt;/p&gt;
+
+&lt;p&gt;Finishing up:
+Do volume up/down and mute (pushing down on the encoder) work properly? If so, time to finish up! If not, make sure
+that the board is programmed (it shows up as &lt;code&gt;LUFA Media Controller&lt;/code&gt; in &lt;code&gt;dmesg&lt;/code&gt;, and similarly under the OS X System Profiler). Also ensure the connections between all the parts are nice and solid.&lt;/p&gt;
+
+&lt;p&gt;If everything is finished, open a pack of Sugru (or the adhesive you&amp;rsquo;re using), and stick things together.
+Next, poke the rotary encoder through the hole on the lid. Then secure it with the hardware provided and add the nice looking control knob to top it off.&lt;/p&gt;
+
+&lt;p&gt;Here is what mine looks like now; it is magnetically attached to the keyboard (no ill effects yet).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/volcontrol/completed.png&#34; alt=&#34;completed&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;attributions:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Attributions:&lt;/h3&gt;
+
+&lt;p&gt;This project uses code and examples provided by LUFA (which is MIT licensed). Thats by Dean Camera.
+The code to read the rotary code comes from a posting by circuitsathome &lt;a href=&#34;http://www.circuitsathome.com/mcu/reading-rotary-encoder-on-arduino&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;improvements-chaos-and-cost-reductions:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Improvements, chaos, and cost reductions:&lt;/h3&gt;
+
+&lt;p&gt;From a performance and cost perspective, the breakout used for this project is overkill; building an ATTiny breakout might be more worthwhile. Also,
+it might be possible to just rip the guts out of an old keyboard and use its media controller functions with some
+modding.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tools for 3D Printing: What do I get?</title>
+      <link>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</link>
+      <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;A pocket level ensures things are reasonably level before further calibration and fine tuning&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;These are few of the things i&amp;rsquo;ve used/and bought over the past few months while owning a 3D printer. If you&amp;rsquo;re new to the 3D printing world (and making, in general), collecting and/or using some of these will make your life easier.&lt;/p&gt;
+
+&lt;p&gt;These are the basics, so you may be able to borrow these from a (friendly) maker and/or tinkerer.&lt;/p&gt;
+
+&lt;h3 id=&#34;thread-locking-fluid:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Thread-locking fluid&lt;/h3&gt;
+
+&lt;p&gt;In the first few &lt;del&gt;months&lt;/del&gt; weeks of owning my 3D printer, I made the mistake of assembling my printer without thread-locking fluid. Of course, bolts and screws fell off during long prints causing incalculable amounts of wasted time and filament.&lt;/p&gt;
+
+&lt;p&gt;Thread locker (or the stuff by its popular brand name: &lt;strong&gt;&lt;em&gt;Loctite&lt;/em&gt;&lt;/strong&gt;) keeps a bolt from freeing itself (usually via vibration forces), while allowing it to be removed by hand if needed.&lt;/p&gt;
+
+&lt;p&gt;Adding loctite is best done during a printer build. If certain parts are constantly coming loose, working it in as needed will do too.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Part #: 91458A115  (McMaster-Carr, Loctite 243, Blue)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;stuff-to-make-things-move:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Stuff to make things move&lt;/h3&gt;
+
+&lt;p&gt;For squeaks, metal on metal noises, or just for things that move and make contact, adding a few drops of lubricant is occasionally needed to keep things in good form.&lt;/p&gt;
+
+&lt;p&gt;Some printing guides prefer sprays (especially on vertical areas like Z-axis rods). For several months i&amp;rsquo;ve been using a liquid lubricant, which contains PTFE (without issue so far). I didn&amp;rsquo;t intend to use it for my printer, but it ended up working quite well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Part #: 1155K33 (McMaster-Carr). You get a lot for about $5 (not including shipping of course).&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;pocket-level:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Pocket level&lt;/h3&gt;
+
+&lt;p&gt;On my particular printer, there is the potential for a lot of things to go out of alignment (either due to stresses at rest, or operator error). A small level is great for getting things into a general ball park for further fine tuning.&lt;/p&gt;
+
+&lt;p&gt;The Stabila Pocket Level ($10) is magnetic (the magnetized area isn&amp;rsquo;t obvious, but it is on the bottom). It also has a very clear window for viewing the bubble, and is slightly more fluid than some of the other bubble levels I have on hand.&lt;/p&gt;
+
+&lt;p&gt;While it is a bit expensive for a smaller level (slightly larger levels like torpedo levels are well within or below its price), this is a pretty good quality level that seems like it will last.&lt;/p&gt;
+
+&lt;p&gt;It will also (unlike torpedo levels) fit into areas with very little clearance.&lt;/p&gt;
+
+&lt;p&gt;What does it look like? Scroll up a bit. :)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Part #: &lt;a href=&#34;http://amzn.com/B0012N368M&#34;&gt;Stabila 11990 Pocket Level&lt;/a&gt; - (Amazon)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;cable-zip-ties:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Cable/zip ties&lt;/h3&gt;
+
+&lt;p&gt;If your printer looks anything like mine, nearly everything (including the pullies and even some of the linear bearings) are held together by these ties. And sometimes readjusting things means cutting those ties.&lt;/p&gt;
+
+&lt;p&gt;For a few bucks you can stop cursing while trying to find a replacement tie.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Part #: 7130K41 (McMaster-Carr). These are the smaller &amp;lsquo;micro&amp;rsquo; zip ties, and come in a large enough pack to stave off regret at the amount of zip tie waste you&amp;rsquo;re bound to generate.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;long-screwdriver-racheting-driver:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Long screwdriver/racheting driver&lt;/h3&gt;
+
+&lt;p&gt;Who doesn&amp;rsquo;t have a screwdriver? (Answer: A person who needs one right now.)&lt;/p&gt;
+
+&lt;p&gt;A ratcheting driver makes a surprising difference on a printer.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been quite happy with a Stanley Ratcheting Screwdriver ($10). The shortened turn in ratchet mode is great when working in tight spaces (where it is hard/annoying to do &amp;ldquo;full&amp;rdquo; turns).&lt;/p&gt;
+
+&lt;p&gt;This particular driver comes with several extra bits hidden in the endcap and has the ability to become a normal/fixed screwdriver with a twist of the knob.&lt;/p&gt;
+
+&lt;p&gt;Normal screwdrivers are more than enough though, and this is really just optional.&lt;/p&gt;
+
+&lt;p&gt;*** Part #: &lt;a href=&#34;http://www.amazon.com/Stanley-69-189-Ratcheting-Multi-Bit-Screwdriver/dp/B002I3TDP0/&#34;&gt;Stanley 69-189 Ratcheting Multi-Bit Screwdriver&lt;/a&gt; - (Amazon)***&lt;/p&gt;
+
+&lt;h2 id=&#34;other-accessories:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Other accessories&lt;/h2&gt;
+
+&lt;p&gt;These are parts that I have no specific recommendation for, but once you have them you may wonder what you did without them!&lt;/p&gt;
+
+&lt;h3 id=&#34;straight-tweezers:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Straight tweezers&lt;/h3&gt;
+
+&lt;p&gt;At working temperatures, the extruder gets really hot. And print beds do as well. To save yourself from getting actual 3D printing battle scars, get a pair of tweezers to pluck out stray strands of filament.&lt;/p&gt;
+
+&lt;p&gt;During warm up, just use the tweezers to pluck at the extruder, or to scrape off a small starting failure/error from the bed that has failed to adhere.&lt;/p&gt;
+
+&lt;p&gt;It is likely that you wouldn&amp;rsquo;t want to use an ESD-style tweezer (they&amp;rsquo;re often colored black with a matte finish). Mostly this is because some of them have a lightly applied coating that scratches easily. Save the ESD tweezers for sensitive electronics work.&lt;/p&gt;
+
+&lt;h3 id=&#34;flush-cutters:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Flush cutters&lt;/h3&gt;
+
+&lt;p&gt;Cutting filament is kind of an afterthought, but it needs to be done (usually when loading and unloading new/used filament). A pair of throwaway flush cutters will make doing so quick and easy.&lt;/p&gt;
+
+&lt;p&gt;It probably isn&amp;rsquo;t a good idea to use new or flush cutters you love. Certain plastics like PLA are fairly hard, which may cause faster wear and tear on cutters. Then again, decent cutters can be had for a good price nowadays (Xcelite cutters are pretty decent! Mouser Part #: 578-175M).&lt;/p&gt;
+
+&lt;h3 id=&#34;detachable-reusable-spool:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Detachable/Reusable spool&lt;/h3&gt;
+
+&lt;p&gt;Using filament freestyle without any sort of management is a recipe for disaster over time. &lt;em&gt;Many&lt;/em&gt; of my early troubles were due to buying spool-less, (but wound filament) and trying to wing it without a spool.&lt;/p&gt;
+
+&lt;p&gt;If I went to sleep, got a drink or otherwise looked away for a bit, the filament would somehow find a way to tangle, feed incorrectly, or do nasty things like snap (after tensing up due to tangling).&lt;/p&gt;
+
+&lt;p&gt;After resorting to hacks, (like turning the filament bag itself into a spool holder), I got kind of fed up and decided to just get a reusable spool.&lt;/p&gt;
+
+&lt;p&gt;A decent one for small quantities (1 lb, or 454 grams for everyone else), consists of a spool that can have the side detached (usually via screws) and filament loaded in.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve found that the filament doesn&amp;rsquo;t necessarily have to be completely flush with the hub for small quantities (perhaps &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; a pound or less), just &amp;lsquo;enclosed&amp;rsquo; by the spool walls.&lt;/p&gt;
+
+&lt;p&gt;Some good features to look out for are pre-drilled holes to put the filament ends into, and a standard diameter/width size (if you&amp;rsquo;ll be using multiple spools with a particular spool feeding system/holder).&lt;/p&gt;
+
+&lt;p&gt;For most spool setups, they should be mounted on some sort of holder where the filament can be pulled into the extruder smoothly (and consistently).&lt;/p&gt;
+
+&lt;h3 id=&#34;spool-holder:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Spool holder&lt;/h3&gt;
+
+&lt;p&gt;There are plenty of &lt;a href=&#34;http://www.thingiverse.com/thing:52558&#34;&gt;examples on Thingiverse&lt;/a&gt; of spool holders. Some can be purchased for $8 and some can be made out of PVC pipe. Don&amp;rsquo;t forgo this for too long, as it is a pretty good addition to your printing kit if it isn&amp;rsquo;t already built-in to your printer.&lt;/p&gt;
+
+&lt;h3 id=&#34;tongue-and-groove-pliers:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Tongue-and-Groove Pliers&lt;/h3&gt;
+
+&lt;p&gt;Otherwise known as Channellocks (which is also the name of the company that created them), these pliers are pretty great to have around, either to remove a print with brute force (if necessary, and if your print allows for it), or for tightening things.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t have these already, they can be cheaply had at many stores (McMaster-Carr also sells them), and are useful for other things around your home as well.&lt;/p&gt;
+
+&lt;h3 id=&#34;calipers:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Calipers&lt;/h3&gt;
+
+&lt;p&gt;This is usually required by every &amp;ldquo;Welcome to your brand new 3D printer!&amp;rdquo; guide. You&amp;rsquo;ll need one to calibrate things like extrusion amounts (when loading new filament) and to bring physical objects into CAD for printing.&lt;/p&gt;
+
+&lt;p&gt;Be sure to do extra research on the different types of calipers out there, as quality can vary a lot between types (veiner vs digital) and brands (Mitutoyo vs dollar store type).&lt;/p&gt;
+
+&lt;h3 id=&#34;blue-painter-s-tape:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Blue Painter&amp;rsquo;s Tape&lt;/h3&gt;
+
+&lt;p&gt;A spool of something like &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; 3M Blue Painters&amp;rsquo; Tape will work very well as a surface for your PLA print to adhere to (as long as the first few layers are pressed down into the tape proper). The larger width also makes resurfacing fairly easy.&lt;/p&gt;
+
+&lt;p&gt;(ABS users will want to look into Kapton/Polyimide tape or squares)&lt;/p&gt;
+
+&lt;p&gt;Best of luck in your printing adventures!&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+
+&lt;h2 id=&#34;errata-changes:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Errata / Changes&lt;/h2&gt;
+
+&lt;p&gt;05/09/13: Clarifications and basic fixes&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Printable divider for the 10164 storage drawer</title>
+      <link>http://open.konspyre.org/blog/2013-02-04-printable-divider/</link>
+      <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2013-02-04-printable-divider/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/assets/images/box_divider/box_divider_plate.png&#34; alt=&#34;Storage drawer divider&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This is a 3D printable small drawer divider for the Akro-Mils 10164 parts cabinet.&lt;/p&gt;
+
+&lt;p&gt;The clear drawers themselves have a nice little slot for partitioning, so this divider fits right in and sits snugly without bowing out the drawer.&lt;/p&gt;
+
+&lt;p&gt;While there are several dividers that come attached to the back of the cabinet (which are manually de-paneled by the end consumer), they&amp;rsquo;re very limited in quantity.&lt;/p&gt;
+
+&lt;p&gt;So if you have a 3D printer of some sort, or want to play with the model enough to make it &amp;lsquo;go&amp;rsquo; on a laser cutter/CNC, give this a shot.&lt;/p&gt;
+
+&lt;p&gt;Keep in mind that this &lt;strong&gt;&lt;em&gt;will not&lt;/em&gt;&lt;/strong&gt; fit the larger drawers like on the 10144.&lt;/p&gt;
+
+&lt;p&gt;Download the STL file &lt;a href=&#34;https://github.com/davidk/3D-Printable-Parts-Divider&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To prevent ambiguities, the license for this (simple work) is WTFPL. Feel free to remix it, and do as you wish without reading walls of text.&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Avrrrinator (Revision A)</title>
+      <link>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</link>
+      <pubDate>Wed, 23 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/avrrrinator/avrrrinator-revA.png&#34; alt=&#34;avrrrinator rev a&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;A simple Bus Pirate v3 to AVR adapter. This was made to simplify wiring between the v3 Bus Pirate and an AVR ISP header. Tested with the &lt;a href=&#34;http://www.johngineer.com/projects/bb313/&#34;&gt;BB313&lt;/a&gt;, and ATTiny4313/85s.&lt;/p&gt;
+
+&lt;p&gt;Add a 3 pin header and a jumper to power the target AVR from the Bus Pirate (for normal operation, programming, etc).&lt;/p&gt;
+
+&lt;p&gt;Check out the &amp;ldquo;&lt;em&gt;Other work in this field&lt;/em&gt;&amp;rdquo; section below for other adapters as well (some of them support multiple protocols and programmers).&lt;/p&gt;
+
+&lt;h2 id=&#34;make-one-for-yourself:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Make one for yourself&lt;/h2&gt;
+
+&lt;p&gt;Grab a zip file of the entire repository by &lt;a href=&#34;https://github.com/davidk/avrrrinator/archive/master.zip&#34;&gt;clicking here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The .brd file is in the hardware/revA folder.&lt;/p&gt;
+
+&lt;p&gt;From there, you can generate
+your own Gerber files using Eagle and send them off, or use a service which processes the Eagle board file for you.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t already have a preferred fabricator, please give &lt;a href=&#34;http://oshpark.com/&#34;&gt;OSHPark&lt;/a&gt; a shot. OSHPark will take the .brd file, panel it and return your boards in a few weeks. It is also run by &lt;a href=&#34;https://twitter.com/laen/&#34;&gt;a very awesome person&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;See the &amp;ldquo;&lt;em&gt;Bill of Materials&lt;/em&gt;&amp;rdquo; section for information on parts.&lt;/p&gt;
+
+&lt;h2 id=&#34;notes-next-revision-improvements:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Notes &amp;amp; next revision improvements&lt;/h2&gt;
+
+&lt;p&gt;The silkscreen is really small in some areas. This will be changed in a future run. If making one for yourself, feel free to change the silkscreen text sizes around, and add a miniature dinosaur.&lt;/p&gt;
+
+&lt;h2 id=&#34;bill-of-materials:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Bill of Materials&lt;/h2&gt;
+
+&lt;h4 id=&#34;pcb:b0111992a47110b3acce8a55c388e8a7&#34;&gt;PCB&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: Avrrrinator PCB&lt;/p&gt;
+
+&lt;h4 id=&#34;headers-jumper:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Headers/Jumper&lt;/h4&gt;
+
+&lt;p&gt;These parts are from Mouser:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;strong&gt;151-8033-E&lt;/strong&gt; - Red jumper for power selection&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;strong&gt;517-9612066404AR&lt;/strong&gt; - 6 pin ISP header&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;strong&gt;649-68004-236&lt;/strong&gt; - Strip of header (enough for both the 10 pin Bus Pirate header and the 3 pin power select switch)&lt;/p&gt;
+
+&lt;h4 id=&#34;cables:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Cables&lt;/h4&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t already have the necessary cables, pick these up. Both are needed since one connects to the Bus Pirate, and the other connects to the AVR:&lt;/p&gt;
+
+&lt;p&gt;These parts are from Adafruit:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;a href=&#34;https://www.adafruit.com/products/370&#34;&gt;10-pin Socket/Socket IDC cable (6&amp;rdquo;)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;a href=&#34;https://www.adafruit.com/products/371&#34;&gt;6-pin Socket/Socket IDC cable (6&amp;rdquo;)&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;optional-parts:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Optional parts&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;strong&gt;538-90130-1110&lt;/strong&gt; (Mouser) - BP box connector. This hasn&amp;rsquo;t been tested or soldered in, but it appears to fit comfortably within the layout of the board.&lt;/p&gt;
+
+&lt;h2 id=&#34;resources:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Resources&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://dangerousprototypes.com/docs/Bus_Pirate_AVR_Programming&#34;&gt;Bus Pirate AVR Programming&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;other-work:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Other work&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://dangerousprototypes.com/2010/01/24/free-pcb-sunday-bus-pirate-picavr-programming-adapter/&#34;&gt;Dangerous Prototypes&amp;rsquo; PIC+AVR programmer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://dangerousprototypes.com/forum/viewtopic.php?f=28&amp;amp;t=1942&#34;&gt;A Bus Pirate Breakout Board for different protocols (which includes an ISP header)&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3D Printed Bus Pirate v3.6 Case (DP6037)</title>
+      <link>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
+      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Source files and general instructions for printing can be found &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Bus Pirate is a pretty fantastic device for sniffing around and working with new circuits. It can even &lt;a href=&#34;http://dangerousprototypes.com/docs/Bus_Pirate_AVR_Programming&#34;&gt;act as an AVR programmer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After using one to fiddle with a few circuits, a case became necessary after seeing its value. While there are cases that can be purchased[1], a 3D printer was laying around waiting to be used.&lt;/p&gt;
+
+&lt;p&gt;Finding only a &lt;a href=&#34;http://www.thingiverse.com/thing:33517&#34;&gt;case outline&lt;/a&gt; (which proved to be extremely useful as a jumping off point) on Thingiverse, one needed to be made for the newer Bus Pirate.&lt;/p&gt;
+
+&lt;p&gt;After several hours (mostly spent re-calibrating the 3D printer, untangling filament, and playing musical notes with the timing belts), the printer popped out several iterations of cases.&lt;/p&gt;
+
+&lt;p&gt;The first few worked well, but were dependent on PLA &amp;lsquo;rods and spikes&amp;rsquo; (scrap filament cut and heated on a hotbed to straighten) and press-fitting to hold the top and bottom halves together. The USB header was also unexposed, which caused leveling issues (since it was higher than the rest of the board).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus-pirate-case-v1.png&#34; alt=&#34;Printed Bus Pirate Case, Reject&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Going forward with several revisions, and many rejects later (about 12!), a decent case started appearing. Instead of PLA rods, a few 8mm long M3 machine screws and M3 hex nuts were used. They&amp;rsquo;re not very common, but the M3s seem to fit rather well while providing a good degree of stability.&lt;/p&gt;
+
+&lt;p&gt;The assembly order from the bottom: M3 screw, bottom plate, PCB, hex nut, top plate.&lt;/p&gt;
+
+&lt;p&gt;While the top looks unsecured, it must actually be screwed/threaded in from the bottom with a decent amount of force.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus-pirate-case-v2-front.png&#34; alt=&#34;Printed Bus Pirate Case, Front&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Polyimide tape was used on the back to protect the pins from being shorted out. The reason for not covering them in CAD is because they can be &lt;a href=&#34;http://www.youtube.com/watch?feature=player_detailpage&amp;amp;v=N60WSQc-G_8#t=416s&#34;&gt;useful to probe&lt;/a&gt; with a multimeter at times.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus-pirate-case-v2-back.png&#34; alt=&#34;Printed Bus Pirate Case, Back&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Files are posted &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;here&lt;/a&gt; (CC-BY-SA; via original author), but may change in the future if I ever get around to beating the thing into a different shape.&lt;/p&gt;
+
+&lt;p&gt;If you have an idea for a change, or can design a better one go for it!&lt;/p&gt;
+
+&lt;h2 id=&#34;updates-errata:6c86a18651dceea50e592c955548af99&#34;&gt;Updates &amp;amp; Errata&lt;/h2&gt;
+
+&lt;p&gt;1-1-13: For many printers with a perfectly flat print bed (borosilicate glass, metal, etc), it may be advantageous to mirror the output on one axis so that the top gets printed perfectly flat.&lt;/p&gt;
+
+&lt;p&gt;With a borosilicate glass bed:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored.png&#34; alt=&#34;Bus Pirate Case, mirrored shiny front&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The exported STL file has been added to the &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;GitHub repository&lt;/a&gt;. Look for &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037/blob/master/dp6037-top-axis-flipped.stl?raw=true&#34;&gt;dp6037-top-axis-flipped.stl&lt;/a&gt; when grabbing it (or click that link).&lt;/p&gt;
+
+&lt;p&gt;1-2-13: Yellow? Who prints stuff in yellow? Don&amp;rsquo;t you have blue?&lt;/p&gt;
+
+&lt;p&gt;After a bit of recalibrating, this is what the case looks like in translucent blue. Not very high quality, but passable:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored-blue.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;1-3-13: Here is a better front panel (printed after mending the Z-axis into alignment), which will probably be the last update (in this series of days).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;1-4-13: Added a link to source files at top and shortened/corrected more text to sound less silly.&lt;/p&gt;
+
+&lt;h2 id=&#34;notes-references:6c86a18651dceea50e592c955548af99&#34;&gt;Notes &amp;amp; References&lt;/h2&gt;
+
+&lt;p&gt;[1] Note that buying an acrylic case is really the way to go. They &lt;a href=&#34;http://www.seeedstudio.com/depot/bus-pirate-v36-acrylic-case-v1-dp6037-p-1229.html?cPath=178_184&#34;&gt;sell for about $3&lt;/a&gt;).. but if you have a 3D printer, it probably needs to earn its keep anyway.&lt;/p&gt;
+
+&lt;h2 id=&#34;thanks-resources:6c86a18651dceea50e592c955548af99&#34;&gt;Thanks &amp;amp; Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;http://www.thingiverse.com/thing:33517&#34;&gt;XQL for creating the model, and publishing it on Thingiverse&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If you want to purchase your own Bus Pirate, plenty of vendors sell them. The particular one I bought was from Adafruit. Check out their &lt;a href=&#34;https://www.adafruit.com/products/237&#34;&gt;Bus Pirates here&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;cheers!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

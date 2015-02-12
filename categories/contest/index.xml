@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contest on open collector</title>
+    <link>http://open.konspyre.org/categories/contest/</link>
+    <description>Recent content in Contest on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 May 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/categories/contest/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Stop, blink and roll*</title>
+      <link>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</guid>
+      <description>
+
+&lt;p&gt;A little bit of the cat got out of the bag some time ago:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/avrrrinator/6-seconds-avrrrinator.gif&#34; alt=&#34;6 seconds of AVR flashing&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;re looking at ~24 hours of continuous AVR flashing compressed down into 6 seconds.&lt;/p&gt;
+
+&lt;p&gt;While I won&amp;rsquo;t be releasing the connecting PCB just yet (i&amp;rsquo;m still beating down a few issues and refining the BOM), I thought it would be good to supply the scripts I used to do the actual time lapse since it was non-obvious from a &amp;ldquo;oh dear, the contest entry is due in &amp;lt;48 hours isn&amp;rsquo;t it..&amp;rdquo; point of view.&lt;/p&gt;
+
+&lt;h2 id=&#34;parts-and-materials:c434917f357788de682d8fe989da3bc9&#34;&gt;Parts and Materials&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Teensy3&lt;/strong&gt;:  Attached to the system doing the programming&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;SSD1306&lt;/strong&gt;: OLED display showing how many times the AVR has been programmed&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Bus Pirate 3&lt;/strong&gt;: Acting as an AVR programmer&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Avrrrinator Rev B&lt;/strong&gt;: Bus Pirate to 2x AVR ISP adapter (this is the super secret &amp;ldquo;prototype&amp;rdquo; I mentioned in the &lt;a href=&#34;http://www.youtube.com/watch?v=1nvUlqp4ISU&#34;&gt;YouTube post&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;BB313 boards&lt;/strong&gt;: Breakouts for easily attaching AVR ISP cables&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;ATtiny4313&lt;/strong&gt;: tiny AVR for programming&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;ATtiny85&lt;/strong&gt;: tiny AVR for programming&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Assorted LEDs&lt;/strong&gt;: Status indicators/Lighting&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Logitech C920 Webcam&lt;/strong&gt;: Takes all the pictures&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;taking-a-picture:c434917f357788de682d8fe989da3bc9&#34;&gt;Taking a picture&lt;/h2&gt;
+
+&lt;p&gt;The small bash script invoking the gstreamer toolchain (without reading the documentation this is pretty much magic) took on the duty of taking a picture every minute. It then copied everything out via rsync to another machine with tons of spare space.&lt;/p&gt;
+
+&lt;p&gt;This is not properly done since my start time edged uncomfortably close to when I had to stop, edit and ship (24 hours later).&lt;/p&gt;
+
+&lt;p&gt;Note that this constantly writes over the same file. It stops the local disk from being clogged up by continuous snapshots. It also does not check and do anything reasonable if the rsync transfer fails.. like move the file aside/retry.&lt;/p&gt;
+
+&lt;p&gt;In my case, losing a few minutes worth of snapshots wasn&amp;rsquo;t a big deal for 24 hours compressed down to 6 seconds. I actually deleted quite a few frames before rendering out to video to eliminate periods of darkness (they show up as jarring sub-millisecond transitions to darkness).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
+
+while true; do
+gst-launch -e v4l2src ! video/x-raw-yuv,format=\(fourcc\)YUY2,width=1920,height=1080,framerate=5/1 \
+! ffmpegcolorspace ! pngenc snapshot=true ! filesink location=&amp;quot;frame.png&amp;quot;
+
+# Yup, this is talking to an actual rsyncd daemon on a NAS
+RSYNC_PASSWORD=&amp;quot;super_secret&amp;quot; rsync -avP frame.png rsync://rsync@storage.somewhere/frame-`date &#39;+%s&#39;`.png
+
+sleep 60;
+done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;video-out:c434917f357788de682d8fe989da3bc9&#34;&gt;Video out&lt;/h2&gt;
+
+&lt;p&gt;After all the frames were assembled, I manually went in and pruned a bunch that were completely dark due to the lights being off. Compressing the video down a bunch to 6 seconds took a bit of playing around, mostly with the framerate:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mencoder &#39;mf://*.png&#39; -mf fps=145:type=png -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -oac copy -o ~/Desktop/output-yt.avi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;At this point, the video quality kind of sucked, but I had to ship it.&lt;/p&gt;
+
+&lt;p&gt;Here is the completed video:&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/1nvUlqp4ISU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;code-doing-the-programming:c434917f357788de682d8fe989da3bc9&#34;&gt;Code doing the programming&lt;/h2&gt;
+
+&lt;p&gt;This is the script that refreshes the display you see. It calls &lt;code&gt;avrdude&lt;/code&gt; to flash the AVRs and records the return code.&lt;/p&gt;
+
+&lt;p&gt;If it is zero, then the success counter for the AVR is incremented.&lt;/p&gt;
+
+&lt;p&gt;From there counts are then written to the serial port where the Teensy 3 can handle persisting the display and refreshing it with new results.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
+# requires pyserial (pip install pyserial)
+import subprocess
+import serial
+
+counter_4313 = 0
+counter_85 = 0
+
+failures_4313 = 0
+failures_85 = 0
+
+ser_port = serial.Serial(port=&#39;/dev/tty.usbmodem12341&#39;, baudrate=9600)
+
+while True:
+    try:
+        ret_4313 = subprocess.check_call([&#39;avrdude&#39;, &#39;-v&#39;, &#39;-p&#39;, &#39;attiny4313&#39;, &#39;-c&#39;, &#39;buspirate&#39;, &#39;-P&#39;,
+        &#39;/dev/tty.usbserial-AE01J4Q7&#39;, &#39;-U&#39;, &#39;flash:w:blinky313.hex&#39;, &#39;-x&#39;, &#39;reset=aux&#39;])
+    except subprocess.CalledProcessError:
+        ret_4313 = 1
+
+    if ret_4313 == 0:
+        print &amp;quot;ATtiny4313&amp;quot;
+        counter_4313 += 1
+    else:
+        failures_4313 += 1
+
+   # Report statistics to the LCD screen
+    report = &amp;quot;313:%s\n\n85:%s&amp;quot; % (counter_4313, counter_85)
+    ser_port.write(report)
+    try:
+        ret_85 = subprocess.check_call([&#39;avrdude&#39;, &#39;-v&#39;, &#39;-p&#39;, &#39;attiny85&#39;, &#39;-c&#39;, &#39;buspirate&#39;, &#39;-P&#39;,
+        &#39;/dev/tty.usbserial-AE01J4Q7&#39;, &#39;-U&#39;, &#39;flash:w:blinky45.hex&#39;, &#39;-x&#39;, &#39;reset=cs&#39;])
+    except subprocess.CalledProcessError:
+        ret_85 = 1
+
+    if ret_85 == 0:
+        print &amp;quot;ATtiny85&amp;quot;
+        counter_85 += 1
+    else:
+        failures_85 += 1
+
+   # We do this twice to make it look more live
+    report = &amp;quot;313:%s\n\n85:%s&amp;quot; % (counter_4313, counter_85)
+    ser_port.write(report)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On the Teensy 3, the data is received and pumped out to the display. Not the greatest code, but decent enough to run for 24 hours without much of a hiccup.&lt;/p&gt;
+
+&lt;p&gt;Note that there are several small issues when using the SSD1306 library with the Teensy 3. I just stomped out the relevant sections after chasing down errors from the compiler (which were unrelated to SPI operation, and mostly due to i2c support).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-arduino&#34;&gt;/*********************************************************************
+* Flash Counter!
+* Teensy 3.0 attached to a 128x64 SPI-driven OLED display
+* Vendor: Adafruit
+*
+* IF YOU GET COMPILE ERRORS (you likely will!)
+* Stomp out the compile errors in Adafruit_SSD1306.cpp line by line
+* and everything should be OK (most of them are i2c related).
+*
+*********************************************************************/
+#include &amp;lt;Wire.h&amp;gt;
+#include &amp;lt;Adafruit_GFX.h&amp;gt;
+#include &amp;lt;Adafruit_SSD1306.h&amp;gt;
+
+#define OLED_DC 11      // All pin numbers correspond to
+#define OLED_CS 10  // the &#39;gray&#39; labels on the welcome to
+#define OLED_CLK 14     // Teensy 3 card
+#define OLED_MOSI 12    // SSD1306 labels this as: &amp;quot;Data&amp;quot;
+#define OLED_RESET 9
+
+Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+
+  // Display setup
+  display.begin(SSD1306_SWITCHCAPVCC);
+  display.clearDisplay();
+  display.setTextColor(WHITE,BLACK);
+
+}
+
+void loop() {
+
+  // Persist the display until we have something to display
+  if( Serial.available() &amp;gt; 0 ) {
+    display.clearDisplay();
+  }
+  display.println(&amp;quot;AVR Program Count&amp;quot;);
+  display.println();
+  display.setTextSize(2);
+  while ( Serial.available() &amp;gt; 0 ) {
+    digitalWrite(13, HIGH);
+    char c = Serial.read();
+
+    if (c == &#39;\n&#39;) {
+      display.println();
+    } else {
+      display.write(c);
+    }
+    digitalWrite(13, LOW);
+  }
+  display.display();
+
+  delay(500);
+  display.setTextSize(1);
+  display.setCursor(0,0);
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And of course, blink programs. The ATtiny4313 and &lt;a href=&#34;https://gist.github.com/davidk/4555334&#34;&gt;ATtiny85&lt;/a&gt; each had their own. They&amp;rsquo;re pretty generic, (the one for the 4313 is from the BB313 website).&lt;/p&gt;
+
+&lt;p&gt;cheers (and drink, if thats your thing)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

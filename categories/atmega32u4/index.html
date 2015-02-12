@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Atmega32u4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link href="http://open.konspyre.org/categories/atmega32u4/index.xml" rel="alternate" type="application/rss+xml" title="open collector" />
+  <link href="http://open.konspyre.org/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://open.konspyre.org/css/hc.css" rel="stylesheet">
+  <link href="http://open.konspyre.org/highlight/styles/default.css" rel="stylesheet">
+
+
+  
+    
+    </head>
+    <body>
+      <div class="nav-toggle"><i class="fa fa-bars fa-2x"></i></div>
+      <div id="wrapper">
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://open.konspyre.org/"><h1 class="brand">open collector</h1></a><h3></h3></li>
+          <hr />
+          
+						<li><a href="/archives/">Archives</a></li>
+					
+						<li><a href="/categories/">Categories</a></li>
+					
+          <hr />
+          
+            <li><a href="/pages/about/">About</a></li>
+          
+          <hr />
+          <div id="social-wrapper">
+           <li> <a href="https://twitter.com/bytctr"><i class="fa fa-twitter-square"></i> @bytctr</a></li>
+           
+           
+           <li> <a href="https://github.com/davidk/"><i class="fa fa-github-square"></i> github</a> </li>
+         </div>
+       </ul>
+     </div>
+
+
+     <div class="container">
+
+<div id="article">
+  
+  <div class="article-title"><a href="http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/">Hardware Volume Controller</a></div>
+  <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i>On 2013-05-11 and filed under:
+    
+    <a href="/categories/volume-control">volume control</a>
+    
+    <a href="/categories/hardware">hardware</a>
+    
+    <a href="/categories/atmega32u4">atmega32u4</a>
+    
+    <a href="/categories/lufa">lufa</a>
+    
+  </small></p><hr/>
+  <div class="post">
+    
+
+<p><em>(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&rsquo;m porting it here to keep everything in one place.</em></p>
+
+<p><em>And if you&rsquo;re curious about the long-term viability of this build.. it is still kicking. The detents are a little less crisp now, but everything works a treat. (And now, back to your regularly scheduled post re-run!)</em></p>
+
+<p>It wasn&rsquo;t too long ago that volume control on a keyboard was a foreign concept. After it became a &lsquo;feature&rsquo;, that control seemed pretty normal. There is however, a slight modern exception now. Many mechanical keyboards (which have been coming back into style) don&rsquo;t have them.</p>
+
+<p><img src="/assets/images/volcontrol/overview.png" alt="overview" />
+</p>
+
+<p>In response, I hacked this together. It&rsquo;s a volume controller which parses a rotary encoder&rsquo;s input
+and controls the volume (tested on OS X/Windows/Linux so far).</p>
+
+<h3 id="parts-bill-of-materials:a8f7eabc62bf84464c72c579bacd87aa">Parts/Bill of Materials:</h3>
+
+<ul>
+<li><p><a href="https://www.adafruit.com/products/16">Altoids Gum sized tin</a> - A slick enclosure. Scratches easily though.</p></li>
+
+<li><p><a href="https://www.adafruit.com/products/377">Rotary Encoder</a> - I&rsquo;ve tried a bunch. A lot of them either failed over time, or the &lsquo;clicks&rsquo; (detents) became mushy. This one comes with a cool looking knob and is panel mountable too.</p></li>
+
+<li><p><a href="https://www.adafruit.com/products/296">Adafruit Atmega32u4 Breakout</a> - Brains of the operation. Comes with headers. For this particular project, just keep the headers for a rainy day.</p></li>
+
+<li><p>Wire - Will need these to hook up the rotary encoder. Stranded wire is preferable since it can bend and flex.</p></li>
+
+<li><p>Perfboard - While you can go without, the perfboard is nice to relieve the stress on the rotary encoder pins. I haven&rsquo;t run across an economical source of cuttable copper-clad perf; they&rsquo;re usually so large that I feel guilty slicing them apart. <a href="https://www.adafruit.com/products/589">These</a> seem to be the right size, but are rather thick (I haven&rsquo;t sliced these apart yet). Use anything that works.</p></li>
+</ul>
+
+<p>Optional (or you already have these if you&rsquo;re thinking this is a good weekend project):</p>
+
+<ul>
+<li><p><a href="https://www.adafruit.com/products/436">Sugru</a> - I used this stuff to attach the board to the tin. Anything non-conductive works (determine the amount of adhesion based on your projected re-use of these parts).</p></li>
+
+<li><p>Soldering iron + Solder - Needed to join all the parts together.</p></li>
+
+<li><p>Mini-B USB cable - This is the cable type that the breakout board accepts.</p></li>
+
+<li><p>Drill/set of bits - To make a hole so that the encoder can poke out of.</p></li>
+
+<li><p>Something to cut with - For perfboard cutting, wire stripping, prying the enclosure, etc.</p></li>
+</ul>
+
+<h3 id="electronics-assembly:a8f7eabc62bf84464c72c579bacd87aa">Electronics assembly</h3>
+
+<p>Start by cutting perf for the rotary encoder. Put on your safety glasses (and quite possibly a dust mask just to be extra cautious). Cutting perfboard (and other things too!) can cause pieces of it to fly into your eyeballs.</p>
+
+<p>To cut the perfboard by hand, score 5-7 times along the holes that mark the edges of the cut (make sure to dry fit before cutting). I had better cuts by scoring along the entire length of the perf (although this means some perf ends up being wasted).</p>
+
+<p>Once you&rsquo;re ready to cut, take a pair of shears (dull diagonal cutters work too) and clip a notch where your scored lines meet the edges. This should serve as a guide for your snap (the concept is similar to tearing a notch in a piece of folded paper before ripping it apart cleanly). Slowly bend the perf where the score is and the perf should snap apart. If it resists or seems like it won&rsquo;t snap along the score line, score some more and repeat.</p>
+
+<p>If that fails, break out a dust mask, a pair of safety glasses (you should already be wearing these!), and just start hacksawing. It won&rsquo;t be very pretty, but it should work.</p>
+
+<p>The next step is to solder the encoder in. Insert the encoder and tack a leg with solder to hold it in place. Ensure everything is aligned the way you like it (check that there is room for the wiring below), and solder the rest of the pins in.</p>
+
+<p>The wiring can be deceptively tricky. Measure out enough wire so that you can open/close the box. Cut, strip and tin the wires. You&rsquo;ll need 5 wires.</p>
+
+<p>Here is the wire mapping (looking from top to down at the rotary encoder, with three pins on top and two on the bottom):</p>
+
+<hr />
+
+<h3 id="volume-up-down-three-pins-top:a8f7eabc62bf84464c72c579bacd87aa">Volume Up/Down (three pins, top)</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong><em>Wire color</em></strong></th>
+<th><strong><em>Pin on Atmega32u4</em></strong></th>
+<th><strong><em>Pin on encoder</em></strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>White</td>
+<td>D0</td>
+<td>Left-most pin</td>
+</tr>
+
+<tr>
+<td>Black</td>
+<td>GND</td>
+<td>Middle pin</td>
+</tr>
+
+<tr>
+<td>Red</td>
+<td>D1</td>
+<td>Right-most pin</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="mute-on-off-two-pins-bottom:a8f7eabc62bf84464c72c579bacd87aa">Mute On/Off (two pins, bottom)</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong><em>Wire color</em></strong></th>
+<th><strong><em>Pin on Atmega32u4</em></strong></th>
+<th><strong><em>Pin on encoder</em></strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Black</td>
+<td>GND</td>
+<td>Left-most pin</td>
+</tr>
+
+<tr>
+<td>White</td>
+<td>B0</td>
+<td>Right-most pin</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<p>Solder all the wires together. Once the wires are attached to the perf, blob some solder to bridge the wiring and the encoder pins together.</p>
+
+<p><img src="/assets/images/volcontrol/encoderwiring.png" alt="encoder wiring" />
+</p>
+
+<h3 id="enclosure:a8f7eabc62bf84464c72c579bacd87aa">Enclosure</h3>
+
+<p>To drill a hole for the encoder, find a bit size that matches (the datasheet says it is 6mm / .236 inches or just around a <sup>15</sup>&frasl;<sub>64</sub> drill bit (.234 inches)). Measure for dead center on both axes (or like a professor once told me: &lsquo;eyeball it until your OCD stops&rsquo;). Mark the drill point.</p>
+
+<p>If it makes it easier, it is possible to remove the lid from the body. Simply bend the hinged tabs outward and the lid will slide off. Reverse to fit the lid back on.</p>
+
+<p>You may need to brace the back of the drill area with a block of scrap wood to prevent warping. Drill from the outside in (so that all the unsightly edges are hidden somewhat). Don&rsquo;t apply too much pressure (you won&rsquo;t be able to undent things easily).</p>
+
+<p>Once you&rsquo;re done, dry fit the encoder but don&rsquo;t screw it into place yet.</p>
+
+<p><img src="/assets/images/volcontrol/enclosure.png" alt="enclosure" />
+</p>
+
+<p>For the USB port, buttress the breakout board against the bottom of the enclosure and mark an approximate outline. Using a drill, begin drilling into the case (the hole won&rsquo;t be large enough, but we&rsquo;ll fix that in a bit). With the hole made, take your shears and carefully pry to make an opening wide enough for the USB plug to poke out. Continue to check the fit while slowly prying. Don&rsquo;t worry if it looks too ugly. The USB plug covers up most of the mess.</p>
+
+<h3 id="final-assembly:a8f7eabc62bf84464c72c579bacd87aa">Final assembly</h3>
+
+<p>Before adhering the breakout board (permanently, depending on your preference); lets test everything.</p>
+
+<p>Compiling:</p>
+
+<p>Unfortunately I haven&rsquo;t had all that much luck compiling on OS X (using Homebrew packages), and I haven&rsquo;t tried on Windows at all. Only Linux has worked so far. All hope is not lost however, you can manually program the breakout with avrdude! Read on to &lsquo;Skipping all of that&rsquo;.</p>
+
+<p>These are the packages I have installed for Fedora which are needed to compile:</p>
+
+<pre><code class="language-bash">$ sudo yum -y install avr-libc avrdude avr-gcc avr-binutils git
+</code></pre>
+
+<p>Next, grab a copy of the LUFA git repository that includes the necessary modifications:</p>
+
+<pre><code class="language-bash">$ git clone git://github.com/davidk/lufa-lib.git
+$ cd lufa-lib
+$ git checkout -b atmega32u4-mediacontroller origin/atmega32u4-mediacontroller
+$ cd trunk/Projects/MediaController
+$ make all
+</code></pre>
+
+<p>If the compile was successful, connect the breakout board to your computer. Type the following into your console,
+hit enter, but don&rsquo;t type in your password yet.</p>
+
+<pre><code class="language-bash">$ sudo make program
+</code></pre>
+
+<p>Going back to the breakout board, hit the white button (a green light should slowly start fading in and out indicating that the breakout is ready to be programmed). Type in your password and watch it go. If avrdude had
+problems finding your 32u4 breakout, run <code>dmesg</code> and check the output for something along the lines of <code>ttyACM</code>. The last part should be a number. Modify the <code>makefile</code> with the new port and re-run the line.</p>
+
+<p>Here is what my dmesg looks like:</p>
+
+<p><img src="/assets/images/volcontrol/dmesg.png" alt="dmesg" />
+</p>
+
+<p>Skipping all of that:</p>
+
+<p>If you&rsquo;re on OS X or Windows.. or just don&rsquo;t like compiling, get the <a href="/assets/code/volcontrol/MediaController.hex">hex file</a>, press the white bootloader button, and run the following (a working example for OS X):</p>
+
+<pre><code class="language-bash">$ avrdude -p atmega32u4 -P /dev/tty.usbmodem621 -c avr109 -U flash:w:MediaController.hex
+</code></pre>
+
+<p>Change <code>/dev/tty.usbmodem621</code> as appropriate for your platform. On OS X, if at first /dev/tty.usbmodem612 doesn&rsquo;t work, use tab-completion to fill in the remaining section. Enter <code>/dev/tty.usb</code> and tap tab to get relevant entries when the bootloader light is active.</p>
+
+<p>Finishing up:
+Do volume up/down and mute (pushing down on the encoder) work properly? If so, time to finish up! If not, make sure
+that the board is programmed (it shows up as <code>LUFA Media Controller</code> in <code>dmesg</code>, and similarly under the OS X System Profiler). Also ensure the connections between all the parts are nice and solid.</p>
+
+<p>If everything is finished, open a pack of Sugru (or the adhesive you&rsquo;re using), and stick things together.
+Next, poke the rotary encoder through the hole on the lid. Then secure it with the hardware provided and add the nice looking control knob to top it off.</p>
+
+<p>Here is what mine looks like now; it is magnetically attached to the keyboard (no ill effects yet).</p>
+
+<p><img src="/assets/images/volcontrol/completed.png" alt="completed" />
+</p>
+
+<h3 id="attributions:a8f7eabc62bf84464c72c579bacd87aa">Attributions:</h3>
+
+<p>This project uses code and examples provided by LUFA (which is MIT licensed). Thats by Dean Camera.
+The code to read the rotary code comes from a posting by circuitsathome <a href="http://www.circuitsathome.com/mcu/reading-rotary-encoder-on-arduino">here</a>.</p>
+
+<h3 id="improvements-chaos-and-cost-reductions:a8f7eabc62bf84464c72c579bacd87aa">Improvements, chaos, and cost reductions:</h3>
+
+<p>From a performance and cost perspective, the breakout used for this project is overkill; building an ATTiny breakout might be more worthwhile. Also,
+it might be possible to just rip the guts out of an old keyboard and use its media controller functions with some
+modding.</p>
+
+  </div>
+  
+  
+    
+</div>
+    <footer>
+      <p class="text-muted credit">eh?</p>
+    </footer>
+ 
+    <script src="http://open.konspyre.org/js/jquery-1.10.2.min.js"></script>
+    <script src="http://open.konspyre.org/js/bootstrap.min.js"></script>
+    <script src="http://open.konspyre.org/js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://open.konspyre.org/js/hc.js"></script>
+  
+  <script src="http://open.konspyre.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>
+

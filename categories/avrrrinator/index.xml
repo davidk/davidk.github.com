@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Avrrrinator on open collector</title>
+    <link>http://open.konspyre.org/categories/avrrrinator/</link>
+    <description>Recent content in Avrrrinator on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/categories/avrrrinator/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Avrrrinator (Revision A)</title>
+      <link>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</link>
+      <pubDate>Wed, 23 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/avrrrinator/avrrrinator-revA.png&#34; alt=&#34;avrrrinator rev a&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;A simple Bus Pirate v3 to AVR adapter. This was made to simplify wiring between the v3 Bus Pirate and an AVR ISP header. Tested with the &lt;a href=&#34;http://www.johngineer.com/projects/bb313/&#34;&gt;BB313&lt;/a&gt;, and ATTiny4313/85s.&lt;/p&gt;
+
+&lt;p&gt;Add a 3 pin header and a jumper to power the target AVR from the Bus Pirate (for normal operation, programming, etc).&lt;/p&gt;
+
+&lt;p&gt;Check out the &amp;ldquo;&lt;em&gt;Other work in this field&lt;/em&gt;&amp;rdquo; section below for other adapters as well (some of them support multiple protocols and programmers).&lt;/p&gt;
+
+&lt;h2 id=&#34;make-one-for-yourself:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Make one for yourself&lt;/h2&gt;
+
+&lt;p&gt;Grab a zip file of the entire repository by &lt;a href=&#34;https://github.com/davidk/avrrrinator/archive/master.zip&#34;&gt;clicking here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The .brd file is in the hardware/revA folder.&lt;/p&gt;
+
+&lt;p&gt;From there, you can generate
+your own Gerber files using Eagle and send them off, or use a service which processes the Eagle board file for you.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t already have a preferred fabricator, please give &lt;a href=&#34;http://oshpark.com/&#34;&gt;OSHPark&lt;/a&gt; a shot. OSHPark will take the .brd file, panel it and return your boards in a few weeks. It is also run by &lt;a href=&#34;https://twitter.com/laen/&#34;&gt;a very awesome person&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;See the &amp;ldquo;&lt;em&gt;Bill of Materials&lt;/em&gt;&amp;rdquo; section for information on parts.&lt;/p&gt;
+
+&lt;h2 id=&#34;notes-next-revision-improvements:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Notes &amp;amp; next revision improvements&lt;/h2&gt;
+
+&lt;p&gt;The silkscreen is really small in some areas. This will be changed in a future run. If making one for yourself, feel free to change the silkscreen text sizes around, and add a miniature dinosaur.&lt;/p&gt;
+
+&lt;h2 id=&#34;bill-of-materials:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Bill of Materials&lt;/h2&gt;
+
+&lt;h4 id=&#34;pcb:b0111992a47110b3acce8a55c388e8a7&#34;&gt;PCB&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: Avrrrinator PCB&lt;/p&gt;
+
+&lt;h4 id=&#34;headers-jumper:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Headers/Jumper&lt;/h4&gt;
+
+&lt;p&gt;These parts are from Mouser:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;strong&gt;151-8033-E&lt;/strong&gt; - Red jumper for power selection&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;strong&gt;517-9612066404AR&lt;/strong&gt; - 6 pin ISP header&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;strong&gt;649-68004-236&lt;/strong&gt; - Strip of header (enough for both the 10 pin Bus Pirate header and the 3 pin power select switch)&lt;/p&gt;
+
+&lt;h4 id=&#34;cables:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Cables&lt;/h4&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t already have the necessary cables, pick these up. Both are needed since one connects to the Bus Pirate, and the other connects to the AVR:&lt;/p&gt;
+
+&lt;p&gt;These parts are from Adafruit:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;a href=&#34;https://www.adafruit.com/products/370&#34;&gt;10-pin Socket/Socket IDC cable (6&amp;rdquo;)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;a href=&#34;https://www.adafruit.com/products/371&#34;&gt;6-pin Socket/Socket IDC cable (6&amp;rdquo;)&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;optional-parts:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Optional parts&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;1x&lt;/em&gt;: &lt;strong&gt;538-90130-1110&lt;/strong&gt; (Mouser) - BP box connector. This hasn&amp;rsquo;t been tested or soldered in, but it appears to fit comfortably within the layout of the board.&lt;/p&gt;
+
+&lt;h2 id=&#34;resources:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Resources&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://dangerousprototypes.com/docs/Bus_Pirate_AVR_Programming&#34;&gt;Bus Pirate AVR Programming&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;other-work:b0111992a47110b3acce8a55c388e8a7&#34;&gt;Other work&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://dangerousprototypes.com/2010/01/24/free-pcb-sunday-bus-pirate-picavr-programming-adapter/&#34;&gt;Dangerous Prototypes&amp;rsquo; PIC+AVR programmer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://dangerousprototypes.com/forum/viewtopic.php?f=28&amp;amp;t=1942&#34;&gt;A Bus Pirate Breakout Board for different protocols (which includes an ISP header)&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

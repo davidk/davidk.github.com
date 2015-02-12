@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Page on open collector</title>
+    <link>http://open.konspyre.org/categories/page/</link>
+    <description>Recent content in Page on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 May 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/categories/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://open.konspyre.org/pages/about/</link>
+      <pubDate>Sat, 31 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/pages/about/</guid>
+      <description>&lt;p&gt;&lt;em&gt;open collector&lt;/em&gt; is just one person, Dave.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m a hobbyist hacking on MCUs, sensors, physical fabrication techniques,
+circuits, and on occasion, radio stuff.&lt;/p&gt;
+
+&lt;p&gt;I have experience and work with Linux/Unix related stuff,
+so you may see a bit of crossover into that from time to time.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

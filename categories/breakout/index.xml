@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Breakout on open collector</title>
+    <link>http://open.konspyre.org/categories/breakout/</link>
+    <description>Recent content in Breakout on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Jun 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/categories/breakout/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CR2032 tester</title>
+      <link>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
+      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I was able to release a small breakout board based on a sample I received long ago from Texas Instruments.
+It is a CR2032 tester, based on the pretty accurate TPS3809L30DBVR part (which was derived
+from eevblog&amp;rsquo;s µCurrent). The LED stops lighting up somewhere slightly at or below 2.64v, where most CR2032 coin cells enter
+end-of-life on the discharge curve.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/davidk/cr2032-tester&#34;&gt;Read more and get it made on the project page&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Panasonic PIR Breakout Board</title>
+      <link>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</link>
+      <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been working on some motion sensing stuff and stumbled across Panasonic&amp;rsquo;s PIR sensors. They&amp;rsquo;re not raw sensors, but come as a mostly all in one TO-5 package.&lt;/p&gt;
+
+&lt;p&gt;Since the package has slender, non-breadboard friendly pins, working with it was quite unwieldy, and required alligator clips (which got tied up in knots, required careful positioning, etc).&lt;/p&gt;
+
+&lt;p&gt;So here is a &lt;a href=&#34;https://github.com/davidk/PanaPIR&#34;&gt;tested breakout board for the Panasonic PIR sensors&lt;/a&gt;. All the good bits of information (which sensors have been tested, vendor links, etc) are in the repository&amp;rsquo;s README (just scroll down).&lt;/p&gt;
+
+&lt;p&gt;If you prefer to use OSHPark&amp;rsquo;s fabrication services for purpleization, a link is included to a shared project. All you need to do is to click order.&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

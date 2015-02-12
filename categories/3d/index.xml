@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3d on open collector</title>
+    <link>http://open.konspyre.org/categories/3d/</link>
+    <description>Recent content in 3d on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Apr 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/categories/3d/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tools for 3D Printing: What do I get?</title>
+      <link>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</link>
+      <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;A pocket level ensures things are reasonably level before further calibration and fine tuning&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;These are few of the things i&amp;rsquo;ve used/and bought over the past few months while owning a 3D printer. If you&amp;rsquo;re new to the 3D printing world (and making, in general), collecting and/or using some of these will make your life easier.&lt;/p&gt;
+
+&lt;p&gt;These are the basics, so you may be able to borrow these from a (friendly) maker and/or tinkerer.&lt;/p&gt;
+
+&lt;h3 id=&#34;thread-locking-fluid:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Thread-locking fluid&lt;/h3&gt;
+
+&lt;p&gt;In the first few &lt;del&gt;months&lt;/del&gt; weeks of owning my 3D printer, I made the mistake of assembling my printer without thread-locking fluid. Of course, bolts and screws fell off during long prints causing incalculable amounts of wasted time and filament.&lt;/p&gt;
+
+&lt;p&gt;Thread locker (or the stuff by its popular brand name: &lt;strong&gt;&lt;em&gt;Loctite&lt;/em&gt;&lt;/strong&gt;) keeps a bolt from freeing itself (usually via vibration forces), while allowing it to be removed by hand if needed.&lt;/p&gt;
+
+&lt;p&gt;Adding loctite is best done during a printer build. If certain parts are constantly coming loose, working it in as needed will do too.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Part #: 91458A115  (McMaster-Carr, Loctite 243, Blue)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;stuff-to-make-things-move:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Stuff to make things move&lt;/h3&gt;
+
+&lt;p&gt;For squeaks, metal on metal noises, or just for things that move and make contact, adding a few drops of lubricant is occasionally needed to keep things in good form.&lt;/p&gt;
+
+&lt;p&gt;Some printing guides prefer sprays (especially on vertical areas like Z-axis rods). For several months i&amp;rsquo;ve been using a liquid lubricant, which contains PTFE (without issue so far). I didn&amp;rsquo;t intend to use it for my printer, but it ended up working quite well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Part #: 1155K33 (McMaster-Carr). You get a lot for about $5 (not including shipping of course).&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;pocket-level:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Pocket level&lt;/h3&gt;
+
+&lt;p&gt;On my particular printer, there is the potential for a lot of things to go out of alignment (either due to stresses at rest, or operator error). A small level is great for getting things into a general ball park for further fine tuning.&lt;/p&gt;
+
+&lt;p&gt;The Stabila Pocket Level ($10) is magnetic (the magnetized area isn&amp;rsquo;t obvious, but it is on the bottom). It also has a very clear window for viewing the bubble, and is slightly more fluid than some of the other bubble levels I have on hand.&lt;/p&gt;
+
+&lt;p&gt;While it is a bit expensive for a smaller level (slightly larger levels like torpedo levels are well within or below its price), this is a pretty good quality level that seems like it will last.&lt;/p&gt;
+
+&lt;p&gt;It will also (unlike torpedo levels) fit into areas with very little clearance.&lt;/p&gt;
+
+&lt;p&gt;What does it look like? Scroll up a bit. :)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Part #: &lt;a href=&#34;http://amzn.com/B0012N368M&#34;&gt;Stabila 11990 Pocket Level&lt;/a&gt; - (Amazon)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;cable-zip-ties:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Cable/zip ties&lt;/h3&gt;
+
+&lt;p&gt;If your printer looks anything like mine, nearly everything (including the pullies and even some of the linear bearings) are held together by these ties. And sometimes readjusting things means cutting those ties.&lt;/p&gt;
+
+&lt;p&gt;For a few bucks you can stop cursing while trying to find a replacement tie.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Part #: 7130K41 (McMaster-Carr). These are the smaller &amp;lsquo;micro&amp;rsquo; zip ties, and come in a large enough pack to stave off regret at the amount of zip tie waste you&amp;rsquo;re bound to generate.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;long-screwdriver-racheting-driver:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Long screwdriver/racheting driver&lt;/h3&gt;
+
+&lt;p&gt;Who doesn&amp;rsquo;t have a screwdriver? (Answer: A person who needs one right now.)&lt;/p&gt;
+
+&lt;p&gt;A ratcheting driver makes a surprising difference on a printer.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been quite happy with a Stanley Ratcheting Screwdriver ($10). The shortened turn in ratchet mode is great when working in tight spaces (where it is hard/annoying to do &amp;ldquo;full&amp;rdquo; turns).&lt;/p&gt;
+
+&lt;p&gt;This particular driver comes with several extra bits hidden in the endcap and has the ability to become a normal/fixed screwdriver with a twist of the knob.&lt;/p&gt;
+
+&lt;p&gt;Normal screwdrivers are more than enough though, and this is really just optional.&lt;/p&gt;
+
+&lt;p&gt;*** Part #: &lt;a href=&#34;http://www.amazon.com/Stanley-69-189-Ratcheting-Multi-Bit-Screwdriver/dp/B002I3TDP0/&#34;&gt;Stanley 69-189 Ratcheting Multi-Bit Screwdriver&lt;/a&gt; - (Amazon)***&lt;/p&gt;
+
+&lt;h2 id=&#34;other-accessories:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Other accessories&lt;/h2&gt;
+
+&lt;p&gt;These are parts that I have no specific recommendation for, but once you have them you may wonder what you did without them!&lt;/p&gt;
+
+&lt;h3 id=&#34;straight-tweezers:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Straight tweezers&lt;/h3&gt;
+
+&lt;p&gt;At working temperatures, the extruder gets really hot. And print beds do as well. To save yourself from getting actual 3D printing battle scars, get a pair of tweezers to pluck out stray strands of filament.&lt;/p&gt;
+
+&lt;p&gt;During warm up, just use the tweezers to pluck at the extruder, or to scrape off a small starting failure/error from the bed that has failed to adhere.&lt;/p&gt;
+
+&lt;p&gt;It is likely that you wouldn&amp;rsquo;t want to use an ESD-style tweezer (they&amp;rsquo;re often colored black with a matte finish). Mostly this is because some of them have a lightly applied coating that scratches easily. Save the ESD tweezers for sensitive electronics work.&lt;/p&gt;
+
+&lt;h3 id=&#34;flush-cutters:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Flush cutters&lt;/h3&gt;
+
+&lt;p&gt;Cutting filament is kind of an afterthought, but it needs to be done (usually when loading and unloading new/used filament). A pair of throwaway flush cutters will make doing so quick and easy.&lt;/p&gt;
+
+&lt;p&gt;It probably isn&amp;rsquo;t a good idea to use new or flush cutters you love. Certain plastics like PLA are fairly hard, which may cause faster wear and tear on cutters. Then again, decent cutters can be had for a good price nowadays (Xcelite cutters are pretty decent! Mouser Part #: 578-175M).&lt;/p&gt;
+
+&lt;h3 id=&#34;detachable-reusable-spool:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Detachable/Reusable spool&lt;/h3&gt;
+
+&lt;p&gt;Using filament freestyle without any sort of management is a recipe for disaster over time. &lt;em&gt;Many&lt;/em&gt; of my early troubles were due to buying spool-less, (but wound filament) and trying to wing it without a spool.&lt;/p&gt;
+
+&lt;p&gt;If I went to sleep, got a drink or otherwise looked away for a bit, the filament would somehow find a way to tangle, feed incorrectly, or do nasty things like snap (after tensing up due to tangling).&lt;/p&gt;
+
+&lt;p&gt;After resorting to hacks, (like turning the filament bag itself into a spool holder), I got kind of fed up and decided to just get a reusable spool.&lt;/p&gt;
+
+&lt;p&gt;A decent one for small quantities (1 lb, or 454 grams for everyone else), consists of a spool that can have the side detached (usually via screws) and filament loaded in.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve found that the filament doesn&amp;rsquo;t necessarily have to be completely flush with the hub for small quantities (perhaps &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; a pound or less), just &amp;lsquo;enclosed&amp;rsquo; by the spool walls.&lt;/p&gt;
+
+&lt;p&gt;Some good features to look out for are pre-drilled holes to put the filament ends into, and a standard diameter/width size (if you&amp;rsquo;ll be using multiple spools with a particular spool feeding system/holder).&lt;/p&gt;
+
+&lt;p&gt;For most spool setups, they should be mounted on some sort of holder where the filament can be pulled into the extruder smoothly (and consistently).&lt;/p&gt;
+
+&lt;h3 id=&#34;spool-holder:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Spool holder&lt;/h3&gt;
+
+&lt;p&gt;There are plenty of &lt;a href=&#34;http://www.thingiverse.com/thing:52558&#34;&gt;examples on Thingiverse&lt;/a&gt; of spool holders. Some can be purchased for $8 and some can be made out of PVC pipe. Don&amp;rsquo;t forgo this for too long, as it is a pretty good addition to your printing kit if it isn&amp;rsquo;t already built-in to your printer.&lt;/p&gt;
+
+&lt;h3 id=&#34;tongue-and-groove-pliers:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Tongue-and-Groove Pliers&lt;/h3&gt;
+
+&lt;p&gt;Otherwise known as Channellocks (which is also the name of the company that created them), these pliers are pretty great to have around, either to remove a print with brute force (if necessary, and if your print allows for it), or for tightening things.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t have these already, they can be cheaply had at many stores (McMaster-Carr also sells them), and are useful for other things around your home as well.&lt;/p&gt;
+
+&lt;h3 id=&#34;calipers:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Calipers&lt;/h3&gt;
+
+&lt;p&gt;This is usually required by every &amp;ldquo;Welcome to your brand new 3D printer!&amp;rdquo; guide. You&amp;rsquo;ll need one to calibrate things like extrusion amounts (when loading new filament) and to bring physical objects into CAD for printing.&lt;/p&gt;
+
+&lt;p&gt;Be sure to do extra research on the different types of calipers out there, as quality can vary a lot between types (veiner vs digital) and brands (Mitutoyo vs dollar store type).&lt;/p&gt;
+
+&lt;h3 id=&#34;blue-painter-s-tape:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Blue Painter&amp;rsquo;s Tape&lt;/h3&gt;
+
+&lt;p&gt;A spool of something like &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; 3M Blue Painters&amp;rsquo; Tape will work very well as a surface for your PLA print to adhere to (as long as the first few layers are pressed down into the tape proper). The larger width also makes resurfacing fairly easy.&lt;/p&gt;
+
+&lt;p&gt;(ABS users will want to look into Kapton/Polyimide tape or squares)&lt;/p&gt;
+
+&lt;p&gt;Best of luck in your printing adventures!&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+
+&lt;h2 id=&#34;errata-changes:a7a6f00eceb9f81ba78c566e527b0395&#34;&gt;Errata / Changes&lt;/h2&gt;
+
+&lt;p&gt;05/09/13: Clarifications and basic fixes&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Printable divider for the 10164 storage drawer</title>
+      <link>http://open.konspyre.org/blog/2013-02-04-printable-divider/</link>
+      <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2013-02-04-printable-divider/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/box_divider/box_divider_plate.png&#34; alt=&#34;Storage drawer divider&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This is a 3D printable small drawer divider for the Akro-Mils 10164 parts cabinet.&lt;/p&gt;
+
+&lt;p&gt;The clear drawers themselves have a nice little slot for partitioning, so this divider fits right in and sits snugly without bowing out the drawer.&lt;/p&gt;
+
+&lt;p&gt;While there are several dividers that come attached to the back of the cabinet (which are manually de-paneled by the end consumer), they&amp;rsquo;re very limited in quantity.&lt;/p&gt;
+
+&lt;p&gt;So if you have a 3D printer of some sort, or want to play with the model enough to make it &amp;lsquo;go&amp;rsquo; on a laser cutter/CNC, give this a shot.&lt;/p&gt;
+
+&lt;p&gt;Keep in mind that this &lt;strong&gt;&lt;em&gt;will not&lt;/em&gt;&lt;/strong&gt; fit the larger drawers like on the 10144.&lt;/p&gt;
+
+&lt;p&gt;Download the STL file &lt;a href=&#34;https://github.com/davidk/3D-Printable-Parts-Divider&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To prevent ambiguities, the license for this (simple work) is WTFPL. Feel free to remix it, and do as you wish without reading walls of text.&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3D Printed Bus Pirate v3.6 Case (DP6037)</title>
+      <link>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
+      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Source files and general instructions for printing can be found &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Bus Pirate is a pretty fantastic device for sniffing around and working with new circuits. It can even &lt;a href=&#34;http://dangerousprototypes.com/docs/Bus_Pirate_AVR_Programming&#34;&gt;act as an AVR programmer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After using one to fiddle with a few circuits, a case became necessary after seeing its value. While there are cases that can be purchased[1], a 3D printer was laying around waiting to be used.&lt;/p&gt;
+
+&lt;p&gt;Finding only a &lt;a href=&#34;http://www.thingiverse.com/thing:33517&#34;&gt;case outline&lt;/a&gt; (which proved to be extremely useful as a jumping off point) on Thingiverse, one needed to be made for the newer Bus Pirate.&lt;/p&gt;
+
+&lt;p&gt;After several hours (mostly spent re-calibrating the 3D printer, untangling filament, and playing musical notes with the timing belts), the printer popped out several iterations of cases.&lt;/p&gt;
+
+&lt;p&gt;The first few worked well, but were dependent on PLA &amp;lsquo;rods and spikes&amp;rsquo; (scrap filament cut and heated on a hotbed to straighten) and press-fitting to hold the top and bottom halves together. The USB header was also unexposed, which caused leveling issues (since it was higher than the rest of the board).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v1.png&#34; alt=&#34;Printed Bus Pirate Case, Reject&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Going forward with several revisions, and many rejects later (about 12!), a decent case started appearing. Instead of PLA rods, a few 8mm long M3 machine screws and M3 hex nuts were used. They&amp;rsquo;re not very common, but the M3s seem to fit rather well while providing a good degree of stability.&lt;/p&gt;
+
+&lt;p&gt;The assembly order from the bottom: M3 screw, bottom plate, PCB, hex nut, top plate.&lt;/p&gt;
+
+&lt;p&gt;While the top looks unsecured, it must actually be screwed/threaded in from the bottom with a decent amount of force.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front.png&#34; alt=&#34;Printed Bus Pirate Case, Front&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Polyimide tape was used on the back to protect the pins from being shorted out. The reason for not covering them in CAD is because they can be &lt;a href=&#34;http://www.youtube.com/watch?feature=player_detailpage&amp;amp;v=N60WSQc-G_8#t=416s&#34;&gt;useful to probe&lt;/a&gt; with a multimeter at times.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-back.png&#34; alt=&#34;Printed Bus Pirate Case, Back&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Files are posted &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;here&lt;/a&gt; (CC-BY-SA; via original author), but may change in the future if I ever get around to beating the thing into a different shape.&lt;/p&gt;
+
+&lt;p&gt;If you have an idea for a change, or can design a better one go for it!&lt;/p&gt;
+
+&lt;h2 id=&#34;updates-errata:6c86a18651dceea50e592c955548af99&#34;&gt;Updates &amp;amp; Errata&lt;/h2&gt;
+
+&lt;p&gt;1-1-13: For many printers with a perfectly flat print bed (borosilicate glass, metal, etc), it may be advantageous to mirror the output on one axis so that the top gets printed perfectly flat.&lt;/p&gt;
+
+&lt;p&gt;With a borosilicate glass bed:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored.png&#34; alt=&#34;Bus Pirate Case, mirrored shiny front&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The exported STL file has been added to the &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;GitHub repository&lt;/a&gt;. Look for &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037/blob/master/dp6037-top-axis-flipped.stl?raw=true&#34;&gt;dp6037-top-axis-flipped.stl&lt;/a&gt; when grabbing it (or click that link).&lt;/p&gt;
+
+&lt;p&gt;1-2-13: Yellow? Who prints stuff in yellow? Don&amp;rsquo;t you have blue?&lt;/p&gt;
+
+&lt;p&gt;After a bit of recalibrating, this is what the case looks like in translucent blue. Not very high quality, but passable:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored-blue.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;1-3-13: Here is a better front panel (printed after mending the Z-axis into alignment), which will probably be the last update (in this series of days).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;1-4-13: Added a link to source files at top and shortened/corrected more text to sound less silly.&lt;/p&gt;
+
+&lt;h2 id=&#34;notes-references:6c86a18651dceea50e592c955548af99&#34;&gt;Notes &amp;amp; References&lt;/h2&gt;
+
+&lt;p&gt;[1] Note that buying an acrylic case is really the way to go. They &lt;a href=&#34;http://www.seeedstudio.com/depot/bus-pirate-v36-acrylic-case-v1-dp6037-p-1229.html?cPath=178_184&#34;&gt;sell for about $3&lt;/a&gt;).. but if you have a 3D printer, it probably needs to earn its keep anyway.&lt;/p&gt;
+
+&lt;h2 id=&#34;thanks-resources:6c86a18651dceea50e592c955548af99&#34;&gt;Thanks &amp;amp; Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;http://www.thingiverse.com/thing:33517&#34;&gt;XQL for creating the model, and publishing it on Thingiverse&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If you want to purchase your own Bus Pirate, plenty of vendors sell them. The particular one I bought was from Adafruit. Check out their &lt;a href=&#34;https://www.adafruit.com/products/237&#34;&gt;Bus Pirates here&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;cheers!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

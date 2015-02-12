@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Usb on open collector</title>
+    <link>http://open.konspyre.org/categories/usb/</link>
+    <description>Recent content in Usb on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Oct 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/categories/usb/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AVR Programming with Adafruit&#39;s Atmega32u4</title>
+      <link>http://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
+      <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
+      <description>
+
+&lt;h2 id=&#34;introduction:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This guide will help you build your own &lt;a href=&#34;http://www.fourwalledcubicle.com/AVRISP.php&#34;&gt;LUFA AVRISP-MKII clone&lt;/a&gt; using the Adafruit Atmega32u4
+breakout board.&lt;/p&gt;
+
+&lt;h2 id=&#34;build-materials:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Build Materials&lt;/h2&gt;
+
+&lt;h4 id=&#34;linux:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Linux&lt;/h4&gt;
+
+&lt;p&gt;You will need Linux as a base for programming and compiling the LUFA project&amp;rsquo;s code. Using another operating system is possible, but won&amp;rsquo;t be covered here (sorry!) If you don&amp;rsquo;t have a dedicated Linux installation, try a &lt;a href=&#34;http://www.ubuntu.com/download/desktop&#34;&gt;Linux live CD&lt;/a&gt; and install the packages below to program.&lt;/p&gt;
+
+&lt;p&gt;Installation of AVR tools are provided for the Ubuntu and Fedora Linux distributions.&lt;/p&gt;
+
+&lt;h4 id=&#34;adafruit-atmega32u4-breakout-https-www-adafruit-com-products-296:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;&lt;a href=&#34;https://www.adafruit.com/products/296&#34;&gt;Adafruit Atmega32u4 breakout&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;A modified LUFA CDC bootloader comes pre-installed on these. This allows the chip to be programmed without an external programmer
+(at the cost of some memory space).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/atmega32u4.JPG&#34; alt=&#34;Atmega32u4 with ISP and programming reset line connected&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;For programming breakout boards, a 6-pin cable is attached to the programmer. A wire is hooked up to B4 (which connects to the target AVR&amp;rsquo;s RESET pin).&lt;/p&gt;
+
+&lt;p&gt;Note that without modification, the RESET line will trigger on the 6-pin cable as a part of the
+programming process through B4. Since the 6-pin cable connects RESET between both target and programmer, the programmer itself will reset when B4 is asserted (which
+ends the attempt). This gets worked around a little bit later by splicing into the wire.&lt;/p&gt;
+
+&lt;p&gt;This method is mostly optional, but useful since some breakouts are only programmed easily through the header.&lt;/p&gt;
+
+&lt;h4 id=&#34;breadboard-wires-and-maybe-a-zif-socket:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Breadboard, wires, and maybe a ZIF socket&lt;/h4&gt;
+
+&lt;p&gt;It is also possible to use a breadboard to program a chip. A completed layout looks something like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/32u4bb_programmer.png&#34; alt=&#34;Breadboard Atmega32u4 ISP programmer targeting ATmega328P&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;There are problems with this setup:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Removing the programmed chip may be difficult/annoying. A ZIF (zero insertion force) socket may be appropriate if programming a large quantity
+of chips.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Depending on fuse settings, the recovery clock (or, as seen in the picture, a resonator)
+may be needed in order to program the chip properly. Breakout boards usually have some sort of clock source installed.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For most, it may be better to program using a dedicated PCB that has the 6-pin header broken out. This might be an
+&lt;a href=&#34;http://arduino.cc&#34;&gt;Arduino&lt;/a&gt; for Atmega328Ps, or the &lt;a href=&#34;http://www.johngineer.com/projects/bb313/&#34;&gt;BB313&lt;/a&gt; for ATTiny chips.&lt;/p&gt;
+
+&lt;p&gt;Here are the necessary connections from the Atmega32u4 breakout to the chip being programmed (if using a breadboard):&lt;/p&gt;
+
+&lt;h3 id=&#34;connections-for-breadboard:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Connections for breadboard&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;32u4 -to-&amp;gt; Target chip
+B1   ----&amp;gt; SCK    (Arduino Digital Pin: 13)
+B3   ----&amp;gt; MISO   (Arduino Digital Pin: 12)
+B2   ----&amp;gt; MOSI   (Arduino Digital Pin: 11)
+B4   ----&amp;gt; RESET  (Arduino Analog  Pin: A6)
+
+GND  ----&amp;gt; GND    (Note: 1)
+VCC  ----&amp;gt; VCC    (Note: 1)
+
+Recovery Clock    (Note: 2)
+B5   ----&amp;gt; XTAL1  (not needed for Arduino boards)
+
+
+1. There may be extra tie in points for these.
+   Check the datasheet to be sure.
+2. The recovery clock can be used if your fuses are set incorrectly.
+
+   If using the recovery clock, be sure to set the programing speed to 125KHz
+   1/125000Hz = 8x10^-6 seconds (or 8 microseconds, since 1 microsecond -&amp;gt; 1x10^-6 seconds)  
+   For avrdude add this as a parameter to set the microsecond bitclock period:
+            -B 8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Optional (for a more compact setup): 6-pin IDC cable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A 6-pin cable will stop the programmer from becoming a bundled mess of wires. This works since most of the necessary
+pins (MISO/SCK/VCC/MOSI/GND) are broken out to the header. However, since both RESET lines are connected, the programmer itself will be reset if
+connected without modification.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/idc-reset-cut.png&#34; alt=&#34;Modified 6-pin IDC cable&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Here is an example of the 6-pin cable which has been cut with a sharp knife. The line to cut is the 5th wire, starting from the red line
+as shown in the picture. If you aren&amp;rsquo;t sure, verify with a multimeter that the line is indeed the one used for RESET.&lt;/p&gt;
+
+&lt;p&gt;To verify: With your spare Arduino or other breakout board, just plug a wire into the RESET line (connected to a lead on your multimeter in
+continuity test mode &amp;ndash; aka &amp;lsquo;beep beep beep&amp;rsquo; mode), and
+connect the 6-pin header (red stripe to small dot, or box connector &amp;ldquo;tab&amp;rdquo; to the proper place). Poke the small wires coming out of the box to check.
+You may need to press with a bit of force.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/programmer_cable_test.png&#34; alt=&#34;Probing 6-pin IDC cable&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;For the absolutely paranoid, pulling apart the box connector may be a good idea.&lt;/p&gt;
+
+&lt;p&gt;Other ways around cutting up your cable: fuse manipulation, designing your
+own PCB (as some have), cutting header pins, etc. If you end up using this particular
+method, soldering up a detachable wire to the cable&amp;rsquo;s RESET (then connecting to the programmer&amp;rsquo;s B4 pin) might be a worthwhile project.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Female/Female jumper wire(s) (Female/Male, Male/Male, etc)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A wire to connect the reset line (B4) and other pins. You might need a single piece of male header to tie the jumper wire to your destination board.
+The RESET line is triggered using this connection.&lt;/p&gt;
+
+&lt;h2 id=&#34;finding-your-board:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Finding your board&lt;/h2&gt;
+
+&lt;h3 id=&#34;linux-1:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Linux&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;m using Linux, so when I plug in the board this shows up after typing &lt;code&gt;dmesg&lt;/code&gt; into a terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;[15138.776119] usb 3-1: new full-speed USB device number 51 using xhci_hcd
+[15138.791800] usb 3-1: New USB device found, idVendor=239a, idProduct=0001
+[15138.791806] usb 3-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[15138.791808] usb 3-1: Product: AVR CDC Bootloader
+[15138.793350] cdc_acm 3-1:1.0: ttyACM0: USB ACM device
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;ttyACM0: USB ACM device&lt;/code&gt; on the last line is where data gets accepted. There are a myriad of other ways to figure that out,
+but parsing dmesg will tell us if it failed to enumerate somehow.&lt;/p&gt;
+
+&lt;h2 id=&#34;download-lufa-linux:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Download LUFA (Linux)&lt;/h2&gt;
+
+&lt;p&gt;The next step from here is to download the files necessary to load the programmer. Run the following (after acquiring git [1]).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git clone https://github.com/davidk/lufa.git
+Cloning into &#39;lufa&#39;...
+remote: Counting objects: 52669, done.
+remote: Compressing objects: 100% (10637/10637), done.
+remote: Total 52669 (delta 42901), reused 51050 (delta 41412)
+Receiving objects: 100% (52669/52669), 9.49 MiB | 497 KiB/s, done.
+Resolving deltas: 100% (42901/42901), done.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a small fork of Dean Camera&amp;rsquo;s &lt;a href=&#34;http://www.fourwalledcubicle.com/LUFA.php&#34;&gt;LUFA project&lt;/a&gt; (a framework for developing USB-enabled AVRs). Of interest is Dean&amp;rsquo;s clean-room
+copy of the AVRISP-MKII programmer, which turns the Atmega32u4 breakout into a programmer for other AVRs (egg, meet chicken). Run the following from
+outside the lufa directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd lufa/Projects/AVRISP-MKII/
+$ git checkout atmega32u4-avrisp
+  Branch atmega32u4-avrisp set up to track remote branch
+  atmega32u4-avrisp from origin.
+  Switched to a new branch &#39;atmega32u4-avrisp&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you&amp;rsquo;re in the branch, ensure that your avr utilities are installed.&lt;/p&gt;
+
+&lt;p&gt;For Fedora users:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo yum install avr-binutils avr-gcc avr-libc avrdude
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ubuntu users:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo aptitude install gcc-avr avr-libc avrdude
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Programming (check to see if your boot light is fading in and out, if not, press the white button and run the following):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo make avrdude AVRDUDE_PROGRAMMER=avr109 AVRDUDE_PORT=/dev/ttyACM0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;connect-the-programmer:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Connect the programmer&lt;/h2&gt;
+
+&lt;p&gt;If it all went well, you now have a programmer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/32u4-to-arduino.png&#34; alt=&#34;ISP programming Arduino Uno&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Remember: The single red wire goes from B4 to the Arduino&amp;rsquo;s RESET pin.&lt;/p&gt;
+
+&lt;h2 id=&#34;start-your-engines:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Start your engines&lt;/h2&gt;
+
+&lt;p&gt;At this point, all the hard work is done! Before programming, make sure that the RESET line is connected to B4.
+&lt;code&gt;avrdude&lt;/code&gt; can be used to program a board by running it as such:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# For Atmega328P chips
+$ sudo avrdude -patmega328p -cavrispmkii -Pusb -Uflash:w:Blink.cpp.hex
+
+# For an Attiny4313
+$ sudo avrdude -pattiny4313 -cavrispmkii -Pusb -Uflash:w:blinky.hex
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example session (targeting an Attiny4313 with the blink program from the bb313 website):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo avrdude -pattiny4313 -cavrispmkii -Pusb -Uflash:w:blinky.hex
+[sudo] password for davidk: hunter2
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e920d
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+ To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: reading input file &amp;quot;blinky.hex&amp;quot;
+avrdude: input file blinky.hex auto detected as Intel Hex
+avrdude: writing flash (60 bytes):
+
+Writing | ################################################## | 100% 0.02s
+
+avrdude: 60 bytes of flash written
+avrdude: verifying flash memory against blinky.hex:
+avrdude: load data flash data from input file blinky.hex:
+avrdude: input file blinky.hex auto detected as Intel Hex
+avrdude: input file blinky.hex contains 60 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.02s
+
+avrdude: verifying ...
+avrdude: 60 bytes of flash verified
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bb313_programmed.png&#34; alt=&#34;programming a bb313&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;programming-without-using-sudo-or-root-linux:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Programming without using &amp;lsquo;sudo&amp;rsquo; or root (Linux)&lt;/h3&gt;
+
+&lt;p&gt;Running avrdude as root is kind of excessive, even temporarily. To run it as a normal user, we can eck out the following to make it work properly:&lt;/p&gt;
+
+&lt;p&gt;First run &lt;code&gt;groups&lt;/code&gt; to get the list of groups your user currently belongs to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ groups
+davidk dialout wheel
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This determines what we set in the GROUP=&amp;ldquo;&amp;rdquo; field below (in this case i&amp;rsquo;ve picked wheel):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo su
+# echo &#39;ATTR{idVendor}==&amp;quot;03eb&amp;quot;, ATTR{idProduct}==&amp;quot;2104&amp;quot;, GROUP=&amp;quot;wheel&amp;quot;, MODE=&amp;quot;0666&amp;quot;&#39;
+&amp;gt;&amp;gt; /etc/udev/rules.d/60-avrispmkii.rules
+# udevadm trigger
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;thanks:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Thanks&lt;/h3&gt;
+
+&lt;p&gt;Special thanks to Dean Camera, who saw that I was making changes to my fork on Github (which is a mirror of his SVN repo)
+and stopped by my lowly branch to suggest a small change. Good guy (he did it again too, on an unrelated branch).&lt;/p&gt;
+
+&lt;h3 id=&#34;problem:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Problem?&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/davidk/davidk.github.com/issues&#34;&gt;Tack on something here&lt;/a&gt;. I will try to help or spin you in the right
+direction.&lt;/p&gt;
+
+&lt;h3 id=&#34;reference-s:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Reference(s)&lt;/h3&gt;
+
+&lt;p&gt;[1] Get git via your preferred package manager, or check out &lt;a href=&#34;http://git-scm.com&#34;&gt;http://git-scm.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;updates:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Updates&lt;/h3&gt;
+
+&lt;p&gt;01-15-13: Added information on using avrdude in a non-root fashion for Linux. Also threw in some magic to make console stuff pretty.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

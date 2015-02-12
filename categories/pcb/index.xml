@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pcb on open collector</title>
+    <link>http://open.konspyre.org/categories/pcb/</link>
+    <description>Recent content in Pcb on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Feb 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/categories/pcb/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Electroscope update</title>
+      <link>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
+      <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
+      <description>
+
+&lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
+back for this version is 2014-08-24(!)&lt;/p&gt;
+
+&lt;h3 id=&#34;changes:7dde062d6c6ca61db731fda7916bef40&#34;&gt;Changes&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pulled copper pour near inputs back&lt;/li&gt;
+&lt;li&gt;Removed polyimide/kapton shield&lt;/li&gt;
+&lt;li&gt;Simplified antennae construction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One slight quirk with nearly all of these electroscopes is that they appear
+to be hard &amp;lsquo;on&amp;rsquo; after assembly sometimes. In many cases i&amp;rsquo;ve found that this is
+due to residual flux (of the water washable type).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve had success by scrubbing down with isopropyl alcohol and reflowing
+again with hot air.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/assets/images/electroscope/electroscope_08_24.png&#34; alt=&#34;Updated electroscope&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CR2032 tester</title>
+      <link>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
+      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I was able to release a small breakout board based on a sample I received long ago from Texas Instruments.
+It is a CR2032 tester, based on the pretty accurate TPS3809L30DBVR part (which was derived
+from eevblog&amp;rsquo;s µCurrent). The LED stops lighting up somewhere slightly at or below 2.64v, where most CR2032 coin cells enter
+end-of-life on the discharge curve.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/davidk/cr2032-tester&#34;&gt;Read more and get it made on the project page&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Toy Electroscope</title>
+      <link>http://open.konspyre.org/blog/2014-05-30-electroscope/</link>
+      <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-05-30-electroscope/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Nearly a year ago, vk2zay posted a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM&#34;&gt;video on electrets&lt;/a&gt;. In it, he also shared
+a design for a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM#t=152&#34;&gt;pretty fun electroscope&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As a part of learning KiCAD earlier this year, I turned it into a PCB.&lt;/p&gt;
+
+&lt;p&gt;This is the latest result:
+&lt;img src=&#34;/assets/images/electroscope/top2.png&#34; alt=&#34;Electroscope&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The exposed copper area accepts a combination of kapton+sticky copper tape+kapton for some rudimentary shielding. LEDs are 3mm, or
+0805 (imperial). The antennae are simply stripped breadboarding wire.&lt;/p&gt;
+
+&lt;p&gt;It triggers on things I would have never expected.. like the clear plastic bags some components come in (from a
+very popular electronics vendor in the middle of nowhere). With the right LEDs (non-diffused/surface mount), people shuffling by light it up,
+and many are curious enough to pick it up and play with it/ask questions.&lt;/p&gt;
+
+&lt;p&gt;You can get your own copy of the PCB through the &lt;a href=&#34;https://www.oshpark.com/shared_projects/KFA2jmSs&#34;&gt;OSHPark shared project page&lt;/a&gt;, or grab the source
+KiCAD files/Bill of Materials/Placement &lt;a href=&#34;https://github.com/davidk/electroscope&#34;&gt;here&lt;/a&gt;. If you want the Gerbers used in fabrication, OSHPark has started
+exposing those as well, &lt;a href=&#34;http://uploads.oshpark.com/uploads/project/design/KFA2jmSs/design.zip&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Avrrrinator B</title>
+      <link>http://open.konspyre.org/pages/avrb/</link>
+      <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/pages/avrb/</guid>
+      <description>
+
+&lt;h2 id=&#34;silkscreen-text-bottom-squirrel-packing-a-ruby-laser-rod:e701188abab5b493e5915f1270430909&#34;&gt;Silkscreen text (bottom): &amp;ldquo;Squirrel Packing A Ruby Laser Rod&amp;rdquo;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_top.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;For the prior revision A release (single output, no logic level voltage translation), &lt;a href=&#34;http://open.konspyre.org/blog/2013/01/23/the-avrrrinator-revision-a/&#34;&gt;click here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is revision B, adding two outputs behind buffers (which also offers logic level voltage shifting).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_early.png&#34; alt=&#34;avrrrinator rev b programmin&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;With revision B, you can flash two attached projects (not at the same time!) without moving your cables around.&lt;/p&gt;
+
+&lt;p&gt;This could be mis-construed to be more awesome than it is, so just to be clear: This isn&amp;rsquo;t a jig for mass-manufacturing, but for projects where it is nice to compare and contrast among two devices.&lt;/p&gt;
+
+&lt;p&gt;Being an adapter for the Bus Pirate means getting features tailored for hacking too, like the ability to provide a small amount of power to connected projects (around 150mA):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# Only available on some firmware revisions
+# it seems, YMMV
+$ screen /dev/ttyUSB0 115200
+HiZ&amp;gt; m 9
+DIO&amp;gt; W
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Of course, this thing does actually program AVR chips!&lt;/p&gt;
+
+&lt;h2 id=&#34;b-side-what-are-the-avrdude-commands-i-can-t-remember-the-avrdude-commands:e701188abab5b493e5915f1270430909&#34;&gt;B-side: &amp;ldquo;What are the avrdude commands? I can&amp;rsquo;t remember the avrdude commands!&amp;rdquo;&lt;/h2&gt;
+
+&lt;p&gt;Revision B includes a cheat sheet. Just flip the board over.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_rear.png&#34; alt=&#34;reverse side avrb&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Here are the general commands listed if you want to cut and paste:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ avrdude -v -p attiny4313 -c buspirate
+-P /dev/ttyUSB0 -U flash:w:blinky313.hex -x reset=cs
+
+$ avrdude -v -p attiny85 -c buspirate
+-P /dev/ttyUSB0 -U flash:w:blinky85.hex -x reset=aux
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Change &lt;code&gt;blinky313.hex&lt;/code&gt; or &lt;code&gt;blinky85.hex&lt;/code&gt; to the hex file for flashing/upload.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;-x reset=cs&lt;/code&gt; will target the AVR attached to the &amp;ldquo;ISP CS&amp;rdquo; header, and &lt;code&gt;-x reset=aux&lt;/code&gt; will target the AVR attached to &amp;ldquo;ISP AUX&amp;rdquo;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;/dev/ttyUSB0&lt;/code&gt; will need to be changed to reflect the location of your Bus Pirate.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See below for test runs of Avrrrinator Rev. B against an ATTiny4313 and ATTiny85.&lt;/p&gt;
+
+&lt;h2 id=&#34;board-files:e701188abab5b493e5915f1270430909&#34;&gt;Board Files&lt;/h2&gt;
+
+&lt;p&gt;Grab the board file here: &lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revB&#34;&gt;https://github.com/davidk/avrrrinator/tree/master/hardware/revB&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Keen observers (read: nobody) will notice that i&amp;rsquo;ve switched to KiCad for some recent projects. Revision B has been in the works for quite some time! I
+may get around to porting this project over to KiCad one day, but it&amp;rsquo;ll likely involve a redo of all the routing and placement.&lt;/p&gt;
+
+&lt;h3 id=&#34;something-to-keep-in-mind-this-board-has-small-parts-they-re-probably-a-sanity-hazard:e701188abab5b493e5915f1270430909&#34;&gt;Something to keep in mind: &lt;strong&gt;&lt;em&gt;This board has small parts. They&amp;rsquo;re probably a sanity hazard.&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;0603 (imperial) is considered by some to be just at the edge of being too difficult to do by hand/without solder
+paste and vision assistance (microscope).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;You can probably get by on good leaded solder, some solder wick, and drag soldering (for the fine pitch ICs).&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The board can be sent off for fabrication in several ways:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Take the board file, load it into Eagle and generate gerbers appropriate for your fabricator.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revB&#34;&gt;Click through to the repository&lt;/a&gt; for the shared projects link at OSHPark. Order from there. (You can also upload the .brd file to OSHPark for fabrication.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;While you wait, buy the parts on the &lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revB#bill-of-materials-for-revision-b&#34;&gt;Bill of Materials list&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;soldering:e701188abab5b493e5915f1270430909&#34;&gt;Soldering&lt;/h2&gt;
+
+&lt;p&gt;For accurate placement information, see the &lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revB#bill-of-materials-for-revision-b&#34;&gt;Bill of Materials&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The two surface mount switches are quite delicate. If using lead-free solder paste, be aware that the plastic switch may melt slightly before the solder reflows. Careful hot air application/hand soldering is suggested.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It is best to start off with soldering the larger ICs, and end with the smaller 0603 resistors and capacitors. Only solder in the through-hole components when you are satisfied with the surface mount placement.&lt;/p&gt;
+
+&lt;p&gt;Capacitors are all 0603 (imperial) 0.1µF, so just solder them to everything C.
+All resistors are 0603 (imperial), and 10k ohms.&lt;/p&gt;
+
+&lt;h2 id=&#34;caveats-and-future-improvements:e701188abab5b493e5915f1270430909&#34;&gt;Caveats and future improvements&lt;/h2&gt;
+
+&lt;p&gt;There are some things you should be aware of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;This is intended for programming AVR microcontrollers through an ISP interface, using avrdude. Boards like the Arduino have a 6-pin AVR ISP connector. Nothing else unless you use hacks.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There is very little in the way of protection. This board will happily hang around and get knocked in the head by some really bad things. Physically and electrically.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;While revision B has been tested in a limited capacity, this breakout is fairly new. A crazy combination of conditions $X $Y $Z will cause problems. So don&amp;rsquo;t pack this as your only programmer to Makerfaire, etc.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Routing needs improvement. Everything works, it just isn&amp;rsquo;t pretty/nice enough.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The 10k resistors exist to set the state of the AVR side during the high impedance/tri-state stages. Further revisions (if done) will suppress the cross-coupling present more elegantly.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;This requires a version 3 Bus Pirate. Version 4 won&amp;rsquo;t work unless connections are jumpered across to the breakout (untested since I do not have a v4 Bus Pirate).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;This also requires a supported Bus Pirate 3 firmware revision, as well as a recent avrdude version with Bus Pirate support. This board has been tested with avrdude version: 5.11.1, and Bus Pirate firmware version: 5.10 (r559). &lt;strong&gt;&lt;em&gt;If you have avrdude version 6, there is a &lt;em&gt;bug&lt;/em&gt; that prevents you from using more than one output (requires a separate posting).&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following change to &lt;code&gt;buspirate.c&lt;/code&gt; makes things work again.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-diff&#34;&gt;Index: buspirate.c
+===================================================================
+--- buspirate.c (revision 1285)
++++ buspirate.c (working copy)
+@@ -573,7 +573,7 @@
+
+        /* 0b0100wxyz - Configure peripherals w=power, x=pull-ups/aux2, y=AUX, z=CS
+         * we want power (0x48) and all reset pins high. */
+-       PDATA(pgm)-&amp;gt;current_peripherals_config  = 0x48 | PDATA(pgm)-&amp;gt;reset;
++       PDATA(pgm)-&amp;gt;current_peripherals_config  = 0x48 | BP_RESET_CS | BP_RESET_AUX;
+        buspirate_expect_bin_byte(pgm, PDATA(pgm)-&amp;gt;current_peripherals_config, 0x01);
+        usleep(50000);  // sleep for 50ms after power up  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;licensing:e701188abab5b493e5915f1270430909&#34;&gt;Licensing&lt;/h2&gt;
+
+&lt;p&gt;This project is Open Source Hardware. Feel free to open, examine, and make. Officially, revision B is &lt;a href=&#34;http://creativecommons.org/publicdomain/zero/1.0/&#34;&gt;Creative Commons Zero&lt;/a&gt;. This is a public domain dedication with an added warranty disclaimer.&lt;/p&gt;
+
+&lt;p&gt;I can&amp;rsquo;t stop you from not doing this (and I really don&amp;rsquo;t want to), but if you plan to make these and sell them, please spin off a cleverly named derivative. Just change the name, url, and add/remove fancy flourishes as desired. I&amp;rsquo;ll be happy to add you to a list of (hopefully improved) derivatives too. This is mostly because I lack the bandwidth to support projects.&lt;/p&gt;
+
+&lt;h2 id=&#34;acknowledgments:e701188abab5b493e5915f1270430909&#34;&gt;Acknowledgments&lt;/h2&gt;
+
+&lt;p&gt;The following deserve thanks for various reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.oshpark.com&#34;&gt;&lt;strong&gt;&lt;em&gt;OSHPark&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;: Purple all the things! It was very useful to forgo breadboarding at one point and just spin prototypes without abandon.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.johngineer.com/projects/bb313/&#34;&gt;&lt;strong&gt;&lt;em&gt;The BB313 board&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;: Many things are borrowed from this board. Parts: ISP connector, and pull jumper. The silkscreen for the ISP connector is borrowed from the BB313 &amp;ndash; it is more user-friendly than the standard &amp;ldquo;honeycomb&amp;rdquo; connector footprint. More importantly, these boards were used as test targets throughout the development of the Avrrrinator (both revision A and B).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://dangerousprototypes.com/docs/Bus_Pirate&#34;&gt;&lt;strong&gt;&lt;em&gt;Dangerous Prototypes&amp;rsquo; Bus Pirate&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;, as well as its &lt;a href=&#34;http://dangerousprototypes.com/docs/Partlist&#34;&gt;&lt;strong&gt;&lt;em&gt;part list&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;http://dangerousprototypes.com/docs/Dangerous_Prototypes_Cadsoft_Eagle_parts_library&#34;&gt;&lt;strong&gt;&lt;em&gt;footprints&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; library. In particular, the power selection switch is borrowed directly from Dangerous Protoypes&amp;rsquo; list and footprint. The Bus Pirate connector is as well.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.nongnu.org/avrdude/&#34;&gt;&lt;strong&gt;&lt;em&gt;avrdude&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; support for the Bus Pirate and documentation in its man page.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;past:e701188abab5b493e5915f1270430909&#34;&gt;Past&lt;/h2&gt;
+
+&lt;p&gt;Many spins ago, I decided to showcase what I was working on. Here is an earlier prototype of this revision, targeting two ATTiny MCUs for 24 hours. It was an entry into the Adafruit 6 second film festival contest:&lt;/p&gt;
+
+&lt;iframe width=&#34;500&#34; height=&#34;480&#34; src=&#34;//www.youtube.com/embed/1nvUlqp4ISU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;test-output:e701188abab5b493e5915f1270430909&#34;&gt;Test output&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;avrdude -v -p attiny4313 -c buspirate -P /dev/ttyUSB0 -U flash:w:blinky313.hex -x reset=cs speed=7
+
+avrdude: Version 5.11.1, compiled on Jun 18 2013 at 10:33:15
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2009 Joerg Wunsch
+
+         System wide configuration file is &amp;quot;/etc/avrdude/avrdude.conf&amp;quot;
+         User configuration file is &amp;quot;/home/davidk/.avrduderc&amp;quot;
+         User configuration file does not exist or is not a regular file, skipping
+
+         Using Port                    : /dev/ttyUSB0
+         Using Programmer              : buspirate
+         AVR Part                      : ATtiny4313
+         Chip Erase delay              : 9000 us
+         PAGEL                         : PD4
+         BS2                           : PD6
+         RESET disposition             : possible i/o
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65     6     4    0 no        256    4      0  4000  4500 0xff 0xff
+           flash         65     6    32    0 yes      4096   64     64  4500  4500 0xff 0xff
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+           lock           0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           lfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           hfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           efuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           calibration    0     0     0    0 no          2    0      0     0     0 0x00 0x00
+
+         Programmer Type : BusPirate
+         Description     : The Bus Pirate
+
+Detecting BusPirate...
+avrdude: buspirate_readline(): #
+avrdude: buspirate_readline(): RE
+avrdude: buspirate_readline(): Bus Pirate v3.5
+avrdude: buspirate_readline(): Firmware v6.1 r1676  Bootloader v4.4
+avrdude: buspirate_readline(): DEVID:0x0447 REVID:0x3046 (24FJ64GA002 B8)
+avrdude: buspirate_readline(): http://dangerousprototypes.com
+avrdude: buspirate_readline(): HiZ&amp;gt;
+**
+BusPirate: using BINARY mode
+BusPirate binmode version: 1
+BusPirate SPI version: 1
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e920d
+avrdude: safemode: lfuse reads as 64
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as FF
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: reading input file &amp;quot;blinky313.hex&amp;quot;
+avrdude: input file blinky313.hex auto detected as Intel Hex
+avrdude: writing flash (60 bytes):
+
+Writing | ################################################## | 100% 0.19s
+
+avrdude: 60 bytes of flash written
+avrdude: verifying flash memory against blinky313.hex:
+avrdude: load data flash data from input file blinky313.hex:
+avrdude: input file blinky313.hex auto detected as Intel Hex
+avrdude: input file blinky313.hex contains 60 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.18s
+
+avrdude: verifying ...
+avrdude: 60 bytes of flash verified
+
+avrdude: safemode: lfuse reads as 64
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as FF
+avrdude: safemode: Fuses OK
+BusPirate is back in the text mode
+
+avrdude done.  Thank you.
+
+avrdude -v -p attiny85 -c buspirate -P /dev/ttyUSB0 -U flash:w:blinky45.hex -x reset=aux speed=7
+
+avrdude: Version 5.11.1, compiled on Jun 18 2013 at 10:33:15
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2009 Joerg Wunsch
+
+         System wide configuration file is &amp;quot;/etc/avrdude/avrdude.conf&amp;quot;
+         User configuration file is &amp;quot;/home/davidk/.avrduderc&amp;quot;
+         User configuration file does not exist or is not a regular file, skipping
+
+         Using Port                    : /dev/ttyUSB0
+         Using Programmer              : buspirate
+         AVR Part                      : ATtiny85
+         Chip Erase delay              : 4500 us
+         PAGEL                         : P00
+         BS2                           : P00
+         RESET disposition             : possible i/o
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65     6     4    0 no        512    4      0  4000  4500 0xff 0xff
+           flash         65     6    32    0 yes      8192   64    128  4500  4500 0xff 0xff
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+           lock           0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           lfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           hfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           efuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           calibration    0     0     0    0 no          2    0      0     0     0 0x00 0x00
+
+         Programmer Type : BusPirate
+         Description     : The Bus Pirate
+
+Detecting BusPirate...
+avrdude: buspirate_readline(): #
+avrdude: buspirate_readline(): RE
+avrdude: buspirate_readline(): Bus Pirate v3.5
+avrdude: buspirate_readline(): Firmware v6.1 r1676  Bootloader v4.4
+avrdude: buspirate_readline(): DEVID:0x0447 REVID:0x3046 (24FJ64GA002 B8)
+avrdude: buspirate_readline(): http://dangerousprototypes.com
+avrdude: buspirate_readline(): HiZ&amp;gt;
+**
+BusPirate: using BINARY mode
+BusPirate binmode version: 1
+BusPirate SPI version: 1
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e930b
+avrdude: safemode: lfuse reads as 62
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as FF
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: reading input file &amp;quot;blinky45.hex&amp;quot;
+avrdude: input file blinky45.hex auto detected as Intel Hex
+avrdude: writing flash (18 bytes):
+
+Writing | ################################################## | 100% 0.06s
+
+avrdude: 18 bytes of flash written
+avrdude: verifying flash memory against blinky45.hex:
+avrdude: load data flash data from input file blinky45.hex:
+avrdude: input file blinky45.hex auto detected as Intel Hex
+avrdude: input file blinky45.hex contains 18 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.05s
+
+avrdude: verifying ...
+avrdude: 18 bytes of flash verified
+
+avrdude: safemode: lfuse reads as 62
+avrdude: safemode: hfuse reads as DF
+avrdude: safemode: efuse reads as FF
+avrdude: safemode: Fuses OK
+BusPirate is back in the text mode
+
+avrdude done.  Thank you.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

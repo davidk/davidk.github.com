@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on open collector</title>
+    <link>http://open.konspyre.org/categories/hardware/</link>
+    <description>Recent content in Hardware on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Feb 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Electroscope update</title>
+      <link>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
+      <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
+      <description>
+
+&lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
+back for this version is 2014-08-24(!)&lt;/p&gt;
+
+&lt;h3 id=&#34;changes:7dde062d6c6ca61db731fda7916bef40&#34;&gt;Changes&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pulled copper pour near inputs back&lt;/li&gt;
+&lt;li&gt;Removed polyimide/kapton shield&lt;/li&gt;
+&lt;li&gt;Simplified antennae construction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One slight quirk with nearly all of these electroscopes is that they appear
+to be hard &amp;lsquo;on&amp;rsquo; after assembly sometimes. In many cases i&amp;rsquo;ve found that this is
+due to residual flux (of the water washable type).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve had success by scrubbing down with isopropyl alcohol and reflowing
+again with hot air.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/electroscope_08_24.png&#34; alt=&#34;Updated electroscope&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CR2032 tester</title>
+      <link>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
+      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I was able to release a small breakout board based on a sample I received long ago from Texas Instruments.
+It is a CR2032 tester, based on the pretty accurate TPS3809L30DBVR part (which was derived
+from eevblog&amp;rsquo;s µCurrent). The LED stops lighting up somewhere slightly at or below 2.64v, where most CR2032 coin cells enter
+end-of-life on the discharge curve.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/davidk/cr2032-tester&#34;&gt;Read more and get it made on the project page&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Toy Electroscope</title>
+      <link>http://open.konspyre.org/blog/2014-05-30-electroscope/</link>
+      <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2014-05-30-electroscope/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Nearly a year ago, vk2zay posted a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM&#34;&gt;video on electrets&lt;/a&gt;. In it, he also shared
+a design for a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM#t=152&#34;&gt;pretty fun electroscope&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As a part of learning KiCAD earlier this year, I turned it into a PCB.&lt;/p&gt;
+
+&lt;p&gt;This is the latest result:
+&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/top2.png&#34; alt=&#34;Electroscope&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The exposed copper area accepts a combination of kapton+sticky copper tape+kapton for some rudimentary shielding. LEDs are 3mm, or
+0805 (imperial). The antennae are simply stripped breadboarding wire.&lt;/p&gt;
+
+&lt;p&gt;It triggers on things I would have never expected.. like the clear plastic bags some components come in (from a
+very popular electronics vendor in the middle of nowhere). With the right LEDs (non-diffused/surface mount), people shuffling by light it up,
+and many are curious enough to pick it up and play with it/ask questions.&lt;/p&gt;
+
+&lt;p&gt;You can get your own copy of the PCB through the &lt;a href=&#34;https://www.oshpark.com/shared_projects/KFA2jmSs&#34;&gt;OSHPark shared project page&lt;/a&gt;, or grab the source
+KiCAD files/Bill of Materials/Placement &lt;a href=&#34;https://github.com/davidk/electroscope&#34;&gt;here&lt;/a&gt;. If you want the Gerbers used in fabrication, OSHPark has started
+exposing those as well, &lt;a href=&#34;http://uploads.oshpark.com/uploads/project/design/KFA2jmSs/design.zip&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;cheers&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hardware Volume Controller</title>
+      <link>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
+      <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&amp;rsquo;m porting it here to keep everything in one place.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;And if you&amp;rsquo;re curious about the long-term viability of this build.. it is still kicking. The detents are a little less crisp now, but everything works a treat. (And now, back to your regularly scheduled post re-run!)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It wasn&amp;rsquo;t too long ago that volume control on a keyboard was a foreign concept. After it became a &amp;lsquo;feature&amp;rsquo;, that control seemed pretty normal. There is however, a slight modern exception now. Many mechanical keyboards (which have been coming back into style) don&amp;rsquo;t have them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/overview.png&#34; alt=&#34;overview&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;In response, I hacked this together. It&amp;rsquo;s a volume controller which parses a rotary encoder&amp;rsquo;s input
+and controls the volume (tested on OS X/Windows/Linux so far).&lt;/p&gt;
+
+&lt;h3 id=&#34;parts-bill-of-materials:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Parts/Bill of Materials:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.adafruit.com/products/16&#34;&gt;Altoids Gum sized tin&lt;/a&gt; - A slick enclosure. Scratches easily though.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.adafruit.com/products/377&#34;&gt;Rotary Encoder&lt;/a&gt; - I&amp;rsquo;ve tried a bunch. A lot of them either failed over time, or the &amp;lsquo;clicks&amp;rsquo; (detents) became mushy. This one comes with a cool looking knob and is panel mountable too.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.adafruit.com/products/296&#34;&gt;Adafruit Atmega32u4 Breakout&lt;/a&gt; - Brains of the operation. Comes with headers. For this particular project, just keep the headers for a rainy day.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Wire - Will need these to hook up the rotary encoder. Stranded wire is preferable since it can bend and flex.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Perfboard - While you can go without, the perfboard is nice to relieve the stress on the rotary encoder pins. I haven&amp;rsquo;t run across an economical source of cuttable copper-clad perf; they&amp;rsquo;re usually so large that I feel guilty slicing them apart. &lt;a href=&#34;https://www.adafruit.com/products/589&#34;&gt;These&lt;/a&gt; seem to be the right size, but are rather thick (I haven&amp;rsquo;t sliced these apart yet). Use anything that works.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Optional (or you already have these if you&amp;rsquo;re thinking this is a good weekend project):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.adafruit.com/products/436&#34;&gt;Sugru&lt;/a&gt; - I used this stuff to attach the board to the tin. Anything non-conductive works (determine the amount of adhesion based on your projected re-use of these parts).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Soldering iron + Solder - Needed to join all the parts together.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Mini-B USB cable - This is the cable type that the breakout board accepts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Drill/set of bits - To make a hole so that the encoder can poke out of.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Something to cut with - For perfboard cutting, wire stripping, prying the enclosure, etc.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;electronics-assembly:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Electronics assembly&lt;/h3&gt;
+
+&lt;p&gt;Start by cutting perf for the rotary encoder. Put on your safety glasses (and quite possibly a dust mask just to be extra cautious). Cutting perfboard (and other things too!) can cause pieces of it to fly into your eyeballs.&lt;/p&gt;
+
+&lt;p&gt;To cut the perfboard by hand, score 5-7 times along the holes that mark the edges of the cut (make sure to dry fit before cutting). I had better cuts by scoring along the entire length of the perf (although this means some perf ends up being wasted).&lt;/p&gt;
+
+&lt;p&gt;Once you&amp;rsquo;re ready to cut, take a pair of shears (dull diagonal cutters work too) and clip a notch where your scored lines meet the edges. This should serve as a guide for your snap (the concept is similar to tearing a notch in a piece of folded paper before ripping it apart cleanly). Slowly bend the perf where the score is and the perf should snap apart. If it resists or seems like it won&amp;rsquo;t snap along the score line, score some more and repeat.&lt;/p&gt;
+
+&lt;p&gt;If that fails, break out a dust mask, a pair of safety glasses (you should already be wearing these!), and just start hacksawing. It won&amp;rsquo;t be very pretty, but it should work.&lt;/p&gt;
+
+&lt;p&gt;The next step is to solder the encoder in. Insert the encoder and tack a leg with solder to hold it in place. Ensure everything is aligned the way you like it (check that there is room for the wiring below), and solder the rest of the pins in.&lt;/p&gt;
+
+&lt;p&gt;The wiring can be deceptively tricky. Measure out enough wire so that you can open/close the box. Cut, strip and tin the wires. You&amp;rsquo;ll need 5 wires.&lt;/p&gt;
+
+&lt;p&gt;Here is the wire mapping (looking from top to down at the rotary encoder, with three pins on top and two on the bottom):&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;volume-up-down-three-pins-top:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Volume Up/Down (three pins, top)&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Wire color&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pin on Atmega32u4&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pin on encoder&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;White&lt;/td&gt;
+&lt;td&gt;D0&lt;/td&gt;
+&lt;td&gt;Left-most pin&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Black&lt;/td&gt;
+&lt;td&gt;GND&lt;/td&gt;
+&lt;td&gt;Middle pin&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Red&lt;/td&gt;
+&lt;td&gt;D1&lt;/td&gt;
+&lt;td&gt;Right-most pin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;mute-on-off-two-pins-bottom:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Mute On/Off (two pins, bottom)&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Wire color&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pin on Atmega32u4&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;&lt;em&gt;Pin on encoder&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Black&lt;/td&gt;
+&lt;td&gt;GND&lt;/td&gt;
+&lt;td&gt;Left-most pin&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;White&lt;/td&gt;
+&lt;td&gt;B0&lt;/td&gt;
+&lt;td&gt;Right-most pin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Solder all the wires together. Once the wires are attached to the perf, blob some solder to bridge the wiring and the encoder pins together.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/encoderwiring.png&#34; alt=&#34;encoder wiring&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;enclosure:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Enclosure&lt;/h3&gt;
+
+&lt;p&gt;To drill a hole for the encoder, find a bit size that matches (the datasheet says it is 6mm / .236 inches or just around a &lt;sup&gt;15&lt;/sup&gt;&amp;frasl;&lt;sub&gt;64&lt;/sub&gt; drill bit (.234 inches)). Measure for dead center on both axes (or like a professor once told me: &amp;lsquo;eyeball it until your OCD stops&amp;rsquo;). Mark the drill point.&lt;/p&gt;
+
+&lt;p&gt;If it makes it easier, it is possible to remove the lid from the body. Simply bend the hinged tabs outward and the lid will slide off. Reverse to fit the lid back on.&lt;/p&gt;
+
+&lt;p&gt;You may need to brace the back of the drill area with a block of scrap wood to prevent warping. Drill from the outside in (so that all the unsightly edges are hidden somewhat). Don&amp;rsquo;t apply too much pressure (you won&amp;rsquo;t be able to undent things easily).&lt;/p&gt;
+
+&lt;p&gt;Once you&amp;rsquo;re done, dry fit the encoder but don&amp;rsquo;t screw it into place yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/enclosure.png&#34; alt=&#34;enclosure&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;For the USB port, buttress the breakout board against the bottom of the enclosure and mark an approximate outline. Using a drill, begin drilling into the case (the hole won&amp;rsquo;t be large enough, but we&amp;rsquo;ll fix that in a bit). With the hole made, take your shears and carefully pry to make an opening wide enough for the USB plug to poke out. Continue to check the fit while slowly prying. Don&amp;rsquo;t worry if it looks too ugly. The USB plug covers up most of the mess.&lt;/p&gt;
+
+&lt;h3 id=&#34;final-assembly:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Final assembly&lt;/h3&gt;
+
+&lt;p&gt;Before adhering the breakout board (permanently, depending on your preference); lets test everything.&lt;/p&gt;
+
+&lt;p&gt;Compiling:&lt;/p&gt;
+
+&lt;p&gt;Unfortunately I haven&amp;rsquo;t had all that much luck compiling on OS X (using Homebrew packages), and I haven&amp;rsquo;t tried on Windows at all. Only Linux has worked so far. All hope is not lost however, you can manually program the breakout with avrdude! Read on to &amp;lsquo;Skipping all of that&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;These are the packages I have installed for Fedora which are needed to compile:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo yum -y install avr-libc avrdude avr-gcc avr-binutils git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, grab a copy of the LUFA git repository that includes the necessary modifications:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git clone git://github.com/davidk/lufa-lib.git
+$ cd lufa-lib
+$ git checkout -b atmega32u4-mediacontroller origin/atmega32u4-mediacontroller
+$ cd trunk/Projects/MediaController
+$ make all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the compile was successful, connect the breakout board to your computer. Type the following into your console,
+hit enter, but don&amp;rsquo;t type in your password yet.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ sudo make program
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Going back to the breakout board, hit the white button (a green light should slowly start fading in and out indicating that the breakout is ready to be programmed). Type in your password and watch it go. If avrdude had
+problems finding your 32u4 breakout, run &lt;code&gt;dmesg&lt;/code&gt; and check the output for something along the lines of &lt;code&gt;ttyACM&lt;/code&gt;. The last part should be a number. Modify the &lt;code&gt;makefile&lt;/code&gt; with the new port and re-run the line.&lt;/p&gt;
+
+&lt;p&gt;Here is what my dmesg looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/dmesg.png&#34; alt=&#34;dmesg&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Skipping all of that:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re on OS X or Windows.. or just don&amp;rsquo;t like compiling, get the &lt;a href=&#34;http://open.konspyre.org/assets/code/volcontrol/MediaController.hex&#34;&gt;hex file&lt;/a&gt;, press the white bootloader button, and run the following (a working example for OS X):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ avrdude -p atmega32u4 -P /dev/tty.usbmodem621 -c avr109 -U flash:w:MediaController.hex
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change &lt;code&gt;/dev/tty.usbmodem621&lt;/code&gt; as appropriate for your platform. On OS X, if at first /dev/tty.usbmodem612 doesn&amp;rsquo;t work, use tab-completion to fill in the remaining section. Enter &lt;code&gt;/dev/tty.usb&lt;/code&gt; and tap tab to get relevant entries when the bootloader light is active.&lt;/p&gt;
+
+&lt;p&gt;Finishing up:
+Do volume up/down and mute (pushing down on the encoder) work properly? If so, time to finish up! If not, make sure
+that the board is programmed (it shows up as &lt;code&gt;LUFA Media Controller&lt;/code&gt; in &lt;code&gt;dmesg&lt;/code&gt;, and similarly under the OS X System Profiler). Also ensure the connections between all the parts are nice and solid.&lt;/p&gt;
+
+&lt;p&gt;If everything is finished, open a pack of Sugru (or the adhesive you&amp;rsquo;re using), and stick things together.
+Next, poke the rotary encoder through the hole on the lid. Then secure it with the hardware provided and add the nice looking control knob to top it off.&lt;/p&gt;
+
+&lt;p&gt;Here is what mine looks like now; it is magnetically attached to the keyboard (no ill effects yet).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/completed.png&#34; alt=&#34;completed&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;attributions:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Attributions:&lt;/h3&gt;
+
+&lt;p&gt;This project uses code and examples provided by LUFA (which is MIT licensed). Thats by Dean Camera.
+The code to read the rotary code comes from a posting by circuitsathome &lt;a href=&#34;http://www.circuitsathome.com/mcu/reading-rotary-encoder-on-arduino&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;improvements-chaos-and-cost-reductions:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Improvements, chaos, and cost reductions:&lt;/h3&gt;
+
+&lt;p&gt;From a performance and cost perspective, the breakout used for this project is overkill; building an ATTiny breakout might be more worthwhile. Also,
+it might be possible to just rip the guts out of an old keyboard and use its media controller functions with some
+modding.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bp on open collector</title>
+    <link>http://open.konspyre.org/categories/bp/</link>
+    <description>Recent content in Bp on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Dec 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://open.konspyre.org/categories/bp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>3D Printed Bus Pirate v3.6 Case (DP6037)</title>
+      <link>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
+      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Source files and general instructions for printing can be found &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Bus Pirate is a pretty fantastic device for sniffing around and working with new circuits. It can even &lt;a href=&#34;http://dangerousprototypes.com/docs/Bus_Pirate_AVR_Programming&#34;&gt;act as an AVR programmer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After using one to fiddle with a few circuits, a case became necessary after seeing its value. While there are cases that can be purchased[1], a 3D printer was laying around waiting to be used.&lt;/p&gt;
+
+&lt;p&gt;Finding only a &lt;a href=&#34;http://www.thingiverse.com/thing:33517&#34;&gt;case outline&lt;/a&gt; (which proved to be extremely useful as a jumping off point) on Thingiverse, one needed to be made for the newer Bus Pirate.&lt;/p&gt;
+
+&lt;p&gt;After several hours (mostly spent re-calibrating the 3D printer, untangling filament, and playing musical notes with the timing belts), the printer popped out several iterations of cases.&lt;/p&gt;
+
+&lt;p&gt;The first few worked well, but were dependent on PLA &amp;lsquo;rods and spikes&amp;rsquo; (scrap filament cut and heated on a hotbed to straighten) and press-fitting to hold the top and bottom halves together. The USB header was also unexposed, which caused leveling issues (since it was higher than the rest of the board).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v1.png&#34; alt=&#34;Printed Bus Pirate Case, Reject&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Going forward with several revisions, and many rejects later (about 12!), a decent case started appearing. Instead of PLA rods, a few 8mm long M3 machine screws and M3 hex nuts were used. They&amp;rsquo;re not very common, but the M3s seem to fit rather well while providing a good degree of stability.&lt;/p&gt;
+
+&lt;p&gt;The assembly order from the bottom: M3 screw, bottom plate, PCB, hex nut, top plate.&lt;/p&gt;
+
+&lt;p&gt;While the top looks unsecured, it must actually be screwed/threaded in from the bottom with a decent amount of force.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front.png&#34; alt=&#34;Printed Bus Pirate Case, Front&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Polyimide tape was used on the back to protect the pins from being shorted out. The reason for not covering them in CAD is because they can be &lt;a href=&#34;http://www.youtube.com/watch?feature=player_detailpage&amp;amp;v=N60WSQc-G_8#t=416s&#34;&gt;useful to probe&lt;/a&gt; with a multimeter at times.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-back.png&#34; alt=&#34;Printed Bus Pirate Case, Back&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Files are posted &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;here&lt;/a&gt; (CC-BY-SA; via original author), but may change in the future if I ever get around to beating the thing into a different shape.&lt;/p&gt;
+
+&lt;p&gt;If you have an idea for a change, or can design a better one go for it!&lt;/p&gt;
+
+&lt;h2 id=&#34;updates-errata:6c86a18651dceea50e592c955548af99&#34;&gt;Updates &amp;amp; Errata&lt;/h2&gt;
+
+&lt;p&gt;1-1-13: For many printers with a perfectly flat print bed (borosilicate glass, metal, etc), it may be advantageous to mirror the output on one axis so that the top gets printed perfectly flat.&lt;/p&gt;
+
+&lt;p&gt;With a borosilicate glass bed:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored.png&#34; alt=&#34;Bus Pirate Case, mirrored shiny front&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The exported STL file has been added to the &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;GitHub repository&lt;/a&gt;. Look for &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037/blob/master/dp6037-top-axis-flipped.stl?raw=true&#34;&gt;dp6037-top-axis-flipped.stl&lt;/a&gt; when grabbing it (or click that link).&lt;/p&gt;
+
+&lt;p&gt;1-2-13: Yellow? Who prints stuff in yellow? Don&amp;rsquo;t you have blue?&lt;/p&gt;
+
+&lt;p&gt;After a bit of recalibrating, this is what the case looks like in translucent blue. Not very high quality, but passable:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored-blue.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;1-3-13: Here is a better front panel (printed after mending the Z-axis into alignment), which will probably be the last update (in this series of days).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;1-4-13: Added a link to source files at top and shortened/corrected more text to sound less silly.&lt;/p&gt;
+
+&lt;h2 id=&#34;notes-references:6c86a18651dceea50e592c955548af99&#34;&gt;Notes &amp;amp; References&lt;/h2&gt;
+
+&lt;p&gt;[1] Note that buying an acrylic case is really the way to go. They &lt;a href=&#34;http://www.seeedstudio.com/depot/bus-pirate-v36-acrylic-case-v1-dp6037-p-1229.html?cPath=178_184&#34;&gt;sell for about $3&lt;/a&gt;).. but if you have a 3D printer, it probably needs to earn its keep anyway.&lt;/p&gt;
+
+&lt;h2 id=&#34;thanks-resources:6c86a18651dceea50e592c955548af99&#34;&gt;Thanks &amp;amp; Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Thanks to &lt;a href=&#34;http://www.thingiverse.com/thing:33517&#34;&gt;XQL for creating the model, and publishing it on Thingiverse&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If you want to purchase your own Bus Pirate, plenty of vendors sell them. The particular one I bought was from Adafruit. Check out their &lt;a href=&#34;https://www.adafruit.com/products/237&#34;&gt;Bus Pirates here&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;cheers!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
