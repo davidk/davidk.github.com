@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lufa on open collector</title>
-    <link>http://localhost:1313/categories/lufa/</link>
+    <link>http://open.konspyre.org/categories/lufa/</link>
     <description>Recent content in Lufa on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 May 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/lufa/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://open.konspyre.org/categories/lufa/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hardware Volume Controller</title>
-      <link>http://localhost:1313/blog/2013-05-11-hardware-volume-controller/</link>
+      <link>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
       <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2013-05-11-hardware-volume-controller/</guid>
+      <guid>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
       <description>
 
 &lt;p&gt;&lt;em&gt;(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&amp;rsquo;m porting it here to keep everything in one place.&lt;/em&gt;&lt;/p&gt;
@@ -23,7 +23,7 @@
 
 &lt;p&gt;It wasn&amp;rsquo;t too long ago that volume control on a keyboard was a foreign concept. After it became a &amp;lsquo;feature&amp;rsquo;, that control seemed pretty normal. There is however, a slight modern exception now. Many mechanical keyboards (which have been coming back into style) don&amp;rsquo;t have them.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/overview.png&#34; alt=&#34;overview&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/overview.png&#34; alt=&#34;overview&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;In response, I hacked this together. It&amp;rsquo;s a volume controller which parses a rotary encoder&amp;rsquo;s input
@@ -139,7 +139,7 @@ and controls the volume (tested on OS X/Windows/Linux so far).&lt;/p&gt;
 
 &lt;p&gt;Solder all the wires together. Once the wires are attached to the perf, blob some solder to bridge the wiring and the encoder pins together.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/encoderwiring.png&#34; alt=&#34;encoder wiring&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/encoderwiring.png&#34; alt=&#34;encoder wiring&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;enclosure:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Enclosure&lt;/h3&gt;
@@ -152,7 +152,7 @@ and controls the volume (tested on OS X/Windows/Linux so far).&lt;/p&gt;
 
 &lt;p&gt;Once you&amp;rsquo;re done, dry fit the encoder but don&amp;rsquo;t screw it into place yet.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/enclosure.png&#34; alt=&#34;enclosure&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/enclosure.png&#34; alt=&#34;enclosure&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For the USB port, buttress the breakout board against the bottom of the enclosure and mark an approximate outline. Using a drill, begin drilling into the case (the hole won&amp;rsquo;t be large enough, but we&amp;rsquo;ll fix that in a bit). With the hole made, take your shears and carefully pry to make an opening wide enough for the USB plug to poke out. Continue to check the fit while slowly prying. Don&amp;rsquo;t worry if it looks too ugly. The USB plug covers up most of the mess.&lt;/p&gt;
@@ -190,12 +190,12 @@ problems finding your 32u4 breakout, run &lt;code&gt;dmesg&lt;/code&gt; and chec
 
 &lt;p&gt;Here is what my dmesg looks like:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/dmesg.png&#34; alt=&#34;dmesg&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/dmesg.png&#34; alt=&#34;dmesg&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Skipping all of that:&lt;/p&gt;
 
-&lt;p&gt;If you&amp;rsquo;re on OS X or Windows.. or just don&amp;rsquo;t like compiling, get the &lt;a href=&#34;http://localhost:1313/assets/code/volcontrol/MediaController.hex&#34;&gt;hex file&lt;/a&gt;, press the white bootloader button, and run the following (a working example for OS X):&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re on OS X or Windows.. or just don&amp;rsquo;t like compiling, get the &lt;a href=&#34;http://open.konspyre.org/assets/code/volcontrol/MediaController.hex&#34;&gt;hex file&lt;/a&gt;, press the white bootloader button, and run the following (a working example for OS X):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ avrdude -p atmega32u4 -P /dev/tty.usbmodem621 -c avr109 -U flash:w:MediaController.hex
 &lt;/code&gt;&lt;/pre&gt;
@@ -211,7 +211,7 @@ Next, poke the rotary encoder through the hole on the lid. Then secure it with t
 
 &lt;p&gt;Here is what mine looks like now; it is magnetically attached to the keyboard (no ill effects yet).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/completed.png&#34; alt=&#34;completed&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/completed.png&#34; alt=&#34;completed&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;attributions:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Attributions:&lt;/h3&gt;
@@ -229,10 +229,10 @@ modding.&lt;/p&gt;
     
     <item>
       <title>AVR Programming with Adafruit&#39;s Atmega32u4</title>
-      <link>http://localhost:1313/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
+      <link>http://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
+      <guid>http://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Introduction&lt;/h2&gt;
@@ -253,7 +253,7 @@ breakout board.&lt;/p&gt;
 &lt;p&gt;A modified LUFA CDC bootloader comes pre-installed on these. This allows the chip to be programmed without an external programmer
 (at the cost of some memory space).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/atmega32u4.JPG&#34; alt=&#34;Atmega32u4 with ISP and programming reset line connected&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/atmega32u4.JPG&#34; alt=&#34;Atmega32u4 with ISP and programming reset line connected&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For programming breakout boards, a 6-pin cable is attached to the programmer. A wire is hooked up to B4 (which connects to the target AVR&amp;rsquo;s RESET pin).&lt;/p&gt;
@@ -268,7 +268,7 @@ ends the attempt). This gets worked around a little bit later by splicing into t
 
 &lt;p&gt;It is also possible to use a breadboard to program a chip. A completed layout looks something like this.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/32u4bb_programmer.png&#34; alt=&#34;Breadboard Atmega32u4 ISP programmer targeting ATmega328P&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/32u4bb_programmer.png&#34; alt=&#34;Breadboard Atmega32u4 ISP programmer targeting ATmega328P&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;There are problems with this setup:&lt;/p&gt;
@@ -319,7 +319,7 @@ B5   ----&amp;gt; XTAL1  (not needed for Arduino boards)
 pins (MISO/SCK/VCC/MOSI/GND) are broken out to the header. However, since both RESET lines are connected, the programmer itself will be reset if
 connected without modification.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/idc-reset-cut.png&#34; alt=&#34;Modified 6-pin IDC cable&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/idc-reset-cut.png&#34; alt=&#34;Modified 6-pin IDC cable&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Here is an example of the 6-pin cable which has been cut with a sharp knife. The line to cut is the 5th wire, starting from the red line
@@ -330,7 +330,7 @@ continuity test mode &amp;ndash; aka &amp;lsquo;beep beep beep&amp;rsquo; mode),
 connect the 6-pin header (red stripe to small dot, or box connector &amp;ldquo;tab&amp;rdquo; to the proper place). Poke the small wires coming out of the box to check.
 You may need to press with a bit of force.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/programmer_cable_test.png&#34; alt=&#34;Probing 6-pin IDC cable&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/programmer_cable_test.png&#34; alt=&#34;Probing 6-pin IDC cable&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For the absolutely paranoid, pulling apart the box connector may be a good idea.&lt;/p&gt;
@@ -407,7 +407,7 @@ $ git checkout atmega32u4-avrisp
 
 &lt;p&gt;If it all went well, you now have a programmer.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/32u4-to-arduino.png&#34; alt=&#34;ISP programming Arduino Uno&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/32u4-to-arduino.png&#34; alt=&#34;ISP programming Arduino Uno&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Remember: The single red wire goes from B4 to the Arduino&amp;rsquo;s RESET pin.&lt;/p&gt;
@@ -460,7 +460,7 @@ avrdude: safemode: Fuses OK
 avrdude done.  Thank you.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/bb313_programmed.png&#34; alt=&#34;programming a bb313&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bb313_programmed.png&#34; alt=&#34;programming a bb313&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;programming-without-using-sudo-or-root-linux:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Programming without using &amp;lsquo;sudo&amp;rsquo; or root (Linux)&lt;/h3&gt;

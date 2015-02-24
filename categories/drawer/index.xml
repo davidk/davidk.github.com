@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drawer on open collector</title>
-    <link>http://localhost:1313/categories/drawer/</link>
+    <link>http://open.konspyre.org/categories/drawer/</link>
     <description>Recent content in Drawer on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Feb 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/drawer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://open.konspyre.org/categories/drawer/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Printable divider for the 10164 storage drawer</title>
-      <link>http://localhost:1313/blog/2013-02-04-printable-divider/</link>
+      <link>http://open.konspyre.org/blog/2013-02-04-printable-divider/</link>
       <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2013-02-04-printable-divider/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/box_divider/box_divider_plate.png&#34; alt=&#34;Storage drawer divider&#34; /&gt;
+      <guid>http://open.konspyre.org/blog/2013-02-04-printable-divider/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/box_divider/box_divider_plate.png&#34; alt=&#34;Storage drawer divider&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;This is a 3D printable small drawer divider for the Akro-Mils 10164 parts cabinet.&lt;/p&gt;

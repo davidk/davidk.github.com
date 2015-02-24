@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on open collector</title>
-    <link>http://localhost:1313/pages/</link>
+    <link>http://open.konspyre.org/pages/</link>
     <description>Recent content in Pages on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 31 May 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://open.konspyre.org/pages/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/pages/about/</link>
+      <link>http://open.konspyre.org/pages/about/</link>
       <pubDate>Sat, 31 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/about/</guid>
+      <guid>http://open.konspyre.org/pages/about/</guid>
       <description>&lt;p&gt;&lt;em&gt;open collector&lt;/em&gt; is just one person, Dave.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m a hobbyist hacking on MCUs, sensors, physical fabrication techniques,
@@ -27,10 +27,10 @@ so you may see a bit of crossover into that from time to time.&lt;/p&gt;
     
     <item>
       <title>Avrrrinator B</title>
-      <link>http://localhost:1313/pages/avrb/</link>
+      <link>http://open.konspyre.org/pages/avrb/</link>
       <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/avrb/</guid>
+      <guid>http://open.konspyre.org/pages/avrb/</guid>
       <description>
 
 &lt;h2 id=&#34;silkscreen-text-bottom-squirrel-packing-a-ruby-laser-rod:e701188abab5b493e5915f1270430909&#34;&gt;Silkscreen text (bottom): &amp;ldquo;Squirrel Packing A Ruby Laser Rod&amp;rdquo;&lt;/h2&gt;
@@ -378,10 +378,10 @@ avrdude done.  Thank you.
     
     <item>
       <title>Avrrrinator Rev. A</title>
-      <link>http://localhost:1313/pages/avra/</link>
+      <link>http://open.konspyre.org/pages/avra/</link>
       <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/avra/</guid>
+      <guid>http://open.konspyre.org/pages/avra/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
 &lt;/p&gt;
 

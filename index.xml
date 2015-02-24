@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>open collector</title>
-    <link>http://localhost:1313/</link>
+    <link>http://open.konspyre.org/</link>
     <description>Recent content on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Feb 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://open.konspyre.org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Electroscope update</title>
-      <link>http://localhost:1313/blog/2015-02-10-electroscope-update/</link>
+      <link>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
       <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2015-02-10-electroscope-update/</guid>
+      <guid>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
       <description>
 
 &lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
@@ -48,10 +48,10 @@ again with hot air.&lt;/p&gt;
     
     <item>
       <title>CR2032 tester</title>
-      <link>http://localhost:1313/blog/2014-06-29-cr2032-tester-released/</link>
+      <link>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
       <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014-06-29-cr2032-tester-released/</guid>
+      <guid>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;
 &lt;/p&gt;
 
@@ -66,10 +66,10 @@ end-of-life on the discharge curve.&lt;/p&gt;
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/pages/about/</link>
+      <link>http://open.konspyre.org/pages/about/</link>
       <pubDate>Sat, 31 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/about/</guid>
+      <guid>http://open.konspyre.org/pages/about/</guid>
       <description>&lt;p&gt;&lt;em&gt;open collector&lt;/em&gt; is just one person, Dave.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m a hobbyist hacking on MCUs, sensors, physical fabrication techniques,
@@ -82,10 +82,10 @@ so you may see a bit of crossover into that from time to time.&lt;/p&gt;
     
     <item>
       <title>Toy Electroscope</title>
-      <link>http://localhost:1313/blog/2014-05-30-electroscope/</link>
+      <link>http://open.konspyre.org/blog/2014-05-30-electroscope/</link>
       <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014-05-30-electroscope/</guid>
+      <guid>http://open.konspyre.org/blog/2014-05-30-electroscope/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
 &lt;/p&gt;
 
@@ -115,10 +115,10 @@ exposing those as well, &lt;a href=&#34;http://uploads.oshpark.com/uploads/proje
     
     <item>
       <title>Avrrrinator B Released</title>
-      <link>http://localhost:1313/blog/2014-05-19-avrrrinator-b-released/</link>
+      <link>http://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</link>
       <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014-05-19-avrrrinator-b-released/</guid>
+      <guid>http://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</guid>
       <description>
 
 &lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_top_cables.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
@@ -142,10 +142,10 @@ learning my lesson with RSTDISBL), hopefully someone will find a bit of utility 
     
     <item>
       <title>Avrrrinator B</title>
-      <link>http://localhost:1313/pages/avrb/</link>
+      <link>http://open.konspyre.org/pages/avrb/</link>
       <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/avrb/</guid>
+      <guid>http://open.konspyre.org/pages/avrb/</guid>
       <description>
 
 &lt;h2 id=&#34;silkscreen-text-bottom-squirrel-packing-a-ruby-laser-rod:e701188abab5b493e5915f1270430909&#34;&gt;Silkscreen text (bottom): &amp;ldquo;Squirrel Packing A Ruby Laser Rod&amp;rdquo;&lt;/h2&gt;
@@ -493,10 +493,10 @@ avrdude done.  Thank you.
     
     <item>
       <title>Avrrrinator Rev. A</title>
-      <link>http://localhost:1313/pages/avra/</link>
+      <link>http://open.konspyre.org/pages/avra/</link>
       <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/pages/avra/</guid>
+      <guid>http://open.konspyre.org/pages/avra/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
 &lt;/p&gt;
 
@@ -506,10 +506,10 @@ avrdude done.  Thank you.
     
     <item>
       <title>Panasonic PIR Breakout Board</title>
-      <link>http://localhost:1313/blog/2014-05-02-panasonic-breakout-board/</link>
+      <link>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</link>
       <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014-05-02-panasonic-breakout-board/</guid>
+      <guid>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;
 &lt;/p&gt;
 
@@ -527,10 +527,10 @@ avrdude done.  Thank you.
     
     <item>
       <title>Avrrrinator Rev. A Updated</title>
-      <link>http://localhost:1313/blog/2014-03-10-avrrrinator-rev-a-updated/</link>
+      <link>http://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014-03-10-avrrrinator-rev-a-updated/</guid>
+      <guid>http://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
 &lt;/p&gt;
 
@@ -546,10 +546,10 @@ avrdude done.  Thank you.
     
     <item>
       <title>Stop, blink and roll*</title>
-      <link>http://localhost:1313/blog/2013-05-13-stop-blink-roll/</link>
+      <link>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2013-05-13-stop-blink-roll/</guid>
+      <guid>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</guid>
       <description>
 
 &lt;p&gt;A little bit of the cat got out of the bag some time ago:&lt;/p&gt;
@@ -747,10 +747,10 @@ void loop() {
     
     <item>
       <title>Hardware Volume Controller</title>
-      <link>http://localhost:1313/blog/2013-05-11-hardware-volume-controller/</link>
+      <link>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
       <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2013-05-11-hardware-volume-controller/</guid>
+      <guid>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
       <description>
 
 &lt;p&gt;&lt;em&gt;(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&amp;rsquo;m porting it here to keep everything in one place.&lt;/em&gt;&lt;/p&gt;
@@ -931,7 +931,7 @@ problems finding your 32u4 breakout, run &lt;code&gt;dmesg&lt;/code&gt; and chec
 
 &lt;p&gt;Skipping all of that:&lt;/p&gt;
 
-&lt;p&gt;If you&amp;rsquo;re on OS X or Windows.. or just don&amp;rsquo;t like compiling, get the &lt;a href=&#34;http://localhost:1313/assets/code/volcontrol/MediaController.hex&#34;&gt;hex file&lt;/a&gt;, press the white bootloader button, and run the following (a working example for OS X):&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re on OS X or Windows.. or just don&amp;rsquo;t like compiling, get the &lt;a href=&#34;http://open.konspyre.org/assets/code/volcontrol/MediaController.hex&#34;&gt;hex file&lt;/a&gt;, press the white bootloader button, and run the following (a working example for OS X):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ avrdude -p atmega32u4 -P /dev/tty.usbmodem621 -c avr109 -U flash:w:MediaController.hex
 &lt;/code&gt;&lt;/pre&gt;
@@ -965,10 +965,10 @@ modding.&lt;/p&gt;
     
     <item>
       <title>Tools for 3D Printing: What do I get?</title>
-      <link>http://localhost:1313/blog/2013-04-07-tools-for-3d-printing/</link>
+      <link>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</link>
       <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2013-04-07-tools-for-3d-printing/</guid>
+      <guid>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</guid>
       <description>
 
 &lt;p&gt;&lt;img src=&#34;/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;
@@ -1102,10 +1102,10 @@ modding.&lt;/p&gt;
     
     <item>
       <title>Printable divider for the 10164 storage drawer</title>
-      <link>http://localhost:1313/blog/2013-02-04-printable-divider/</link>
+      <link>http://open.konspyre.org/blog/2013-02-04-printable-divider/</link>
       <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2013-02-04-printable-divider/</guid>
+      <guid>http://open.konspyre.org/blog/2013-02-04-printable-divider/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;/assets/images/box_divider/box_divider_plate.png&#34; alt=&#34;Storage drawer divider&#34; /&gt;
 &lt;/p&gt;
 
@@ -1129,10 +1129,10 @@ modding.&lt;/p&gt;
     
     <item>
       <title>The Avrrrinator (Revision A)</title>
-      <link>http://localhost:1313/blog/2013-01-23-the-avrrrinator-revision-a/</link>
+      <link>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</link>
       <pubDate>Wed, 23 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2013-01-23-the-avrrrinator-revision-a/</guid>
+      <guid>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</guid>
       <description>
 
 &lt;p&gt;&lt;img src=&#34;/assets/images/avrrrinator/avrrrinator-revA.png&#34; alt=&#34;avrrrinator rev a&#34; /&gt;
@@ -1205,10 +1205,10 @@ your own Gerber files using Eagle and send them off, or use a service which proc
     
     <item>
       <title>3D Printed Bus Pirate v3.6 Case (DP6037)</title>
-      <link>http://localhost:1313/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
+      <link>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
+      <guid>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
       <description>
 
 &lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;

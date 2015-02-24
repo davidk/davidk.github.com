@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Attiny on open collector</title>
-    <link>http://localhost:1313/categories/attiny/</link>
+    <link>http://open.konspyre.org/categories/attiny/</link>
     <description>Recent content in Attiny on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 May 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/attiny/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://open.konspyre.org/categories/attiny/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Stop, blink and roll*</title>
-      <link>http://localhost:1313/blog/2013-05-13-stop-blink-roll/</link>
+      <link>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2013-05-13-stop-blink-roll/</guid>
+      <guid>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</guid>
       <description>
 
 &lt;p&gt;A little bit of the cat got out of the bag some time ago:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/avrrrinator/6-seconds-avrrrinator.gif&#34; alt=&#34;6 seconds of AVR flashing&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/avrrrinator/6-seconds-avrrrinator.gif&#34; alt=&#34;6 seconds of AVR flashing&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;You&amp;rsquo;re looking at ~24 hours of continuous AVR flashing compressed down into 6 seconds.&lt;/p&gt;
