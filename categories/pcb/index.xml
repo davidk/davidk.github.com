@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pcb on open collector</title>
-    <link>http://open.konspyre.org/categories/pcb/</link>
+    <link>http://localhost:1313/categories/pcb/</link>
     <description>Recent content in Pcb on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Feb 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://open.konspyre.org/categories/pcb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/pcb/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Electroscope update</title>
-      <link>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
+      <link>http://localhost:1313/blog/2015-02-10-electroscope-update/</link>
       <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
+      <guid>http://localhost:1313/blog/2015-02-10-electroscope-update/</guid>
       <description>
 
 &lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
@@ -48,10 +48,10 @@ again with hot air.&lt;/p&gt;
     
     <item>
       <title>CR2032 tester</title>
-      <link>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
+      <link>http://localhost:1313/blog/2014-06-29-cr2032-tester-released/</link>
       <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
+      <guid>http://localhost:1313/blog/2014-06-29-cr2032-tester-released/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;
 &lt;/p&gt;
 
@@ -66,10 +66,10 @@ end-of-life on the discharge curve.&lt;/p&gt;
     
     <item>
       <title>Toy Electroscope</title>
-      <link>http://open.konspyre.org/blog/2014-05-30-electroscope/</link>
+      <link>http://localhost:1313/blog/2014-05-30-electroscope/</link>
       <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-05-30-electroscope/</guid>
+      <guid>http://localhost:1313/blog/2014-05-30-electroscope/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
 &lt;/p&gt;
 
@@ -99,10 +99,10 @@ exposing those as well, &lt;a href=&#34;http://uploads.oshpark.com/uploads/proje
     
     <item>
       <title>Avrrrinator B</title>
-      <link>http://open.konspyre.org/pages/avrb/</link>
+      <link>http://localhost:1313/pages/avrb/</link>
       <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/pages/avrb/</guid>
+      <guid>http://localhost:1313/pages/avrb/</guid>
       <description>
 
 &lt;h2 id=&#34;silkscreen-text-bottom-squirrel-packing-a-ruby-laser-rod:e701188abab5b493e5915f1270430909&#34;&gt;Silkscreen text (bottom): &amp;ldquo;Squirrel Packing A Ruby Laser Rod&amp;rdquo;&lt;/h2&gt;

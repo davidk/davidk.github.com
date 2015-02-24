@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raspberry Pi on open collector</title>
-    <link>http://open.konspyre.org/categories/raspberry-pi/</link>
+    <link>http://localhost:1313/categories/raspberry-pi/</link>
     <description>Recent content in Raspberry Pi on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Oct 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://open.konspyre.org/categories/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Raspberry Flavored Time (A NTP server on your Pi, tethered to a GPS unit)</title>
-      <link>http://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</link>
+      <link>http://localhost:1313/blog/2012-10-18-raspberry-pi-time-server/</link>
       <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</guid>
+      <guid>http://localhost:1313/blog/2012-10-18-raspberry-pi-time-server/</guid>
       <description>
 
 &lt;p&gt;2014/11/12: This article&amp;rsquo;s is in the process of being revisited. Please keep in mind that it is very old before using its instructions and resources.&lt;/p&gt;
 
 &lt;p&gt;GPS module connected to a Raspberry Pi (for accurate time keeping):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/ulti_gps_v3.png&#34; alt=&#34;Adafruit Ultimate GPS v3&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/ulti_gps_v3.png&#34; alt=&#34;Adafruit Ultimate GPS v3&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h2 id=&#34;a-primer-on-time:f0add37b64850e1a23640fa819df10c0&#34;&gt;A primer on time&lt;/h2&gt;
@@ -187,12 +187,12 @@ VIN --&amp;gt; 5V0
 
 &lt;p&gt;Wiring for the Adafruit Ultimate GPS v3 (RX-&amp;gt;TXD isn&amp;rsquo;t connected):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/ulti_gps_v3.png&#34; alt=&#34;Adafruit Ultimate GPS v3&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/ulti_gps_v3.png&#34; alt=&#34;Adafruit Ultimate GPS v3&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For the v2, with a wire soldered onto the 1PPS pad (the 1PPS wire goes to the blue one off image, which then leads to GPIO #23):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/ulti_gps_v2.png&#34; alt=&#34;Adafruit Ultimate GPS v2&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/ulti_gps_v2.png&#34; alt=&#34;Adafruit Ultimate GPS v2&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;If you need background on where GPIO pin 23 is located when connecting directly, see &lt;a href=&#34;http://elinux.org/RPi_Low-level_peripherals&#34;&gt;this page at elinux.org&lt;/a&gt;. Otherwise, GPIO #23 is just #23 if you&amp;rsquo;re using the Pi Cobbler.&lt;/p&gt;
@@ -207,7 +207,7 @@ VIN --&amp;gt; 5V0
 
 &lt;p&gt;This is where the PPS pin we connected earlier comes into play. &lt;em&gt;1PPS&lt;/em&gt; or &lt;strong&gt;One Pulse Per Second&lt;/strong&gt;, is a signal that says &amp;ldquo;here is the precise start of a second!&amp;rdquo; A PPS signal is usually accurate to a few nanoseconds give or take whatever is in the path between sender and receiver.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/gps_1pps.png&#34; alt=&#34;1PPS signal&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/gps_1pps.png&#34; alt=&#34;1PPS signal&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Alone, 1PPS can only tell you the precise start of a second, so anything that wants to set time accurately needs &lt;em&gt;both&lt;/em&gt; NMEA data and 1PPS information.&lt;/p&gt;

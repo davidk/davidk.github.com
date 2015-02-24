@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atmega32u4 on open collector</title>
-    <link>http://open.konspyre.org/categories/atmega32u4/</link>
+    <link>http://localhost:1313/categories/atmega32u4/</link>
     <description>Recent content in Atmega32u4 on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 May 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://open.konspyre.org/categories/atmega32u4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/atmega32u4/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hardware Volume Controller</title>
-      <link>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
+      <link>http://localhost:1313/blog/2013-05-11-hardware-volume-controller/</link>
       <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
+      <guid>http://localhost:1313/blog/2013-05-11-hardware-volume-controller/</guid>
       <description>
 
 &lt;p&gt;&lt;em&gt;(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&amp;rsquo;m porting it here to keep everything in one place.&lt;/em&gt;&lt;/p&gt;
@@ -23,7 +23,7 @@
 
 &lt;p&gt;It wasn&amp;rsquo;t too long ago that volume control on a keyboard was a foreign concept. After it became a &amp;lsquo;feature&amp;rsquo;, that control seemed pretty normal. There is however, a slight modern exception now. Many mechanical keyboards (which have been coming back into style) don&amp;rsquo;t have them.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/overview.png&#34; alt=&#34;overview&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/overview.png&#34; alt=&#34;overview&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;In response, I hacked this together. It&amp;rsquo;s a volume controller which parses a rotary encoder&amp;rsquo;s input
@@ -139,7 +139,7 @@ and controls the volume (tested on OS X/Windows/Linux so far).&lt;/p&gt;
 
 &lt;p&gt;Solder all the wires together. Once the wires are attached to the perf, blob some solder to bridge the wiring and the encoder pins together.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/encoderwiring.png&#34; alt=&#34;encoder wiring&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/encoderwiring.png&#34; alt=&#34;encoder wiring&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;enclosure:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Enclosure&lt;/h3&gt;
@@ -152,7 +152,7 @@ and controls the volume (tested on OS X/Windows/Linux so far).&lt;/p&gt;
 
 &lt;p&gt;Once you&amp;rsquo;re done, dry fit the encoder but don&amp;rsquo;t screw it into place yet.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/enclosure.png&#34; alt=&#34;enclosure&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/enclosure.png&#34; alt=&#34;enclosure&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For the USB port, buttress the breakout board against the bottom of the enclosure and mark an approximate outline. Using a drill, begin drilling into the case (the hole won&amp;rsquo;t be large enough, but we&amp;rsquo;ll fix that in a bit). With the hole made, take your shears and carefully pry to make an opening wide enough for the USB plug to poke out. Continue to check the fit while slowly prying. Don&amp;rsquo;t worry if it looks too ugly. The USB plug covers up most of the mess.&lt;/p&gt;
@@ -190,12 +190,12 @@ problems finding your 32u4 breakout, run &lt;code&gt;dmesg&lt;/code&gt; and chec
 
 &lt;p&gt;Here is what my dmesg looks like:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/dmesg.png&#34; alt=&#34;dmesg&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/dmesg.png&#34; alt=&#34;dmesg&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Skipping all of that:&lt;/p&gt;
 
-&lt;p&gt;If you&amp;rsquo;re on OS X or Windows.. or just don&amp;rsquo;t like compiling, get the &lt;a href=&#34;http://open.konspyre.org/assets/code/volcontrol/MediaController.hex&#34;&gt;hex file&lt;/a&gt;, press the white bootloader button, and run the following (a working example for OS X):&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re on OS X or Windows.. or just don&amp;rsquo;t like compiling, get the &lt;a href=&#34;http://localhost:1313/assets/code/volcontrol/MediaController.hex&#34;&gt;hex file&lt;/a&gt;, press the white bootloader button, and run the following (a working example for OS X):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ avrdude -p atmega32u4 -P /dev/tty.usbmodem621 -c avr109 -U flash:w:MediaController.hex
 &lt;/code&gt;&lt;/pre&gt;
@@ -211,7 +211,7 @@ Next, poke the rotary encoder through the hole on the lid. Then secure it with t
 
 &lt;p&gt;Here is what mine looks like now; it is magnetically attached to the keyboard (no ill effects yet).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/completed.png&#34; alt=&#34;completed&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/completed.png&#34; alt=&#34;completed&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;attributions:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Attributions:&lt;/h3&gt;

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on open collector</title>
-    <link>http://open.konspyre.org/categories/tools/</link>
+    <link>http://localhost:1313/categories/tools/</link>
     <description>Recent content in Tools on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Apr 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://open.konspyre.org/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/tools/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Tools for 3D Printing: What do I get?</title>
-      <link>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</link>
+      <link>http://localhost:1313/blog/2013-04-07-tools-for-3d-printing/</link>
       <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</guid>
+      <guid>http://localhost:1313/blog/2013-04-07-tools-for-3d-printing/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;A pocket level ensures things are reasonably level before further calibration and fine tuning&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;

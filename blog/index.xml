@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on open collector</title>
-    <link>http://open.konspyre.org/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in Blogs on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Feb 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://open.konspyre.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Electroscope update</title>
-      <link>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
+      <link>http://localhost:1313/blog/2015-02-10-electroscope-update/</link>
       <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
+      <guid>http://localhost:1313/blog/2015-02-10-electroscope-update/</guid>
       <description>
 
 &lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
@@ -35,7 +35,7 @@ due to residual flux (of the water washable type).&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve had success by scrubbing down with isopropyl alcohol and reflowing
 again with hot air.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/electroscope_08_24.png&#34; alt=&#34;Updated electroscope&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/electroscope/electroscope_08_24.png&#34; alt=&#34;Updated electroscope&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;fabrication:7dde062d6c6ca61db731fda7916bef40&#34;&gt;Fabrication&lt;/h3&gt;
@@ -48,10 +48,10 @@ again with hot air.&lt;/p&gt;
     
     <item>
       <title>CR2032 tester</title>
-      <link>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
+      <link>http://localhost:1313/blog/2014-06-29-cr2032-tester-released/</link>
       <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
+      <guid>http://localhost:1313/blog/2014-06-29-cr2032-tester-released/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;
 &lt;/p&gt;
 
@@ -66,11 +66,11 @@ end-of-life on the discharge curve.&lt;/p&gt;
     
     <item>
       <title>Toy Electroscope</title>
-      <link>http://open.konspyre.org/blog/2014-05-30-electroscope/</link>
+      <link>http://localhost:1313/blog/2014-05-30-electroscope/</link>
       <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-05-30-electroscope/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
+      <guid>http://localhost:1313/blog/2014-05-30-electroscope/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Nearly a year ago, vk2zay posted a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM&#34;&gt;video on electrets&lt;/a&gt;. In it, he also shared
@@ -79,7 +79,7 @@ a design for a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM#t=152&
 &lt;p&gt;As a part of learning KiCAD earlier this year, I turned it into a PCB.&lt;/p&gt;
 
 &lt;p&gt;This is the latest result:
-&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/top2.png&#34; alt=&#34;Electroscope&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/assets/images/electroscope/top2.png&#34; alt=&#34;Electroscope&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;The exposed copper area accepts a combination of kapton+sticky copper tape+kapton for some rudimentary shielding. LEDs are 3mm, or
@@ -99,13 +99,13 @@ exposing those as well, &lt;a href=&#34;http://uploads.oshpark.com/uploads/proje
     
     <item>
       <title>Avrrrinator B Released</title>
-      <link>http://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</link>
+      <link>http://localhost:1313/blog/2014-05-19-avrrrinator-b-released/</link>
       <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</guid>
+      <guid>http://localhost:1313/blog/2014-05-19-avrrrinator-b-released/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_top_cables.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/avrb/images/avrrrinator_b_top_cables.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Bus Pirate 3 -&amp;gt; 2x AVR (ISP) adapter!&lt;/p&gt;
@@ -126,11 +126,11 @@ learning my lesson with RSTDISBL), hopefully someone will find a bit of utility 
     
     <item>
       <title>Panasonic PIR Breakout Board</title>
-      <link>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</link>
+      <link>http://localhost:1313/blog/2014-05-02-panasonic-breakout-board/</link>
       <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;
+      <guid>http://localhost:1313/blog/2014-05-02-panasonic-breakout-board/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve been working on some motion sensing stuff and stumbled across Panasonic&amp;rsquo;s PIR sensors. They&amp;rsquo;re not raw sensors, but come as a mostly all in one TO-5 package.&lt;/p&gt;
@@ -147,11 +147,11 @@ learning my lesson with RSTDISBL), hopefully someone will find a bit of utility 
     
     <item>
       <title>Avrrrinator Rev. A Updated</title>
-      <link>http://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</link>
+      <link>http://localhost:1313/blog/2014-03-10-avrrrinator-rev-a-updated/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
+      <guid>http://localhost:1313/blog/2014-03-10-avrrrinator-rev-a-updated/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;A mostly visual update to Avrrrinator Rev. A has been pushed to its &lt;a href=&#34;https://github.com/davidk/avrrrinator&#34;&gt;repository&lt;/a&gt;.&lt;/p&gt;
@@ -166,15 +166,15 @@ learning my lesson with RSTDISBL), hopefully someone will find a bit of utility 
     
     <item>
       <title>Stop, blink and roll*</title>
-      <link>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</link>
+      <link>http://localhost:1313/blog/2013-05-13-stop-blink-roll/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</guid>
+      <guid>http://localhost:1313/blog/2013-05-13-stop-blink-roll/</guid>
       <description>
 
 &lt;p&gt;A little bit of the cat got out of the bag some time ago:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/avrrrinator/6-seconds-avrrrinator.gif&#34; alt=&#34;6 seconds of AVR flashing&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/avrrrinator/6-seconds-avrrrinator.gif&#34; alt=&#34;6 seconds of AVR flashing&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;You&amp;rsquo;re looking at ~24 hours of continuous AVR flashing compressed down into 6 seconds.&lt;/p&gt;
@@ -367,10 +367,10 @@ void loop() {
     
     <item>
       <title>Hardware Volume Controller</title>
-      <link>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
+      <link>http://localhost:1313/blog/2013-05-11-hardware-volume-controller/</link>
       <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
+      <guid>http://localhost:1313/blog/2013-05-11-hardware-volume-controller/</guid>
       <description>
 
 &lt;p&gt;&lt;em&gt;(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&amp;rsquo;m porting it here to keep everything in one place.&lt;/em&gt;&lt;/p&gt;
@@ -379,7 +379,7 @@ void loop() {
 
 &lt;p&gt;It wasn&amp;rsquo;t too long ago that volume control on a keyboard was a foreign concept. After it became a &amp;lsquo;feature&amp;rsquo;, that control seemed pretty normal. There is however, a slight modern exception now. Many mechanical keyboards (which have been coming back into style) don&amp;rsquo;t have them.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/overview.png&#34; alt=&#34;overview&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/overview.png&#34; alt=&#34;overview&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;In response, I hacked this together. It&amp;rsquo;s a volume controller which parses a rotary encoder&amp;rsquo;s input
@@ -495,7 +495,7 @@ and controls the volume (tested on OS X/Windows/Linux so far).&lt;/p&gt;
 
 &lt;p&gt;Solder all the wires together. Once the wires are attached to the perf, blob some solder to bridge the wiring and the encoder pins together.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/encoderwiring.png&#34; alt=&#34;encoder wiring&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/encoderwiring.png&#34; alt=&#34;encoder wiring&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;enclosure:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Enclosure&lt;/h3&gt;
@@ -508,7 +508,7 @@ and controls the volume (tested on OS X/Windows/Linux so far).&lt;/p&gt;
 
 &lt;p&gt;Once you&amp;rsquo;re done, dry fit the encoder but don&amp;rsquo;t screw it into place yet.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/enclosure.png&#34; alt=&#34;enclosure&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/enclosure.png&#34; alt=&#34;enclosure&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For the USB port, buttress the breakout board against the bottom of the enclosure and mark an approximate outline. Using a drill, begin drilling into the case (the hole won&amp;rsquo;t be large enough, but we&amp;rsquo;ll fix that in a bit). With the hole made, take your shears and carefully pry to make an opening wide enough for the USB plug to poke out. Continue to check the fit while slowly prying. Don&amp;rsquo;t worry if it looks too ugly. The USB plug covers up most of the mess.&lt;/p&gt;
@@ -546,12 +546,12 @@ problems finding your 32u4 breakout, run &lt;code&gt;dmesg&lt;/code&gt; and chec
 
 &lt;p&gt;Here is what my dmesg looks like:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/dmesg.png&#34; alt=&#34;dmesg&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/dmesg.png&#34; alt=&#34;dmesg&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Skipping all of that:&lt;/p&gt;
 
-&lt;p&gt;If you&amp;rsquo;re on OS X or Windows.. or just don&amp;rsquo;t like compiling, get the &lt;a href=&#34;http://open.konspyre.org/assets/code/volcontrol/MediaController.hex&#34;&gt;hex file&lt;/a&gt;, press the white bootloader button, and run the following (a working example for OS X):&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re on OS X or Windows.. or just don&amp;rsquo;t like compiling, get the &lt;a href=&#34;http://localhost:1313/assets/code/volcontrol/MediaController.hex&#34;&gt;hex file&lt;/a&gt;, press the white bootloader button, and run the following (a working example for OS X):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ avrdude -p atmega32u4 -P /dev/tty.usbmodem621 -c avr109 -U flash:w:MediaController.hex
 &lt;/code&gt;&lt;/pre&gt;
@@ -567,7 +567,7 @@ Next, poke the rotary encoder through the hole on the lid. Then secure it with t
 
 &lt;p&gt;Here is what mine looks like now; it is magnetically attached to the keyboard (no ill effects yet).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/completed.png&#34; alt=&#34;completed&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/volcontrol/completed.png&#34; alt=&#34;completed&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;attributions:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Attributions:&lt;/h3&gt;
@@ -585,13 +585,13 @@ modding.&lt;/p&gt;
     
     <item>
       <title>Tools for 3D Printing: What do I get?</title>
-      <link>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</link>
+      <link>http://localhost:1313/blog/2013-04-07-tools-for-3d-printing/</link>
       <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</guid>
+      <guid>http://localhost:1313/blog/2013-04-07-tools-for-3d-printing/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;A pocket level ensures things are reasonably level before further calibration and fine tuning&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -722,11 +722,11 @@ modding.&lt;/p&gt;
     
     <item>
       <title>Printable divider for the 10164 storage drawer</title>
-      <link>http://open.konspyre.org/blog/2013-02-04-printable-divider/</link>
+      <link>http://localhost:1313/blog/2013-02-04-printable-divider/</link>
       <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-02-04-printable-divider/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/box_divider/box_divider_plate.png&#34; alt=&#34;Storage drawer divider&#34; /&gt;
+      <guid>http://localhost:1313/blog/2013-02-04-printable-divider/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/box_divider/box_divider_plate.png&#34; alt=&#34;Storage drawer divider&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;This is a 3D printable small drawer divider for the Akro-Mils 10164 parts cabinet.&lt;/p&gt;
@@ -749,13 +749,13 @@ modding.&lt;/p&gt;
     
     <item>
       <title>The Avrrrinator (Revision A)</title>
-      <link>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</link>
+      <link>http://localhost:1313/blog/2013-01-23-the-avrrrinator-revision-a/</link>
       <pubDate>Wed, 23 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</guid>
+      <guid>http://localhost:1313/blog/2013-01-23-the-avrrrinator-revision-a/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/avrrrinator/avrrrinator-revA.png&#34; alt=&#34;avrrrinator rev a&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/avrrrinator/avrrrinator-revA.png&#34; alt=&#34;avrrrinator rev a&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;A simple Bus Pirate v3 to AVR adapter. This was made to simplify wiring between the v3 Bus Pirate and an AVR ISP header. Tested with the &lt;a href=&#34;http://www.johngineer.com/projects/bb313/&#34;&gt;BB313&lt;/a&gt;, and ATTiny4313/85s.&lt;/p&gt;
@@ -825,13 +825,13 @@ your own Gerber files using Eagle and send them off, or use a service which proc
     
     <item>
       <title>3D Printed Bus Pirate v3.6 Case (DP6037)</title>
-      <link>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
+      <link>http://localhost:1313/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
+      <guid>http://localhost:1313/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Source files and general instructions for printing can be found &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -846,7 +846,7 @@ your own Gerber files using Eagle and send them off, or use a service which proc
 
 &lt;p&gt;The first few worked well, but were dependent on PLA &amp;lsquo;rods and spikes&amp;rsquo; (scrap filament cut and heated on a hotbed to straighten) and press-fitting to hold the top and bottom halves together. The USB header was also unexposed, which caused leveling issues (since it was higher than the rest of the board).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v1.png&#34; alt=&#34;Printed Bus Pirate Case, Reject&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/bus-pirate-cases/bus-pirate-case-v1.png&#34; alt=&#34;Printed Bus Pirate Case, Reject&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Going forward with several revisions, and many rejects later (about 12!), a decent case started appearing. Instead of PLA rods, a few 8mm long M3 machine screws and M3 hex nuts were used. They&amp;rsquo;re not very common, but the M3s seem to fit rather well while providing a good degree of stability.&lt;/p&gt;
@@ -855,12 +855,12 @@ your own Gerber files using Eagle and send them off, or use a service which proc
 
 &lt;p&gt;While the top looks unsecured, it must actually be screwed/threaded in from the bottom with a decent amount of force.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front.png&#34; alt=&#34;Printed Bus Pirate Case, Front&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/bus-pirate-cases/bus-pirate-case-v2-front.png&#34; alt=&#34;Printed Bus Pirate Case, Front&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Polyimide tape was used on the back to protect the pins from being shorted out. The reason for not covering them in CAD is because they can be &lt;a href=&#34;http://www.youtube.com/watch?feature=player_detailpage&amp;amp;v=N60WSQc-G_8#t=416s&#34;&gt;useful to probe&lt;/a&gt; with a multimeter at times.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-back.png&#34; alt=&#34;Printed Bus Pirate Case, Back&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/bus-pirate-cases/bus-pirate-case-v2-back.png&#34; alt=&#34;Printed Bus Pirate Case, Back&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Files are posted &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;here&lt;/a&gt; (CC-BY-SA; via original author), but may change in the future if I ever get around to beating the thing into a different shape.&lt;/p&gt;
@@ -873,7 +873,7 @@ your own Gerber files using Eagle and send them off, or use a service which proc
 
 &lt;p&gt;With a borosilicate glass bed:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored.png&#34; alt=&#34;Bus Pirate Case, mirrored shiny front&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored.png&#34; alt=&#34;Bus Pirate Case, mirrored shiny front&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;The exported STL file has been added to the &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;GitHub repository&lt;/a&gt;. Look for &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037/blob/master/dp6037-top-axis-flipped.stl?raw=true&#34;&gt;dp6037-top-axis-flipped.stl&lt;/a&gt; when grabbing it (or click that link).&lt;/p&gt;
@@ -882,12 +882,12 @@ your own Gerber files using Eagle and send them off, or use a service which proc
 
 &lt;p&gt;After a bit of recalibrating, this is what the case looks like in translucent blue. Not very high quality, but passable:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored-blue.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored-blue.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;1-3-13: Here is a better front panel (printed after mending the Z-axis into alignment), which will probably be the last update (in this series of days).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;1-4-13: Added a link to source files at top and shortened/corrected more text to sound less silly.&lt;/p&gt;
@@ -910,17 +910,17 @@ your own Gerber files using Eagle and send them off, or use a service which proc
     
     <item>
       <title>Raspberry Flavored Time (A NTP server on your Pi, tethered to a GPS unit)</title>
-      <link>http://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</link>
+      <link>http://localhost:1313/blog/2012-10-18-raspberry-pi-time-server/</link>
       <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</guid>
+      <guid>http://localhost:1313/blog/2012-10-18-raspberry-pi-time-server/</guid>
       <description>
 
 &lt;p&gt;2014/11/12: This article&amp;rsquo;s is in the process of being revisited. Please keep in mind that it is very old before using its instructions and resources.&lt;/p&gt;
 
 &lt;p&gt;GPS module connected to a Raspberry Pi (for accurate time keeping):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/ulti_gps_v3.png&#34; alt=&#34;Adafruit Ultimate GPS v3&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/ulti_gps_v3.png&#34; alt=&#34;Adafruit Ultimate GPS v3&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h2 id=&#34;a-primer-on-time:f0add37b64850e1a23640fa819df10c0&#34;&gt;A primer on time&lt;/h2&gt;
@@ -1086,12 +1086,12 @@ VIN --&amp;gt; 5V0
 
 &lt;p&gt;Wiring for the Adafruit Ultimate GPS v3 (RX-&amp;gt;TXD isn&amp;rsquo;t connected):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/ulti_gps_v3.png&#34; alt=&#34;Adafruit Ultimate GPS v3&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/ulti_gps_v3.png&#34; alt=&#34;Adafruit Ultimate GPS v3&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For the v2, with a wire soldered onto the 1PPS pad (the 1PPS wire goes to the blue one off image, which then leads to GPIO #23):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/ulti_gps_v2.png&#34; alt=&#34;Adafruit Ultimate GPS v2&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/ulti_gps_v2.png&#34; alt=&#34;Adafruit Ultimate GPS v2&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;If you need background on where GPIO pin 23 is located when connecting directly, see &lt;a href=&#34;http://elinux.org/RPi_Low-level_peripherals&#34;&gt;this page at elinux.org&lt;/a&gt;. Otherwise, GPIO #23 is just #23 if you&amp;rsquo;re using the Pi Cobbler.&lt;/p&gt;
@@ -1106,7 +1106,7 @@ VIN --&amp;gt; 5V0
 
 &lt;p&gt;This is where the PPS pin we connected earlier comes into play. &lt;em&gt;1PPS&lt;/em&gt; or &lt;strong&gt;One Pulse Per Second&lt;/strong&gt;, is a signal that says &amp;ldquo;here is the precise start of a second!&amp;rdquo; A PPS signal is usually accurate to a few nanoseconds give or take whatever is in the path between sender and receiver.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/gps_1pps.png&#34; alt=&#34;1PPS signal&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/gps_1pps.png&#34; alt=&#34;1PPS signal&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Alone, 1PPS can only tell you the precise start of a second, so anything that wants to set time accurately needs &lt;em&gt;both&lt;/em&gt; NMEA data and 1PPS information.&lt;/p&gt;
@@ -1391,10 +1391,10 @@ Adafruit GPS unit in the future, you may use this command to reset it to its def
     
     <item>
       <title>AVR Programming with Adafruit&#39;s Atmega32u4</title>
-      <link>http://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
+      <link>http://localhost:1313/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
+      <guid>http://localhost:1313/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Introduction&lt;/h2&gt;
@@ -1415,7 +1415,7 @@ breakout board.&lt;/p&gt;
 &lt;p&gt;A modified LUFA CDC bootloader comes pre-installed on these. This allows the chip to be programmed without an external programmer
 (at the cost of some memory space).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/atmega32u4.JPG&#34; alt=&#34;Atmega32u4 with ISP and programming reset line connected&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/atmega32u4.JPG&#34; alt=&#34;Atmega32u4 with ISP and programming reset line connected&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For programming breakout boards, a 6-pin cable is attached to the programmer. A wire is hooked up to B4 (which connects to the target AVR&amp;rsquo;s RESET pin).&lt;/p&gt;
@@ -1430,7 +1430,7 @@ ends the attempt). This gets worked around a little bit later by splicing into t
 
 &lt;p&gt;It is also possible to use a breadboard to program a chip. A completed layout looks something like this.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/32u4bb_programmer.png&#34; alt=&#34;Breadboard Atmega32u4 ISP programmer targeting ATmega328P&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/32u4bb_programmer.png&#34; alt=&#34;Breadboard Atmega32u4 ISP programmer targeting ATmega328P&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;There are problems with this setup:&lt;/p&gt;
@@ -1481,7 +1481,7 @@ B5   ----&amp;gt; XTAL1  (not needed for Arduino boards)
 pins (MISO/SCK/VCC/MOSI/GND) are broken out to the header. However, since both RESET lines are connected, the programmer itself will be reset if
 connected without modification.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/idc-reset-cut.png&#34; alt=&#34;Modified 6-pin IDC cable&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/idc-reset-cut.png&#34; alt=&#34;Modified 6-pin IDC cable&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Here is an example of the 6-pin cable which has been cut with a sharp knife. The line to cut is the 5th wire, starting from the red line
@@ -1492,7 +1492,7 @@ continuity test mode &amp;ndash; aka &amp;lsquo;beep beep beep&amp;rsquo; mode),
 connect the 6-pin header (red stripe to small dot, or box connector &amp;ldquo;tab&amp;rdquo; to the proper place). Poke the small wires coming out of the box to check.
 You may need to press with a bit of force.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/programmer_cable_test.png&#34; alt=&#34;Probing 6-pin IDC cable&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/programmer_cable_test.png&#34; alt=&#34;Probing 6-pin IDC cable&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For the absolutely paranoid, pulling apart the box connector may be a good idea.&lt;/p&gt;
@@ -1569,7 +1569,7 @@ $ git checkout atmega32u4-avrisp
 
 &lt;p&gt;If it all went well, you now have a programmer.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/32u4-to-arduino.png&#34; alt=&#34;ISP programming Arduino Uno&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/32u4-to-arduino.png&#34; alt=&#34;ISP programming Arduino Uno&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Remember: The single red wire goes from B4 to the Arduino&amp;rsquo;s RESET pin.&lt;/p&gt;
@@ -1622,7 +1622,7 @@ avrdude: safemode: Fuses OK
 avrdude done.  Thank you.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bb313_programmed.png&#34; alt=&#34;programming a bb313&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/bb313_programmed.png&#34; alt=&#34;programming a bb313&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;programming-without-using-sudo-or-root-linux:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Programming without using &amp;lsquo;sudo&amp;rsquo; or root (Linux)&lt;/h3&gt;
@@ -1665,10 +1665,10 @@ direction.&lt;/p&gt;
     
     <item>
       <title>music</title>
-      <link>http://open.konspyre.org/blog/2012-09-16-test-music/</link>
+      <link>http://localhost:1313/blog/2012-09-16-test-music/</link>
       <pubDate>Sun, 16 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2012-09-16-test-music/</guid>
+      <guid>http://localhost:1313/blog/2012-09-16-test-music/</guid>
       <description>&lt;p&gt;A bit of Ruby to start things off (I guess I should say &amp;lsquo;test&amp;rsquo; in here too).&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;#!/usr/bin/env ruby
