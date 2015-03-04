@@ -11,10 +11,10 @@
     
     <item>
       <title>Electroscope update</title>
-      <link>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
+      <link>http://open.konspyre.org/blog/2015/02/10/electroscope-update/</link>
       <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
+      <guid>http://open.konspyre.org/blog/2015/02/10/electroscope-update/</guid>
       <description>
 
 &lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
@@ -35,7 +35,7 @@ due to residual flux (of the water washable type).&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve had success by scrubbing down with isopropyl alcohol and reflowing
 again with hot air.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/electroscope/electroscope_08_24.png&#34; alt=&#34;Updated electroscope&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/electroscope_08_24.png&#34; alt=&#34;Updated electroscope&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;fabrication:7dde062d6c6ca61db731fda7916bef40&#34;&gt;Fabrication&lt;/h3&gt;
@@ -48,10 +48,10 @@ again with hot air.&lt;/p&gt;
     
     <item>
       <title>CR2032 tester</title>
-      <link>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
+      <link>http://open.konspyre.org/blog/2014/06/29/cr2032-tester/</link>
       <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
+      <guid>http://open.konspyre.org/blog/2014/06/29/cr2032-tester/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;
 &lt;/p&gt;
 
@@ -82,11 +82,11 @@ so you may see a bit of crossover into that from time to time.&lt;/p&gt;
     
     <item>
       <title>Toy Electroscope</title>
-      <link>http://open.konspyre.org/blog/2014-05-30-electroscope/</link>
+      <link>http://open.konspyre.org/blog/2014/05/30/toy-electroscope/</link>
       <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-05-30-electroscope/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
+      <guid>http://open.konspyre.org/blog/2014/05/30/toy-electroscope/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Nearly a year ago, vk2zay posted a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM&#34;&gt;video on electrets&lt;/a&gt;. In it, he also shared
@@ -95,7 +95,7 @@ a design for a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM#t=152&
 &lt;p&gt;As a part of learning KiCAD earlier this year, I turned it into a PCB.&lt;/p&gt;
 
 &lt;p&gt;This is the latest result:
-&lt;img src=&#34;/assets/images/electroscope/top2.png&#34; alt=&#34;Electroscope&#34; /&gt;
+&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/top2.png&#34; alt=&#34;Electroscope&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;The exposed copper area accepts a combination of kapton+sticky copper tape+kapton for some rudimentary shielding. LEDs are 3mm, or
@@ -115,13 +115,13 @@ exposing those as well, &lt;a href=&#34;http://uploads.oshpark.com/uploads/proje
     
     <item>
       <title>Avrrrinator B Released</title>
-      <link>http://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</link>
+      <link>http://open.konspyre.org/blog/2014/05/19/avrrrinator-b-released/</link>
       <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</guid>
+      <guid>http://open.konspyre.org/blog/2014/05/19/avrrrinator-b-released/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_top_cables.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_top_cables.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Bus Pirate 3 -&amp;gt; 2x AVR (ISP) adapter!&lt;/p&gt;
@@ -150,14 +150,14 @@ learning my lesson with RSTDISBL), hopefully someone will find a bit of utility 
 
 &lt;h2 id=&#34;silkscreen-text-bottom-squirrel-packing-a-ruby-laser-rod:e701188abab5b493e5915f1270430909&#34;&gt;Silkscreen text (bottom): &amp;ldquo;Squirrel Packing A Ruby Laser Rod&amp;rdquo;&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_top.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_top.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For the prior revision A release (single output, no logic level voltage translation), &lt;a href=&#34;http://open.konspyre.org/blog/2013/01/23/the-avrrrinator-revision-a/&#34;&gt;click here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This is revision B, adding two outputs behind buffers (which also offers logic level voltage shifting).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_early.png&#34; alt=&#34;avrrrinator rev b programmin&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_early.png&#34; alt=&#34;avrrrinator rev b programmin&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;With revision B, you can flash two attached projects (not at the same time!) without moving your cables around.&lt;/p&gt;
@@ -179,7 +179,7 @@ DIO&amp;gt; W
 
 &lt;p&gt;Revision B includes a cheat sheet. Just flip the board over.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_rear.png&#34; alt=&#34;reverse side avrb&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_rear.png&#34; alt=&#34;reverse side avrb&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Here are the general commands listed if you want to cut and paste:&lt;/p&gt;
@@ -497,7 +497,7 @@ avrdude done.  Thank you.
       <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://open.konspyre.org/pages/avra/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Documentation for the latest Avrrrinator Rev. A board is located &lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revA&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -506,11 +506,11 @@ avrdude done.  Thank you.
     
     <item>
       <title>Panasonic PIR Breakout Board</title>
-      <link>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</link>
+      <link>http://open.konspyre.org/blog/2014/05/02/panasonic-pir-breakout-board/</link>
       <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;
+      <guid>http://open.konspyre.org/blog/2014/05/02/panasonic-pir-breakout-board/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve been working on some motion sensing stuff and stumbled across Panasonic&amp;rsquo;s PIR sensors. They&amp;rsquo;re not raw sensors, but come as a mostly all in one TO-5 package.&lt;/p&gt;
@@ -527,11 +527,11 @@ avrdude done.  Thank you.
     
     <item>
       <title>Avrrrinator Rev. A Updated</title>
-      <link>http://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</link>
+      <link>http://open.konspyre.org/blog/2014/03/10/avrrrinator-rev.-a-updated/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
+      <guid>http://open.konspyre.org/blog/2014/03/10/avrrrinator-rev.-a-updated/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;A mostly visual update to Avrrrinator Rev. A has been pushed to its &lt;a href=&#34;https://github.com/davidk/avrrrinator&#34;&gt;repository&lt;/a&gt;.&lt;/p&gt;
@@ -546,15 +546,15 @@ avrdude done.  Thank you.
     
     <item>
       <title>Stop, blink and roll*</title>
-      <link>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</link>
+      <link>http://open.konspyre.org/blog/2013/05/13/stop-blink-and-roll/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</guid>
+      <guid>http://open.konspyre.org/blog/2013/05/13/stop-blink-and-roll/</guid>
       <description>
 
 &lt;p&gt;A little bit of the cat got out of the bag some time ago:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/avrrrinator/6-seconds-avrrrinator.gif&#34; alt=&#34;6 seconds of AVR flashing&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/avrrrinator/6-seconds-avrrrinator.gif&#34; alt=&#34;6 seconds of AVR flashing&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;You&amp;rsquo;re looking at ~24 hours of continuous AVR flashing compressed down into 6 seconds.&lt;/p&gt;
@@ -747,10 +747,10 @@ void loop() {
     
     <item>
       <title>Hardware Volume Controller</title>
-      <link>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
+      <link>http://open.konspyre.org/blog/2013/05/11/hardware-volume-controller/</link>
       <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
+      <guid>http://open.konspyre.org/blog/2013/05/11/hardware-volume-controller/</guid>
       <description>
 
 &lt;p&gt;&lt;em&gt;(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&amp;rsquo;m porting it here to keep everything in one place.&lt;/em&gt;&lt;/p&gt;
@@ -759,7 +759,7 @@ void loop() {
 
 &lt;p&gt;It wasn&amp;rsquo;t too long ago that volume control on a keyboard was a foreign concept. After it became a &amp;lsquo;feature&amp;rsquo;, that control seemed pretty normal. There is however, a slight modern exception now. Many mechanical keyboards (which have been coming back into style) don&amp;rsquo;t have them.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/volcontrol/overview.png&#34; alt=&#34;overview&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/overview.png&#34; alt=&#34;overview&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;In response, I hacked this together. It&amp;rsquo;s a volume controller which parses a rotary encoder&amp;rsquo;s input
@@ -875,7 +875,7 @@ and controls the volume (tested on OS X/Windows/Linux so far).&lt;/p&gt;
 
 &lt;p&gt;Solder all the wires together. Once the wires are attached to the perf, blob some solder to bridge the wiring and the encoder pins together.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/volcontrol/encoderwiring.png&#34; alt=&#34;encoder wiring&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/encoderwiring.png&#34; alt=&#34;encoder wiring&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;enclosure:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Enclosure&lt;/h3&gt;
@@ -888,7 +888,7 @@ and controls the volume (tested on OS X/Windows/Linux so far).&lt;/p&gt;
 
 &lt;p&gt;Once you&amp;rsquo;re done, dry fit the encoder but don&amp;rsquo;t screw it into place yet.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/volcontrol/enclosure.png&#34; alt=&#34;enclosure&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/enclosure.png&#34; alt=&#34;enclosure&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For the USB port, buttress the breakout board against the bottom of the enclosure and mark an approximate outline. Using a drill, begin drilling into the case (the hole won&amp;rsquo;t be large enough, but we&amp;rsquo;ll fix that in a bit). With the hole made, take your shears and carefully pry to make an opening wide enough for the USB plug to poke out. Continue to check the fit while slowly prying. Don&amp;rsquo;t worry if it looks too ugly. The USB plug covers up most of the mess.&lt;/p&gt;
@@ -926,7 +926,7 @@ problems finding your 32u4 breakout, run &lt;code&gt;dmesg&lt;/code&gt; and chec
 
 &lt;p&gt;Here is what my dmesg looks like:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/volcontrol/dmesg.png&#34; alt=&#34;dmesg&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/dmesg.png&#34; alt=&#34;dmesg&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Skipping all of that:&lt;/p&gt;
@@ -947,7 +947,7 @@ Next, poke the rotary encoder through the hole on the lid. Then secure it with t
 
 &lt;p&gt;Here is what mine looks like now; it is magnetically attached to the keyboard (no ill effects yet).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/volcontrol/completed.png&#34; alt=&#34;completed&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/volcontrol/completed.png&#34; alt=&#34;completed&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;attributions:a8f7eabc62bf84464c72c579bacd87aa&#34;&gt;Attributions:&lt;/h3&gt;
@@ -965,13 +965,13 @@ modding.&lt;/p&gt;
     
     <item>
       <title>Tools for 3D Printing: What do I get?</title>
-      <link>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</link>
+      <link>http://open.konspyre.org/blog/2013/04/07/tools-for-3d-printing-what-do-i-get/</link>
       <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</guid>
+      <guid>http://open.konspyre.org/blog/2013/04/07/tools-for-3d-printing-what-do-i-get/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;A pocket level ensures things are reasonably level before further calibration and fine tuning&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -1102,11 +1102,11 @@ modding.&lt;/p&gt;
     
     <item>
       <title>Printable divider for the 10164 storage drawer</title>
-      <link>http://open.konspyre.org/blog/2013-02-04-printable-divider/</link>
+      <link>http://open.konspyre.org/blog/2013/02/04/printable-divider-for-the-10164-storage-drawer/</link>
       <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-02-04-printable-divider/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/assets/images/box_divider/box_divider_plate.png&#34; alt=&#34;Storage drawer divider&#34; /&gt;
+      <guid>http://open.konspyre.org/blog/2013/02/04/printable-divider-for-the-10164-storage-drawer/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/box_divider/box_divider_plate.png&#34; alt=&#34;Storage drawer divider&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;This is a 3D printable small drawer divider for the Akro-Mils 10164 parts cabinet.&lt;/p&gt;
@@ -1129,13 +1129,13 @@ modding.&lt;/p&gt;
     
     <item>
       <title>The Avrrrinator (Revision A)</title>
-      <link>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</link>
+      <link>http://open.konspyre.org/blog/2013/01/23/the-avrrrinator-revision-a/</link>
       <pubDate>Wed, 23 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</guid>
+      <guid>http://open.konspyre.org/blog/2013/01/23/the-avrrrinator-revision-a/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/avrrrinator/avrrrinator-revA.png&#34; alt=&#34;avrrrinator rev a&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/avrrrinator/avrrrinator-revA.png&#34; alt=&#34;avrrrinator rev a&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;A simple Bus Pirate v3 to AVR adapter. This was made to simplify wiring between the v3 Bus Pirate and an AVR ISP header. Tested with the &lt;a href=&#34;http://www.johngineer.com/projects/bb313/&#34;&gt;BB313&lt;/a&gt;, and ATTiny4313/85s.&lt;/p&gt;
@@ -1205,13 +1205,13 @@ your own Gerber files using Eagle and send them off, or use a service which proc
     
     <item>
       <title>3D Printed Bus Pirate v3.6 Case (DP6037)</title>
-      <link>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
+      <link>http://open.konspyre.org/blog/2012/12/31/3d-printed-bus-pirate-v3.6-case-dp6037/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
+      <guid>http://open.konspyre.org/blog/2012/12/31/3d-printed-bus-pirate-v3.6-case-dp6037/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Source files and general instructions for printing can be found &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -1226,7 +1226,7 @@ your own Gerber files using Eagle and send them off, or use a service which proc
 
 &lt;p&gt;The first few worked well, but were dependent on PLA &amp;lsquo;rods and spikes&amp;rsquo; (scrap filament cut and heated on a hotbed to straighten) and press-fitting to hold the top and bottom halves together. The USB header was also unexposed, which caused leveling issues (since it was higher than the rest of the board).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus-pirate-case-v1.png&#34; alt=&#34;Printed Bus Pirate Case, Reject&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v1.png&#34; alt=&#34;Printed Bus Pirate Case, Reject&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Going forward with several revisions, and many rejects later (about 12!), a decent case started appearing. Instead of PLA rods, a few 8mm long M3 machine screws and M3 hex nuts were used. They&amp;rsquo;re not very common, but the M3s seem to fit rather well while providing a good degree of stability.&lt;/p&gt;
@@ -1235,12 +1235,12 @@ your own Gerber files using Eagle and send them off, or use a service which proc
 
 &lt;p&gt;While the top looks unsecured, it must actually be screwed/threaded in from the bottom with a decent amount of force.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus-pirate-case-v2-front.png&#34; alt=&#34;Printed Bus Pirate Case, Front&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front.png&#34; alt=&#34;Printed Bus Pirate Case, Front&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Polyimide tape was used on the back to protect the pins from being shorted out. The reason for not covering them in CAD is because they can be &lt;a href=&#34;http://www.youtube.com/watch?feature=player_detailpage&amp;amp;v=N60WSQc-G_8#t=416s&#34;&gt;useful to probe&lt;/a&gt; with a multimeter at times.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus-pirate-case-v2-back.png&#34; alt=&#34;Printed Bus Pirate Case, Back&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-back.png&#34; alt=&#34;Printed Bus Pirate Case, Back&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Files are posted &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;here&lt;/a&gt; (CC-BY-SA; via original author), but may change in the future if I ever get around to beating the thing into a different shape.&lt;/p&gt;
@@ -1253,7 +1253,7 @@ your own Gerber files using Eagle and send them off, or use a service which proc
 
 &lt;p&gt;With a borosilicate glass bed:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored.png&#34; alt=&#34;Bus Pirate Case, mirrored shiny front&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored.png&#34; alt=&#34;Bus Pirate Case, mirrored shiny front&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;The exported STL file has been added to the &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037&#34;&gt;GitHub repository&lt;/a&gt;. Look for &lt;a href=&#34;https://github.com/davidk/3D-Printable-BusPirate-DP6037/blob/master/dp6037-top-axis-flipped.stl?raw=true&#34;&gt;dp6037-top-axis-flipped.stl&lt;/a&gt; when grabbing it (or click that link).&lt;/p&gt;
@@ -1262,12 +1262,12 @@ your own Gerber files using Eagle and send them off, or use a service which proc
 
 &lt;p&gt;After a bit of recalibrating, this is what the case looks like in translucent blue. Not very high quality, but passable:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored-blue.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored-blue.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;1-3-13: Here is a better front panel (printed after mending the Z-axis into alignment), which will probably be the last update (in this series of days).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png&#34; alt=&#34;Bus Pirate Case, Translucent Blue, Improved&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;1-4-13: Added a link to source files at top and shortened/corrected more text to sound less silly.&lt;/p&gt;

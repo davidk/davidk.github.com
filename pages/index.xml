@@ -35,14 +35,14 @@ so you may see a bit of crossover into that from time to time.&lt;/p&gt;
 
 &lt;h2 id=&#34;silkscreen-text-bottom-squirrel-packing-a-ruby-laser-rod:e701188abab5b493e5915f1270430909&#34;&gt;Silkscreen text (bottom): &amp;ldquo;Squirrel Packing A Ruby Laser Rod&amp;rdquo;&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_top.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_top.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For the prior revision A release (single output, no logic level voltage translation), &lt;a href=&#34;http://open.konspyre.org/blog/2013/01/23/the-avrrrinator-revision-a/&#34;&gt;click here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This is revision B, adding two outputs behind buffers (which also offers logic level voltage shifting).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_early.png&#34; alt=&#34;avrrrinator rev b programmin&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_early.png&#34; alt=&#34;avrrrinator rev b programmin&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;With revision B, you can flash two attached projects (not at the same time!) without moving your cables around.&lt;/p&gt;
@@ -64,7 +64,7 @@ DIO&amp;gt; W
 
 &lt;p&gt;Revision B includes a cheat sheet. Just flip the board over.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_rear.png&#34; alt=&#34;reverse side avrb&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_rear.png&#34; alt=&#34;reverse side avrb&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Here are the general commands listed if you want to cut and paste:&lt;/p&gt;
@@ -382,7 +382,7 @@ avrdude done.  Thank you.
       <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://open.konspyre.org/pages/avra/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Documentation for the latest Avrrrinator Rev. A board is located &lt;a href=&#34;https://github.com/davidk/avrrrinator/tree/master/hardware/revA&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;

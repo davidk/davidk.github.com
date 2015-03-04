@@ -11,10 +11,10 @@
     
     <item>
       <title>Electroscope update</title>
-      <link>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
+      <link>http://open.konspyre.org/blog/2015/02/10/electroscope-update/</link>
       <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
+      <guid>http://open.konspyre.org/blog/2015/02/10/electroscope-update/</guid>
       <description>
 
 &lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
@@ -35,7 +35,7 @@ due to residual flux (of the water washable type).&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve had success by scrubbing down with isopropyl alcohol and reflowing
 again with hot air.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/assets/images/electroscope/electroscope_08_24.png&#34; alt=&#34;Updated electroscope&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/electroscope_08_24.png&#34; alt=&#34;Updated electroscope&#34; /&gt;
 &lt;/p&gt;
 
 &lt;h3 id=&#34;fabrication:7dde062d6c6ca61db731fda7916bef40&#34;&gt;Fabrication&lt;/h3&gt;
@@ -48,10 +48,10 @@ again with hot air.&lt;/p&gt;
     
     <item>
       <title>CR2032 tester</title>
-      <link>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
+      <link>http://open.konspyre.org/blog/2014/06/29/cr2032-tester/</link>
       <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
+      <guid>http://open.konspyre.org/blog/2014/06/29/cr2032-tester/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;
 &lt;/p&gt;
 
@@ -66,11 +66,11 @@ end-of-life on the discharge curve.&lt;/p&gt;
     
     <item>
       <title>Toy Electroscope</title>
-      <link>http://open.konspyre.org/blog/2014-05-30-electroscope/</link>
+      <link>http://open.konspyre.org/blog/2014/05/30/toy-electroscope/</link>
       <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-05-30-electroscope/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
+      <guid>http://open.konspyre.org/blog/2014/05/30/toy-electroscope/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Nearly a year ago, vk2zay posted a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM&#34;&gt;video on electrets&lt;/a&gt;. In it, he also shared
@@ -79,7 +79,7 @@ a design for a &lt;a href=&#34;http://www.youtube.com/watch?v=1DR-tTU8uIM#t=152&
 &lt;p&gt;As a part of learning KiCAD earlier this year, I turned it into a PCB.&lt;/p&gt;
 
 &lt;p&gt;This is the latest result:
-&lt;img src=&#34;/assets/images/electroscope/top2.png&#34; alt=&#34;Electroscope&#34; /&gt;
+&lt;img src=&#34;http://open.konspyre.org/assets/images/electroscope/top2.png&#34; alt=&#34;Electroscope&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;The exposed copper area accepts a combination of kapton+sticky copper tape+kapton for some rudimentary shielding. LEDs are 3mm, or
@@ -107,14 +107,14 @@ exposing those as well, &lt;a href=&#34;http://uploads.oshpark.com/uploads/proje
 
 &lt;h2 id=&#34;silkscreen-text-bottom-squirrel-packing-a-ruby-laser-rod:e701188abab5b493e5915f1270430909&#34;&gt;Silkscreen text (bottom): &amp;ldquo;Squirrel Packing A Ruby Laser Rod&amp;rdquo;&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_top.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_top.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;For the prior revision A release (single output, no logic level voltage translation), &lt;a href=&#34;http://open.konspyre.org/blog/2013/01/23/the-avrrrinator-revision-a/&#34;&gt;click here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This is revision B, adding two outputs behind buffers (which also offers logic level voltage shifting).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_early.png&#34; alt=&#34;avrrrinator rev b programmin&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_early.png&#34; alt=&#34;avrrrinator rev b programmin&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;With revision B, you can flash two attached projects (not at the same time!) without moving your cables around.&lt;/p&gt;
@@ -136,7 +136,7 @@ DIO&amp;gt; W
 
 &lt;p&gt;Revision B includes a cheat sheet. Just flip the board over.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/avrb/images/avrrrinator_b_rear.png&#34; alt=&#34;reverse side avrb&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_rear.png&#34; alt=&#34;reverse side avrb&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Here are the general commands listed if you want to cut and paste:&lt;/p&gt;
