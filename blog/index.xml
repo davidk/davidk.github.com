@@ -6,8 +6,27 @@
     <description>Recent content in Blogs on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Feb 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://open.konspyre.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The CR2032 tester in action</title>
+      <link>http://open.konspyre.org/blog/2015/03/12/the-cr2032-tester-in-action/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://open.konspyre.org/blog/2015/03/12/the-cr2032-tester-in-action/</guid>
+      <description>&lt;p&gt;I dug up this image of the CR2032 with a coin cell inserted.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/cr2032/cr2032_working.png&#34; alt=&#34;coin cell tester in action&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The coin cell doesn&amp;rsquo;t have to be inserted completely for the tester to work, which
+reduces test time (no need to mess up/bend fingernails prying the battery out too).&lt;/p&gt;
+
+&lt;p&gt;The next best thing to add to this design would probably be a plastic non-conductive
+ejection system. But i&amp;rsquo;m not in the business of testing lots of coin cell batteries. :)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Electroscope update</title>
@@ -1660,46 +1679,6 @@ direction.&lt;/p&gt;
 &lt;h3 id=&#34;updates:0bac2ba79e0556b332cd6050dd5cb073&#34;&gt;Updates&lt;/h3&gt;
 
 &lt;p&gt;01-15-13: Added information on using avrdude in a non-root fashion for Linux. Also threw in some magic to make console stuff pretty.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>music</title>
-      <link>http://open.konspyre.org/blog/2012/09/16/music/</link>
-      <pubDate>Sun, 16 Sep 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://open.konspyre.org/blog/2012/09/16/music/</guid>
-      <description>&lt;p&gt;A bit of Ruby to start things off (I guess I should say &amp;lsquo;test&amp;rsquo; in here too).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;#!/usr/bin/env ruby
-
-class Music
-  attr_accessor :id, :artist, :title, :album
-end
-
-songs = Array.new
-
-ARGV.each do |m|
-  f = File.open(m)
-  while (l = f.gets)
-    info = l.split(&#39;;&#39;)
-
-    if info.length &amp;gt; 0
-      song = Music.new
-      song.id = info[0]
-      song.title = info[1]
-      song.artist = info[2]
-      song.album = info[3]
-      songs &amp;lt;&amp;lt; song
-    end
-  end
-  f.close()
-end
-
-songs.each do |s|
-  puts &amp;quot;#{s.artist} - #{s.title} - #{s.album}&amp;quot;
-end
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
