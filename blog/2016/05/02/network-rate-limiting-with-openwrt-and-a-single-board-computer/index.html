@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Network Rate Limiting with OpenWRT and a Single Board Computer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+  <link href="http://open.konspyre.org/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://open.konspyre.org/css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://open.konspyre.org/"><h1 class="brand">open collector</h1></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          
+            <li><a href="/archives">Archives</a></li>
+          
+            <li><a href="/categories">Categories</a></li>
+          
+          <hr />
+          
+            <li><a href="/pages/about/index/">About</a></li>
+          
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://open.konspyre.org/"><h1 class="brand">open collector</h1></a><h3></h3></li>
+          <hr />
+          
+            <li><a href="/archives">Archives</a></li>
+          
+            <li><a href="/categories">Categories</a></li>
+          
+          <hr />
+          
+            <li><a href="/pages/about/index/">About</a></li>
+          
+					
+          <hr />
+          <div id="social-wrapper">
+           <li> <a href="https://twitter.com/keyglitch"><i class="fa fa-twitter-square"></i> @twitter</a></li>
+           
+           
+           <li> <a href="https://github.com/davidk/"><i class="fa fa-github-square"></i> github</a> </li>
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+  
+  <div id="article">
+  <div class="article-title"><a href="http://open.konspyre.org/blog/2016/05/02/network-rate-limiting-with-openwrt-and-a-single-board-computer/">Network Rate Limiting with OpenWRT and a Single Board Computer</a></div>
+  <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i>On 2016-05-02 and filed under:
+    
+    <a href="/categories/linux">linux</a>
+    
+    <a href="/categories/openwrt">openwrt</a>
+    
+    <a href="/categories/raspberrypi">raspberrypi</a>
+    
+  </small></p><hr/>
+  <div class="post">
+   
+
+<h1 id="notes">Notes</h1>
+
+<ul>
+<li>eth1 should be used for SQM. Using eth0 for SQM will lock up the interface when it applies the settings.</li>
+
+<li><p>Add:</p>
+
+<p>/usr/lib/sqm/run.sh start</p></li>
+</ul>
+
+<p>to /etc/init.d/sqm so that sqm is started at boot. Bridge detection doesn&rsquo;t work with SQM.</p>
+
+<h1 id="overview">Overview</h1>
+
+<p>This provides a walk-through of how to install OpenWRT on a Raspberry Pi, and how to configure it to rate limit traffic going through it.</p>
+
+<p>On my own home network, I have a pretty performant network, however</p>
+
+<p>When we&rsquo;re done, the Device to Internet path will look something like this:
+<code></p>
+
+<blockquote>
+<p><strong><em>Device to be managed</em></strong> -&gt; Ethernet Cable</p>
+
+<p>-&gt; Ethernet-To-USB Adapter -&gt; <strong><em>Single Board Computer</em></strong></p>
+
+<p>-&gt; Ethernet Cable -&gt; <strong><em>Internet (Router)</em></strong></p>
+</blockquote>
+
+<p></code></p>
+
+<p>We&rsquo;ll basically be physically inserting something in-between the network path to
+manage and shape the network traffic.</p>
+
+<p>And as far as software for doing this sort of thing, OpenWRT offers an amazing
+footprint-to-power ratio. This article will be using a <em>tiny</em> subset of what
+it offers, so do check out the packages for some inspiration.</p>
+
+<p>Look here to get the right image:
+<a href="https://wiki.openwrt.org/toh/raspberry_pi_foundation/raspberry_pi">https://wiki.openwrt.org/toh/raspberry_pi_foundation/raspberry_pi</a></p>
+
+<p>Follow the instructions to dd the image to an SD card, or use the Windows formatter tool
+(etc). OpenWRT is designed for routers with small amounts of flash space, so a huge SD
+card isn’t a necessity.</p>
+
+<p>If you&rsquo;re really lazy and want to cut corners: zcat openwrt-15.05.1-brcm2708-bcm2708-sdcard-vfat-ext4.img.gz &gt; /dev/mmcblk0</p>
+
+<p>When the prompt returns, eject the card and connect your Pi up (HDMI, keyboard, USB ethernet adapter+ethernet cables)</p>
+
+<h1 id="networking">Networking</h1>
+
+<p>It&rsquo;s possible to do everything without an HDMI setup too.</p>
+
+<p>The network on your Pi will be set (by default) to a static address of 192.168.1.1.</p>
+
+<p>It is possible to self­-assign your computer to something like 192.168.1.2 and then telnet to the Pi to complete setup.</p>
+
+<pre><code>telnet 192.168.1.1
+passwd
+vi /etc/config/network
+
+# Add the option proto ‘dhcp’ line to make your Pi ask for an IP address
+config interface 'lan'
+option ifname 'eth0'
+option type 'bridge'
+option proto 'dhcp'
+# option proto 'static'
+# option ipaddr '192.168.1.1'
+# option netmask '255.255.255.0'
+# option ip6assign '60'
+
+# Exit with &lt;ESC&gt; :wq
+
+ifup lan
+opkg update
+opkg install luci­ssl
+reboot
+</code></pre>
+
+<p>Your Pi will now reboot, and telnet <em>should</em> be inaccessible. Use ssh for all future interactions. The console should also spawn a password-less shell by hitting ‘enter’ after boot completes, so don&rsquo;t count on full security locally.</p>
+
+<p>Installing luci also gave us a web interface at <a href="https://192.168.1.1">https://192.168.1.1</a> ­­ The user is root by default, with the password you’ve set earlier.</p>
+
+<h1 id="add-a-usb-to-ethernet-adapter">Add a USB to Ethernet adapter</h1>
+
+<p>● There are plenty of USB to Ethernet adapters available.The most common ones are
+asix­based. Support in OpenWRT isn’t baked in, but provided via an installable kernel
+module.</p>
+
+<pre><code>opkg update
+opkg install kmod-usb-net-asix
+</code></pre>
+
+<p>If this didn’t work, it might help to install usbutils (opkg install usbutils) and use lsusb to get more information on your Ethernet adapter’s chipset.</p>
+
+<p>To figure out which ethernet interface the adapter has been assigned:</p>
+
+<pre><code>dmesg | grep asix
+[ .. snip .. ] asix 1­1.3:1.0 eth1: register ‘asix’ [ .. snip .. ]
+</code></pre>
+
+<p>Another method is to match up the MAC address (printed on the adapter usually), by abusing <code>grep</code> slightly:</p>
+
+<pre><code>grep : /sys/class/net/*/address
+</code></pre>
+
+<p>This lists all of the interfaces picked up by Linux. The MAC address for your adapter is typically printed on the rear.</p>
+
+<p>Application: SQM (fighting bufferbloat)
+Overview: <a href="https://wiki.openwrt.org/doc/howto/sqm">https://wiki.openwrt.org/doc/howto/sqm</a>
+Build bridges across all the things:</p>
+
+<p>The idea is to bridge things so clients get internet access through the USB­ Ethernet adapter.</p>
+
+<p>● Be sure to do this over a console so that you’re able to safely recover if something goes
+south (something always does).</p>
+
+<pre><code>vi /etc/config/network
+
+config interface 'loopback'
+    option ifname 'lo'
+    option proto 'static'
+    option ipaddr '127.0.0.1'
+    option netmask '255.0.0.0'
+
+config interface 'wan'
+    option proto 'dhcp'
+    option auto '1'
+    option delegate '0'
+    option _orig_ifname 'br-lan'
+    option _orig_bridge 'false'
+    option ifname 'eth0'
+    option defaultroute '1'
+    option peerdns '1'
+
+config interface 'lan'
+    option ifname 'eth0 eth1'
+    option type 'bridge'
+    option auto '1'
+</code></pre>
+
+<p>The next step will likely disconnect your SSH session</p>
+
+<pre><code>/etc/init.d/network reload
+</code></pre>
+
+<p>Installing SQM stuff:
+By default the standard QoS stuff isn’t installed. The instructions on the wiki recommend removing
+them if they are (qos­scripts and luci­app­qos).</p>
+
+<pre><code>opkg update &amp;&amp; opkg install luci­app­sqm
+https://192.168.1.X (where X is the DHCP address your Pi was assigned).
+</code></pre>
+
+<p>Log in with your username (probably ‘root’) and password.</p>
+
+<p>Go to Network ­&gt; SQM QoS</p>
+
+<p>Check ‘Enable this SQM Instance’</p>
+
+<p>Ensure the interface name is set to your Ethernet adapter</p>
+
+<p>Set the Download and Upload speed as desired</p>
+
+<p>Save &amp; Apply (bottom­right)</p>
+
+<p>Now test using your favourite speed test application. The speed should be limited to whatever you wish, and all things behind the USB-­Ethernet adapter should behave a little bit better.</p>
+
+<p>On my personal connection to the Internet (in the States), things are slow as compared to other, more progressively technological countries, so the shared Ethernet/USB bus doesn’t really seem to get saturated at all.</p>
+
+<p>* Of course, the real answer lies somewhere in the future. OpenWRT already features modern techniques for minimizing network latency (see <a href="https://wiki.openwrt.org/doc/howto/sqm">Smart Queue Management</a>), aka bufferbloat.</p>
+
+  </div>
+ </div>
+
+ <ul class="pager">
+     
+      &nbsp;<li class="next"><a href="http://open.konspyre.org/blog/2015/03/12/the-cr2032-tester-in-action/"> The CR2032 tester in action</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+      <p class="text-muted credit">eh?</p>
+    </footer>
+ 
+    <script src="http://open.konspyre.org/js/jquery-1.10.2.min.js"></script>
+    <script src="http://open.konspyre.org/js/bootstrap.min.js"></script>
+    <script src="http://open.konspyre.org/js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://open.konspyre.org/js/hc.js"></script>
+  
+  <script src="http://open.konspyre.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>
+

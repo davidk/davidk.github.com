@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>3D Printed Bus Pirate v3.6 Case (DP6037) &middot; open collector</title>
+    <meta name="author" content="davidk">
+    
+    <meta name="generator" content="Hugo 0.21-DEV" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="https://open.konspyre.org/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://open.konspyre.org/css/screen.css">
+    <link rel="stylesheet" href="https://open.konspyre.org/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
+
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="https://open.konspyre.org/">open collector</a></h1>
+	
+	
+	<h1 class="blog-subtitle">a curious base</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">About</a></li>
+      	
+    </ul>
+</nav>
+
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">3D Printed Bus Pirate v3.6 Case (DP6037)</h1>
+        <div class="post-meta">
+            <time datetime="31 December 2012">
+                31 December 2012
+            </time>
+        </div>
+    </header>
+
+    <section class="post-content">
+        
+
+<p><img src="/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png" alt="Bus Pirate Case, Translucent Blue, Improved" /></p>
+
+<p>Source files and general instructions for printing can be found <a href="https://github.com/davidk/3D-Printable-BusPirate-DP6037">here</a>.</p>
+
+<p>The Bus Pirate is a pretty fantastic device for sniffing around and working with new circuits. It can even <a href="http://dangerousprototypes.com/docs/Bus_Pirate_AVR_Programming">act as an AVR programmer</a>.</p>
+
+<p>After using one to fiddle with a few circuits, a case became necessary after seeing its value. While there are cases that can be purchased[1], a 3D printer was laying around waiting to be used.</p>
+
+<p>Finding only a <a href="http://www.thingiverse.com/thing:33517">case outline</a> (which proved to be extremely useful as a jumping off point) on Thingiverse, one needed to be made for the newer Bus Pirate.</p>
+
+<p>After several hours (mostly spent re-calibrating the 3D printer, untangling filament, and playing musical notes with the timing belts), the printer popped out several iterations of cases.</p>
+
+<p>The first few worked well, but were dependent on PLA &lsquo;rods and spikes&rsquo; (scrap filament cut and heated on a hotbed to straighten) and press-fitting to hold the top and bottom halves together. The USB header was also unexposed, which caused leveling issues (since it was higher than the rest of the board).</p>
+
+<p><img src="/assets/images/bus-pirate-cases/bus-pirate-case-v1.png" alt="Printed Bus Pirate Case, Reject" /></p>
+
+<p>Going forward with several revisions, and many rejects later (about 12!), a decent case started appearing. Instead of PLA rods, a few 8mm long M3 machine screws and M3 hex nuts were used. They&rsquo;re not very common, but the M3s seem to fit rather well while providing a good degree of stability.</p>
+
+<p>The assembly order from the bottom: M3 screw, bottom plate, PCB, hex nut, top plate.</p>
+
+<p>While the top looks unsecured, it must actually be screwed/threaded in from the bottom with a decent amount of force.</p>
+
+<p><img src="/assets/images/bus-pirate-cases/bus-pirate-case-v2-front.png" alt="Printed Bus Pirate Case, Front" /></p>
+
+<p>Polyimide tape was used on the back to protect the pins from being shorted out. The reason for not covering them in CAD is because they can be <a href="http://www.youtube.com/watch?feature=player_detailpage&amp;v=N60WSQc-G_8#t=416s">useful to probe</a> with a multimeter at times.</p>
+
+<p><img src="/assets/images/bus-pirate-cases/bus-pirate-case-v2-back.png" alt="Printed Bus Pirate Case, Back" /></p>
+
+<p>Files are posted <a href="https://github.com/davidk/3D-Printable-BusPirate-DP6037">here</a> (CC-BY-SA; via original author), but may change in the future if I ever get around to beating the thing into a different shape.</p>
+
+<p>If you have an idea for a change, or can design a better one go for it!</p>
+
+<h2 id="updates-errata">Updates &amp; Errata</h2>
+
+<p>1-1-13: For many printers with a perfectly flat print bed (borosilicate glass, metal, etc), it may be advantageous to mirror the output on one axis so that the top gets printed perfectly flat.</p>
+
+<p>With a borosilicate glass bed:</p>
+
+<p><img src="/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored.png" alt="Bus Pirate Case, mirrored shiny front" /></p>
+
+<p>The exported STL file has been added to the <a href="https://github.com/davidk/3D-Printable-BusPirate-DP6037">GitHub repository</a>. Look for <a href="https://github.com/davidk/3D-Printable-BusPirate-DP6037/blob/master/dp6037-top-axis-flipped.stl?raw=true">dp6037-top-axis-flipped.stl</a> when grabbing it (or click that link).</p>
+
+<p>1-2-13: Yellow? Who prints stuff in yellow? Don&rsquo;t you have blue?</p>
+
+<p>After a bit of recalibrating, this is what the case looks like in translucent blue. Not very high quality, but passable:</p>
+
+<p><img src="/assets/images/bus-pirate-cases/bus-pirate-case-v2-front-mirrored-blue.png" alt="Bus Pirate Case, Translucent Blue" /></p>
+
+<p>1-3-13: Here is a better front panel (printed after mending the Z-axis into alignment), which will probably be the last update (in this series of days).</p>
+
+<p><img src="/assets/images/bus-pirate-cases/bus_pirate_case_v2-front-mirrored-blue-improved.png" alt="Bus Pirate Case, Translucent Blue, Improved" /></p>
+
+<p>1-4-13: Added a link to source files at top and shortened/corrected more text to sound less silly.</p>
+
+<h2 id="notes-references">Notes &amp; References</h2>
+
+<p>[1] Note that buying an acrylic case is really the way to go. They <a href="http://www.seeedstudio.com/depot/bus-pirate-v36-acrylic-case-v1-dp6037-p-1229.html?cPath=178_184">sell for about $3</a>).. but if you have a 3D printer, it probably needs to earn its keep anyway.</p>
+
+<h2 id="thanks-resources">Thanks &amp; Resources</h2>
+
+<ul>
+<li><p>Thanks to <a href="http://www.thingiverse.com/thing:33517">XQL for creating the model, and publishing it on Thingiverse</a>.</p></li>
+
+<li><p>If you want to purchase your own Bus Pirate, plenty of vendors sell them. The particular one I bought was from Adafruit. Check out their <a href="https://www.adafruit.com/products/237">Bus Pirates here</a>.</p></li>
+</ul>
+
+<p>cheers!</p>
+
+    </section>
+
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/keyglitch" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/davidk" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2017 <a href="https://open.konspyre.org/">davidk</a>. </section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://open.konspyre.org/js/index.js"></script>
+<script src="https://open.konspyre.org/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>

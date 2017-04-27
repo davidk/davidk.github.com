@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Buspirate3 on open collector</title>
+    <link>https://open.konspyre.org/categories/buspirate3/</link>
+    <description>Recent content in Buspirate3 on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 May 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://open.konspyre.org/categories/buspirate3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stop, blink and roll*</title>
+      <link>https://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</guid>
+      <description>A little bit of the cat got out of the bag some time ago:
+You&amp;rsquo;re looking at ~24 hours of continuous AVR flashing compressed down into 6 seconds.
+While I won&amp;rsquo;t be releasing the connecting PCB just yet (i&amp;rsquo;m still beating down a few issues and refining the BOM), I thought it would be good to supply the scripts I used to do the actual time lapse since it was non-obvious from a &amp;ldquo;oh dear, the contest entry is due in &amp;lt;48 hours isn&amp;rsquo;t it.</description>
+    </item>
+    
+  </channel>
+</rss>

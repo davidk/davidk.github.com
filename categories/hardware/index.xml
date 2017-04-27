@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on open collector</title>
+    <link>https://open.konspyre.org/categories/hardware/</link>
+    <description>Recent content in Hardware on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Mar 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://open.konspyre.org/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The CR2032 tester in action</title>
+      <link>https://open.konspyre.org/blog/2015-03-12-cr2032-tester-in-action/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/blog/2015-03-12-cr2032-tester-in-action/</guid>
+      <description>&lt;p&gt;I dug up this image of the CR2032 tester with a coin cell inserted.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/cr2032/cr2032_working.png&#34; alt=&#34;coin cell tester in action&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Electroscope update</title>
+      <link>https://open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
+      <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
+      <description>&lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
+back for this version is 2014-08-24(!)
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CR2032 tester</title>
+      <link>https://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
+      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Toy Electroscope</title>
+      <link>https://open.konspyre.org/blog/2014-05-30-electroscope/</link>
+      <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/blog/2014-05-30-electroscope/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hardware Volume Controller</title>
+      <link>https://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
+      <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
+      <description>(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&amp;rsquo;m porting it here to keep everything in one place.
+And if you&amp;rsquo;re curious about the long-term viability of this build.. it is still kicking. The detents are a little less crisp now, but everything works a treat. (And now, back to your regularly scheduled post re-run!</description>
+    </item>
+    
+  </channel>
+</rss>

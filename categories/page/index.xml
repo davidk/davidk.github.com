@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Page on open collector</title>
+    <link>https://open.konspyre.org/categories/page/</link>
+    <description>Recent content in Page on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 May 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://open.konspyre.org/categories/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://open.konspyre.org/about/</link>
+      <pubDate>Sat, 31 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/about/</guid>
+      <description>Dave (also: davidk) is the person behind open collector.
+This is mostly where I document things that don&amp;rsquo;t belong on other sites (thingiverse, forums), or are too long form for other mediums (like tweets).
+For the other stuff, like 3D printables check out the things i&amp;rsquo;ve put up on Thingiverse, YouMagine, or Collector3 on GitHub. The printables are usually inconsistent between sites because it&amp;rsquo;s a pain to post everywhere.
+GitHub has a bunch of random pieces of code i&amp;rsquo;ve written over the years.</description>
+    </item>
+    
+  </channel>
+</rss>

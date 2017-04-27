@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberrypi on open collector</title>
+    <link>https://open.konspyre.org/categories/raspberrypi/</link>
+    <description>Recent content in Raspberrypi on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 May 2016 03:16:39 +0000</lastBuildDate>
+    
+	<atom:link href="https://open.konspyre.org/categories/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Network Rate Limiting with OpenWRT and a Single Board Computer</title>
+      <link>https://open.konspyre.org/blog/network-rate-limiting-with-openwrt-and-an-single-board-computer/</link>
+      <pubDate>Mon, 02 May 2016 03:16:39 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/blog/network-rate-limiting-with-openwrt-and-an-single-board-computer/</guid>
+      <description>Notes  eth1 should be used for SQM. Using eth0 for SQM will lock up the interface when it applies the settings. Add:
+/usr/lib/sqm/run.sh start
+  to /etc/init.d/sqm so that sqm is started at boot. Bridge detection doesn&amp;rsquo;t work with SQM.
+Overview This provides a walk-through of how to install OpenWRT on a Raspberry Pi, and how to configure it to rate limit traffic going through it.
+On my own home network, I have a pretty performant network, however</description>
+    </item>
+    
+  </channel>
+</rss>

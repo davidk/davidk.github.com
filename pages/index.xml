@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on open collector</title>
+    <link>https://open.konspyre.org/pages/</link>
+    <description>Recent content in Pages on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 May 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://open.konspyre.org/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://open.konspyre.org/pages/about/index/</link>
+      <pubDate>Sat, 31 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/pages/about/index/</guid>
+      <description>open collector is just one person, Dave.
+I&amp;rsquo;m a hobbyist hacking on MCUs, sensors, physical fabrication techniques, circuits, and on occasion, radio stuff.
+I have experience and work with Linux/Unix related stuff, so you may see a bit of crossover into that from time to time.</description>
+    </item>
+    
+    <item>
+      <title>Avrrrinator B</title>
+      <link>https://open.konspyre.org/pages/avrb/index/</link>
+      <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/pages/avrb/index/</guid>
+      <description>Silkscreen text (bottom): &amp;ldquo;Squirrel Packing A Ruby Laser Rod&amp;rdquo; For the prior revision A release (single output, no logic level voltage translation), click here.
+This is revision B, adding two outputs behind buffers (which also offers logic level voltage shifting).
+With revision B, you can flash two attached projects (not at the same time!) without moving your cables around.
+This could be mis-construed to be more awesome than it is, so just to be clear: This isn&amp;rsquo;t a jig for mass-manufacturing, but for projects where it is nice to compare and contrast among two devices.</description>
+    </item>
+    
+    <item>
+      <title>Avrrrinator Rev. A</title>
+      <link>https://open.konspyre.org/pages/avra/index/</link>
+      <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/pages/avra/index/</guid>
+      <description>Documentation for the latest Avrrrinator Rev. A board is located here.</description>
+    </item>
+    
+  </channel>
+</rss>

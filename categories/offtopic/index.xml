@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Offtopic on open collector</title>
+    <link>https://open.konspyre.org/categories/offtopic/</link>
+    <description>Recent content in Offtopic on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Sep 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://open.konspyre.org/categories/offtopic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>music</title>
+      <link>https://open.konspyre.org/blog/2012-09-16-test-music/</link>
+      <pubDate>Sun, 16 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/blog/2012-09-16-test-music/</guid>
+      <description>&lt;p&gt;A bit of Ruby to start things off (I guess I should say &amp;lsquo;test&amp;rsquo; in here too).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;#!/usr/bin/env ruby
+
+class Music
+  attr_accessor :id, :artist, :title, :album
+end
+
+songs = Array.new
+
+ARGV.each do |m|
+  f = File.open(m)
+  while (l = f.gets)
+    info = l.split(&#39;;&#39;)
+
+    if info.length &amp;gt; 0
+      song = Music.new
+      song.id = info[0]
+      song.title = info[1]
+      song.artist = info[2]
+      song.album = info[3]
+      songs &amp;lt;&amp;lt; song
+    end
+  end
+  f.close()
+end
+
+songs.each do |s|
+  puts &amp;quot;#{s.artist} - #{s.title} - #{s.album}&amp;quot;
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

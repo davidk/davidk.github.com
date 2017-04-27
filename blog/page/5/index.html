@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+    <link href="http://open.konspyre.org/blog/index.xml" rel="alternate" type="application/rss+xml" title="open collector" />
+    <link href="http://open.konspyre.org/blog/index.xml" rel="feed" type="application/rss+xml" title="open collector" />
+  
+  <link href="http://open.konspyre.org/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://open.konspyre.org/css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://open.konspyre.org/"><h1 class="brand">open collector</h1></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          
+            <li><a href="/archives">Archives</a></li>
+          
+            <li><a href="/categories">Categories</a></li>
+          
+          <hr />
+          
+            <li><a href="/pages/about/index/">About</a></li>
+          
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://open.konspyre.org/"><h1 class="brand">open collector</h1></a><h3></h3></li>
+          <hr />
+          
+            <li><a href="/archives">Archives</a></li>
+          
+            <li><a href="/categories">Categories</a></li>
+          
+          <hr />
+          
+            <li><a href="/pages/about/index/">About</a></li>
+          
+					
+          <hr />
+          <div id="social-wrapper">
+           <li> <a href="https://twitter.com/keyglitch"><i class="fa fa-twitter-square"></i> @twitter</a></li>
+           
+           
+           <li> <a href="https://github.com/davidk/"><i class="fa fa-github-square"></i> github</a> </li>
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+<div id="article">
+  
+  <div class="article-title"><a href="http://open.konspyre.org/blog/2012/09/16/music/">music</a></div>
+  <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i>On 2012-09-16 and filed under:
+    
+    <a href="/categories/offtopic">offtopic</a>
+    
+  </small></p><hr/>
+  <div class="post">
+    <p>A bit of Ruby to start things off (I guess I should say &lsquo;test&rsquo; in here too).</p>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+
+class Music
+  attr_accessor :id, :artist, :title, :album
+end
+
+songs = Array.new
+
+ARGV.each do |m|
+  f = File.open(m)
+  while (l = f.gets)
+    info = l.split(';')
+
+    if info.length &gt; 0
+      song = Music.new
+      song.id = info[0]
+      song.title = info[1]
+      song.artist = info[2]
+      song.album = info[3]
+      songs &lt;&lt; song
+    end
+  end
+  f.close()
+end
+
+songs.each do |s|
+  puts &quot;#{s.artist} - #{s.title} - #{s.album}&quot;
+end
+</code></pre>
+
+  </div>
+  
+  
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="/blog/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="/blog/page/4/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="/blog/">1</a></li>
+        
+        <li
+        ><a href="/blog/page/2/">2</a></li>
+        
+        <li
+        ><a href="/blog/page/3/">3</a></li>
+        
+        <li
+        ><a href="/blog/page/4/">4</a></li>
+        
+        <li
+        class="active"><a href="/blog/page/5/">5</a></li>
+        
+        <li
+        class="disabled">
+        <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="/blog/page/5/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+</div>
+    <footer>
+      <p class="text-muted credit">eh?</p>
+    </footer>
+ 
+    <script src="http://open.konspyre.org/js/jquery-1.10.2.min.js"></script>
+    <script src="http://open.konspyre.org/js/bootstrap.min.js"></script>
+    <script src="http://open.konspyre.org/js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://open.konspyre.org/js/hc.js"></script>
+  
+  <script src="http://open.konspyre.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>
+
