@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pir on open collector</title>
-    <link>http://open.konspyre.org/categories/pir/</link>
+    <link>open.konspyre.org/categories/pir/</link>
     <description>Recent content in Pir on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 May 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://open.konspyre.org/categories/pir/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="open.konspyre.org/categories/pir/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Panasonic PIR Breakout Board</title>
-      <link>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</link>
+      <link>open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</link>
       <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;&lt;/p&gt;</description>
+      <guid>open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;open.konspyre.org/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

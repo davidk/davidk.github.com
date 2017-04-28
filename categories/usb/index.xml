@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Usb on open collector</title>
-    <link>http://open.konspyre.org/categories/usb/</link>
+    <link>open.konspyre.org/categories/usb/</link>
     <description>Recent content in Usb on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Oct 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://open.konspyre.org/categories/usb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="open.konspyre.org/categories/usb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AVR Programming with Adafruit&#39;s Atmega32u4</title>
-      <link>http://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
+      <link>open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
+      <guid>open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;This guide will help you build your own &lt;a href=&#34;http://www.fourwalledcubicle.com/AVRISP.php&#34;&gt;LUFA AVRISP-MKII clone&lt;/a&gt; using the Adafruit Atmega32u4
