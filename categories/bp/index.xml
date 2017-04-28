@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bp on open collector</title>
-    <link>open.konspyre.org/categories/bp/</link>
+    <link>https://open.konspyre.org/categories/bp/</link>
     <description>Recent content in Bp on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 31 Dec 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="open.konspyre.org/categories/bp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://open.konspyre.org/categories/bp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>3D Printed Bus Pirate v3.6 Case (DP6037)</title>
-      <link>open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
+      <link>https://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
+      <guid>https://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
       <description>Source files and general instructions for printing can be found here.
 The Bus Pirate is a pretty fantastic device for sniffing around and working with new circuits. It can even act as an AVR programmer.
 After using one to fiddle with a few circuits, a case became necessary after seeing its value. While there are cases that can be purchased[1], a 3D printer was laying around waiting to be used.</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Volume Control on open collector</title>
-    <link>open.konspyre.org/categories/volume-control/</link>
+    <link>https://open.konspyre.org/categories/volume-control/</link>
     <description>Recent content in Volume Control on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 May 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="open.konspyre.org/categories/volume-control/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://open.konspyre.org/categories/volume-control/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hardware Volume Controller</title>
-      <link>open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
+      <link>https://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
       <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
+      <guid>https://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
       <description>(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&amp;rsquo;m porting it here to keep everything in one place.
 And if you&amp;rsquo;re curious about the long-term viability of this build.. it is still kicking. The detents are a little less crisp now, but everything works a treat. (And now, back to your regularly scheduled post re-run!</description>
     </item>

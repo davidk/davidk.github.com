@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>open collector</title>
-    <link>open.konspyre.org/</link>
+    <link>https://open.konspyre.org/</link>
     <description>Recent content on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Mar 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="open.konspyre.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://open.konspyre.org/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The CR2032 tester in action</title>
-      <link>open.konspyre.org/blog/2015-03-12-cr2032-tester-in-action/</link>
+      <link>https://open.konspyre.org/blog/2015-03-12-cr2032-tester-in-action/</link>
       <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2015-03-12-cr2032-tester-in-action/</guid>
+      <guid>https://open.konspyre.org/blog/2015-03-12-cr2032-tester-in-action/</guid>
       <description>&lt;p&gt;I dug up this image of the CR2032 tester with a coin cell inserted.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;open.konspyre.org/assets/images/cr2032/cr2032_working.png&#34; alt=&#34;coin cell tester in action&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/cr2032/cr2032_working.png&#34; alt=&#34;coin cell tester in action&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Electroscope update</title>
-      <link>open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
+      <link>https://open.konspyre.org/blog/2015-02-10-electroscope-update/</link>
       <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
+      <guid>https://open.konspyre.org/blog/2015-02-10-electroscope-update/</guid>
       <description>&lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
 back for this version is 2014-08-24(!)
 &lt;/p&gt;</description>
@@ -35,19 +35,19 @@ back for this version is 2014-08-24(!)
     
     <item>
       <title>CR2032 tester</title>
-      <link>open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
+      <link>https://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
       <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
+      <guid>https://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>open.konspyre.org/about/</link>
+      <link>https://open.konspyre.org/about/</link>
       <pubDate>Sat, 31 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/about/</guid>
+      <guid>https://open.konspyre.org/about/</guid>
       <description>Dave (also: davidk) is the person behind open collector.
 This is mostly where I document things that don&amp;rsquo;t belong on other sites (thingiverse, forums), or are too long form for other mediums (like tweets).
 For the other stuff, like 3D printables check out the things i&amp;rsquo;ve put up on Thingiverse, YouMagine, or Collector3 on GitHub. The printables are usually inconsistent between sites because it&amp;rsquo;s a pain to post everywhere.
@@ -56,46 +56,46 @@ GitHub has a bunch of random pieces of code i&amp;rsquo;ve written over the year
     
     <item>
       <title>Toy Electroscope</title>
-      <link>open.konspyre.org/blog/2014-05-30-electroscope/</link>
+      <link>https://open.konspyre.org/blog/2014-05-30-electroscope/</link>
       <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2014-05-30-electroscope/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;open.konspyre.org/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;&lt;/p&gt;</description>
+      <guid>https://open.konspyre.org/blog/2014-05-30-electroscope/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/electroscope/top-old-ver-kapton.png&#34; alt=&#34;Kaptonized&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Avrrrinator B Released</title>
-      <link>open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</link>
+      <link>https://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</link>
       <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;open.konspyre.org/avrb/images/avrrrinator_b_top_cables.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;&lt;/p&gt;</description>
+      <guid>https://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/avrb/images/avrrrinator_b_top_cables.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Panasonic PIR Breakout Board</title>
-      <link>open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</link>
+      <link>https://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</link>
       <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;open.konspyre.org/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;&lt;/p&gt;</description>
+      <guid>https://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Avrrrinator Rev. A Updated</title>
-      <link>open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</link>
+      <link>https://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;open.konspyre.org/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;&lt;/p&gt;</description>
+      <guid>https://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Stop, blink and roll*</title>
-      <link>open.konspyre.org/blog/2013-05-13-stop-blink-roll/</link>
+      <link>https://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2013-05-13-stop-blink-roll/</guid>
+      <guid>https://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</guid>
       <description>A little bit of the cat got out of the bag some time ago:
 You&amp;rsquo;re looking at ~24 hours of continuous AVR flashing compressed down into 6 seconds.
 While I won&amp;rsquo;t be releasing the connecting PCB just yet (i&amp;rsquo;m still beating down a few issues and refining the BOM), I thought it would be good to supply the scripts I used to do the actual time lapse since it was non-obvious from a &amp;ldquo;oh dear, the contest entry is due in &amp;lt;48 hours isn&amp;rsquo;t it.</description>
@@ -103,29 +103,29 @@ While I won&amp;rsquo;t be releasing the connecting PCB just yet (i&amp;rsquo;m 
     
     <item>
       <title>Hardware Volume Controller</title>
-      <link>open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
+      <link>https://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
       <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
+      <guid>https://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
       <description>(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&amp;rsquo;m porting it here to keep everything in one place.
 And if you&amp;rsquo;re curious about the long-term viability of this build.. it is still kicking. The detents are a little less crisp now, but everything works a treat. (And now, back to your regularly scheduled post re-run!</description>
     </item>
     
     <item>
       <title>Tools for 3D Printing: What do I get?</title>
-      <link>open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</link>
+      <link>https://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</link>
       <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;open.konspyre.org/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;&lt;/p&gt;</description>
+      <guid>https://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Printable divider for the 10164 storage drawer</title>
-      <link>open.konspyre.org/blog/2013-02-04-printable-divider/</link>
+      <link>https://open.konspyre.org/blog/2013-02-04-printable-divider/</link>
       <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2013-02-04-printable-divider/</guid>
+      <guid>https://open.konspyre.org/blog/2013-02-04-printable-divider/</guid>
       <description>This is a 3D printable small drawer divider for the Akro-Mils 10164 parts cabinet.
 The clear drawers themselves have a nice little slot for partitioning, so this divider fits right in and sits snugly without bowing out the drawer.
 While there are several dividers that come attached to the back of the cabinet (which are manually de-paneled by the end consumer), they&amp;rsquo;re very limited in quantity.
@@ -134,19 +134,19 @@ So if you have a 3D printer of some sort, or want to play with the model enough 
     
     <item>
       <title>The Avrrrinator (Revision A)</title>
-      <link>open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</link>
+      <link>https://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</link>
       <pubDate>Wed, 23 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;open.konspyre.org/assets/images/avrrrinator/avrrrinator-revA.png&#34; alt=&#34;avrrrinator rev a&#34; /&gt;&lt;/p&gt;</description>
+      <guid>https://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/avrrrinator/avrrrinator-revA.png&#34; alt=&#34;avrrrinator rev a&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>3D Printed Bus Pirate v3.6 Case (DP6037)</title>
-      <link>open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
+      <link>https://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
+      <guid>https://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</guid>
       <description>Source files and general instructions for printing can be found here.
 The Bus Pirate is a pretty fantastic device for sniffing around and working with new circuits. It can even act as an AVR programmer.
 After using one to fiddle with a few circuits, a case became necessary after seeing its value. While there are cases that can be purchased[1], a 3D printer was laying around waiting to be used.</description>
@@ -154,23 +154,23 @@ After using one to fiddle with a few circuits, a case became necessary after see
     
     <item>
       <title>Raspberry Flavored Time (A NTP server on your Pi, tethered to a GPS unit)</title>
-      <link>open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</link>
+      <link>https://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</link>
       <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</guid>
+      <guid>https://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</guid>
       <description>&lt;p&gt;2014/11/12: This article&amp;rsquo;s is in the process of being revisited. Please keep in mind that it is very old before using its instructions and resources.&lt;/p&gt;
 
 &lt;p&gt;GPS module connected to a Raspberry Pi (for accurate time keeping):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;open.konspyre.org/assets/images/ulti_gps_v3.png&#34; alt=&#34;Adafruit Ultimate GPS v3&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/ulti_gps_v3.png&#34; alt=&#34;Adafruit Ultimate GPS v3&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>AVR Programming with Adafruit&#39;s Atmega32u4</title>
-      <link>open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
+      <link>https://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
+      <guid>https://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;This guide will help you build your own &lt;a href=&#34;http://www.fourwalledcubicle.com/AVRISP.php&#34;&gt;LUFA AVRISP-MKII clone&lt;/a&gt; using the Adafruit Atmega32u4
@@ -179,10 +179,10 @@ breakout board.&lt;/p&gt;</description>
     
     <item>
       <title>music</title>
-      <link>open.konspyre.org/blog/2012-09-16-test-music/</link>
+      <link>https://open.konspyre.org/blog/2012-09-16-test-music/</link>
       <pubDate>Sun, 16 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>open.konspyre.org/blog/2012-09-16-test-music/</guid>
+      <guid>https://open.konspyre.org/blog/2012-09-16-test-music/</guid>
       <description>&lt;p&gt;A bit of Ruby to start things off (I guess I should say &amp;lsquo;test&amp;rsquo; in here too).&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;#!/usr/bin/env ruby
