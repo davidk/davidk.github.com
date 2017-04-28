@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Avr on open collector</title>
-    <link>https://open.konspyre.org/categories/avr/</link>
+    <link>http://open.konspyre.org/categories/avr/</link>
     <description>Recent content in Avr on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 May 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://open.konspyre.org/categories/avr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://open.konspyre.org/categories/avr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Avrrrinator B Released</title>
-      <link>https://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</link>
+      <link>http://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</link>
       <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/avrb/images/avrrrinator_b_top_cables.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;&lt;/p&gt;</description>
+      <guid>http://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avrb/images/avrrrinator_b_top_cables.png&#34; alt=&#34;avrrrinator rev b&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Avrrrinator Rev. A Updated</title>
-      <link>https://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</link>
+      <link>http://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;&lt;/p&gt;</description>
+      <guid>http://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/avra/images/avrrinator-a2-bp.png&#34; alt=&#34;avra&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>The Avrrrinator (Revision A)</title>
-      <link>https://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</link>
+      <link>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</link>
       <pubDate>Wed, 23 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/avrrrinator/avrrrinator-revA.png&#34; alt=&#34;avrrrinator rev a&#34; /&gt;&lt;/p&gt;</description>
+      <guid>http://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/avrrrinator/avrrrinator-revA.png&#34; alt=&#34;avrrrinator rev a&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>AVR Programming with Adafruit&#39;s Atmega32u4</title>
-      <link>https://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
+      <link>http://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
+      <guid>http://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;This guide will help you build your own &lt;a href=&#34;http://www.fourwalledcubicle.com/AVRISP.php&#34;&gt;LUFA AVRISP-MKII clone&lt;/a&gt; using the Adafruit Atmega32u4

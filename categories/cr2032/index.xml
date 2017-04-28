@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cr2032 on open collector</title>
-    <link>https://open.konspyre.org/categories/cr2032/</link>
+    <link>http://open.konspyre.org/categories/cr2032/</link>
     <description>Recent content in Cr2032 on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Mar 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://open.konspyre.org/categories/cr2032/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://open.konspyre.org/categories/cr2032/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The CR2032 tester in action</title>
-      <link>https://open.konspyre.org/blog/2015-03-12-cr2032-tester-in-action/</link>
+      <link>http://open.konspyre.org/blog/2015-03-12-cr2032-tester-in-action/</link>
       <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/blog/2015-03-12-cr2032-tester-in-action/</guid>
+      <guid>http://open.konspyre.org/blog/2015-03-12-cr2032-tester-in-action/</guid>
       <description>&lt;p&gt;I dug up this image of the CR2032 tester with a coin cell inserted.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/cr2032/cr2032_working.png&#34; alt=&#34;coin cell tester in action&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;http://open.konspyre.org/assets/images/cr2032/cr2032_working.png&#34; alt=&#34;coin cell tester in action&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>CR2032 tester</title>
-      <link>https://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
+      <link>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</link>
       <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
+      <guid>http://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
