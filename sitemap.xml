@@ -8,17 +8,17 @@
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2015-03-12-cr2032-tester-in-action/</loc>
+    <loc>https://open.konspyre.org/post/2015-03-12-cr2032-tester-in-action/</loc>
     <lastmod>2015-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2015-02-10-electroscope-update/</loc>
+    <loc>https://open.konspyre.org/post/2015-02-10-electroscope-update/</loc>
     <lastmod>2015-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2014-06-29-cr2032-tester-released/</loc>
+    <loc>https://open.konspyre.org/post/2014-06-29-cr2032-tester-released/</loc>
     <lastmod>2014-06-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,67 +28,67 @@
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2014-05-30-electroscope/</loc>
+    <loc>https://open.konspyre.org/post/2014-05-30-electroscope/</loc>
     <lastmod>2014-05-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2014-05-19-avrrrinator-b-released/</loc>
+    <loc>https://open.konspyre.org/post/2014-05-19-avrrrinator-b-released/</loc>
     <lastmod>2014-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2014-05-02-panasonic-breakout-board/</loc>
+    <loc>https://open.konspyre.org/post/2014-05-02-panasonic-breakout-board/</loc>
     <lastmod>2014-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2014-03-10-avrrrinator-rev-a-updated/</loc>
+    <loc>https://open.konspyre.org/post/2014-03-10-avrrrinator-rev-a-updated/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2013-05-13-stop-blink-roll/</loc>
+    <loc>https://open.konspyre.org/post/2013-05-13-stop-blink-roll/</loc>
     <lastmod>2013-05-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</loc>
+    <loc>https://open.konspyre.org/post/2013-05-11-hardware-volume-controller/</loc>
     <lastmod>2013-05-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/</loc>
+    <loc>https://open.konspyre.org/post/2013-04-07-tools-for-3d-printing/</loc>
     <lastmod>2013-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2013-02-04-printable-divider/</loc>
+    <loc>https://open.konspyre.org/post/2013-02-04-printable-divider/</loc>
     <lastmod>2013-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/</loc>
+    <loc>https://open.konspyre.org/post/2013-01-23-the-avrrrinator-revision-a/</loc>
     <lastmod>2013-01-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/</loc>
+    <loc>https://open.konspyre.org/post/2012-12-31-3d-printed-bus-pirate-case/</loc>
     <lastmod>2012-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</loc>
+    <loc>https://open.konspyre.org/post/2012-10-18-raspberry-pi-time-server/</loc>
     <lastmod>2012-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</loc>
+    <loc>https://open.konspyre.org/post/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</loc>
     <lastmod>2012-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/blog/2012-09-16-test-music/</loc>
+    <loc>https://open.konspyre.org/post/2012-09-16-test-music/</loc>
     <lastmod>2012-09-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -149,12 +149,6 @@
   <url>
     <loc>https://open.konspyre.org/categories/bb313/</loc>
     <lastmod>2013-05-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://open.konspyre.org/blog/</loc>
-    <lastmod>2015-03-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -267,12 +261,6 @@
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/categories/pi/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://open.konspyre.org/categories/pir/</loc>
     <lastmod>2014-05-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -309,20 +297,14 @@
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/categories/raspberry/</loc>
+    <loc>https://open.konspyre.org/categories/raspberry-pi/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://open.konspyre.org/categories/raspberry-pi/</loc>
-    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://open.konspyre.org/categories/rpi/</loc>
-    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

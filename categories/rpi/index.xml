@@ -6,17 +6,28 @@
     <description>Recent content in Rpi on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Oct 2012 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://open.konspyre.org/categories/rpi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>A modular Pi camera enclosure</title>
+      <link>https://open.konspyre.org/post/a-modular-raspberry-pi-camera-enclosure/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/post/a-modular-raspberry-pi-camera-enclosure/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/3dprinting/jointed_camera.png&#34; alt=&#34;Jointed RPi camera case with printed M2.5 bolts&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;TL;DR: I made a modular Raspberry Pi camera case; &lt;a href=&#34;https://www.youmagine.com/designs/modular-raspberry-pi-camera-cases&#34;&gt;it&amp;rsquo;s now released&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Raspberry Flavored Time (A NTP server on your Pi, tethered to a GPS unit)</title>
-      <link>https://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</link>
+      <link>https://open.konspyre.org/post/2012-10-18-raspberry-pi-time-server/</link>
       <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</guid>
+      <guid>https://open.konspyre.org/post/2012-10-18-raspberry-pi-time-server/</guid>
       <description>&lt;p&gt;2014/11/12: This article&amp;rsquo;s is in the process of being revisited. Please keep in mind that it is very old before using its instructions and resources.&lt;/p&gt;
 
 &lt;p&gt;GPS module connected to a Raspberry Pi (for accurate time keeping):&lt;/p&gt;

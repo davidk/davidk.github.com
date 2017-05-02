@@ -13,10 +13,10 @@
     
     <item>
       <title>Raspberry Flavored Time (A NTP server on your Pi, tethered to a GPS unit)</title>
-      <link>https://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</link>
+      <link>https://open.konspyre.org/post/2012-10-18-raspberry-pi-time-server/</link>
       <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/</guid>
+      <guid>https://open.konspyre.org/post/2012-10-18-raspberry-pi-time-server/</guid>
       <description>&lt;p&gt;2014/11/12: This article&amp;rsquo;s is in the process of being revisited. Please keep in mind that it is very old before using its instructions and resources.&lt;/p&gt;
 
 &lt;p&gt;GPS module connected to a Raspberry Pi (for accurate time keeping):&lt;/p&gt;

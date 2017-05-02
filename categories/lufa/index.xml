@@ -13,20 +13,20 @@
     
     <item>
       <title>Hardware Volume Controller</title>
-      <link>https://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</link>
+      <link>https://open.konspyre.org/post/2013-05-11-hardware-volume-controller/</link>
       <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/blog/2013-05-11-hardware-volume-controller/</guid>
+      <guid>https://open.konspyre.org/post/2013-05-11-hardware-volume-controller/</guid>
       <description>(5/11/13) - Hey fantastic reader: This is an old how-to (from 4/2/12!) that existed in its own self-contained repository. Reflecting back, this hack was kind of silly, but i&amp;rsquo;m porting it here to keep everything in one place.
 And if you&amp;rsquo;re curious about the long-term viability of this build.. it is still kicking. The detents are a little less crisp now, but everything works a treat. (And now, back to your regularly scheduled post re-run!</description>
     </item>
     
     <item>
       <title>AVR Programming with Adafruit&#39;s Atmega32u4</title>
-      <link>https://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
+      <link>https://open.konspyre.org/post/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</link>
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/blog/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
+      <guid>https://open.konspyre.org/post/2012-10-01-avr-programming-with-an-adafruit-atmega32u4/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;This guide will help you build your own &lt;a href=&#34;http://www.fourwalledcubicle.com/AVRISP.php&#34;&gt;LUFA AVRISP-MKII clone&lt;/a&gt; using the Adafruit Atmega32u4
