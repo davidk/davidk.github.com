@@ -6,7 +6,7 @@
     <description>Recent content in Categories on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Apr 2013 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Sep 2017 07:18:33 +0000</lastBuildDate>
     
 	<atom:link href="https://open.konspyre.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>3d</title>
       <link>https://open.konspyre.org/categories/3d/</link>
-      <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Sep 2017 07:18:33 +0000</pubDate>
       
       <guid>https://open.konspyre.org/categories/3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3d_printing</title>
+      <link>https://open.konspyre.org/categories/3d_printing/</link>
+      <pubDate>Fri, 15 Sep 2017 07:18:33 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/3d_printing/</guid>
       <description></description>
     </item>
     
@@ -203,7 +212,7 @@
     <item>
       <title>Hardware</title>
       <link>https://open.konspyre.org/categories/hardware/</link>
-      <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Sep 2017 07:18:33 +0000</pubDate>
       
       <guid>https://open.konspyre.org/categories/hardware/</guid>
       <description></description>
