@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://open.konspyre.org/post/2018-05-28-bug-hunting-in-fedoras-kicad/</loc>
+    <lastmod>2018-05-28T23:56:47+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://open.konspyre.org/post/2017-09-15-cases-for-feathers/</loc>
     <lastmod>2017-09-15T07:18:33+00:00</lastmod>
   </url>
@@ -176,6 +181,12 @@
   </url>
   
   <url>
+    <loc>https://open.konspyre.org/categories/bug/</loc>
+    <lastmod>2018-05-28T23:56:47+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://open.konspyre.org/categories/buspirate/</loc>
     <lastmod>2013-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -230,6 +241,12 @@
   </url>
   
   <url>
+    <loc>https://open.konspyre.org/categories/fedora/</loc>
+    <lastmod>2018-05-28T23:56:47+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://open.konspyre.org/categories/gps/</loc>
     <lastmod>2012-10-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -238,6 +255,12 @@
   <url>
     <loc>https://open.konspyre.org/categories/hardware/</loc>
     <lastmod>2017-09-15T07:18:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://open.konspyre.org/categories/kicad/</loc>
+    <lastmod>2018-05-28T23:56:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -279,7 +302,7 @@
   
   <url>
     <loc>https://open.konspyre.org/post/</loc>
-    <lastmod>2017-09-15T07:18:33+00:00</lastmod>
+    <lastmod>2018-05-28T23:56:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -380,7 +403,7 @@
   
   <url>
     <loc>https://open.konspyre.org/</loc>
-    <lastmod>2017-09-15T07:18:33+00:00</lastmod>
+    <lastmod>2018-05-28T23:56:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   

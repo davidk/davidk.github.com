@@ -6,10 +6,21 @@
     <description>Recent content in Posts on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Sep 2017 07:18:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 May 2018 23:56:47 +0000</lastBuildDate>
     
 	<atom:link href="https://open.konspyre.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bug Hunting (in Fedora&#39;s KiCad)</title>
+      <link>https://open.konspyre.org/post/2018-05-28-bug-hunting-in-fedoras-kicad/</link>
+      <pubDate>Mon, 28 May 2018 23:56:47 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/post/2018-05-28-bug-hunting-in-fedoras-kicad/</guid>
+      <description>&lt;p&gt;This post is a bit of a departure from the usual content here. I&amp;rsquo;m recollecting my experience working through a software bug based on intuition. Most of this has to be picked up over time, and doesn&amp;rsquo;t seem to be documented well enough (collectively) anywhere else.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Cases for Feathers</title>
