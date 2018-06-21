@@ -224,11 +224,31 @@ $ coredumpctl gdb kicad
 
 <p>This is a good guess, but it is still a swing in the dark without verification.</p>
 
+<h3 id="heading-straight-to-the-source">Heading straight to the source</h3>
+
+<p>KiCad&rsquo;s source code is online and open source. This means we can look up the line which caused the crash.</p>
+
+<p>Remember that the version of KiCad where this occurs is 4.0.7-3 &ndash; the KiCad source is mirrored <a href="https://github.com/KiCad/kicad-source-mirror">here</a>. If we click around a bit <a href="https://github.com/KiCad/kicad-source-mirror/releases">into the releases</a>, there&rsquo;s a release tag named 4.0.7; clicking the string of letters lets us dig into the repository at that point in time: <a href="https://github.com/KiCad/kicad-source-mirror/commit/9f35e384c1c4e3a2df0eba6196fe0664031cc5a9">9f35e38</a>.</p>
+
+<p>This is the latest commit though, which isn&rsquo;t relevant to our bug. We need to see the <code>drc.cpp</code> file &ndash; so clicking <a href="https://github.com/KiCad/kicad-source-mirror/tree/9f35e384c1c4e3a2df0eba6196fe0664031cc5a9">browse files</a> gets us to the tree. We can then head to <a href="https://github.com/KiCad/kicad-source-mirror/blob/9f35e384c1c4e3a2df0eba6196fe0664031cc5a9/pcbnew/drc.cpp">pcbnew/drc.cpp</a> and scroll down to <a href="https://github.com/KiCad/kicad-source-mirror/blob/9f35e384c1c4e3a2df0eba6196fe0664031cc5a9/pcbnew/drc.cpp#L456">line 456</a></p>
+
+<p>Here&rsquo;s the version that caused the crash (with -D_GLIBCXX_ASSERTIONS set)</p>
+
+<pre><code class="language-C++">	D_PAD** listEnd = &amp;sortedPads[ sortedPads.size() ];
+</code></pre>
+
+<p>And here is the fixed, <a href="https://github.com/KiCad/kicad-source-mirror/blob/147c1e60880a5234ad800c707fd7471485558267/pcbnew/drc.cpp#L692">upstream version</a>:</p>
+
+<pre><code class="language-C++">	D_PAD** listEnd = &amp;sortedPads[0] + sortedPads.size();
+</code></pre>
+
+<p>This change avoids the assertation failure since the range is aggressively checked inside of the subscript <code>&amp;sortedPads[ sortedPads.size() ];</code>. Instead, the starting address of sortedPads is added together with the size of sortedPads to get a similar result.</p>
+
 <h3 id="bug-verification">Bug verification</h3>
 
 <p>Verifying this (aka, setting up an entire build system) is a bit much for this post. (I did it to increase my confidence that this flag was the root cause.)</p>
 
-<p>Building one to test anyway? Don&rsquo;t make an entire containerized build system from scratch like I did. And developers might ask to &lsquo;test it with this patch&rsquo; &ndash; so look for a tool that makes patching/recompiling repeatable.</p>
+<p>Building one to test anyway? Don&rsquo;t make an entire containerized build system from scratch like I did. Look for a tool that makes patching/recompiling repeatable as you&rsquo;ll most likely have to test any changes that a developer asks for.</p>
 
 <p>For Fedora, <a href="https://github.com/rpm-software-management/mock/wiki">pull this thread</a>, and <a href="https://fedoraproject.org/wiki/Using_Mock_to_test_package_builds#How_do_I_use_Mock.3F">this thread as well</a>.</p>
 
