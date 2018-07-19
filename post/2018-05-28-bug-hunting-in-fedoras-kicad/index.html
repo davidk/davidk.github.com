@@ -237,13 +237,6 @@ $ coredumpctl gdb kicad
 <pre><code class="language-C++">	D_PAD** listEnd = &amp;sortedPads[ sortedPads.size() ];
 </code></pre>
 
-<p>And here is the fixed, <a href="https://github.com/KiCad/kicad-source-mirror/blob/147c1e60880a5234ad800c707fd7471485558267/pcbnew/drc.cpp#L692">upstream version</a>:</p>
-
-<pre><code class="language-C++">	D_PAD** listEnd = &amp;sortedPads[0] + sortedPads.size();
-</code></pre>
-
-<p>This change avoids the assertation failure since the range is aggressively checked inside of the subscript <code>&amp;sortedPads[ sortedPads.size() ];</code>. Instead, the starting address of sortedPads is added together with the size of sortedPads to get a similar result.</p>
-
 <h3 id="bug-verification">Bug verification</h3>
 
 <p>Verifying this (aka, setting up an entire build system) is a bit much for this post. (I did it to increase my confidence that this flag was the root cause.)</p>
@@ -267,6 +260,15 @@ $ coredumpctl gdb kicad
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you&#39;re reading this in the future, (and stuck in this particular hole/crash), switch over to the KiCad nightlies for Fedora 28: <a href="https://t.co/0Y8P2NPm6H">https://t.co/0Y8P2NPm6H</a></p>&mdash; dave (@keyglitch) <a href="https://twitter.com/keyglitch/status/998236517838409728?ref_src=twsrc%5Etfw">May 20, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+
+<h3 id="the-fix">The fix</h3>
+
+<p>Here is the fixed, <a href="https://github.com/KiCad/kicad-source-mirror/blob/147c1e60880a5234ad800c707fd7471485558267/pcbnew/drc.cpp#L692">upstream version</a>:</p>
+
+<pre><code class="language-C++">	D_PAD** listEnd = &amp;sortedPads[0] + sortedPads.size();
+</code></pre>
+
+<p>This change avoids the assertation failure since the range is aggressively checked inside of the subscript <code>&amp;sortedPads[ sortedPads.size() ];</code>. Instead, the starting address of sortedPads is added together with the size of sortedPads to get a similar result.</p>
 
 <h3 id="conclusion">Conclusion</h3>
 

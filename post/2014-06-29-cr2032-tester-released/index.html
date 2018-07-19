@@ -72,10 +72,13 @@
     <section class="post-content">
         <p><img src="https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png" alt="CR2032 tester" /></p>
 
-<p>I was able to release a small breakout board based on a sample I received long ago from Texas Instruments.
-It is a CR2032 tester, based on the pretty accurate TPS3809L30DBVR part (which was derived
-from eevblog&rsquo;s µCurrent). The LED stops lighting up somewhere slightly at or below 2.64v, where most CR2032 coin cells enter
-end-of-life on the discharge curve.</p>
+<p>This is a small breakout board based on a sample I received long ago from Texas Instruments. It&rsquo;s a CR2032 tester, based on the pretty accurate <code>TPS3809L30DBVR</code> part (derived from eevblog&rsquo;s µCurrent project). The LED stops lighting up somewhere slightly at or below 2.64v, where most CR2032 coin cells enter end-of-life on the discharge curve.</p>
+
+<p>A test load isn&rsquo;t included in the design (these are usually 6.5k, 15k or 1M resistors—depending on datasheet/manufacturer), but can be added in parallel via the +3V and GND through-holes.</p>
+
+<p><img src="/assets/images/cr2032/cr2032_working.png" alt="Coin cell tester with a battery inserted" /></p>
+
+<p>To use the coin cell tester, the coin cell only has to be partially inserted. The battery can seat fully, but it&rsquo;ll be more difficult to take out later (eject it by pushing something (preferably non-conductive) through the holes on the other side).</p>
 
 <p><a href="https://github.com/davidk/cr2032-tester">Read more and get it made on the project page</a>.</p>
     </section>
