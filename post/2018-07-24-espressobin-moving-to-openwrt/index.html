@@ -102,14 +102,14 @@ $ git log --graph --oneline u-boot-2015.01-armada-17.02 u-boot-2017.03-armada-17
 
 <p>To update, download the U-Boot images from <a href="http://espressobin.net/tech-spec/">http://espressobin.net/tech-spec/</a> and select <a href="https://espressobin.net/wp-content/uploads/2018/07/ebin-17.10-bootloader.zip">U-Boot 2017.03-armada-17.10</a>. The 1GB and 2GB (DDR3) versions are both inside the zip file.</p>
 
-<p>To figure out which ESPRESSObin flavor you have, check the U-Boot log. U-Boot usually prints this information out in the header as power is applied (to scroll up in a screen session, hit CTRL+[ and use your arrow keys/PGUP/PGDOWN &ndash; to exit, tap ESC a few times])</p>
+<p>To figure out which ESPRESSObin flavor you have, check the U-Boot log. U-Boot usually prints this information out in the header as power is applied (to scroll up in a screen session, hit CTRL+[ and use your arrow keys/PGUP/PGDOWN &ndash; to exit, tap ESC a few times)</p>
 
 <p>With power removed and USB cable connected to a computer:</p>
 
 <pre><code>$ sudo screen /dev/ttyUSB0 115200
 </code></pre>
 
-<p>After the session is established, apply power and wait for things to scroll by (use the <code>CTRL+[</code> command to view scrollback])</p>
+<p>After the session is established, apply power and wait for things to scroll by (use the <code>CTRL+[</code> command to view scrollback)</p>
 
 <pre><code>U-Boot 2015.01-armada-17.02.0-g48dc978 (May 18 2017 - 17:28:01)
 
@@ -130,7 +130,7 @@ DRAM:  1 GiB
 
 <p>Releases for the ESPRESSObin are filed under <code>releases/$version/targets/mvebu/cortexa53/</code>.</p>
 
-<p>Grab 18.06.0-rc2&rsquo;s <code>globalscale-espressobin-ext4-sdcard.img.gz</code> and verify it against the sha512 checksum.</p>
+<p>Grab 18.06.0-rc2&rsquo;s (or later) <code>globalscale-espressobin-ext4-sdcard.img.gz</code> and verify it against the sha512 checksum.</p>
 
 <pre><code>$ wget https://downloads.openwrt.org/releases/18.06.0-rc2/targets/mvebu/cortexa53/openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
 
@@ -138,7 +138,7 @@ $ sha256sum openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdc
 d883824bb0e9a23b46437114cb3d03e096041dd4327f8b2e311dd3a3e7becf06  openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
 </code></pre>
 
-<p>Insert the microSD card that OpenWRT will live on, and write this out, carefully:</p>
+<p>Insert the microSD card that OpenWRT will live on, and write it out, carefully noting the block device:</p>
 
 <pre><code>$ sudo lsblk
 # [ ... locate your microSD card's sd[a|b|c|e|f] block device ... ]
@@ -148,9 +148,12 @@ $ sudo su
 # eject /dev/sdSomeLetterHereFromAbove
 </code></pre>
 
-<p>Grab the ESPRESSObin, insert the microSD card, microUSB (for console). Run this first before applying power:</p>
+<p>Grab the ESPRESSObin, insert the microSD card, and microUSB cable (for console). Run this first before applying power:</p>
 
-<pre><code># screen /dev/ttyUSB0 115200
+<pre><code># /dev/ttyUSB0 might be different on your machine, dmesg will
+# likely have more information if that is the case
+#
+# screen /dev/ttyUSB0 115200
 </code></pre>
 
 <p>After the serial console is established, apply power. If the ESPRESSObin boots directly to Linux, great! If not, some boot settings may need to be adjusted; you might see something on the order of:</p>
@@ -175,9 +178,13 @@ Marvell&gt;&gt; reset
 
 <h3 id="conclusion">Conclusion</h3>
 
-<p>That&rsquo;s it! Now that ESPRESSObin is supported in OpenWRT&rsquo;s mainline, you&rsquo;ll always be able to update it directly as releases come out.</p>
+<p>That&rsquo;s it! Now that ESPRESSObin is supported in OpenWRT&rsquo;s mainline, you&rsquo;ll be able to update it as releases come out.</p>
 
-<p>I&rsquo;d like to thank any current users for trying out my LEDE build. More work that i&rsquo;ll admit was put into unraveling the build system and figuring out how to containerize it in a repeatable fashion. It is awesome that others got to use that work and benefit from it.</p>
+<p>I&rsquo;d like to thank any current users of the LEDE build. More work that i&rsquo;ll admit was put into unraveling the build system and figuring out how to containerize it in a repeatable fashion.</p>
+
+<p>It is awesome that others got to benefit from it, even if it was only for a short time.</p>
+
+<p>Until next time, ✌🏼</p>
     </section>
 
     
