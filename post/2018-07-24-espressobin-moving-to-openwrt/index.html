@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>ESPRESSObin: Moving to OpenWRT &middot; open collector</title>
+    <meta name="author" content="davidk">
+    
+    <meta name="generator" content="Hugo 0.38-DEV" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="https://open.konspyre.org/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://open.konspyre.org/css/screen.css">
+    <link rel="stylesheet" href="https://open.konspyre.org/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="https://open.konspyre.org">open collector</a></h1>
+	
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">About</a></li>
+      	
+    </ul>
+</nav>
+
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">ESPRESSObin: Moving to OpenWRT</h1>
+        <div class="post-meta">
+            <time datetime="24 July 2018">
+                24 July 2018
+            </time>
+        </div>
+    </header>
+
+    <section class="post-content">
+        <p>I&rsquo;ve maintained a <a href="https://github.com/davidk/espressobin-lede-sqm-cake">build of LEDE</a> for the <a href="http://espressobin.net/">ESPRESSObin</a> single board computer. Things have changed, and it&rsquo;s now time to sunset the build.</p>
+
+<p></p>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>Time capsule warning: <em>If you&rsquo;re reading this far beyond July 2018, this post&rsquo;s instructions are probably really out of date!</em></p>
+
+<p>If you don&rsquo;t know of the <a href="http://espressobin.net">ESPRESSObin, it&rsquo;s a single board computer</a> with properties that make it ideal for a customizble home router.</p>
+
+<p>This <a href="https://github.com/davidk/espressobin-lede-sqm-cake">LEDE custom build</a> was made to take advantage of the <a href="https://www.bufferbloat.net/projects/codel/wiki/CakeTechnical/">Cake queuing discipline</a>, which attempts to stabilize latency during high bandwidth usage. At the time it was made, <a href="https://openwrt.org">OpenWRT</a> did not support Cake, but the newer LEDE fork did.</p>
+
+<p>I didn&rsquo;t advertise it anywhere (same as the <a href="https://www.thingiverse.com/thing:2408222">ESPRESSObin case</a> which weirdly <a href="https://hackaday.com/2018/04/12/building-the-perfect-home-router/">ended up on hackaday</a>), but several users found it useful enough to give it a spin.</p>
+
+<p><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=584d7c53bd2d286a71fe5e8244624f59c529cb26">OpenWRT is now supporting the ESPRESSObin upstream</a>, so I am quite pleased to sunset my own build and build scripts. Everything, it appears, including Cake SQM, is now supported by people far more qualified to do it. Please use that instead for security updates, and timely updates in general.</p>
+
+<p>The following are instructions that I followed to migrate my personal ESPRESSObin to OpenWRT (which has now merged with LEDE). Hopefully these instructions help anyone wishing to similiarly migrate.</p>
+
+<p>Note: Instructions will vary as time moves along. The source of truth in the future will always be the <a href="http://wiki.espressobin.net/tiki-index.php">ESPRESSObin wiki</a>, OpenWRT, and any associated git commits.</p>
+
+<h3 id="updating-u-boot-optional">Updating U-Boot (Optional)</h3>
+
+<p>Since the ESPRESSObin started shipping (with version: <code>U-Boot 2015.01-armada-17.02.0-g48dc978</code>), U-Boot has been updated quite a bit. As of this writing, the one currently available (without compiling, from the ESPRESSObin website) is <code>U-Boot 2017.03-armada-17.10.1-gaee49fc</code>.</p>
+
+<p>The changes are quite numerous and hard to condense. If you want a way to visualize the changes, try the following commands:</p>
+
+<pre><code>$ git clone https://github.com/MarvellEmbeddedProcessors/u-boot-marvell
+$ git log --graph --oneline u-boot-2015.01-armada-17.02 u-boot-2017.03-armada-17.10
+</code></pre>
+
+<p>To update, download the U-Boot images from <a href="http://espressobin.net/tech-spec/">http://espressobin.net/tech-spec/</a> and select <a href="https://espressobin.net/wp-content/uploads/2018/07/ebin-17.10-bootloader.zip">U-Boot 2017.03-armada-17.10</a>. The 1GB and 2GB (DDR3) versions are both inside the zip file.</p>
+
+<p>To figure out which ESPRESSObin flavor you have, check the U-Boot log. U-Boot usually prints this information out in the header as power is applied (to scroll up in a screen session, hit CTRL+[ and use your arrow keys/PGUP/PGDOWN &ndash; to exit, tap ESC a few times])</p>
+
+<p>With power removed and USB cable connected to a computer:</p>
+
+<pre><code>$ sudo screen /dev/ttyUSB0 115200
+</code></pre>
+
+<p>After the session is established, apply power and wait for things to scroll by (use the <code>CTRL+[</code> command to view scrollback])</p>
+
+<pre><code>U-Boot 2015.01-armada-17.02.0-g48dc978 (May 18 2017 - 17:28:01)
+
+I2C:   ready
+DRAM:  1 GiB
+[ .. continues to boot .. ]
+</code></pre>
+
+<p><code>DRAM: 1 GiB</code> implies that we use <code>espressobin-bootloader-cpu-1000-ddr3-2cs-1g-atf-ga3306ab-uboot-gaee49fc-20180129-REL.bin</code> from the .zip file (N.B. there is another 1G image in the zip, with the extension <code>-DBG.bin</code>).</p>
+
+<p>Next: Grab an empty/sacrificial USB stick, or microSD card.</p>
+
+<p>Follow the <a href="http://wiki.espressobin.net/tiki-index.php?page=Update+the+Bootloader">Update the Bootloader</a> instructions on the ESPRESSObin wiki (if you have problems getting it to recognize a SD card, try the <a href="http://wiki.espressobin.net/tiki-index.php?page=Update+the+Bootloader#USB_stick_or_SD_card">USB stick method</a>; it can still be a little fickle and might need to be retried a few times).</p>
+
+<h3 id="releases">Releases</h3>
+
+<p>The OpenWRT website has <a href="https://downloads.openwrt.org/snapshots/targets/mvebu/cortexa53/">snapshots</a> and <a href="https://downloads.openwrt.org/releases/18.06.0-rc2/targets/mvebu/cortexa53/">releases</a> for the ESPRESSObin.</p>
+
+<p>Releases for the ESPRESSObin are filed under <code>releases/$version/targets/mvebu/cortexa53/</code>.</p>
+
+<p>Grab 18.06.0-rc2&rsquo;s <code>globalscale-espressobin-ext4-sdcard.img.gz</code> and verify it against the sha512 checksum.</p>
+
+<pre><code>$ wget https://downloads.openwrt.org/releases/18.06.0-rc2/targets/mvebu/cortexa53/openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
+
+$ sha256sum openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
+d883824bb0e9a23b46437114cb3d03e096041dd4327f8b2e311dd3a3e7becf06  openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
+</code></pre>
+
+<p>Insert the microSD card that OpenWRT will live on, and write this out, carefully:</p>
+
+<pre><code>$ sudo lsblk
+# [ ... locate your microSD card's sd[a|b|c|e|f] block device ... ]
+# [ ... dmesg can also give hints as to what was just plugged in, if on Linux ...]
+$ sudo su 
+# zcat openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz &gt; /dev/sdSomeLetterHereFromAbove
+# eject /dev/sdSomeLetterHereFromAbove
+</code></pre>
+
+<p>Grab the ESPRESSObin, insert the microSD card, microUSB (for console). Run this first before applying power:</p>
+
+<pre><code># screen /dev/ttyUSB0 115200
+</code></pre>
+
+<p>After the serial console is established, apply power. If the ESPRESSObin boots directly to Linux, great! If not, some boot settings may need to be adjusted; you might see something on the order of:</p>
+
+<pre><code># [ .. lots of messages ..]
+# [ .. some errors .. ]
+Bad Linux ARM64 Image magic!
+</code></pre>
+
+<p>From this <a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=584d7c53bd2d286a71fe5e8244624f59c529cb26">git commit</a>, the magic appears to be (with an updated U-Boot &ndash; for older U-Boot versions, scroll down in the commit log):</p>
+
+<pre><code>Marvell&gt;&gt; setenv bootcmd &quot;load mmc 0:1 0x4d00000 boot.scr; source 0x4d00000&quot;
+Marvell&gt;&gt; saveenv
+Marvell&gt;&gt; reset
+</code></pre>
+
+<h3 id="get-cake">Get Cake</h3>
+
+<p>Once OpenWRT boots, press <code>[Enter]</code> to get a console, and connect an Ethernet cable to the WAN port. If your computers reside on <code>192.168.1.x</code>, you may want to disable OpenWRT&rsquo;s LAN interface (using <code>ifdown lan</code>) or move the address temporarily in <code>/etc/config/network</code> so that downloads complete reliably.</p>
+
+<p>To get packages, run <code>opkg update</code>, then run <code>opkg install luci-app-sqm luci-ssl luci kmod-sched-cake</code> to install the cake SQM shaper, as well as luci management tooling.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>That&rsquo;s it! Now that ESPRESSObin is supported in OpenWRT&rsquo;s mainline, you&rsquo;ll always be able to update it directly as releases come out.</p>
+
+<p>I&rsquo;d like to thank any current users for trying out my LEDE build. More work that i&rsquo;ll admit was put into unraveling the build system and figuring out how to containerize it in a repeatable fashion. It is awesome that others got to use that work and benefit from it.</p>
+    </section>
+
+    
+    <section class="post-categories" style="padding-bottom:60px;">
+        <div class="post-meta categories">
+            <i class="fa fa-fw fa-tag"></i>
+            
+        </div>
+    </section>
+
+    
+    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fopen.konspyre.org%2fpost%2f2018-07-24-espressobin-moving-to-openwrt%2f - ESPRESSObin%3a%20Moving%20to%20OpenWRT by @keyglitch"><span class="icon-twitter"> Share via Tweet</span></a>
+
+
+    <footer class="post-footer">
+        <section class="author">
+    <div class="authorimage" style="background: url(https://open.konspyre.org/img/avatar.jpg)"></div>
+    <h4>davidk</h4>
+    <p class="bio"></p>
+    <p class="meta">
+      
+    </p>
+</section>
+    </footer>
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/keyglitch" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/davidk" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2018 <a href="https://open.konspyre.org">davidk</a>. </section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://open.konspyre.org/js/index.js"></script>
+<script src="https://open.konspyre.org/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>
