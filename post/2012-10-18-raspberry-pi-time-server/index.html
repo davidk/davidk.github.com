@@ -7,7 +7,7 @@
     <title>Raspberry Flavored Time (A NTP server on your Pi, tethered to a GPS unit) &middot; open collector</title>
     <meta name="author" content="davidk">
     
-    <meta name="generator" content="Hugo 0.38-DEV" />
+    <meta name="generator" content="Hugo 0.46-DEV" />
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -490,47 +490,41 @@ offset 0.005233
 
 <p>Note: No consideration (except for great customer service) was given to me by Adafruit for writing this. I did win an unrelated prize a few days ago that I should dig into though (OHS bag of swag).</p>
 
-<p><code>11/12/12</code>: Thanks to @karldyson for reporting that PPS was not being picked up properly by the repository packages. Looks like that bug is still there!</p>
+<pre><code class="language-11/12/12```:">
+```12/24/12```: Added information on calibrating Adafruit's GPS module (including references) and updated offset in configuration. Clobbered the introduction and added more spelling errors/walls of text to confuse/clarify things a bit.
 
-<p><code>12/24/12</code>: Added information on calibrating Adafruit&rsquo;s GPS module (including references) and updated offset in configuration. Clobbered the introduction and added more spelling errors/walls of text to confuse/clarify things a bit.</p>
+```1/15/13```: Changed the hardware voltage warning (fixed non-serious typo). Also tried to un-break formatting for note #5 and redirected help to a more proper place.
 
-<p><code>1/15/13</code>: Changed the hardware voltage warning (fixed non-serious typo). Also tried to un-break formatting for note #5 and redirected help to a more proper place.</p>
+```02/05/13```: Added a reminder to connect the proper line before working on
+the Adafruit GPS module.
 
-<p><code>02/05/13</code>: Added a reminder to connect the proper line before working on
-the Adafruit GPS module.</p>
+```02/06/13```: The DAEMON line in /etc/init.d/ntp had a typo, and should be /usr/bin/ntpd (due to the prefix used).
 
-<p><code>02/06/13</code>: The DAEMON line in /etc/init.d/ntp had a typo, and should be /usr/bin/ntpd (due to the prefix used).</p>
+```03/03/13```: Thanks to both Sven Wunder and @davidmonro_ for reporting that pps-tools needs to be installed during a compile of NTP from source.
 
-<p><code>03/03/13</code>: Thanks to both Sven Wunder and @davidmonro_ for reporting that pps-tools needs to be installed during a compile of NTP from source.</p>
+```05/09/13```: Collapsed the configure line (it was tested to be cut and paste friendly), and reduced the amount of make by one.
 
-<p><code>05/09/13</code>: Collapsed the configure line (it was tested to be cut and paste friendly), and reduced the amount of make by one.</p>
+## Extra Information on NTP
 
-<h2 id="extra-information-on-ntp">Extra Information on NTP</h2>
+* Selecting reliable time servers: [http://support.ntp.org/bin/view/Support/SelectingOffsiteNTPServers#Section_5.3.3.](http://support.ntp.org/bin/view/Support/SelectingOffsiteNTPServers#Section_5.3.3.)
 
-<ul>
-<li>Selecting reliable time servers: <a href="http://support.ntp.org/bin/view/Support/SelectingOffsiteNTPServers#Section_5.3.3.">http://support.ntp.org/bin/view/Support/SelectingOffsiteNTPServers#Section_5.3.3.</a></li>
-</ul>
+This includes a discussion about how a proper NTP setup should look like (having three servers to sync time is a good idea).
 
-<p>This includes a discussion about how a proper NTP setup should look like (having three servers to sync time is a good idea).</p>
+* ntpq documentation: [http://doc.ntp.org/4.1.1/ntpq.htm](http://doc.ntp.org/4.1.1/ntpq.htm).
 
-<ul>
-<li><p>ntpq documentation: <a href="http://doc.ntp.org/4.1.1/ntpq.htm">http://doc.ntp.org/4.1.1/ntpq.htm</a>.</p></li>
+* RFC 5905 (NTP v4 standard, very detailed): [http://tools.ietf.org/html/rfc5905](http://tools.ietf.org/html/rfc5905)
 
-<li><p>RFC 5905 (NTP v4 standard, very detailed): <a href="http://tools.ietf.org/html/rfc5905">http://tools.ietf.org/html/rfc5905</a></p></li>
-</ul>
+## Notes &amp; References
 
-<h2 id="notes-references">Notes &amp; References</h2>
+1. [http://en.wikipedia.org/wiki/Network_Time_Protocol#Clock_strata](http://en.wikipedia.org/wiki/Network_Time_Protocol#Clock_strata)
+2. The kernel fork I used and modified is available [here](https://github.com/davidk/adafruit-raspberrypi-linux). Look under the `ppsgpio` branch. You can clone it or download the entire thing by clicking around.
+3. [http://doc.ntp.org/4.2.6p5/confopt.html](http://doc.ntp.org/4.2.6p5/confopt.html)
+4. [http://www.eecis.udel.edu/~mills/ntp/html/drivers/driver20.html](http://www.eecis.udel.edu/~mills/ntp/html/drivers/driver20.html)
+5. Note that this disables select sentences, so if you'll be re-purposing your
+Adafruit GPS unit in the future, you may use this command to reset it to its default sentences:
 
-<ol>
-<li><a href="http://en.wikipedia.org/wiki/Network_Time_Protocol#Clock_strata">http://en.wikipedia.org/wiki/Network_Time_Protocol#Clock_strata</a></li>
-<li>The kernel fork I used and modified is available <a href="https://github.com/davidk/adafruit-raspberrypi-linux">here</a>. Look under the <code>ppsgpio</code> branch. You can clone it or download the entire thing by clicking around.</li>
-<li><a href="http://doc.ntp.org/4.2.6p5/confopt.html">http://doc.ntp.org/4.2.6p5/confopt.html</a></li>
-<li><a href="http://www.eecis.udel.edu/~mills/ntp/html/drivers/driver20.html">http://www.eecis.udel.edu/~mills/ntp/html/drivers/driver20.html</a></li>
-<li>Note that this disables select sentences, so if you&rsquo;ll be re-purposing your
-Adafruit GPS unit in the future, you may use this command to reset it to its default sentences:</li>
-</ol>
-
-<pre><code class="language-bash">$ echo -e '$PMTK314,-1*04\r\n' &gt; /dev/ttyAMA0
+```bash
+$ echo -e '$PMTK314,-1*04\r\n' &gt; /dev/ttyAMA0
 </code></pre>
 
 <p>If that fails, removing the battery and unhooking the power for your unit will usually revert it to its old behavior.</p>
@@ -539,31 +533,13 @@ Adafruit GPS unit in the future, you may use this command to reset it to its def
     </section>
 
     
-    <section class="post-categories" style="padding-bottom:60px;">
-        <div class="post-meta categories">
+    <section class="post-tags" style="padding-bottom:60px;">
+        <div class="post-meta tags">
             <i class="fa fa-fw fa-tag"></i>
-            
-                
-                <a href="https://open.konspyre.org/categories/raspberry-pi">raspberry pi </a>
-            
-                
-                <a href="https://open.konspyre.org/categories/rpi">rpi </a>
-            
-                
-                <a href="https://open.konspyre.org/categories/adafruit">adafruit </a>
-            
-                
-                <a href="https://open.konspyre.org/categories/ntp">ntp </a>
-            
-                
-                <a href="https://open.konspyre.org/categories/time">time </a>
-            
-                
-                <a href="https://open.konspyre.org/categories/gps">gps </a>
             
         </div>
     </section>
-
+    
     
     <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fopen.konspyre.org%2fpost%2f2012-10-18-raspberry-pi-time-server%2f - Raspberry%20Flavored%20Time%20%28A%20NTP%20server%20on%20your%20Pi%2c%20tethered%20to%20a%20GPS%20unit%29 by @keyglitch"><span class="icon-twitter"> Share via Tweet</span></a>
 

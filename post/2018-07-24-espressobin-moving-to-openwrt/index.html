@@ -7,7 +7,7 @@
     <title>ESPRESSObin: Moving to OpenWRT &middot; open collector</title>
     <meta name="author" content="davidk">
     
-    <meta name="generator" content="Hugo 0.38-DEV" />
+    <meta name="generator" content="Hugo 0.46-DEV" />
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -78,7 +78,7 @@
 
 <p>Time capsule warning: <em>If you&rsquo;re reading this far beyond July 2018, this post&rsquo;s instructions are probably really out of date!</em></p>
 
-<p>If you don&rsquo;t know of the <a href="http://espressobin.net">ESPRESSObin, it&rsquo;s a single board computer</a> with properties that make it ideal for a customizble home router.</p>
+<p>If you don&rsquo;t know of the <a href="http://espressobin.net">ESPRESSObin, it&rsquo;s a single board computer</a> with properties that make it ideal for a customizable home router.</p>
 
 <p>This <a href="https://github.com/davidk/espressobin-lede-sqm-cake">LEDE custom build</a> was made to take advantage of the <a href="https://www.bufferbloat.net/projects/codel/wiki/CakeTechnical/">Cake queuing discipline</a>, which attempts to stabilize latency during high bandwidth usage. At the time it was made, <a href="https://openwrt.org">OpenWRT</a> did not support Cake, but the newer LEDE fork did.</p>
 
@@ -86,7 +86,7 @@
 
 <p><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=584d7c53bd2d286a71fe5e8244624f59c529cb26">OpenWRT is now supporting the ESPRESSObin upstream</a>, so I am quite pleased to sunset my own build and build scripts. Everything, it appears, including Cake SQM, is now supported by people far more qualified to do it. Please use that instead for security updates, and timely updates in general.</p>
 
-<p>The following are instructions that I followed to migrate my personal ESPRESSObin to OpenWRT (which has now merged with LEDE). Hopefully these instructions help anyone wishing to similiarly migrate.</p>
+<p>The following are instructions that I followed to migrate my personal ESPRESSObin to OpenWRT (which has now merged with LEDE). Hopefully these instructions help anyone wishing to similarly migrate.</p>
 
 <p>Note: Instructions will vary as time moves along. The source of truth in the future will always be the <a href="http://wiki.espressobin.net/tiki-index.php">ESPRESSObin wiki</a>, OpenWRT, and any associated git commits.</p>
 
@@ -184,17 +184,17 @@ Marvell&gt;&gt; reset
 
 <p>It is awesome that others got to benefit from it, even if it was only for a short time.</p>
 
-<p>Until next time, ✌🏼</p>
+<p>Until next time.</p>
     </section>
 
     
-    <section class="post-categories" style="padding-bottom:60px;">
-        <div class="post-meta categories">
+    <section class="post-tags" style="padding-bottom:60px;">
+        <div class="post-meta tags">
             <i class="fa fa-fw fa-tag"></i>
             
         </div>
     </section>
-
+    
     
     <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fopen.konspyre.org%2fpost%2f2018-07-24-espressobin-moving-to-openwrt%2f - ESPRESSObin%3a%20Moving%20to%20OpenWRT by @keyglitch"><span class="icon-twitter"> Share via Tweet</span></a>
 
