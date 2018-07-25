@@ -17,7 +17,7 @@
       <pubDate>Tue, 24 Jul 2018 07:05:51 +0000</pubDate>
       
       <guid>https://open.konspyre.org/post/2018-07-24-espressobin-moving-to-openwrt/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve maintained a &lt;a href=&#34;https://github.com/davidk/espressobin-lede-sqm-cake&#34;&gt;build of LEDE&lt;/a&gt; for the &lt;a href=&#34;http://espressobin.net/&#34;&gt;ESPRESSObin&lt;/a&gt; single board computer. Things have changed, and it&amp;rsquo;s now time to sunset the build.&lt;/p&gt;
+      <description>&lt;p&gt;Backstory: I&amp;rsquo;ve been maintaining a build of LEDE for the &lt;a href=&#34;http://espressobin.net/&#34;&gt;ESPRESSObin&lt;/a&gt; single board computer. Things have changed for the better, so its now time to sunset the build.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
