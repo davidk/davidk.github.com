@@ -136,10 +136,10 @@ DRAM:  1 GiB
 
 <p>Grab 18.06.0-rc2&rsquo;s (or later) <code>globalscale-espressobin-ext4-sdcard.img.gz</code> and verify it against the sha512 checksum.</p>
 
-<pre><code class="language-bash">	$ wget https://downloads.openwrt.org/releases/18.06.0-rc2/targets/mvebu/cortexa53/openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
-		
-	$ sha256sum openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
-	d883824bb0e9a23b46437114cb3d03e096041dd4327f8b2e311dd3a3e7becf06  openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
+<pre><code class="language-bash">$ wget https://downloads.openwrt.org/releases/18.06.0-rc2/targets/mvebu/cortexa53/openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
+	
+$ sha256sum openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
+d883824bb0e9a23b46437114cb3d03e096041dd4327f8b2e311dd3a3e7becf06  openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
 </code></pre>
 
 <p>Insert the microSD card that OpenWRT will live on, and write it out, carefully noting the block device:</p>
@@ -147,10 +147,14 @@ DRAM:  1 GiB
 <pre><code class="language-bash">sudo lsblk
 # [ ... locate your microSD card's sd[a|b|c|e|f] block device ... ]
 # [ ... dmesg can also give hints as to what was just plugged in, if on Linux ...]
-sudo su 
-# zcat openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz &gt; /dev/sdSomeLetterHereFromAbove
-# eject /dev/sdSomeLetterHereFromAbove
 </code></pre>
+
+<pre><code class="language-bash">sudo su 
+zcat openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz &gt; /dev/sdSomeLetterHereFromAbove
+eject /dev/sdSomeLetterHereFromAbove
+</code></pre>
+
+<p>Tap CTRL+D or use the &lsquo;exit&rsquo; command to leave the root shell.</p>
 
 <p>Grab the ESPRESSObin, insert the microSD card, and microUSB cable (for console). Run this first before applying power:</p>
 
