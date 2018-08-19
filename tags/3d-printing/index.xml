@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3d Printing on open collector</title>
+    <link>https://open.konspyre.org/tags/3d-printing/</link>
+    <description>Recent content in 3d Printing on open collector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Aug 2018 07:35:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://open.konspyre.org/tags/3d-printing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Buildlog: A soldering smoke absorber</title>
+      <link>https://open.konspyre.org/post/2018-08-17-solder_smoke_absorber/</link>
+      <pubDate>Fri, 17 Aug 2018 07:35:26 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/post/2018-08-17-solder_smoke_absorber/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/fume-away/fume-away-3.gif&#34; alt=&#34;Filter stack&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a fan that takes a carbon filter cartridge. It&amp;rsquo;s used to redirect the fumes encountered during electronics &lt;a href=&#34;https://en.wikipedia.org/wiki/Soldering&#34;&gt;soldering&lt;/a&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

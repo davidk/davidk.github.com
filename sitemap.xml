@@ -3,8 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://open.konspyre.org/post/2018-07-24-espressobin-moving-to-openwrt/</loc>
-    <lastmod>2018-07-24T07:05:51+00:00</lastmod>
+    <loc>https://open.konspyre.org/post/2018-08-17-solder_smoke_absorber/</loc>
+    <lastmod>2018-08-17T07:35:26+00:00</lastmod>
   </url>
   
   <url>
@@ -105,6 +105,12 @@
   <url>
     <loc>https://open.konspyre.org/categories/3d/</loc>
     <lastmod>2017-09-15T07:18:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://open.konspyre.org/tags/3d-printing/</loc>
+    <lastmod>2018-08-17T07:35:26+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -302,7 +308,7 @@
   
   <url>
     <loc>https://open.konspyre.org/post/</loc>
-    <lastmod>2018-07-24T07:05:51+00:00</lastmod>
+    <lastmod>2018-08-17T07:35:26+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -356,6 +362,7 @@
   
   <url>
     <loc>https://open.konspyre.org/tags/</loc>
+    <lastmod>2018-08-17T07:35:26+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -403,7 +410,7 @@
   
   <url>
     <loc>https://open.konspyre.org/</loc>
-    <lastmod>2018-07-24T07:05:51+00:00</lastmod>
+    <lastmod>2018-08-17T07:35:26+00:00</lastmod>
     <priority>0</priority>
   </url>
   
