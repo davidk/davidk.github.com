@@ -17,10 +17,10 @@
       <pubDate>Sat, 31 May 2014 00:00:00 +0000</pubDate>
       
       <guid>https://open.konspyre.org/about/</guid>
-      <description>Hello, i&amp;rsquo;m Dave (I also go by david/davidk).
-I build cloud tooling and cloud infrastructure (bare metal on up) as a day job, mostly tailored to all things Linux.
-This bit holds nearly all of my spare time projects; mostly consisting of printables, software, and hardware.
-3D Printables I build a lot of enclosures for breakout boards, as my workspace gets dusty. Maybe you&amp;rsquo;ve seen or used one in the wild?</description>
+      <description>Hello, i&amp;rsquo;m David. I also go by dave/davidk.
+I work on cloud tooling and cloud infrastructure (starting from bare metal on up), mostly tailored to all things Linux.
+This page is a collection of my spare time projects: mostly consisting of electronics, software and printables.
+Software GitHub has a bunch of pieces of code i&amp;rsquo;ve written over the years. It&amp;rsquo;s all in various formats/versions of Go, Ruby, C, Bash, Python and/or Perl.</description>
     </item>
     
   </channel>
