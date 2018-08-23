@@ -130,19 +130,19 @@ DRAM:  1 GiB
 
 <h3 id="installing-openwrt">Installing OpenWRT</h3>
 
-<p>The OpenWRT website has <a href="https://downloads.openwrt.org/snapshots/targets/mvebu/cortexa53/">snapshots</a> and <a href="https://downloads.openwrt.org/releases/18.06.0-rc2/targets/mvebu/cortexa53/">releases</a> for the ESPRESSObin.</p>
+<p>The OpenWRT website has a <a href="https://downloads.openwrt.org/releases/18.06.1/targets/mvebu/cortexa53/">stable release</a> for the ESPRESSObin.</p>
 
-<p>Releases for the ESPRESSObin are filed under <code>releases/$version/targets/mvebu/cortexa53/</code>.</p>
+<p>They&rsquo;re filed by architecture, and ESPRESSObin lives in <code>releases/$version/targets/mvebu/cortexa53/</code>.</p>
 
-<p>Grab 18.06.0-rc2&rsquo;s (or later) <code>globalscale-espressobin-ext4-sdcard.img.gz</code> and verify it against the sha512 checksum.</p>
+<p>Grab 18.06.1&rsquo;s (or later) <code>globalscale-espressobin-ext4-sdcard.img.gz</code> and verify it against the sha512 checksum.</p>
 
-<pre><code class="language-bash">$ wget https://downloads.openwrt.org/releases/18.06.0-rc2/targets/mvebu/cortexa53/openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
+<pre><code class="language-bash">$ wget https://downloads.openwrt.org/releases/18.06.1/targets/mvebu/cortexa53/openwrt-18.06.1-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
 	
-$ sha256sum openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
-d883824bb0e9a23b46437114cb3d03e096041dd4327f8b2e311dd3a3e7becf06  openwrt-18.06.0-rc2-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
+$ sha256sum openwrt-18.06.1-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
+af71b6a01bb5ac6812c5cc6c0d16deda2d9f2bf65ebcf7ab3db3d2e300277eee  openwrt-18.06.1-mvebu-cortexa53-globalscale-espressobin-ext4-sdcard.img.gz
 </code></pre>
 
-<p>Insert the microSD card that OpenWRT will live on, and write it out, carefully noting the block device:</p>
+<p>Insert the microSD card that OpenWRT will live on, and write the image out, carefully noting the block device:</p>
 
 <pre><code class="language-bash">sudo lsblk
 # [ ... locate your microSD card's sd[a|b|c|e|f] block device ... ]
@@ -162,6 +162,9 @@ eject /dev/sdSomeLetterHereFromAbove
 # likely have more information if that is the case
 
 screen /dev/ttyUSB0 115200
+
+# If screen exits immediately, run it with sudo
+sudo screen /dev/ttyUSB0 115200
 </code></pre>
 
 <p>After the serial console is established, apply power. If the ESPRESSObin boots directly to Linux, great! If not, some boot settings may need to be adjusted; you might see something on the order of:</p>
@@ -180,9 +183,53 @@ Marvell&gt;&gt; reset
 
 <h3 id="add-cake">Add Cake</h3>
 
-<p>Once OpenWRT boots, press <code>[Enter]</code> to get a console, and connect an Ethernet cable to the WAN port. If your computers reside on <code>192.168.1.x</code>, you may want to disable OpenWRT&rsquo;s LAN interface (using <code>ifdown lan</code>) or move the address temporarily in <code>/etc/config/network</code> so that downloads complete reliably.</p>
+<p>Once OpenWRT boots, press <code>[Enter]</code> to get a console, and connect an Ethernet cable to the WAN port. If the WAN cable connects to a <code>192.168.1.x</code> network, you may want to disable OpenWRT&rsquo;s LAN interface (using <code>ifdown lan</code>) or move the address temporarily in <code>/etc/config/network</code> so that downloads complete reliably.</p>
 
 <p>To get packages, run <code>opkg update</code>, then run <code>opkg install luci-app-sqm luci-ssl luci kmod-sched-cake</code> to install the Cake SQM scripts, as well as luci management tooling to manage it.</p>
+
+<h3 id="wireguard-optional">Wireguard (Optional)</h3>
+
+<p>The LEDE distribution included wireguard &ndash; its available through opkg:</p>
+
+<pre><code>root@OpenWrt:/# opkg install wireguard
+Installing wireguard (0.0.20180718-2) to root...
+Downloading http://downloads.openwrt.org/releases/18.06.1/packages/aarch64_cortex-a53/base/wireguard_0.0.20180718-2_aarch64_cortex-a53.ipk
+Installing ip-tiny (4.16.0-4) to root...
+Downloading http://downloads.openwrt.org/releases/18.06.1/packages/aarch64_cortex-a53/base/ip-tiny_4.16.0-4_aarch64_cortex-a53.ipk
+Installing wireguard-tools (0.0.20180718-2) to root...
+Downloading http://downloads.openwrt.org/releases/18.06.1/packages/aarch64_cortex-a53/base/wireguard-tools_0.0.20180718-2_aarch64_cortex-a53.ipk
+Installing kmod-udptunnel6 (4.14.63-1) to root...
+Downloading http://downloads.openwrt.org/releases/18.06.1/targets/mvebu/cortexa53/packages/kmod-udptunnel6_4.14.63-1_aarch64_cortex-a53.ipk
+Installing kmod-udptunnel4 (4.14.63-1) to root...
+Downloading http://downloads.openwrt.org/releases/18.06.1/targets/mvebu/cortexa53/packages/kmod-udptunnel4_4.14.63-1_aarch64_cortex-a53.ipk
+Installing kmod-wireguard (4.14.63+0.0.20180718-2) to root...
+Downloading http://downloads.openwrt.org/releases/18.06.1/targets/mvebu/cortexa53/packages/kmod-wireguard_4.14.63%2b0.0.20180718-2_aarch64_cortex-a53.ipk
+Configuring kmod-udptunnel4.
+[  374.869219] kmodloader: loading kernel modules from /etc/modules.d/*
+[  374.881598] wireguard: WireGuard 0.0.20180718 loaded. See www.wireguard.com for information.
+[  374.890172] wireguard: Copyright (C) 2015-2018 Jason A. Donenfeld &lt;Jason@zx2c4.com&gt;. All Rights Reserved.
+[  374.900714] kmodloader: done loading kernel modules from /etc/modules.d/*
+Configuring kmod-udptunnel6.
+[  374.940244] kmodloader: loading kernel modules from /etc/modules.d/*
+[  374.949342] kmodloader: done loading kernel modules from /etc/modules.d/*
+Configuring kmod-wireguard.
+[  374.999050] kmodloader: loading kernel modules from /etc/modules.d/*
+[  375.007124] kmodloader: done loading kernel modules from /etc/modules.d/*
+Configuring ip-tiny.
+Configuring wireguard-tools.
+Configuring wireguard.
+</code></pre>
+
+<p>Be sure to grab the luci management modules too:</p>
+
+<pre><code>root@OpenWrt:/# opkg install luci-app-wireguard
+Installing luci-app-wireguard (git-18.228.31946-f64b152-1) to root...
+Downloading http://downloads.openwrt.org/releases/18.06.1/packages/aarch64_cortex-a53/luci/luci-app-wireguard_git-18.228.31946-f64b152-1_all.ipk
+Installing luci-proto-wireguard (git-18.228.31946-f64b152-1) to root...
+Downloading http://downloads.openwrt.org/releases/18.06.1/packages/aarch64_cortex-a53/luci/luci-proto-wireguard_git-18.228.31946-f64b152-1_all.ipk
+Configuring luci-proto-wireguard.
+Configuring luci-app-wireguard.
+</code></pre>
 
 <h3 id="conclusion">Conclusion</h3>
 

@@ -7,7 +7,7 @@
     <title>open collector</title>
     <meta name="author" content="davidk">
     
-    <meta name="generator" content="Hugo 0.21-DEV" />
+    <meta name="generator" content="Hugo 0.46-DEV" />
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -36,14 +36,13 @@
 
     <!-- Stylesheet for theme color -->
     <style type="text/css">
-    a {color: #33cc99;}
+    a, a:visited {color: #33cc99;}
     .pagination a {color: #33cc99;}
     .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
     a:focus, a:hover {color: #178b6b;}
     h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
     .older-posts:hover, .newer-posts:hover {color: #178b6b;}
 </style>
-
 </head>
 
 <body class="home-template">
@@ -51,8 +50,6 @@
 	
 	<h1 class="blog-title"><a href="https://open.konspyre.org">open collector</a></h1>
 	
-	
-	<h1 class="blog-subtitle">a curious base</h1>
 	
 </header>
     
@@ -72,85 +69,48 @@
         
            <article class="preview">
     <header>
-        <h1 class="post-title"><a href="https://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/">Tools for 3D Printing: What do I get?</a></h1>
-        <div class="post-meta"><time datetime="07 April 2013">07 April 2013</time></div>
+        <h1 class="post-title"><a href="https://open.konspyre.org/post/2012-09-16-test-music/">music</a></h1>
+        <div class="post-meta"><time datetime="16 September 2012">16 September 2012</time></div>
     </header>
     <section class="post-excerpt">
         
-        <a class="excerptlink" href="https://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/"><p><p><img src="/assets/images/3dprinting/pocket-level-x-bridge.png" alt="Pocket level" /></p>&hellip;</p></a>
+        <a class="excerptlink" href="https://open.konspyre.org/post/2012-09-16-test-music/"><p><p>A bit of Ruby to start things off (I guess I should say &lsquo;test&rsquo; in here too).</p>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+
+class Music
+  attr_accessor :id, :artist, :title, :album
+end
+
+songs = Array.new
+
+ARGV.each do |m|
+  f = File.open(m)
+  while (l = f.gets)
+    info = l.split(';')
+
+    if info.length &gt; 0
+      song = Music.new
+      song.id = info[0]
+      song.title = info[1]
+      song.artist = info[2]
+      song.album = info[3]
+      songs &lt;&lt; song
+    end
+  end
+  f.close()
+end
+
+songs.each do |s|
+  puts &quot;#{s.artist} - #{s.title} - #{s.album}&quot;
+end
+</code></pre>
+
+<p></p>&hellip;</p></a>
         
-        <p class="readmore"><a href="https://open.konspyre.org/blog/2013-04-07-tools-for-3d-printing/">Keep reading <i class="fa fa-angle-double-right" style="padding-left: 5px;"></i></a></p>
+        <p class="readmore"><a href="https://open.konspyre.org/post/2012-09-16-test-music/">Keep reading <i class="fa fa-angle-double-right" style="padding-left: 5px;"></i></a></p>
     </section>
 </article>
-
-        
-    
-        
-           <article class="preview">
-    <header>
-        <h1 class="post-title"><a href="https://open.konspyre.org/blog/2013-02-04-printable-divider/">Printable divider for the 10164 storage drawer</a></h1>
-        <div class="post-meta"><time datetime="04 February 2013">04 February 2013</time></div>
-    </header>
-    <section class="post-excerpt">
-        
-        <a class="excerptlink" href="https://open.konspyre.org/blog/2013-02-04-printable-divider/"><p>A simple printable divider for a bunch of drawers&hellip;</p></a>
-        
-        <p class="readmore"><a href="https://open.konspyre.org/blog/2013-02-04-printable-divider/">Keep reading <i class="fa fa-angle-double-right" style="padding-left: 5px;"></i></a></p>
-    </section>
-</article>
-
-        
-    
-        
-           <article class="preview">
-    <header>
-        <h1 class="post-title"><a href="https://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/">The Avrrrinator (Revision A)</a></h1>
-        <div class="post-meta"><time datetime="23 January 2013">23 January 2013</time></div>
-    </header>
-    <section class="post-excerpt">
-        
-        <a class="excerptlink" href="https://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/"><p><p><img src="/assets/images/avrrrinator/avrrrinator-revA.png" alt="avrrrinator rev a" /></p>&hellip;</p></a>
-        
-        <p class="readmore"><a href="https://open.konspyre.org/blog/2013-01-23-the-avrrrinator-revision-a/">Keep reading <i class="fa fa-angle-double-right" style="padding-left: 5px;"></i></a></p>
-    </section>
-</article>
-
-        
-    
-        
-           <article class="preview">
-    <header>
-        <h1 class="post-title"><a href="https://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/">3D Printed Bus Pirate v3.6 Case (DP6037)</a></h1>
-        <div class="post-meta"><time datetime="31 December 2012">31 December 2012</time></div>
-    </header>
-    <section class="post-excerpt">
-        
-        <a class="excerptlink" href="https://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/"><p>3D printing a Bus Pirate case&hellip;</p></a>
-        
-        <p class="readmore"><a href="https://open.konspyre.org/blog/2012-12-31-3d-printed-bus-pirate-case/">Keep reading <i class="fa fa-angle-double-right" style="padding-left: 5px;"></i></a></p>
-    </section>
-</article>
-
-        
-    
-        
-           <article class="preview">
-    <header>
-        <h1 class="post-title"><a href="https://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/">Raspberry Flavored Time (A NTP server on your Pi, tethered to a GPS unit)</a></h1>
-        <div class="post-meta"><time datetime="18 October 2012">18 October 2012</time></div>
-    </header>
-    <section class="post-excerpt">
-        
-        <a class="excerptlink" href="https://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/"><p><p>2014/11/12: This article&rsquo;s is in the process of being revisited. Please keep in mind that it is very old before using its instructions and resources.</p>
-
-<p>GPS module connected to a Raspberry Pi (for accurate time keeping):</p>
-
-<p><img src="/assets/images/ulti_gps_v3.png" alt="Adafruit Ultimate GPS v3" /></p>&hellip;</p></a>
-        
-        <p class="readmore"><a href="https://open.konspyre.org/blog/2012-10-18-raspberry-pi-time-server/">Keep reading <i class="fa fa-angle-double-right" style="padding-left: 5px;"></i></a></p>
-    </section>
-</article>
-
         
     
 
@@ -160,10 +120,8 @@
     <a class="newer-posts" href="/page/2/"><i class="fa fa-chevron-circle-left"></i> Newer</a>
     
 
-    <span class="page-number">Page 3 of 4</span>
+    <span class="page-number">Page 3 of 3</span>
     
-    
-    <a class="older-posts" href="/page/4/">Older <i class="fa fa-chevron-circle-right"></i></a>
     
 </nav>
 
@@ -190,7 +148,7 @@
       
   </section>
 
-		<section class="copyright">&copy; 2017 <a href="https://open.konspyre.org">davidk</a>. </section>
+		<section class="copyright">&copy; 2018 <a href="https://open.konspyre.org">davidk</a>. </section>
 	</div>
 </footer>
 
