@@ -70,13 +70,15 @@
     </header>
 
     <section class="post-content">
-        <p>This is a bit of a departure from the usual content here! I spent a bit more time than I should have piecing all of this together, so i&rsquo;m collecting all of the knowledge that I needed to solve it.</p>
-
-<p>It&rsquo;s presented intuitively here, so you can see how I lept to the conclusion that I did.</p>
+        <p>I got a little lost, debugging KiCad!</p>
 
 <p></p>
 
-<h3 id="time-capsules">Time Capsules</h3>
+<p>This is a bit of a departure from the usual content here. I spent more time than I should have piecing all of this together, so i&rsquo;m collecting all of the knowledge that I needed to solve it.</p>
+
+<p>I&rsquo;ve also tried to present it intuitively, so hopefully this helps someone equally lost!</p>
+
+<h3 id="time-capsule">Time Capsule</h3>
 
 <p>If you&rsquo;re reading this several years down the line, there are probably better ways of reporting bugs. As of this post (May 2018), Fedora 28 is the latest.</p>
 
@@ -84,9 +86,7 @@
 
 <p>On May 8th (after updating to Fedora 28), I loaded a copy of a simple board (the one pictured is the V-USB based controller for a <a href="https://github.com/davidk/fade/">volume controller</a> project) board into Fedora 28&rsquo;s KiCad.</p>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Oops (bonus: running DRC crashes pcbnew) <a href="https://t.co/XbDQ61KFg2">pic.twitter.com/XbDQ61KFg2</a></p>&mdash; dave (@keyglitch) <a href="https://twitter.com/keyglitch/status/994019293233795073?ref_src=twsrc%5Etfw">May 9, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+<p><img src="/assets/image/kicad-debugging/broken-schematic.jpg" alt="Broken project" /></p>
 
 <p>I completely expected the schematic to blow up and was ready to fix it. The board survived intact, but DRC didn&rsquo;t work and mysteriously crashed KiCad every time.</p>
 
@@ -257,11 +257,11 @@ $ coredumpctl gdb kicad
 
 <p>The fix landed in KiCad&rsquo;s repositories, which were then built for Fedora under KiCad&rsquo;s nightly releases.</p>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you&#39;re reading this in the future, (and stuck in this particular hole/crash), switch over to the KiCad nightlies for Fedora 28: <a href="https://t.co/0Y8P2NPm6H">https://t.co/0Y8P2NPm6H</a></p>&mdash; dave (@keyglitch) <a href="https://twitter.com/keyglitch/status/998236517838409728?ref_src=twsrc%5Etfw">May 20, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h3 id="a-workaround-for-fedora-users">A workaround for Fedora users</h3>
 
+<p>If you&rsquo;re reading this in the future (and stuck with this particular crash), consider switching over to the <a href="https://copr.fedorainfracloud.org/coprs/g/kicad/kicad/">KiCad nightlies</a> which has an upstream fix for this bug.</p>
 
-<h3 id="the-fix">The fix</h3>
+<h3 id="the-upstream-fix">The upstream fix</h3>
 
 <p>Here is the fixed, <a href="https://github.com/KiCad/kicad-source-mirror/blob/147c1e60880a5234ad800c707fd7471485558267/pcbnew/drc.cpp#L692">upstream version</a>:</p>
 
