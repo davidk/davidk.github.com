@@ -6,10 +6,21 @@
     <description>Recent content on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Aug 2018 07:35:26 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Oct 2018 07:03:35 +0000</lastBuildDate>
     
 	<atom:link href="https://open.konspyre.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Inductive Kickback - The curious case of the fan that didn&#39;t</title>
+      <link>https://open.konspyre.org/post/2018-10-12-inductive-kickback-case-fans/</link>
+      <pubDate>Fri, 12 Oct 2018 07:03:35 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/post/2018-10-12-inductive-kickback-case-fans/</guid>
+      <description>&lt;p&gt;As I was testing and validating the Soldering Smoke Absorber&amp;rsquo;s electronics, I noticed a curiosity: The input terminals were mostly.. fine?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Buildlog: A soldering smoke absorber</title>
