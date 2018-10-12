@@ -19,8 +19,9 @@
       <guid>https://open.konspyre.org/about/</guid>
       <description>Hi! I&amp;rsquo;m David. I also go by dave/davidk.
 I work on cloud tooling and cloud infrastructure (starting from bare metal on up), mostly tailored to all things Linux.
-This page is a collection of projects I do, time permitting: mostly consisting of software, electronics and 3D printables.
-Software GitHub has a bunch of pieces of code i&amp;rsquo;ve written over the years. It&amp;rsquo;s all in various formats/versions of Go, Ruby, C, Bash, Python and/or Perl.</description>
+This page is a collection of pointers to side projects, time permitting: mostly consisting of software, electronics and 3D printables.
+Software GitHub has a bunch of things i&amp;rsquo;ve written over the years.
+I have an interest in small embedded systems, so sometimes distributions and kernels that i&amp;rsquo;ve built end up there.</description>
     </item>
     
   </channel>
