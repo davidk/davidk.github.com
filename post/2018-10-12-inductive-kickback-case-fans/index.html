@@ -139,6 +139,8 @@
 
 <p>See the little black protrusion at the top of the circuit board, in-between the metal fins of the coils?</p>
 
+<p><img src="/assets/images/bldc-kickback/fan-bldc-driver.png" alt="the BLDC driver IC" /></p>
+
 <p>That&rsquo;s the BLDC driver and hall effect sensor, which runs the magnetic sequence. The sequence has to switch as the fan moves, otherwise it would stall the rotor.</p>
 
 <p>Knowing that the rotor is moving (with the sensor), the driver can quickly switch the poles to keep things moving.</p>
@@ -199,7 +201,7 @@
 
 <p><strong><em>This is not the snubber we are looking for.</em></strong></p>
 
-<p>Instead, I believe that this is probably an RLC (resistor-inductor-capacitor), and is likely acting as a damper for any high frequency emmissions (also known as a <a href="https://en.wikipedia.org/wiki/RLC_circuit#Low-pass_filter">low-pass filter</a>). These occur during the switching of the coils.</p>
+<p>Instead, I believe that this is probably an RLC (resistor-inductor-capacitor), and is likely acting as a damper for any high frequency/unwanted emmissions (this particular configuration is also known as a <a href="https://en.wikipedia.org/wiki/RLC_circuit#Band-pass_filter">band-pass filter</a>. These occur during the switching of the coils.</p>
 
 <p>(N.B: This fan&rsquo;s circuit uses 3.3μF capacitors, with a voltage rating of 50V.)</p>
 
