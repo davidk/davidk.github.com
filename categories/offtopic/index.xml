@@ -47,9 +47,7 @@ end
 songs.each do |s|
   puts &amp;quot;#{s.artist} - #{s.title} - #{s.album}&amp;quot;
 end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

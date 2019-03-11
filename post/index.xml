@@ -17,9 +17,7 @@
       <pubDate>Fri, 12 Oct 2018 07:03:35 +0000</pubDate>
       
       <guid>https://open.konspyre.org/post/2018-10-12-inductive-kickback-case-fans/</guid>
-      <description>&lt;p&gt;As I was testing and validating the Soldering Smoke Absorber&amp;rsquo;s electronics, I noticed a curiosity: The input terminals were mostly.. fine?&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;As I was testing and validating the Soldering Smoke Absorber&amp;rsquo;s electronics, I noticed a curiosity: The input terminals were mostly.. fine?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,8 +28,7 @@
       <guid>https://open.konspyre.org/post/2018-08-17-solder_smoke_absorber/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/fume-away/fume-away-3.gif&#34; alt=&#34;Filter stack&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This is a fan that takes a carbon filter cartridge. It&amp;rsquo;s used to redirect the fumes encountered during electronics &lt;a href=&#34;https://en.wikipedia.org/wiki/Soldering&#34;&gt;soldering&lt;/a&gt;.
-&lt;/p&gt;</description>
+&lt;p&gt;This is a fan that takes a carbon filter cartridge. It&amp;rsquo;s used to redirect the fumes encountered during electronics &lt;a href=&#34;https://en.wikipedia.org/wiki/Soldering&#34;&gt;soldering&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -40,9 +37,7 @@
       <pubDate>Tue, 24 Jul 2018 07:05:51 +0000</pubDate>
       
       <guid>https://open.konspyre.org/post/2018-07-24-espressobin-moving-to-openwrt/</guid>
-      <description>&lt;p&gt;Backstory: I&amp;rsquo;ve been maintaining a build of LEDE for the &lt;a href=&#34;http://espressobin.net/&#34;&gt;ESPRESSObin&lt;/a&gt; single board computer. Things have changed for the better, so its now time to sunset the build.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Backstory: I&amp;rsquo;ve been maintaining a build of LEDE for the &lt;a href=&#34;http://espressobin.net/&#34;&gt;ESPRESSObin&lt;/a&gt; single board computer. Things have changed for the better, so its now time to sunset the build.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -51,9 +46,7 @@
       <pubDate>Mon, 28 May 2018 23:56:47 +0000</pubDate>
       
       <guid>https://open.konspyre.org/post/2018-05-28-bug-hunting-in-fedoras-kicad/</guid>
-      <description>&lt;p&gt;I got a little lost, debugging KiCad!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I got a little lost, debugging KiCad!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -64,9 +57,7 @@
       <guid>https://open.konspyre.org/post/2017-09-15-cases-for-feathers/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/3dprinting/feather-cases/feather-esp8266-silabs.png&#34; alt=&#34;ESP8266 Feather Case with a SiLabs temperature sensor&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;These are 3D printable cases for Adafruit&amp;rsquo;s &lt;a href=&#34;https://www.adafruit.com/feather/&#34;&gt;Feather&lt;/a&gt; series of development boards. They&amp;rsquo;re designed to be compact, unobtrusive and adaptable from prototyping to deployment.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;These are 3D printable cases for Adafruit&amp;rsquo;s &lt;a href=&#34;https://www.adafruit.com/feather/&#34;&gt;Feather&lt;/a&gt; series of development boards. They&amp;rsquo;re designed to be compact, unobtrusive and adaptable from prototyping to deployment.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -75,7 +66,9 @@
       <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
       
       <guid>https://open.konspyre.org/post/a-modular-raspberry-pi-camera-enclosure/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/3dprinting/jointed_camera.png&#34; alt=&#34;Jointed RPi camera case with printed M2.5 bolts&#34; /&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/3dprinting/jointed_camera.png&#34; alt=&#34;Jointed RPi camera case with printed M2.5 bolts&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;TL;DR: I made a modular Raspberry Pi camera case.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,8 +78,7 @@
       
       <guid>https://open.konspyre.org/post/2015-02-10-electroscope-update/</guid>
       <description>&lt;p&gt;The 9V attachable electroscope has been updated. The silkscreened date on the
-back for this version is 2014-08-24(!)
-&lt;/p&gt;</description>
+back for this version is 2014-08-24(!)&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -257,9 +249,7 @@ end
 songs.each do |s|
   puts &amp;quot;#{s.artist} - #{s.title} - #{s.album}&amp;quot;
 end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

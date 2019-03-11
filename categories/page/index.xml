@@ -6,10 +6,20 @@
     <description>Recent content in Page on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 May 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://open.konspyre.org/categories/page/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Segger J-LINK SWD Breakout</title>
+      <link>https://open.konspyre.org/jswd/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/jswd/</guid>
+      <description>Hello! If you&amp;rsquo;re looking for more information about the Segger J-Link Breakout, please visit the GitHub repository.
+Additionally, you might be interested in the OSHPark shared project.</description>
+    </item>
     
     <item>
       <title>About</title>
