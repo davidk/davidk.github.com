@@ -13,10 +13,10 @@
     
     <item>
       <title>Stop, blink and roll*</title>
-      <link>https://open.konspyre.org/post/2013-05-13-stop-blink-roll/</link>
+      <link>https://open.konspyre.org/2013-05-13-stop-blink-roll/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/post/2013-05-13-stop-blink-roll/</guid>
+      <guid>https://open.konspyre.org/2013-05-13-stop-blink-roll/</guid>
       <description>A little bit of the cat got out of the bag some time ago:
 You&amp;rsquo;re looking at ~24 hours of continuous AVR flashing compressed down into 6 seconds.
 While I won&amp;rsquo;t be releasing the connecting PCB just yet (i&amp;rsquo;m still beating down a few issues and refining the BOM), I thought it would be good to supply the scripts I used to do the actual time lapse since it was non-obvious from a &amp;ldquo;oh dear, the contest entry is due in &amp;lt;48 hours isn&amp;rsquo;t it.</description>
@@ -24,10 +24,10 @@ While I won&amp;rsquo;t be releasing the connecting PCB just yet (i&amp;rsquo;m 
     
     <item>
       <title>3D Printed Bus Pirate v3.6 Case (DP6037)</title>
-      <link>https://open.konspyre.org/post/2012-12-31-3d-printed-bus-pirate-case/</link>
+      <link>https://open.konspyre.org/2012-12-31-3d-printed-bus-pirate-case/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/post/2012-12-31-3d-printed-bus-pirate-case/</guid>
+      <guid>https://open.konspyre.org/2012-12-31-3d-printed-bus-pirate-case/</guid>
       <description>Source files and general instructions for printing can be found here.
 The Bus Pirate is a pretty fantastic device for sniffing around and working with new circuits. It can even act as an AVR programmer.
 After using one to fiddle with a few circuits, a case became necessary after seeing its value. While there are cases that can be purchased[1], a 3D printer was laying around waiting to be used.</description>

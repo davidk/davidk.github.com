@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Stop, blink and roll* &middot; open collector</title>
+    <meta name="author" content="davidk">
+    
+    <meta name="generator" content="Hugo 0.59.0-DEV" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="https://open.konspyre.org/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://open.konspyre.org/css/screen.css">
+    <link rel="stylesheet" href="https://open.konspyre.org/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="https://open.konspyre.org">open collector</a></h1>
+	
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">About</a></li>
+      	
+    </ul>
+</nav>
+
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">Stop, blink and roll*</h1>
+        <div class="post-meta">
+            <time datetime="13 May 2013">
+                13 May 2013
+            </time>
+        </div>
+    </header>
+
+    <section class="post-content">
+        
+
+<p>A little bit of the cat got out of the bag some time ago:</p>
+
+<p><img src="/assets/images/avrrrinator/6-seconds-avrrrinator.gif" alt="6 seconds of AVR flashing" /></p>
+
+<p>You&rsquo;re looking at ~24 hours of continuous AVR flashing compressed down into 6 seconds.</p>
+
+<p>While I won&rsquo;t be releasing the connecting PCB just yet (i&rsquo;m still beating down a few issues and refining the BOM), I thought it would be good to supply the scripts I used to do the actual time lapse since it was non-obvious from a &ldquo;oh dear, the contest entry is due in &lt;48 hours isn&rsquo;t it..&rdquo; point of view.</p>
+
+<h2 id="parts-and-materials">Parts and Materials</h2>
+
+<ul>
+<li><p><strong>Teensy3</strong>:  Attached to the system doing the programming</p></li>
+
+<li><p><strong>SSD1306</strong>: OLED display showing how many times the AVR has been programmed</p></li>
+
+<li><p><strong>Bus Pirate 3</strong>: Acting as an AVR programmer</p></li>
+
+<li><p><strong>Avrrrinator Rev B</strong>: Bus Pirate to 2x AVR ISP adapter (this is the super secret &ldquo;prototype&rdquo; I mentioned in the <a href="http://www.youtube.com/watch?v=1nvUlqp4ISU">YouTube post</a>)</p></li>
+
+<li><p><strong>BB313 boards</strong>: Breakouts for easily attaching AVR ISP cables</p></li>
+
+<li><p><strong>ATtiny4313</strong>: tiny AVR for programming</p></li>
+
+<li><p><strong>ATtiny85</strong>: tiny AVR for programming</p></li>
+
+<li><p><strong>Assorted LEDs</strong>: Status indicators/Lighting</p></li>
+
+<li><p><strong>Logitech C920 Webcam</strong>: Takes all the pictures</p></li>
+</ul>
+
+<h2 id="taking-a-picture">Taking a picture</h2>
+
+<p>The small bash script invoking the gstreamer toolchain (without reading the documentation this is pretty much magic) took on the duty of taking a picture every minute. It then copied everything out via rsync to another machine with tons of spare space.</p>
+
+<p>This is not properly done since my start time edged uncomfortably close to when I had to stop, edit and ship (24 hours later).</p>
+
+<p>Note that this constantly writes over the same file. It stops the local disk from being clogged up by continuous snapshots. It also does not check and do anything reasonable if the rsync transfer fails.. like move the file aside/retry.</p>
+
+<p>In my case, losing a few minutes worth of snapshots wasn&rsquo;t a big deal for 24 hours compressed down to 6 seconds. I actually deleted quite a few frames before rendering out to video to eliminate periods of darkness (they show up as jarring sub-millisecond transitions to darkness).</p>
+
+<pre><code class="language-bash">#!/bin/bash
+
+while true; do
+gst-launch -e v4l2src ! video/x-raw-yuv,format=\(fourcc\)YUY2,width=1920,height=1080,framerate=5/1 \
+! ffmpegcolorspace ! pngenc snapshot=true ! filesink location=&quot;frame.png&quot;
+
+# Yup, this is talking to an actual rsyncd daemon on a NAS
+RSYNC_PASSWORD=&quot;super_secret&quot; rsync -avP frame.png rsync://rsync@storage.somewhere/frame-`date '+%s'`.png
+
+sleep 60;
+done
+</code></pre>
+
+<h2 id="video-out">Video out</h2>
+
+<p>After all the frames were assembled, I manually went in and pruned a bunch that were completely dark due to the lights being off. Compressing the video down a bunch to 6 seconds took a bit of playing around, mostly with the framerate:</p>
+
+<pre><code class="language-bash">mencoder 'mf://*.png' -mf fps=145:type=png -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -oac copy -o ~/Desktop/output-yt.avi
+</code></pre>
+
+<p>At this point, the video quality kind of sucked, but I had to ship it.</p>
+
+<p>Here is the completed video:</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/1nvUlqp4ISU" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="code-doing-the-programming">Code doing the programming</h2>
+
+<p>This is the script that refreshes the display you see. It calls <code>avrdude</code> to flash the AVRs and records the return code.</p>
+
+<p>If it is zero, then the success counter for the AVR is incremented.</p>
+
+<p>From there counts are then written to the serial port where the Teensy 3 can handle persisting the display and refreshing it with new results.</p>
+
+<pre><code class="language-python">#!/usr/bin/env python
+# requires pyserial (pip install pyserial)
+import subprocess
+import serial
+
+counter_4313 = 0
+counter_85 = 0
+
+failures_4313 = 0
+failures_85 = 0
+
+ser_port = serial.Serial(port='/dev/tty.usbmodem12341', baudrate=9600)
+
+while True:
+    try:
+        ret_4313 = subprocess.check_call(['avrdude', '-v', '-p', 'attiny4313', '-c', 'buspirate', '-P',
+        '/dev/tty.usbserial-AE01J4Q7', '-U', 'flash:w:blinky313.hex', '-x', 'reset=aux'])
+    except subprocess.CalledProcessError:
+        ret_4313 = 1
+
+    if ret_4313 == 0:
+        print &quot;ATtiny4313&quot;
+        counter_4313 += 1
+    else:
+        failures_4313 += 1
+
+   # Report statistics to the LCD screen
+    report = &quot;313:%s\n\n85:%s&quot; % (counter_4313, counter_85)
+    ser_port.write(report)
+    try:
+        ret_85 = subprocess.check_call(['avrdude', '-v', '-p', 'attiny85', '-c', 'buspirate', '-P',
+        '/dev/tty.usbserial-AE01J4Q7', '-U', 'flash:w:blinky45.hex', '-x', 'reset=cs'])
+    except subprocess.CalledProcessError:
+        ret_85 = 1
+
+    if ret_85 == 0:
+        print &quot;ATtiny85&quot;
+        counter_85 += 1
+    else:
+        failures_85 += 1
+
+   # We do this twice to make it look more live
+    report = &quot;313:%s\n\n85:%s&quot; % (counter_4313, counter_85)
+    ser_port.write(report)
+</code></pre>
+
+<p>On the Teensy 3, the data is received and pumped out to the display. Not the greatest code, but decent enough to run for 24 hours without much of a hiccup.</p>
+
+<p>Note that there are several small issues when using the SSD1306 library with the Teensy 3. I just stomped out the relevant sections after chasing down errors from the compiler (which were unrelated to SPI operation, and mostly due to i2c support).</p>
+
+<pre><code class="language-arduino">/*********************************************************************
+* Flash Counter!
+* Teensy 3.0 attached to a 128x64 SPI-driven OLED display
+* Vendor: Adafruit
+*
+* IF YOU GET COMPILE ERRORS (you likely will!)
+* Stomp out the compile errors in Adafruit_SSD1306.cpp line by line
+* and everything should be OK (most of them are i2c related).
+*
+*********************************************************************/
+#include &lt;Wire.h&gt;
+#include &lt;Adafruit_GFX.h&gt;
+#include &lt;Adafruit_SSD1306.h&gt;
+
+#define OLED_DC 11      // All pin numbers correspond to
+#define OLED_CS 10  // the 'gray' labels on the welcome to
+#define OLED_CLK 14     // Teensy 3 card
+#define OLED_MOSI 12    // SSD1306 labels this as: &quot;Data&quot;
+#define OLED_RESET 9
+
+Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+
+  // Display setup
+  display.begin(SSD1306_SWITCHCAPVCC);
+  display.clearDisplay();
+  display.setTextColor(WHITE,BLACK);
+
+}
+
+void loop() {
+
+  // Persist the display until we have something to display
+  if( Serial.available() &gt; 0 ) {
+    display.clearDisplay();
+  }
+  display.println(&quot;AVR Program Count&quot;);
+  display.println();
+  display.setTextSize(2);
+  while ( Serial.available() &gt; 0 ) {
+    digitalWrite(13, HIGH);
+    char c = Serial.read();
+
+    if (c == '\n') {
+      display.println();
+    } else {
+      display.write(c);
+    }
+    digitalWrite(13, LOW);
+  }
+  display.display();
+
+  delay(500);
+  display.setTextSize(1);
+  display.setCursor(0,0);
+}
+
+</code></pre>
+
+<p>And of course, blink programs. The ATtiny4313 and <a href="https://gist.github.com/davidk/4555334">ATtiny85</a> each had their own. They&rsquo;re pretty generic, (the one for the 4313 is from the BB313 website).</p>
+
+<p>cheers (and drink, if thats your thing)</p>
+
+    </section>
+
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/keyglitch" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/davidk" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2019 <a href="https://open.konspyre.org">davidk</a>. </section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://open.konspyre.org/js/index.js"></script>
+<script src="https://open.konspyre.org/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>

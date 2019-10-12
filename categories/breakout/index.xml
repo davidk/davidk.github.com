@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>breakout on open collector</title>
+    <title>breakout, on open collector</title>
     <link>https://open.konspyre.org/categories/breakout/</link>
-    <description>Recent content in breakout on open collector</description>
+    <description>Recent content in breakout, on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Jun 2014 00:00:00 +0000</lastBuildDate>
@@ -13,19 +13,19 @@
     
     <item>
       <title>CR2032 tester</title>
-      <link>https://open.konspyre.org/post/2014-06-29-cr2032-tester-released/</link>
+      <link>https://open.konspyre.org/2014-06-29-cr2032-tester-released/</link>
       <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/post/2014-06-29-cr2032-tester-released/</guid>
+      <guid>https://open.konspyre.org/2014-06-29-cr2032-tester-released/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/davidk/cr2032-tester/master/pictures/front.png&#34; alt=&#34;CR2032 tester&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Panasonic PIR Breakout Board</title>
-      <link>https://open.konspyre.org/post/2014-05-02-panasonic-breakout-board/</link>
+      <link>https://open.konspyre.org/2014-05-02-panasonic-breakout-board/</link>
       <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/post/2014-05-02-panasonic-breakout-board/</guid>
+      <guid>https://open.konspyre.org/2014-05-02-panasonic-breakout-board/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/panapir/top_side_white_pir.png&#34; alt=&#34;panapir&#34; /&gt;&lt;/p&gt;</description>
     </item>
     

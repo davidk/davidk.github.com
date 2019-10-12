@@ -13,10 +13,10 @@
     
     <item>
       <title>music</title>
-      <link>https://open.konspyre.org/post/2012-09-16-test-music/</link>
+      <link>https://open.konspyre.org/2012-09-16-test-music/</link>
       <pubDate>Sun, 16 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/post/2012-09-16-test-music/</guid>
+      <guid>https://open.konspyre.org/2012-09-16-test-music/</guid>
       <description>&lt;p&gt;A bit of Ruby to start things off (I guess I should say &amp;lsquo;test&amp;rsquo; in here too).&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;#!/usr/bin/env ruby

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Bug Hunting (in Fedora&#39;s KiCad) &middot; open collector</title>
+    <meta name="author" content="davidk">
+    
+    <meta name="generator" content="Hugo 0.59.0-DEV" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="https://open.konspyre.org/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://open.konspyre.org/css/screen.css">
+    <link rel="stylesheet" href="https://open.konspyre.org/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="https://open.konspyre.org">open collector</a></h1>
+	
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">About</a></li>
+      	
+    </ul>
+</nav>
+
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">Bug Hunting (in Fedora&#39;s KiCad)</h1>
+        <div class="post-meta">
+            <time datetime="28 May 2018">
+                28 May 2018
+            </time>
+        </div>
+    </header>
+
+    <section class="post-content">
+        <p>I got a little lost, debugging KiCad!</p>
+
+<p>This is a bit of a departure from the usual content here. I spent more time than I should have piecing all of this together, so i&rsquo;m collecting all of the knowledge that I needed to solve it.</p>
+
+<p>I&rsquo;ve also tried to present it intuitively, so hopefully this helps someone equally lost!</p>
+
+<h3 id="time-capsule">Time Capsule</h3>
+
+<p>If you&rsquo;re reading this several years down the line, there are probably better ways of reporting bugs. As of this post (May 2018), Fedora 28 is the latest.</p>
+
+<h3 id="getting-some-work-done">Getting Some Work Done</h3>
+
+<p>On May 8th (after updating to Fedora 28), I loaded a copy of a simple board (the one pictured is the V-USB based controller for a <a href="https://github.com/davidk/fade/">volume controller</a> project) board into Fedora 28&rsquo;s KiCad.</p>
+
+<p><img src="/assets/image/kicad-debugging/broken-schematic.jpg" alt="Broken project" /></p>
+
+<p>I completely expected the schematic to blow up and was ready to fix it. The board survived intact, but DRC didn&rsquo;t work and mysteriously crashed KiCad every time.</p>
+
+<h3 id="design-rules-check-drc">Design Rules Check (DRC)</h3>
+
+<p>When a board designer finishes a design, they typically run what&rsquo;s called a Design Rules Check (DRC). This ensures that a Printed Circuit Board (PCB) is within the manufacturing tolerances for a particular PCB manufacturer/fabrication house.</p>
+
+<p>It&rsquo;s quite a critical function, as PCBs can be densely packed with components and traces; falling back to manual verification isn&rsquo;t a thing (unless said designer is trying to bend spoons) &ndash; it&rsquo;s difficult, tedious and error-prone enough designing a board.</p>
+
+<p>A normal DRC run looks like this:</p>
+
+<p><img src="/assets/images/kicad-debugging/drc-works.png" alt="Working DRC" /></p>
+
+<p><strong><em>(N.B. The errors are intentional abuse of plated through-hole in surface mount pad)</em></strong></p>
+
+<p>On the other hand, Fedora 28&rsquo;s (KiCad) DRC run just closed everything suddenly. No messages, no popups. Oops.</p>
+
+<h3 id="where-some-intuition-about-the-system-helps">Where some intuition about the system helps</h3>
+
+<p>On Linux, running GUI programs from the terminal to figure out what&rsquo;s wrong is always a good bet:</p>
+
+<pre><code class="language-bash">$ kicad 
+# &lt;--- Ed note: opened the circuit board file, and ran DRC ---&gt;
+/usr/include/c++/8/bits/stl_vector.h:932: std::vector&lt;_Tp,
+_Alloc&gt;::reference std::vector&lt;_Tp, _Alloc&gt;::operator[](std::vector&lt;_Tp,
+_Alloc&gt;::size_type) [with _Tp = D_PAD*; _Alloc = std::allocator&lt;D_PAD*&gt;;
+std::vector&lt;_Tp, _Alloc&gt;::reference = D_PAD*&amp;; std::vector&lt;_Tp,
+_Alloc&gt;::size_type = long unsigned int]: Assertion '__builtin_expect(__n &lt;
+this-&gt;size(), true)' failed. 
+Aborted (core dumped) 
+</code></pre>
+
+<p>With very little understanding of the program&rsquo;s construction, that is a confusing error message. The last part is somewhat helpful, since it says <code>Aborted (core dumped)</code>.</p>
+
+<p>Seeing that <code>Assertion failed</code> along with a <code>std::vector</code> is kind of useful too; a possible translation is: &ldquo;This is potentially unintended/unsafe behavior on an std::vector. Stop.&rdquo;</p>
+
+<p>Not knowing anything else, this would be a somewhat decent message to hand to a developer.</p>
+
+<h3 id="down-the-core-rabbit-hole">Down The Core Rabbit Hole</h3>
+
+<p><strong><em>core dumps</em></strong> save the state of the program when it crashes. With the right incantations (installing debugging versions of our programs), the path which lead to the crash becomes clearer.</p>
+
+<p>But first, we have to be able to catch cores!</p>
+
+<p>(This is an annotated version of this <a href="https://ask.fedoraproject.org/en/question/98776/where-is-core-dump-located/">ask.fedora</a>)</p>
+
+<p>On some Linux distributions, core files are limited by default to preserve space on disk. Check the <code>ulimit -c</code> setting to see what the limit is:</p>
+
+<pre><code class="language-bash"># This is usually the default setting, but check just in case
+$ ulimit -c
+unlimited
+
+# Set it to unlimited if it doesn't report unlimited above
+$ ulimit -c unlimited
+</code></pre>
+
+<p>And another command will tell us where core files land:</p>
+
+<pre><code class="language-bash">$ sysctl kernel.core_pattern
+sysctl kernel.core_pattern = |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e
+</code></pre>
+
+<p>Normally, core files just end up as files in an obscure part of the filesystem. However, <code>systemd-coredump</code> is catching all the cores for us, and shuffling it all away behind a friendly utility called <code>coredumpctl</code>. Calling it with the <code>list kicad</code> arguments, there appears to be a core file for KiCad.</p>
+
+<pre><code class="language-bash">$ coredumpctl list kicad
+TIME  PID   UID   GID SIG COREFILE  EXE
+[...] 17474 1000  1000  6 present   /usr/bin/KiCad
+</code></pre>
+
+<h3 id="walking-the-core">Walking the core</h3>
+
+<p>Running gdb against the core is a first step. gdb can look pretty complex, but we just need a look at the backtrace.</p>
+
+<pre><code class="language-bash">$ coredumpctl gdb kicad 
+[ .. a ton of information scrolls by .. ]
+
+Missing separate debuginfos, use: dnf debuginfo-install kicad-4.0.7-3.fc28.x86_64
+(gdb) backtrace
+#0  0x00007fad7b6cdf2b in raise () from /lib64/libc.so.6
+#1  0x00007fad7b6b8561 in abort () from /lib64/libc.so.6
+#2  0x00007fad574135e8 in std::__replacement_assert(char const*, int, char const*, char const*) () from /usr/bin/_pcbnew.kiface
+#3  0x00007fad57623487 in DRC::testPad2Pad() () from /usr/bin/_pcbnew.kiface
+#4  0x00007fad57623a5e in DRC::RunTests(wxTextCtrl*) () from /usr/bin/_pcbnew.kiface
+[.. removed for brevity ..]
+</code></pre>
+
+<p>The blob of text is a bit neater this time, but it would be nice if we could see more relevant text. The prompt for <code>Missing separate debuginfos, use: dnf debuginfo-install kicad-4.0.7-3.fc28.x86_64</code> is pretty useful here!</p>
+
+<pre><code class="language-bash">(gdb) quit
+
+$ sudo dnf -y debuginfo-install kicad-4.0.7-3.fc28.x86_64
+[.. installation messages ..]
+
+$ coredumpctl gdb kicad 
+(gdb) backtrace
+#0  0x00007fad7b6cdf2b in raise () from /lib64/libc.so.6
+#1  0x00007fad7b6b8561 in abort () from /lib64/libc.so.6
+#2  0x00007fad574135e8 in std::__replacement_assert (__file=__file@entry=0x7fad57adcee0 &quot;/usr/include/c++/8/bits/stl_vector.h&quot;, __line=__line@entry=932, 
+    __function=__function@entry=0x7fad57af6c60 &lt;_ZZNSt6vectorIP5D_PADSaIS1_EEixEmE19__PRETTY_FUNCTION__&gt; &quot;std::vector&lt;_Tp, _Alloc&gt;::reference std::vector&lt;_Tp, _Alloc&gt;::operator[](std::vector&lt;_Tp, _Alloc&gt;::size_type) [with _Tp = D_PAD*; _Alloc = std::allocator&lt;D_PAD*&gt;; std::vector&lt;_Tp, _Alloc&gt;::reference =&quot;..., __condition=__condition@entry=0x7fad57adceb0 &quot;__builtin_expect(__n &lt; this-&gt;size(), true)&quot;)
+    at /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h:2389
+#3  0x00007fad57623487 in std::vector&lt;D_PAD*, std::allocator&lt;D_PAD*&gt; &gt;::operator[] (__n=&lt;optimized out&gt;, this=0x7fff55b32170) at /usr/src/debug/kicad-4.0.7-3.fc28.x86_64/pcbnew/drc.cpp:456
+</code></pre>
+
+<p>This looks like the message we got when the application exited on the command-line, but #3 gives us a hint on where.</p>
+
+<p>Now we have a better idea of where the error occurs, based on this line: <code>/usr/src/debug/kicad-4.0.7-3.fc28.x86_64/pcbnew/drc.cpp:456</code>. This gets us close, but at this point, its better to get familiar with the code, or to connect with a developer.</p>
+
+<p>To be even more helpful, we can think about what might have changed.</p>
+
+<h3 id="what-we-know-so-far">What we know so far</h3>
+
+<ol>
+<li><p>Fedora 27&rsquo;s KiCad worked</p></li>
+
+<li><p>DRC is an important function and it would be unlikely that it shipped broken (can validate by building KiCad standalone)</p></li>
+
+<li><p>An assertation indicates unusual internal behavior, and seems to indicate bounding/quantitative errors?</p></li>
+
+<li><p>The type it failed on was an std::vector</p></li>
+</ol>
+
+<p>What might&rsquo;ve changed when the upgrade to Fedora 28 took place?</p>
+
+<h3 id="some-intuition-about-the-distribution">Some intuition about the distribution</h3>
+
+<p>For most of Fedora&rsquo;s recent releases, they&rsquo;ve included a very helpful <a href="https://fedoraproject.org/wiki/Releases/28/ChangeSet">changeset/log</a>. Searching the wiki should bring up any interesting changes (in this case: were there any changes that affected vectors?).</p>
+
+<p>As of Fedora 28, there were indeed a set of new <a href="https://fedoraproject.org/wiki/Releases/28/ChangeSet#Hardening_Flags_Updates_for_Fedora_28">hardening flags</a>.</p>
+
+<p>Following the tracking bug link over to another wiki page, we land <a href="https://fedoraproject.org//wiki/Changes/HardeningFlags28">here</a>.</p>
+
+<p><img src="/assets/images/kicad-debugging/fedora-hardening-flags.png" alt="Fedora hardening flags include -D_GLIBCXX_ASSERTIONS in Fedora 28 Noooooo" /></p>
+
+<p>Reading down the bullet points, <code>-D_GLIBCXX_ASSERTIONS</code> pops out. Our crash lands on a vector! And the assert complains about a quantity comparison (was it less than?) Does it fit our crash? Maybe.</p>
+
+<p>This is a good guess, but it is still a swing in the dark without verification.</p>
+
+<h3 id="heading-straight-to-the-source">Heading straight to the source</h3>
+
+<p>KiCad&rsquo;s source code is online and open source. This means we can look up the line which caused the crash.</p>
+
+<p>Remember that the version of KiCad where this occurs is 4.0.7-3 &ndash; the KiCad source is mirrored <a href="https://github.com/KiCad/kicad-source-mirror">here</a>. If we click around a bit <a href="https://github.com/KiCad/kicad-source-mirror/releases">into the releases</a>, there&rsquo;s a release tag named 4.0.7; clicking the string of letters lets us dig into the repository at that point in time: <a href="https://github.com/KiCad/kicad-source-mirror/commit/9f35e384c1c4e3a2df0eba6196fe0664031cc5a9">9f35e38</a>.</p>
+
+<p>This is the latest commit though, which isn&rsquo;t relevant to our bug. We need to see the <code>drc.cpp</code> file &ndash; so clicking <a href="https://github.com/KiCad/kicad-source-mirror/tree/9f35e384c1c4e3a2df0eba6196fe0664031cc5a9">browse files</a> gets us to the tree. We can then head to <a href="https://github.com/KiCad/kicad-source-mirror/blob/9f35e384c1c4e3a2df0eba6196fe0664031cc5a9/pcbnew/drc.cpp">pcbnew/drc.cpp</a> and scroll down to <a href="https://github.com/KiCad/kicad-source-mirror/blob/9f35e384c1c4e3a2df0eba6196fe0664031cc5a9/pcbnew/drc.cpp#L456">line 456</a></p>
+
+<p>Here&rsquo;s the version that caused the crash (with -D_GLIBCXX_ASSERTIONS set)</p>
+
+<pre><code class="language-C++">	D_PAD** listEnd = &amp;sortedPads[ sortedPads.size() ];
+</code></pre>
+
+<h3 id="bug-verification">Bug verification</h3>
+
+<p>Verifying this (aka, setting up an entire build system) is a bit much for this post. (I did it to increase my confidence that this flag was the root cause.)</p>
+
+<p>Building one to test anyway? Don&rsquo;t make an entire containerized build system from scratch like I did. Look for a tool that makes patching/recompiling repeatable as you&rsquo;ll most likely have to test any changes that a developer asks for.</p>
+
+<p>For Fedora, <a href="https://github.com/rpm-software-management/mock/wiki">pull this thread</a>, and <a href="https://fedoraproject.org/wiki/Using_Mock_to_test_package_builds#How_do_I_use_Mock.3F">this thread as well</a>.</p>
+
+<h3 id="how-and-where-would-i-report-this">How and where would I report this?</h3>
+
+<p>It&rsquo;s ideal that everyone works together to fix a bug, but time is a precious commodity. This is especially true in open source work where unpaid labor is common.</p>
+
+<p>This particular bug started off being filed in Fedora&rsquo;s Bugzilla, but was eventually fixed on KiCad&rsquo;s launchpad instead.</p>
+
+<p>Fedora&rsquo;s Bugzilla is located <a href="https://bugzilla.redhat.com">here</a>. <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1577065">Here&rsquo;s where this bug ended up</a>. There were extra details included to aid in building an up-to-date version.</p>
+
+<p>KiCad&rsquo;s <a href="https://bugs.launchpad.net/KiCad">bug tracker is on a different service called launchpad</a>. Searching was/is difficult, but eventually in this case, kismet; another fellow Fedora 28 user was <a href="https://bugs.launchpad.net/KiCad/+bug/1770414">experiencing the same crash</a>.</p>
+
+<p>The fix landed in KiCad&rsquo;s repositories, which were then built for Fedora under KiCad&rsquo;s nightly releases.</p>
+
+<h3 id="a-workaround-for-fedora-users">A workaround for Fedora users</h3>
+
+<p>If you&rsquo;re reading this in the future (and stuck with this particular crash), consider switching over to the <a href="https://copr.fedorainfracloud.org/coprs/g/kicad/kicad/">KiCad nightlies</a> which has an upstream fix for this bug.</p>
+
+<h3 id="the-upstream-fix">The upstream fix</h3>
+
+<p>Here is the fixed, <a href="https://github.com/KiCad/kicad-source-mirror/blob/147c1e60880a5234ad800c707fd7471485558267/pcbnew/drc.cpp#L692">upstream version</a>:</p>
+
+<pre><code class="language-C++">	D_PAD** listEnd = &amp;sortedPads[0] + sortedPads.size();
+</code></pre>
+
+<p>This change avoids the assertation failure since the range is aggressively checked inside of the subscript <code>&amp;sortedPads[ sortedPads.size() ];</code>. Instead, the starting address of sortedPads is added together with the size of sortedPads to get a similar result.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Hopefully this shows that much of the process is intuition about the system at hand! Yes there are bugs that bend the mind and require specific areas of expertise; but often, only a little bit of intuition is required.</p>
+
+<p>And don&rsquo;t be afraid to ask for help if you are truly lost.</p>
+
+<h3 id="other-resources-fedora-specific">Other resources (Fedora specific)</h3>
+
+<p><a href="https://fedoraproject.org/wiki/StackTraces">Fedora Wiki: Stack Traces</a></p>
+
+<p><a href="https://fedoraproject.org/wiki/Bugs_and_feature_requests">Fedora Wiki: Bugs and Feature Requests</a></p>
+
+<p><a href="https://fedoraproject.org/wiki/How_to_file_a_bug_report">Fedora Wiki: How to file a bug report</a></p>
+    </section>
+
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/keyglitch" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/davidk" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2019 <a href="https://open.konspyre.org">davidk</a>. </section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://open.konspyre.org/js/index.js"></script>
+<script src="https://open.konspyre.org/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>

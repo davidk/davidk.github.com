@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Inductive Kickback - The curious case of the fan that didn&#39;t &middot; open collector</title>
+    <meta name="author" content="davidk">
+    
+    <meta name="generator" content="Hugo 0.59.0-DEV" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="https://open.konspyre.org/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://open.konspyre.org/css/screen.css">
+    <link rel="stylesheet" href="https://open.konspyre.org/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="https://open.konspyre.org">open collector</a></h1>
+	
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">About</a></li>
+      	
+    </ul>
+</nav>
+
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">Inductive Kickback - The curious case of the fan that didn&#39;t</h1>
+        <div class="post-meta">
+            <time datetime="12 October 2018">
+                12 October 2018
+            </time>
+        </div>
+    </header>
+
+    <section class="post-content">
+        <p>As I was testing and validating the Soldering Smoke Absorber&rsquo;s electronics, I noticed a curiosity: The input terminals were mostly.. fine?</p>
+
+<p>Here&rsquo;s a scope capture as the fan&rsquo;s power was cut (generated from a Rigol DS1102E&rsquo;s CSV output):</p>
+
+<p><img src="/assets/images/bldc-kickback/case-fan-wheres-the-kickback.png" alt="No kickback of the electrical variety here" />
+<em>X: time &ndash; Y: voltage</em>, GNUPlot settings <sup><a href="#REF">1</a></sup></p>
+
+<p>The ripple at the end is the fan becoming a &lsquo;generator&rsquo; as it freewheels to a stop.</p>
+
+<p>Related post: <a href="/post/2018-08-17-solder_smoke_absorber/">Smoke Absorber Build</a></p>
+
+<h2 id="inductive-kickback">Inductive Kickback</h2>
+
+<p>One of the more vivid examples of learning electronics involves an electromechanical device (typically a relay) and what happens when it is suddenly turned off.</p>
+
+<p>Cool examples <a href="http://oomlout.com/a/products/ardx/circ-11/">use an LED</a> to show the quick flash of energy that gets dissipated.</p>
+
+<p>Cooler still is the arcing that happens. This is probably around 100v or more from a 12V solenoid:</p>
+
+<p><img src="/assets/images/bldc-kickback/kickback-solenoid.webm" alt="" /></p>
+
+<figure class="video_container">
+  <video controls="false" loop="yes" allowfullscreen="true" autoplay>
+    <source src="/assets/images/bldc-kickback/kickback-solenoid.webm" type="video/webm">
+  </video>
+</figure>
+
+<h3 id="inductors">Inductors</h3>
+
+<p>Inductors are essentially a precisely wound coil of wire. They&rsquo;re a fundamental building block of modern electronics design, having applications ranging from signal filtering to storing energy for switch mode power supplies.</p>
+
+<p>The fan in the smoke absorber build is driven by a brushless DC motor. It switches coils of wire (changing the electromagnetic field) to spin a permanent magnet in a precise sequence.</p>
+
+<p>(It has similar properties to an inductor, in the simplest terms.)</p>
+
+<h3 id="inductive-kickback-1">Inductive Kickback</h3>
+
+<p>When a power switch is turned &lsquo;off&rsquo;, its probably normal to assume that that energy just stops flowing.</p>
+
+<p>Faraday&rsquo;s law of induction<sup><a href="#REF">2</a></sup> tells us that inductors have different plans.</p>
+
+<p>The stored energy (in the magnetic field) of the inductor wants to keep flowing after power is removed, but can&rsquo;t. There&rsquo;s nowhere to go. But it keeps collapsing into the inductor anyway.</p>
+
+<p>As the magnetic field continues collapsing onto the inductor, the inductor&rsquo;s voltage rises until it finds (or creates) the path of least resistance.</p>
+
+<p>And at a high enough voltage, <a href="https://en.wikipedia.org/wiki/Electrical_breakdown">air becomes conductive too</a>.</p>
+
+<p>These high voltage arcs damage and destroy components, from switch contacts to transistors. So they&rsquo;re to be avoided, normally by placing devices called <strong>snubbers</strong> in their path.</p>
+
+<h3 id="bldcs-brushless-dc-fans">BLDCs (Brushless DC) Fans</h3>
+
+<p>Here is a BLDC fan that has been torn down haphazardly and put back together):</p>
+
+<p><img src="/assets/images/bldc-kickback/bldc-stator.png" alt="BLDC fan, showing the stator part with coils" /></p>
+
+<p>This part with the circuit board and wound wire is the stator (mnemonic: &lsquo;static&rsquo;).</p>
+
+<p><img src="/assets/images/bldc-kickback/fan-rotor.png" alt="BLDC fan, showing the rotor part with the permanent magnet" /></p>
+
+<p>The part with the fins is called the rotor (mnemonic: &lsquo;rotator&rsquo;) and it has a circular magnet on the inside, which sits around the stator&rsquo;s coils when the two are slotted together.</p>
+
+<p>When the coils of wire are powered and switched in a precise sequence, the stator makes the rotor &lsquo;chase&rsquo; the changing magnetic field, whipping air around via the fan blades.</p>
+
+<h3 id="driver">Driver</h3>
+
+<p>See the little black protrusion at the top of the circuit board, in-between the metal fins of the coils?</p>
+
+<p><img src="/assets/images/bldc-kickback/fan-bldc-driver.png" alt="the BLDC driver IC" /></p>
+
+<p>That&rsquo;s the BLDC driver and hall effect sensor, which runs the magnetic sequence. The sequence has to switch as the fan moves, otherwise it would stall the rotor.</p>
+
+<p>Knowing that the rotor is moving (with the sensor), the driver can quickly switch the poles to keep things moving.</p>
+
+<p>And if you&rsquo;re like me, maybe an animation helps? I&rsquo;m not that great at designing those, but <a href="http://www.ti.com/general/docs/video/watch.tsp?entryid=3870197889001">Texas Instruments has a useful animation to commutate this around your brain</a>.</p>
+
+<p>I recommend giving it a look, it&rsquo;s a really high quality animation!</p>
+
+<p><a href="http://www.ti.com/general/docs/video/watch.tsp?entryid=3870197889001"><img src="/assets/images/bldc-kickback/ti-brushless-dc-motor-animation.png" alt="Ti BLDC Animation Link" /></a></p>
+
+<h3 id="show-us-the-kickback">Show us the kickback</h3>
+
+<p>Now that we&rsquo;ve had a look at the insides, what of the inductive kickback?</p>
+
+<p>Here&rsquo;s another oscilloscope capture, probing both coils, as a neodymium magnet is being moved across the hall effect sensor.</p>
+
+<p>This switches it from one set of coils to the other and back:</p>
+
+<p><img src="/assets/images/bldc-kickback/two-coils-commutating.png" alt="Scope trace: Inductive kickback during coil commutation" /></p>
+
+<p>Some sort of inductive kickback is definitely registering (those are the brief spikes on the graph)! At nearly 23V, too. But why doesn&rsquo;t the kickback happen right away?</p>
+
+<p>I have an idea. Here&rsquo;s a single scope trace, showing one coil as it is being switched:</p>
+
+<p><img src="/assets/images/bldc-kickback/inductive-kickback-at-the-capacitor-during-hall-effect-trig.png" alt="Scope trace: Inductive kickback delay" /></p>
+
+<p>The <a href="http://www.ti.com/general/docs/video/watch.tsp?entryid=3870197889001">TI animation shows this</a>, but as a pole reversal (north to south, or south to north) until the inductor is cut off completely &ndash; (watch the transistors on the bottom right.</p>
+
+<h3 id="inductive-kickback-vs-supply">Inductive kickback vs supply</h3>
+
+<p>Here&rsquo;s another capture, showing the inductive kickback and supply:</p>
+
+<p><img src="/assets/images/bldc-kickback/rail_vs_kickback_at_capacitor_during_hall_effect-blue-supply-yellow-capacitor-pos.png" alt="Scope trace: Inductive kickback at capacitor vs supply" /></p>
+
+<p><em>blue trace</em>: 12V rail / <em>yellow trace</em>: inductor</p>
+
+<p>Everything is handled internally.</p>
+
+<h3 id="so-where-are-the-diodes">So where are the diodes?</h3>
+
+<p>Like the statement above about snubbers, the standard suggestion that follows is to add a diode in an anti-parallel (striped side points towards +, usually) configuration across an inductive load.</p>
+
+<p>This is preferably a &lsquo;fast&rsquo; schottky diode, which starts suppressing/clipping the inductive kickback faster/earlier, before it is able to do harm.</p>
+
+<p>A <a href="https://en.wikipedia.org/wiki/Flyback_diode">kickback diode (alternatively named flyback, snubber, freewheeling..)</a> works by circulating the remaining energy through itself and back into the coil, letting the losses in both safely dissipate the remaining energy over time.</p>
+
+<p><strong><em>But this board has no obviously visible snubbing devices.</em></strong></p>
+
+<h3 id="back-to-the-fan">Back to the fan</h3>
+
+<p>Remember the little IC that had a hall effect sensor in it? Well, it&rsquo;s a <code>FTCS277</code> (Feeling Tech) IC<sup><a href="#REF">3</a></sup>.</p>
+
+<p>The <a href="http://www.feeling-tech.com.tw/km-master/ezcatfiles/cust/img/img/26/fs277lfv02.pdf">Feeling Tech datasheet</a> [PDF warning] suggests a typical application circuit that looks like this:</p>
+
+<p><img src="/assets/images/bldc-kickback/fs277.png" alt="Feeling Tech datasheet" /></p>
+
+<p>The red highlights alone <em>might</em> indicate that this is a RC (resistor-capacitor) snubber. They&rsquo;re <a href="https://en.wikipedia.org/wiki/Snubber#RC">pretty common</a> <sup><a href="#REF">4</a></sup>, but are often placed across (in parallel) a device to be protected (like a switch, or in combination with a diode snubber).</p>
+
+<p><strong><em>This is not the snubber we are looking for.</em></strong></p>
+
+<p>Instead, I believe that this is probably an RLC (resistor-inductor-capacitor), and is likely acting as a damper for any high frequency/unwanted emmissions (this particular configuration is also known as a <a href="https://en.wikipedia.org/wiki/RLC_circuit#Band-pass_filter">band-pass filter</a>. These occur during the switching of the coils.</p>
+
+<p>(N.B: This fan&rsquo;s circuit uses 3.3μF capacitors, with a voltage rating of 50V.)</p>
+
+<h3 id="removing-a-capacitor">Removing a capacitor</h3>
+
+<p>So if there aren&rsquo;t any visible diodes, are these some kind of weird snubbing capacitors? (It&rsquo;s unlikely, but hey, lets believe in magic.)</p>
+
+<p>So what happens when a capacitor is removed from the circuit?</p>
+
+<p><img src="/assets/images/bldc-kickback/no-capacitor-at-ground.png" alt="No capacitor to ground us now" /></p>
+
+<p>Something interesting: The kickback increases for the coil where the capacitor is removed.</p>
+
+<p>It still gets clipped at a fairly precise voltage though. Something else is doing this.</p>
+
+<p>Here&rsquo;s a block diagram for the <code>FS277</code>. This tells us what is going on inside the chip, and how things are hooked up (from an implementation standpoint).</p>
+
+<p><img src="/assets/images/bldc-kickback/fs277-block-diagram.png" alt="FS277 block diagram" /></p>
+
+<p>The boxes are hand wavy (regulator, amp, pre-driver..) and don&rsquo;t tell us much, but the parts at the right are interesting!</p>
+
+<h3 id="breaking-down">Breaking Down</h3>
+
+<p><strong><em>Reverse breakdown</em></strong> is a useful property in zener diodes. Normal diodes tend to be a one way street, but zeners let you safely go the other way, as long as you fit certain parameters (most importantly, voltage).</p>
+
+<p>When a coil is turned off in this circuit, the zener diodes go into reverse breakdown (say, from pin number 2; it flows up and over, toward the &ldquo;pre-driver&rdquo;).</p>
+
+<p>It then drives the base of the NPN transistor (that&rsquo;s the thing with the arrow pointing to the right and down) and opens a path across the transistor for the remaining energy to return.</p>
+
+<p>If the capacitor was still present, it might have smoothed out/clipped the sudden transient a bit, but the zeners still work well enough.</p>
+
+<h3 id="a-very-specific-value">A very specific value</h3>
+
+<p>What happens at around 35v though? And why is it that specific value? A look at the IC&rsquo;s specifications gives the zener&rsquo;s breakdown voltage at around 35V.
+<img src="/assets/images/bldc-kickback/fs277-specs.png" alt="Datasheet for the FS277, showing the output zener breakdown voltage" /></p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>So now we know where the kickback goes: It&rsquo;s all handled internally by the zeners.</p>
+
+<p>And no kickback diodes are needed across the power input terminals of this case fan (your mileage may vary, check your fan driver&rsquo;s datasheet, no purchase necessary).</p>
+
+<h2 id="REF">References</h2>
+
+<p>GNUPlot settings<sup>1</sup>:</p>
+
+<pre><code>gnuplot&gt; set datafile separator &quot;,&quot;
+gnuplot&gt; set xdata time
+gnuplot&gt; plot &quot;aewFile1.csv&quot; using 0:2 with linespoints linestyle 1 smooth csplines
+</code></pre>
+
+<p><sup>2</sup> <a href="https://en.wikipedia.org/wiki/Lenz%27s_law">Faraday&rsquo;s law of induction</a> describes an inductor&rsquo;s behavior as it is powered off. It resists any change and will exert a force to oppose it (in this case, the current has stopped flowing, so the inductor opposes it with an increase in voltage until it conducts across air, briefly).</p>
+
+<p><sup>3</sup> Which is similar still to an <a href="https://www.diodes.com/products/analog/sensors/hall-effect-switches/latches/complementary-output/part/AH277A">AH277A</a>.</p>
+
+<p><sup>4</sup> The fan&rsquo;s PCB does not have that diode at the top of the diagram installed, so you can do fun/horrible things &ndash; like starting the commutation by directly powering one coil (it backpowers the IC and hobbles along on one coil).</p>
+    </section>
+
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/keyglitch" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/davidk" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2019 <a href="https://open.konspyre.org">davidk</a>. </section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://open.konspyre.org/js/index.js"></script>
+<script src="https://open.konspyre.org/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>

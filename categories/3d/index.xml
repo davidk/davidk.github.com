@@ -13,10 +13,10 @@
     
     <item>
       <title>Cases for Feathers</title>
-      <link>https://open.konspyre.org/post/2017-09-15-cases-for-feathers/</link>
+      <link>https://open.konspyre.org/2017-09-15-cases-for-feathers/</link>
       <pubDate>Fri, 15 Sep 2017 07:18:33 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/post/2017-09-15-cases-for-feathers/</guid>
+      <guid>https://open.konspyre.org/2017-09-15-cases-for-feathers/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/3dprinting/feather-cases/feather-esp8266-silabs.png&#34; alt=&#34;ESP8266 Feather Case with a SiLabs temperature sensor&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;These are 3D printable cases for Adafruit&amp;rsquo;s &lt;a href=&#34;https://www.adafruit.com/feather/&#34;&gt;Feather&lt;/a&gt; series of development boards. They&amp;rsquo;re designed to be compact, unobtrusive and adaptable from prototyping to deployment.&lt;/p&gt;</description>
@@ -24,19 +24,19 @@
     
     <item>
       <title>Tools for 3D Printing: What do I get?</title>
-      <link>https://open.konspyre.org/post/2013-04-07-tools-for-3d-printing/</link>
+      <link>https://open.konspyre.org/2013-04-07-tools-for-3d-printing/</link>
       <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/post/2013-04-07-tools-for-3d-printing/</guid>
+      <guid>https://open.konspyre.org/2013-04-07-tools-for-3d-printing/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://open.konspyre.org/assets/images/3dprinting/pocket-level-x-bridge.png&#34; alt=&#34;Pocket level&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Printable divider for the 10164 storage drawer</title>
-      <link>https://open.konspyre.org/post/2013-02-04-printable-divider/</link>
+      <link>https://open.konspyre.org/2013-02-04-printable-divider/</link>
       <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/post/2013-02-04-printable-divider/</guid>
+      <guid>https://open.konspyre.org/2013-02-04-printable-divider/</guid>
       <description>This is a 3D printable small drawer divider for the Akro-Mils 10164 parts cabinet.
 The clear drawers themselves have a nice little slot for partitioning, so this divider fits right in and sits snugly without bowing out the drawer.
 While there are several dividers that come attached to the back of the cabinet (which are manually de-paneled by the end consumer), they&amp;rsquo;re very limited in quantity.
@@ -45,10 +45,10 @@ So if you have a 3D printer of some sort, or want to play with the model enough 
     
     <item>
       <title>3D Printed Bus Pirate v3.6 Case (DP6037)</title>
-      <link>https://open.konspyre.org/post/2012-12-31-3d-printed-bus-pirate-case/</link>
+      <link>https://open.konspyre.org/2012-12-31-3d-printed-bus-pirate-case/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/post/2012-12-31-3d-printed-bus-pirate-case/</guid>
+      <guid>https://open.konspyre.org/2012-12-31-3d-printed-bus-pirate-case/</guid>
       <description>Source files and general instructions for printing can be found here.
 The Bus Pirate is a pretty fantastic device for sniffing around and working with new circuits. It can even act as an AVR programmer.
 After using one to fiddle with a few circuits, a case became necessary after seeing its value. While there are cases that can be purchased[1], a 3D printer was laying around waiting to be used.</description>

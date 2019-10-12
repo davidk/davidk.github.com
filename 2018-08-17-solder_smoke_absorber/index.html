@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Buildlog: A soldering smoke absorber &middot; open collector</title>
+    <meta name="author" content="davidk">
+    
+    <meta name="generator" content="Hugo 0.59.0-DEV" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="https://open.konspyre.org/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://open.konspyre.org/css/screen.css">
+    <link rel="stylesheet" href="https://open.konspyre.org/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://open.konspyre.org/favicon.ico">
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="https://open.konspyre.org">open collector</a></h1>
+	
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">About</a></li>
+      	
+    </ul>
+</nav>
+
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">Buildlog: A soldering smoke absorber</h1>
+        <div class="post-meta">
+            <time datetime="17 August 2018">
+                17 August 2018
+            </time>
+        </div>
+    </header>
+
+    <section class="post-content">
+        <p><img src="/assets/images/fume-away/fume-away-3.gif" alt="Filter stack" /></p>
+
+<p>This is a fan that takes a carbon filter cartridge. It&rsquo;s used to redirect the fumes encountered during electronics <a href="https://en.wikipedia.org/wiki/Soldering">soldering</a>.</p>
+
+<h3 id="research-and-prior-work">Research and Prior Work</h3>
+
+<p>This is one of many similar implementations. (You probably don&rsquo;t want to use this one, for reasons stated here.)</p>
+
+<p>For professional/serious use: a commercial unit off of the shelf (<a href="https://www.hakko.com/english/products/hakko_fa430.html">like this Hakko unit</a>) is much more appropriate.</p>
+
+<p>It includes a HEPA filter, which is effective at capturing more of the particulate generated during soldering (see: &ldquo;<a href="https://academic.oup.com/annweh/article/42/8/511/148079">Measurement of the Performance of Air Cleaners
+Against the Particulate Element of Rosin-based Solder
+Flux Fume</a>&rdquo; &ndash; <a href="https://academic.oup.com/annweh/article-pdf/42/8/511/346131/42-8-511.pdf">PDF here</a>).</p>
+
+<p>Also: Cheaper, nearly finished units are also <a href="https://www.adafruit.com/product/3544">available too</a>. These require simple modifications (tape or additional 3d printing) to get you there, but like this unit, are probably best used with external ventilation.</p>
+
+<p>The reason this exists is that I had an extra 140mm fan in a corner.</p>
+
+<h3 id="where-to-from-here">Where to from here?</h3>
+
+<p>If you&rsquo;re here for the parts and instructions, there is a list in the &ldquo;<strong><em><a href="#Parts">Parts</a></em></strong>&rdquo; section. Instructions begin right after that.</p>
+
+<p>If you&rsquo;re intersted in the design process, it&rsquo;s what follows after this!</p>
+
+<h2 id="design">Design</h2>
+
+<p>I started off in April 2017 by buying a <a href="https://www.amazon.com/gp/product/B00KF7O58G">140mm Noctua fan</a>. It sat in a corner for a while, destined for a quiet dust filter build.</p>
+
+<p>Fast forward to seeing a <a href="https://www.adafruit.com/product/3836">carbon filter</a> - I threw one in my cart as I was buying robot parts and decided to design a carbon/fan extractor/absorber instead.</p>
+
+<p>With a few changes, I could also use this as a dust filter / air freshener too.</p>
+
+<h3 id="first-iteration">First iteration</h3>
+
+<p>These are from <a href="https://onshape.com">OnShape</a>, a cloud based CAD tool.</p>
+
+<p><img src="/assets/images/fume-away/fume-away-1.jpg" alt="Fume Away Version 1 CAD" /></p>
+
+<p>The entire filter assembly, front to back.</p>
+
+<p>Inputting the pieces required extra work up front, but having the flexibility to adjust the spacing between inner-connected components saved a lot of time.</p>
+
+<p>And basic placeholders (the charcoal filter is a squarish translucent black block) helped with rendering speed too.</p>
+
+<h3 id="printing-the-first-version">Printing the first version</h3>
+
+<p>Each piece here was the size of a large technical book (comparable to a copy of &ldquo;The Art of Electronics&rdquo;).</p>
+
+<p>5-8 hours for each piece (there are three), on a Prusa i3 MK2 with a 0.2mm height setting and normal speeds.</p>
+
+<p><img src="/assets/images/fume-away/fume-away-1-irl1.jpg" alt="Fume Away Print 1" /></p>
+
+<p>The carbon filter, nestled in the case nicely.</p>
+
+<p>(The stickers are from <a href="https://www.boldport.club/shop/product/1307456448">Boldport&rsquo;s sticker CAD sheet</a>, bringing more attention to an uneven spot in the bed)</p>
+
+<p><img src="/assets/images/fume-away/fume-away-1-irl2.jpg" alt="Fume Away Print 2" /></p>
+
+<p>The fan and fan spacer (with the filter removed). This kept the fan blades from chipping away at the carbon filter and served to keep both a set distance apart.</p>
+
+<p><img src="/assets/images/fume-away/fume-away-1-irl3.jpg" alt="Fume Away Print 3" /></p>
+
+<p>The cutout on the back cover is unused in the final version, but here, it was designated for a rocker switch/speed control/add-on.</p>
+
+<p>There were several errors in this version:</p>
+
+<ul>
+<li><p>The front cover&rsquo;s tolerances were tight enough that it required hammering in with a rubber mallet.</p></li>
+
+<li><p>Conversely, the rear cover ended up being too loose, with 0.2mm of spacing in all directions.</p></li>
+
+<li><p>The toggle switch on the side (it is the metal protrusion, bottom left) pushed the casing apart. The hole was correctly sized for the switch to come through, but the retainer&rsquo;s overall diameter pushed on the cover pieces slightly.</p></li>
+
+<li><p>The filter itself was hard to remove. It required digging in with a tool or displacing the fan from the rear and knocking the filter out.</p></li>
+</ul>
+
+<h3 id="improving-on-the-first-version">Improving on the first version</h3>
+
+<p><img src="/assets/images/fume-away/fume-away-2.jpg" alt="Fume Away Version 2 CAD" /></p>
+
+<p>User-friendliness of the filter became a priority in the updated version.</p>
+
+<ul>
+<li><p>This added a cartridge system. The fan could be used for other things with or without the filter. Great for really warm days, drying boards off and keeping the carbon element fresh in-between uses.</p></li>
+
+<li><p>The holes on the sides were resized, to allow for the toggle switch&rsquo;s retainer to fit. One side was also resized to fit a panel mount DC jack.</p></li>
+
+<li><p>These holes also had external cuts added, allowing them to accept smaller sized mounts (with an adapter).</p></li>
+
+<li><p>Tolerances were revisited and the rear panel was made to take an additional spacer.</p></li>
+</ul>
+
+<h3 id="cartridge-handle">Cartridge handle</h3>
+
+<p>Before I could print all of the second version, I figured that the cartridge handle could double as a handle too, but it needed a bit more security.</p>
+
+<ul>
+<li><p>The cartridge was made to take an M3 screw (currently setup for tapping, but can also be changed/resized for a heat-set brass insert using the STEP files).</p></li>
+
+<li><p>The cartridge is now loose fitting, so it can&rsquo;t be mistaken for a secure handle (the screw needs to be inserted, maybe a pop-up eject button next?).</p></li>
+
+<li><p>There are new slots and protrusions in the cover pieces and case. These lock the cover pieces together vertically but still allow relatively easy separation, horizontally.</p></li>
+</ul>
+
+<p>With the screw in place, the cartridge&rsquo;s handle acts as a carrying handle for the entire unit.</p>
+
+<h3 id="version-3-printed">Version 3: Printed</h3>
+
+<p><img src="/assets/images/fume-away/fume-away-3.jpg" alt="Fume Away Version 3 CAD" /></p>
+
+<p>It still looks pretty boring in CAD! I think this is a good thing.</p>
+
+<p><img src="/assets/images/fume-away/fume-away-3-dc-jack.jpg" alt="Fume Away Version 3 DC Jack" /></p>
+
+<p>Here&rsquo;s the outside where the panel mount DC jack is. Some deburring was needed here before the jack would seat properly.</p>
+
+<p>Sandpaper would work just as well if you encounter this issue too.</p>
+
+<p><img src="/assets/images/fume-away/fume-away-3-toggle-switch-plate.jpg" alt="Fume Away Version 3 Toggle Switch Plate" /></p>
+
+<p>This is the toggle switch&rsquo;s plate. It allows for different sizings of switches to be inserted. The press-fit is fairly tight.</p>
+
+<p><img src="/assets/images/fume-away/fume-away-3.gif" alt="Fume Away Cartridge Removal" /></p>
+
+<p>The cartridge slides out smoothly too.</p>
+
+<h3 id="Future">Future considerations</h3>
+
+<ul>
+<li><p>A better version of the cartridge might be a printed quick snap/eject button of some kind</p></li>
+
+<li><p>The case&rsquo;s fan to cartridge separator (the top lip) could be a bit more aggressive (limited by support/overhangs). The fan can fall past the lip and obstruct cartridge insertion sometimes.</p></li>
+
+<li><p>Parts of the cover/case might be better designed as modular snap in panels, so that different configurations of switches / controllers / add-ons could be used without reprinting everything. It might also make the case/cover faster to print.</p></li>
+
+<li><p>A HEPA filter</p></li>
+
+<li><p>PWM speed control: for very loud fans, or people who don&rsquo;t want 100% speed all the time.</p></li>
+
+<li><p>Moving power and the switch to the same side (so that the fan can be used on its side)</p></li>
+
+<li><p>Adding a tiling system so that surfaces can be cooled</p></li>
+</ul>
+
+<h2 id="Parts">Parts</h2>
+
+<p>Here&rsquo;s the part list! If you&rsquo;re doing this on your own, please substitute or add as you wish. It&rsquo;ll hopefully end up being your number one fan.</p>
+
+<h3 id="tools">Tools</h3>
+
+<ul>
+<li><p>Soldering iron with solder (crimped connections would be better but crimp connectors and crimpers are a rabbit hole and require practice to get right)</p></li>
+
+<li><p>Wire strippers</p></li>
+
+<li><p>3D printer with a bed size that can accommodate this print (the i3 MK2&rsquo;s is 250 x 210 x 200 mm); lengthy side of the large pieces: 201 mm, wide side: 160 mm)</p></li>
+</ul>
+
+<p><img src="/assets/images/fume-away/fume-away-3-cover-print.jpg" alt="Fume Away Version 3 Cover Print" /></p>
+
+<h2 id="materials">Materials</h2>
+
+<h3 id="amazon">Amazon</h3>
+
+<ul>
+<li><p>A Noctua <a href="https://www.amazon.com/gp/product/B00KF7O58G">140mm fan</a> - I selected this Noctua based on a combination of performance/silence, with cost being a more minor factor. If cost were no object, I&rsquo;d move up to <a href="https://www.amazon.com/gp/product/B00KFCR0PQ/">this industrial grade 140mm Noctua</a> instead. However, I don&rsquo;t think it is that great of a step up.</p></li>
+
+<li><p>Carbon filter (5-pack), if you want it in ones, look below: <a href="https://www.amazon.com/gp/product/B079D5W2C2/">https://www.amazon.com/gp/product/B079D5W2C2/</a></p></li>
+</ul>
+
+<h3 id="adafruit">Adafruit</h3>
+
+<ul>
+<li><p>2.1mm panel mount jack: <a href="https://www.adafruit.com/product/610">https://www.adafruit.com/product/610</a> (test desired pins by plugging in power and carefully verify with a voltmeter before soldering &ndash; the assembly images might help too).</p></li>
+
+<li><p>SPDT (Single Pole, Double Throw) toggle switch: <a href="https://www.adafruit.com/product/3221">https://www.adafruit.com/product/3221</a></p></li>
+
+<li><p>2.1mm center-positive 12V DC switching power supply: <a href="https://www.adafruit.com/product/798">https://www.adafruit.com/product/798</a></p></li>
+
+<li><p>Carbon filter: <a href="https://www.adafruit.com/product/3836">https://www.adafruit.com/product/3836</a></p></li>
+
+<li><p>Heatshrink tubing: <a href="https://www.adafruit.com/product/1649">https://www.adafruit.com/product/1649</a></p></li>
+
+<li><p>Silicone wire: <a href="https://www.adafruit.com/product/1881">Black</a> | <a href="https://www.adafruit.com/product/1877">Red</a></p></li>
+</ul>
+
+<h3 id="optional-missing-no-proper-source">Optional/missing/no proper source</h3>
+
+<ul>
+<li>Wago connectors: I keep a box of Wago connectors around; they&rsquo;re really nice for an easy, solid connection.</li>
+</ul>
+
+<p>Adafruit sells a <a href="https://www.adafruit.com/product/866">3-conductor version</a> with a window. I&rsquo;ve been using a box of the <a href="https://www.amazon.com/gp/product/B00HIOP6SC/">gray two-conductor connectors</a> off of Amazon, so I&rsquo;ve not needed to use the newer versions.</p>
+
+<ul>
+<li>Fan cable: A cable that converts the four pin header to two wires makes things more elegant (chop off the wiring on the large end and put each into the wago connectors).</li>
+</ul>
+
+<p>Something like <a href="https://www.amazon.com/Rosewill-Splitter-Duplicator-Converter-Adapter/dp/B01N0XQ7XC/">this</a> &ndash; I wouldn&rsquo;t recommend going out to buy one though! Soldering silicone wire to one end of a 2.54mm header will work in a pinch (use hot glue to keep it attached to the fan header).</p>
+
+<ul>
+<li>M3 tap: For tapping a hole into the cartridge.</li>
+</ul>
+
+<h3 id="3d-prints">3D prints</h3>
+
+<p>The prints are in this repository: <a href="https://github.com/Collector3/fume-away">https://github.com/Collector3/fume-away</a> (now on YouMagine and Thingiverse as well, if you came from there, hello!).</p>
+
+<p>Print the <code>cartridge</code>, <code>case</code> (enable support material), <code>cover</code> (enable support material), <code>rear-cover</code>, <code>rear-fan-grill</code>, and <code>fan-grill</code> files.</p>
+
+<p>If you&rsquo;re using the smaller SPST switch, print the <code>6mm adapter</code> as well.</p>
+
+<h2 id="assembly-instructions">Assembly Instructions</h2>
+
+<p>The prints take a long time, but assembly is (hopefully) straightforward.</p>
+
+<h3 id="fan">Fan</h3>
+
+<p>Screw the <code>fan-grill</code> and <code>rear-fan-grill</code> pieces onto the fan, using fan screws (four are included in the Noctua box, use two in a diagonal configuration for each). They should tap into the plastic and into the fan itself (try to drive them straight in).</p>
+
+<h3 id="carbon-filter-cartridge">Carbon Filter Cartridge</h3>
+
+<p>Tap the hole if you want to use the cartridge as a carrying handle with an M3 tap. Choose any screw size that keeps the cartridge in place and engages the front cover. An M3 x 16mm was used in development.</p>
+
+<h3 id="toggle-switch">Toggle Switch</h3>
+
+<p><img src="/assets/images/fume-away/fume-away-3-toggle-switch-internal.jpg" alt="Fume Away Version 3 Toggle Switch" /></p>
+
+<p>With a multimeter in continuity mode (aka beep mode), check the switch to see which contacts you&rsquo;ll be wiring to. Power input goes to the center pin and it is distributed to the two &lsquo;poles&rsquo; on either side, as the switch is flipped.</p>
+
+<p>Counter-intuitively, the &lsquo;on&rsquo; position means the bottom tab is connected to the center pin (just &lsquo;flip&rsquo; the switch around physically if soldered backwards: nobody will know).</p>
+
+<p>Strip two wires, red/red, <strong>cut &amp; add heatshrink tubing</strong>, then carefully solder the wires to the switch. Use a blow dryer or quick flick of a lighter to tighten the heatshrink.</p>
+
+<h3 id="toggle-switch-1">Toggle Switch</h3>
+
+<p>To attach the toggle switch, tap the 6mm press-fit mount into the case, like this:</p>
+
+<p><img src="/assets/images/fume-away/fume-away-3-toggle-switch-plate.jpg" alt="Fume Away Version 3 Toggle Switch Plate" /></p>
+
+<p>It should fit snugly; if it doesn&rsquo;t, a bit of glue/epoxy will help to keep it in place.</p>
+
+<p>To attach the switch, unscrew the top retainer and the &lsquo;external lock washer&rsquo; (looks like a spiky dog collar, feels prickly) from the toggle switch.</p>
+
+<p>Insert the toggle lever from inside the case and push it through to the outside. Then screw the retainer and washer onto the top to secure it.</p>
+
+<h3 id="dc-jack">DC Jack</h3>
+
+<p><img src="/assets/images/fume-away/fume-away-3-dc-jack-internal.jpg" alt="Fume Away Version 3 DC Jack Internal" /></p>
+
+<p>With this jack, the negative poles will switch connectivity depending on whether or not a DC jack is inserted.</p>
+
+<p>To absolutely verify which pins to solder to, use a multimeter and carefully measure the voltage across the pins, with the power supply plugged in. It should read 12V and indicate which pins are positive and negative (if you get a -12V reading, the multimeter&rsquo;s leads are backwards).</p>
+
+<p>Strip two wires, red/black, <strong>cut &amp; add heatshrink tubing</strong>, then solder the wires to the panel-mount jack. Again, use a blow dryer or lighter to tighten the heatshrink.</p>
+
+<p>Note: If at first, the panel mount jack does not fit, use a bit of sandpaper or a deburring tool to widen the hole, as different printer-to-printer tolerances can deposit a little more in this area.</p>
+
+<p>Attach the panel mount jack to the case from the outside, pushing in (threading the wires in first). Secure it to the case with the retainer from the inside.</p>
+
+<h3 id="final-wiring">Final wiring</h3>
+
+<p><img src="/assets/images/fume-away/fume-away-3-electronics.jpg" alt="Fume Away Version 3 Wiring" /></p>
+
+<p>If that picture looks confusing, it is! We&rsquo;ll break it down together.</p>
+
+<h3 id="text-version">Text version</h3>
+
+<p>We&rsquo;ll start by following the conventional path of current flow. From the power supply brick, it goes into the positive pin of the DC jack. Then it enters a wago connector and exits to the center pin of the toggle switch.</p>
+
+<p>From the center pin of the toggle switch, it exits to the bottom pin (when in the on position), into another wago connector.</p>
+
+<p>Another wire from the connector then connects to the positive pin of the fan&rsquo;s yellow wire.</p>
+
+<p>On the negative side, the fan is connected to one wago connector, which is then connected to the negative pole of the DC jack.</p>
+
+<h3 id="how-about-a-diagram">How about a diagram?</h3>
+
+<p>You got it.</p>
+
+<p><img src="/assets/images/fume-away/fume-away-schematic.png" alt="Fume Away Schematic" /></p>
+
+<p>Also: If you&rsquo;re super confident that nothing will be re-used, and that there are no further improvements to be made, feel free to do away with the wago nuts and wire/solder/crimp directly.</p>
+
+<h3 id="case-assembly">Case assembly</h3>
+
+<ul>
+<li><p>Push the carbon filter into the cartridge.</p></li>
+
+<li><p>Attach the front cover to the case.</p></li>
+
+<li><p>Route the fan&rsquo;s cable into the case. It may need to be wrapped around inside the case a few times.</p></li>
+
+<li><p>Push the fan into the front cover from the back of the case. Have the label facing you (so it sucks in air through the filter).</p></li>
+
+<li><p>Connect the fan to the power connections we routed above.</p></li>
+</ul>
+
+<h3 id="fan-connection">Fan connection</h3>
+
+<p>If you&rsquo;ve acquired a four pin to two pin molex fan connector, now would be the time to substitute it in.</p>
+
+<p>Other options include using a 2.54mm Male/Male header as a go-between (soldering wire to one end) and hot gluing everything so it stays in place.</p>
+
+<p>Cutting the fan header off and attaching the yellow (positive) / black (negative) ends to the switch/DC jack would also work in a pinch.</p>
+
+<h3 id="final-case-assembly-continued">Final case assembly (continued)</h3>
+
+<ul>
+<li>Push the rear cover over the case. Attach DC power and flip the switch. If everything is wired correctly, the fan should begin to immediately spin up.</li>
+</ul>
+
+<p>If it doesn&rsquo;t, pull out the power brick and check your wiring. With the fan cable disconnected, connect the power brick and probe around with a multimeter. You should see 12v with the switch in the &lsquo;on&rsquo; position.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>This about completes the build process. If you&rsquo;ve made it this far, thanks!</p>
+
+<p>It&rsquo;s rather unlikely that there will continue to be updates to this build (i&rsquo;ll probably revisit it to add a HEPA filter if my soldering area changes), but if you are interested in improving it for your own uses, please grab the STEP files and make this build your own.</p>
+
+<p>Until next time.</p>
+
+<p><img src="/assets/images/fume-away/fume-away-3.jpg" alt="Fume Away 3 CAD" /></p>
+
+<p><img src="/assets/images/fume-away/fume-away-3-front-fully-assembled.jpg" alt="Fume Away 3 IRL" /></p>
+    </section>
+
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/keyglitch" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/davidk" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2019 <a href="https://open.konspyre.org">davidk</a>. </section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://open.konspyre.org/js/index.js"></script>
+<script src="https://open.konspyre.org/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>
