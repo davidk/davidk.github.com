@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Page on open collector</title>
+    <title>page on open collector</title>
     <link>https://open.konspyre.org/categories/page/</link>
-    <description>Recent content in Page on open collector</description>
+    <description>Recent content in page on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
@@ -28,8 +28,8 @@ Additionally, you might be interested in the OSHPark shared project.</descriptio
       
       <guid>https://open.konspyre.org/about/</guid>
       <description>Hi! I&amp;rsquo;m David. I also go by dave/davidk.
-I work on cloud tooling and cloud infrastructure (starting from bare metal on up), mostly tailored to all things Linux.
-This page is a collection of pointers to side projects, time permitting: mostly consisting of software, electronics and 3D printables.
+I work on the things that make up cloud infrastructure, mostly tailored to all things Linux.
+This page is a collection of pointers to my side projects, time permitting: mostly consisting of software, electronics and 3D printables.
 Software GitHub has a bunch of things i&amp;rsquo;ve written over the years.
 I have an interest in small embedded systems, so sometimes distributions and kernels that i&amp;rsquo;ve built end up there.</description>
     </item>

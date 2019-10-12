@@ -7,7 +7,7 @@
     <title>Raspberry Flavored Time (A NTP server on your Pi, tethered to a GPS unit) &middot; open collector</title>
     <meta name="author" content="davidk">
     
-    <meta name="generator" content="Hugo 0.54-DEV" />
+    <meta name="generator" content="Hugo 0.59.0-DEV" />
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -491,19 +491,22 @@ offset 0.005233
 <p>Note: No consideration (except for great customer service) was given to me by Adafruit for writing this. I did win an unrelated prize a few days ago that I should dig into though (OHS bag of swag).</p>
 
 <pre><code class="language-11/12/12```:">
-```12/24/12```: Added information on calibrating Adafruit's GPS module (including references) and updated offset in configuration. Clobbered the introduction and added more spelling errors/walls of text to confuse/clarify things a bit.
+</code></pre>
 
-```1/15/13```: Changed the hardware voltage warning (fixed non-serious typo). Also tried to un-break formatting for note #5 and redirected help to a more proper place.
+<p>12/24/12```: Added information on calibrating Adafruit&rsquo;s GPS module (including references) and updated offset in configuration. Clobbered the introduction and added more spelling errors/walls of text to confuse/clarify things a bit.</p>
 
-```02/05/13```: Added a reminder to connect the proper line before working on
-the Adafruit GPS module.
+<pre><code class="language-1/15/13```:">
+</code></pre>
 
-```02/06/13```: The DAEMON line in /etc/init.d/ntp had a typo, and should be /usr/bin/ntpd (due to the prefix used).
+<p>02/05/13```: Added a reminder to connect the proper line before working on
+the Adafruit GPS module.</p>
 
-```03/03/13```: Thanks to both Sven Wunder and @davidmonro_ for reporting that pps-tools needs to be installed during a compile of NTP from source.
+<pre><code class="language-02/06/13```:">
+</code></pre>
 
-```05/09/13```: Collapsed the configure line (it was tested to be cut and paste friendly), and reduced the amount of make by one.
+<p>03/03/13```: Thanks to both Sven Wunder and @davidmonro_ for reporting that pps-tools needs to be installed during a compile of NTP from source.</p>
 
+<pre><code class="language-05/09/13```:">
 ## Extra Information on NTP
 
 * Selecting reliable time servers: [http://support.ntp.org/bin/view/Support/SelectingOffsiteNTPServers#Section_5.3.3.](http://support.ntp.org/bin/view/Support/SelectingOffsiteNTPServers#Section_5.3.3.)
@@ -523,9 +526,11 @@ This includes a discussion about how a proper NTP setup should look like (having
 5. Note that this disables select sentences, so if you'll be re-purposing your
 Adafruit GPS unit in the future, you may use this command to reset it to its default sentences:
 
-```bash
-$ echo -e '$PMTK314,-1*04\r\n' &gt; /dev/ttyAMA0
 </code></pre>
+
+<p>bash
+$ echo -e &lsquo;$PMTK314,-1*04\r\n&rsquo; &gt; /dev/ttyAMA0
+```</p>
 
 <p>If that fails, removing the battery and unhooking the power for your unit will usually revert it to its old behavior.</p>
 

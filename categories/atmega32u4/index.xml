@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Atmega32u4 on open collector</title>
+    <title>atmega32u4 on open collector</title>
     <link>https://open.konspyre.org/categories/atmega32u4/</link>
-    <description>Recent content in Atmega32u4 on open collector</description>
+    <description>Recent content in atmega32u4 on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 May 2013 00:00:00 +0000</lastBuildDate>

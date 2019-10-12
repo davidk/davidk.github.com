@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>open collector</title>
@@ -107,8 +107,8 @@ back for this version is 2014-08-24(!)&lt;/p&gt;</description>
       
       <guid>https://open.konspyre.org/about/</guid>
       <description>Hi! I&amp;rsquo;m David. I also go by dave/davidk.
-I work on cloud tooling and cloud infrastructure (starting from bare metal on up), mostly tailored to all things Linux.
-This page is a collection of pointers to side projects, time permitting: mostly consisting of software, electronics and 3D printables.
+I work on the things that make up cloud infrastructure, mostly tailored to all things Linux.
+This page is a collection of pointers to my side projects, time permitting: mostly consisting of software, electronics and 3D printables.
 Software GitHub has a bunch of things i&amp;rsquo;ve written over the years.
 I have an interest in small embedded systems, so sometimes distributions and kernels that i&amp;rsquo;ve built end up there.</description>
     </item>

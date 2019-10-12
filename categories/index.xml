@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on open collector</title>
@@ -6,10 +6,46 @@
     <description>Recent content in Categories on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Sep 2017 07:18:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://open.konspyre.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>page</title>
+      <link>https://open.konspyre.org/categories/page/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/page/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bug</title>
+      <link>https://open.konspyre.org/categories/bug/</link>
+      <pubDate>Mon, 28 May 2018 23:56:47 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/bug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fedora</title>
+      <link>https://open.konspyre.org/categories/fedora/</link>
+      <pubDate>Mon, 28 May 2018 23:56:47 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/fedora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kicad</title>
+      <link>https://open.konspyre.org/categories/kicad/</link>
+      <pubDate>Mon, 28 May 2018 23:56:47 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/kicad/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>3d</title>
@@ -30,205 +66,7 @@
     </item>
     
     <item>
-      <title>Adafruit</title>
-      <link>https://open.konspyre.org/categories/adafruit/</link>
-      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/adafruit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Atmega32u4</title>
-      <link>https://open.konspyre.org/categories/atmega32u4/</link>
-      <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/atmega32u4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Attiny</title>
-      <link>https://open.konspyre.org/categories/attiny/</link>
-      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/attiny/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Avr</title>
-      <link>https://open.konspyre.org/categories/avr/</link>
-      <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/avr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Avrb</title>
-      <link>https://open.konspyre.org/categories/avrb/</link>
-      <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/avrb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Avrisp</title>
-      <link>https://open.konspyre.org/categories/avrisp/</link>
-      <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/avrisp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Avrrinatora</title>
-      <link>https://open.konspyre.org/categories/avrrinatora/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/avrrinatora/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Avrrrinator</title>
-      <link>https://open.konspyre.org/categories/avrrrinator/</link>
-      <pubDate>Wed, 23 Jan 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/avrrrinator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bb313</title>
-      <link>https://open.konspyre.org/categories/bb313/</link>
-      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/bb313/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bp</title>
-      <link>https://open.konspyre.org/categories/bp/</link>
-      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/bp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Breakout</title>
-      <link>https://open.konspyre.org/categories/breakout/</link>
-      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/breakout/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bug</title>
-      <link>https://open.konspyre.org/categories/bug/</link>
-      <pubDate>Mon, 28 May 2018 23:56:47 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/bug/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Buspirate</title>
-      <link>https://open.konspyre.org/categories/buspirate/</link>
-      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/buspirate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Buspirate3</title>
-      <link>https://open.konspyre.org/categories/buspirate3/</link>
-      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/buspirate3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Camera</title>
-      <link>https://open.konspyre.org/categories/camera/</link>
-      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/camera/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contest</title>
-      <link>https://open.konspyre.org/categories/contest/</link>
-      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/contest/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cr2032</title>
-      <link>https://open.konspyre.org/categories/cr2032/</link>
-      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/cr2032/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dp6037</title>
-      <link>https://open.konspyre.org/categories/dp6037/</link>
-      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/dp6037/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Drawer</title>
-      <link>https://open.konspyre.org/categories/drawer/</link>
-      <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/drawer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Electroscope</title>
-      <link>https://open.konspyre.org/categories/electroscope/</link>
-      <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/electroscope/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fedora</title>
-      <link>https://open.konspyre.org/categories/fedora/</link>
-      <pubDate>Mon, 28 May 2018 23:56:47 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/fedora/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gps</title>
-      <link>https://open.konspyre.org/categories/gps/</link>
-      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/gps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hardware</title>
+      <title>hardware</title>
       <link>https://open.konspyre.org/categories/hardware/</link>
       <pubDate>Fri, 15 Sep 2017 07:18:33 +0000</pubDate>
       
@@ -237,106 +75,16 @@
     </item>
     
     <item>
-      <title>Kicad</title>
-      <link>https://open.konspyre.org/categories/kicad/</link>
-      <pubDate>Mon, 28 May 2018 23:56:47 +0000</pubDate>
+      <title>camera</title>
+      <link>https://open.konspyre.org/categories/camera/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/categories/kicad/</guid>
+      <guid>https://open.konspyre.org/categories/camera/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Lufa</title>
-      <link>https://open.konspyre.org/categories/lufa/</link>
-      <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/lufa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ntp</title>
-      <link>https://open.konspyre.org/categories/ntp/</link>
-      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/ntp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Offtopic</title>
-      <link>https://open.konspyre.org/categories/offtopic/</link>
-      <pubDate>Sun, 16 Sep 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/offtopic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Page</title>
-      <link>https://open.konspyre.org/categories/page/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/page/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pcb</title>
-      <link>https://open.konspyre.org/categories/pcb/</link>
-      <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/pcb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pir</title>
-      <link>https://open.konspyre.org/categories/pir/</link>
-      <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/pir/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Printable</title>
-      <link>https://open.konspyre.org/categories/printable/</link>
-      <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/printable/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Printing</title>
-      <link>https://open.konspyre.org/categories/printing/</link>
-      <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/printing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programmer</title>
-      <link>https://open.konspyre.org/categories/programmer/</link>
-      <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/programmer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming</title>
-      <link>https://open.konspyre.org/categories/programming/</link>
-      <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Raspberry Pi</title>
+      <title>raspberry pi</title>
       <link>https://open.konspyre.org/categories/raspberry-pi/</link>
       <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
       
@@ -345,7 +93,7 @@
     </item>
     
     <item>
-      <title>Rpi</title>
+      <title>rpi</title>
       <link>https://open.konspyre.org/categories/rpi/</link>
       <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
       
@@ -354,61 +102,25 @@
     </item>
     
     <item>
-      <title>Stl</title>
-      <link>https://open.konspyre.org/categories/stl/</link>
-      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
+      <title>electroscope</title>
+      <link>https://open.konspyre.org/categories/electroscope/</link>
+      <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/categories/stl/</guid>
+      <guid>https://open.konspyre.org/categories/electroscope/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Storage</title>
-      <link>https://open.konspyre.org/categories/storage/</link>
-      <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
+      <title>pcb</title>
+      <link>https://open.konspyre.org/categories/pcb/</link>
+      <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/categories/storage/</guid>
+      <guid>https://open.konspyre.org/categories/pcb/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Tester</title>
-      <link>https://open.konspyre.org/categories/tester/</link>
-      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/tester/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Time</title>
-      <link>https://open.konspyre.org/categories/time/</link>
-      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/time/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Timelapse</title>
-      <link>https://open.konspyre.org/categories/timelapse/</link>
-      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/timelapse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tools</title>
-      <link>https://open.konspyre.org/categories/tools/</link>
-      <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://open.konspyre.org/categories/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Toy</title>
+      <title>toy</title>
       <link>https://open.konspyre.org/categories/toy/</link>
       <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
@@ -417,7 +129,295 @@
     </item>
     
     <item>
-      <title>Usb</title>
+      <title>breakout</title>
+      <link>https://open.konspyre.org/categories/breakout/</link>
+      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/breakout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cr2032</title>
+      <link>https://open.konspyre.org/categories/cr2032/</link>
+      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/cr2032/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tester</title>
+      <link>https://open.konspyre.org/categories/tester/</link>
+      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/tester/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>avr</title>
+      <link>https://open.konspyre.org/categories/avr/</link>
+      <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/avr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>avrb</title>
+      <link>https://open.konspyre.org/categories/avrb/</link>
+      <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/avrb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programmer</title>
+      <link>https://open.konspyre.org/categories/programmer/</link>
+      <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/programmer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pir</title>
+      <link>https://open.konspyre.org/categories/pir/</link>
+      <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/pir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>avrrinatorA</title>
+      <link>https://open.konspyre.org/categories/avrrinatora/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/avrrinatora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>attiny</title>
+      <link>https://open.konspyre.org/categories/attiny/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/attiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bb313</title>
+      <link>https://open.konspyre.org/categories/bb313/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/bb313/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>buspirate</title>
+      <link>https://open.konspyre.org/categories/buspirate/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/buspirate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>buspirate3</title>
+      <link>https://open.konspyre.org/categories/buspirate3/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/buspirate3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>contest</title>
+      <link>https://open.konspyre.org/categories/contest/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/contest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>timelapse</title>
+      <link>https://open.konspyre.org/categories/timelapse/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/timelapse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>atmega32u4</title>
+      <link>https://open.konspyre.org/categories/atmega32u4/</link>
+      <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/atmega32u4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lufa</title>
+      <link>https://open.konspyre.org/categories/lufa/</link>
+      <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/lufa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>volume control</title>
+      <link>https://open.konspyre.org/categories/volume-control/</link>
+      <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/volume-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>printing</title>
+      <link>https://open.konspyre.org/categories/printing/</link>
+      <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/printing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://open.konspyre.org/categories/tools/</link>
+      <pubDate>Sun, 07 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drawer</title>
+      <link>https://open.konspyre.org/categories/drawer/</link>
+      <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/drawer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>printable</title>
+      <link>https://open.konspyre.org/categories/printable/</link>
+      <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/printable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>storage</title>
+      <link>https://open.konspyre.org/categories/storage/</link>
+      <pubDate>Mon, 04 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>avrrrinator</title>
+      <link>https://open.konspyre.org/categories/avrrrinator/</link>
+      <pubDate>Wed, 23 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/avrrrinator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bp</title>
+      <link>https://open.konspyre.org/categories/bp/</link>
+      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/bp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dp6037</title>
+      <link>https://open.konspyre.org/categories/dp6037/</link>
+      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/dp6037/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stl</title>
+      <link>https://open.konspyre.org/categories/stl/</link>
+      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/stl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>adafruit</title>
+      <link>https://open.konspyre.org/categories/adafruit/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/adafruit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gps</title>
+      <link>https://open.konspyre.org/categories/gps/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/gps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ntp</title>
+      <link>https://open.konspyre.org/categories/ntp/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/ntp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>time</title>
+      <link>https://open.konspyre.org/categories/time/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>avrisp</title>
+      <link>https://open.konspyre.org/categories/avrisp/</link>
+      <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/avrisp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://open.konspyre.org/categories/programming/</link>
+      <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://open.konspyre.org/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>usb</title>
       <link>https://open.konspyre.org/categories/usb/</link>
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       
@@ -426,11 +426,11 @@
     </item>
     
     <item>
-      <title>Volume Control</title>
-      <link>https://open.konspyre.org/categories/volume-control/</link>
-      <pubDate>Sat, 11 May 2013 00:00:00 +0000</pubDate>
+      <title>offtopic</title>
+      <link>https://open.konspyre.org/categories/offtopic/</link>
+      <pubDate>Sun, 16 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://open.konspyre.org/categories/volume-control/</guid>
+      <guid>https://open.konspyre.org/categories/offtopic/</guid>
       <description></description>
     </item>
     

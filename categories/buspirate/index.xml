@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Buspirate on open collector</title>
+    <title>buspirate on open collector</title>
     <link>https://open.konspyre.org/categories/buspirate/</link>
-    <description>Recent content in Buspirate on open collector</description>
+    <description>Recent content in buspirate on open collector</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 May 2013 00:00:00 +0000</lastBuildDate>
